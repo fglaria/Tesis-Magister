@@ -47,7 +47,7 @@ La \textbf{transitividad} de un grafo ($T(G)$) es la probabilidad que un par de 
 
 Tanto el coeficiente de clusterización como la transitividad son métricas que permiten vislumbrar cuán conectados o clusterizados están los vértices de un grafo, y de sus ecuaciones se puede notar que están relacionados.
 
-\section{Codificaciones}
+\section{Codificaciones}\label{sec:coding}
 Una codificación muy usada es la propuesta por Huffman\cite{huffman1952method}, que retorna códigos de largo variable. Su conversión se basa en la frecuencia de los símbolos en la secuencia de entrada, codificando los más frecuentes con menos bits. Esta representación requiere tanto la secuencia codificada junto a un vocabulario de símbolos para recuperar la secuencia original. 
 
 En la Figura~\ref{fig:huffman} se muestra un ejemplo de esta codificación, donde (a) es la secuencia de entrada, (b) es la secuencia de salida, y (c) es el vocabulario de símbolos dispuesto en un árbol binario. Primero se cuenta la frecuencia de cada símbolo en la secuencia de entrada, dos veces $1$, dos veces $2$, y cinco veces $3$. Luego se crea el árbol binario, partiendo por las hojas de los símbolos menos frecuentes, $1$ y $2$, y creando un nodo con la frecuencia total de ambos casos, en total cuatro. Luego esa rama se añade a otro nodo junto con la hoja del símbolo más probable, $3$, y ambas suman la frecuencia total de nueve símbolos. Así, el símbolo $3$ puede representarse tan solo con un bit en 1, y para los otros casos se necesitarán dos bits.
