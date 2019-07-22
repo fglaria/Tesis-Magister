@@ -1,0 +1,9 @@
+# comprimir con gzip ca-coauthors resulta en un bpe de 3.65 y reconstruir grafo toma 6780ms
+graph nodes edges bpeCL k2tree k2treeBFS AD WG WGseq
+marknewman-astro 16706 242502 4.45 9.28 8.05 5.67 8.10 7.30
+marknewman-condmat 40421 351386 6.20 12.06 10.43 7.86 11.78 10.45
+dblp-2010 326186 1615400 6.27 7.45 8.00 6.71 8.67 6.91
+snap-dblp 317080 2099732 7.19 11.21 9.92 8.14 11.80 10.17
+snap-amazon 403394 4886816 10.49 15.66 12.33 10.96 14.50 13.35
+dblp-2011 986324 6707236 6.87 10.18 11.37 9.67 10.13 8.71
+ca-coauthors 540486 30491458 0.8 3.29 1.83 1.81 2.71 2.48

@@ -1,0 +1,164 @@
+\chapter{RESULTADOS}\label{chap:contributions}
+\vskip 3.0ex
+
+En esta sección se presentan las características de los grafos $G(V, E)$ y de la estructura compacta utilizada para evaluar la propuesta, y luego se compara tanto el nivel de compresión como los tiempos de acceso secuencial y aleatorio de los algoritmos propuestos contra otros algoritmos relevantes del área.
+
+Los algoritmos a comparar son actuales en el estado del arte para compresión de grafos, incluyendo la última versión de WebGraph \cite{boldi2011layered}, Apostolico and Drovandi \cite{apostolico2009graph}, y k2tree \cite{brisaboa2014compact}.
+
+Todas las pruebas y experimentos se realizaron en una computadora con un procesador Intel i7 2.70GHz CPU con 12GB de RAM, y los algoritmos fueron implementados con el compilador g++ 8.2.1 con la opción de optimización O3.
+
+\section{Grafos y estructura compacta}
+
+Los grafos a evaluar son todos no densos y no dirigidos. Se consideran los ocho grafos \texttt{dblp-2010} y \texttt{dblp-2011} de WebGraph\footnote{\url{http://law.di.unimi.it/datasets.php}},  \texttt{snap-dblp} y \texttt{snap-amazon} de SNAP\footnote{\url{https://snap.stanford.edu/data/}}, \texttt{marknewman-astro} y \texttt{marknewman-condmat} de Quick-Cliques\footnote{\url{http://www.dcs.gla.ac.uk/~pat/jchoco/clique/enumeration/quick-cliques/doc/}}, y \texttt{coPapersDBLP} junto a \texttt{coPapersCiteseer} de Network repository\footnote{\url{http://networkrepository.com/}}.
+
+En la Tabla~\ref{table:gafros3} se muestran la cantidad de vértices (\boldsymbol{$|V|$}), aristas (\boldsymbol{$|E|$}), cliques maximales (\boldsymbol{$|\mathcal{C}|$}), grado medio (\boldsymbol{$\overline{d}$}) y máximo (\boldsymbol{$d_{max}$}) de los vértices de los grafos, valor de degeneracy (\boldsymbol{$D(G)$}), coeficiente de clusterización (\boldsymbol{$C(G)$}) y transitividad (\boldsymbol{$T(G)$}). De ella se pueden apreciar varias características importantes de los grafos.
+
+En cuanto a tamaño, \texttt{marknewman-astro} y \texttt{marknewman-condmat} son los más pequeños, no superan los 50.000 vértices. Los demás tienen un tamaño bastante similar, siendo \texttt{dblp-2011} el más grande con 986.324 vértices.
+
+Con respecto al número de aristas, \texttt{marknewman-astro} y \texttt{marknewman-condmat} también son los menores con menos de 400.000, luego \texttt{dblp-2010}, \texttt{dblp-2011}, \texttt{snap-dblp} y \texttt{snap-amazon} entre 1 y 7 millones, y finalmente \texttt{coPapersDBLP} junto a \texttt{coPapersCiteseer} con más de 30 millones de aristas.
+
+En cantidad de cliques maximales, la mayoría tiene una cantidad proporcional a su número de vértices, a excepción de tres grafos: \texttt{snap-amazon} posee más del doble de cliques que vértices, y tanto \texttt{coPapersDBLP} y \texttt{coPapersCiteseer} tienen menos de la mitad de cliques que vértices. Esto quiere decir que su clusterización es distinta a los demás, lo que se confirma estudiando los indicadores restantes.
+
+Con respecto al grado medio y máximo de los vértices en los grafos, se destacan \texttt{snap-dblp} con 6,62 de media pero 2.752 de máxima, que contrasta con \texttt{dblp-2011} que tiene cerca del triple de vértices, aristas y cliques, pero una media similar y un grado máximo tres veces menor. Y \texttt{coPapersDBLP} con \texttt{coPapersCiteseer} que presentan 56,41 y 73,88 de grado medio, y 3.299 con 1.188 de grado máximo, respectivamente.
+
+Finalmente en los indicadores de clusterización, los mismos grafos \texttt{coPapersDBLP} y \texttt{coPapersCiteseer} presentan los valores más altos, lo que podría dar un indicio que los resultados de compresión y tiempos de acceso serán distintos a los demás. 
+
+
+%\input{tables/grafos}
+%\input{tables/grafos2}
+\input{tables/grafos3}
+
+La distribución del grado de los vértices para cada grafo se presenta en la Figura~\ref{fig:grades}. Se puede apreciar que todos los grafos presentan una distribución similar, donde muchos vértices tienen pocos vecinos, y pocos vértices tienen muchos vecinos.
+
+\input{figs/grades}
+\input{figs/cliqueDist2}
+
+La distribución de los tamaños de los cliques maximales para cada grafo se muestra en la Figura~\ref{fig:cliqueDist2}. Es importante notar que el gráfico del grafo \texttt{coPapersCiteseer} está truncado para efectos de comparación, pero tiene muy pocos cliques por sobre el límite fijado gráficamente.
+
+En general los grafos contienen una gran mayoría de cliques pequeños y algunos pocos de gran tamaño, a excepción del grafo \texttt{snap-amazon} que no presenta cliques muy grandes. Mención especial requieren \texttt{coPapersDBLP} y \texttt{coPapersCiteseer} los cuales, aún cuando presenta la misma tendencia que los demás, contienen una cantidad considerable de cliques de hasta 100 vértices, a diferencia de los demás grafos donde la mayoría de sus cliques no superan los 25 vértices.
+
+%\input{figs/cliqueDist}
+
+
+Para generar la estructura compacta se usa la librería \texttt{sdsl-lite}\footnote{\url{https://github.com/simongog/sdsl-lite}} desarrollada por Gog et al.\cite{gbmp2014sea}. Las estructuras de datos sucintas a evaluar dependen del tipo de secuencia a compactar.
+
+\begin{itemize}
+	\item Para las secuencias de símbolos, se consideran las estructuras basadas en wavelet matrix (\textit{wm}) \cite{claude2015wavelet} y wavelet tree (\textit{wt}) \cite{grossi2003high}.
+	\item Para la secuencia de bits, se consideran las estructuras basadas en bitmaps comprimidos de Raman, Raman y Rao (\textit{rrr}) \cite{raman2002succinct}, y Okanohara y Sadakane (\textit{sdb}) \cite{DBLP:journals/corr/abs-cs-0610001}.
+	\item Para la secuencia de bytes, se consideran las estructuras basadas en Hu-Tucker (\textit{hutu}) \cite{brisaboa2011compressed}, y Huffman (\textit{huff}) \cite{makinen2005succinct}.
+\end{itemize}
+
+Se toman como factores de selección el nivel de compresión en bits y el tiempo de reconstrucción secuencial, usando el Algoritmo~\ref{alg:sequential}, para cada grafo y cada función de ranking con cada una de las estructuras antes planteadas.
+
+En la Tabla~\ref{table:sdslBitsRf} se presentan los bytes que ocupa cada estructura de datos sucintas para la función de ranking $r_{f}(u)$, en la Tabla~\ref{table:sdslBitsRc} lo equivalente para la función $r_{c}(u)$, y en la Tabla~\ref{table:sdslBitsRr} para la función $r_{r}(u)$. Se puede apreciar que en la mayoría de los casos, para las secuencias de símbolos \textit{wt} requiere menos bytes, para las secuencias de bits \textit{rrr} requiere un poco menos de la mitad de espacio que \textit{sdb}, y para las secuencias de bytes \textit{hutu} requiere menos espacio que \textit{huff}. Pero es necesario incorporar el análisis de tiempo de reconstrucción antes de seleccionar las mejores estructuras para cada secuencia.
+
+\input{tables/sdslBitsRf}
+\input{tables/sdslBitsRc}
+\input{tables/sdslBitsRr}
+
+Para ello, se decide construir la estructura compacta para cada grafo y cada función de ranking, con todas las posibles combinaciones para las secuencias. En la Figura~\ref{fig:sdslBPE2}, Figura~\ref{fig:sdslBPE3}, Figura~\ref{fig:sdslBPE4}, y Figura~\ref{fig:sdslBPE5}, se compara para cada grafo, el BPE de las ocho posibles combinaciones para cada función de ranking con respecto al tiempo secuencial de reconstrucción del grafo. Y en la Figura~\ref{fig:sdslBPEAle2}, Figura~\ref{fig:sdslBPEAle3}, Figura~\ref{fig:sdslBPEAle4} y Figura~\ref{fig:sdslBPEAle5}, el BPE con respecto al tiempo de acceso aleatorio al recuperar los vecinos de un millón de nodos.
+% En la Tabla~\ref{table:sdslTime} se muestran los tiempos de reconstrucción secuencial del grafo y el espacio en bits para todas las posibles combinaciones. 
+
+En la mayoría de los casos, la estructura que presenta la mejor relación entre BPE y tiempos es la de secuencias de símbolos con \textit{wm}, secuencia de bytes con \textit{hutu}, y secuencia de bits con \textit{sdb}.  Las opciones que presentan menores tiempos aumentan en BPE, y viceversa. Por tanto, se elige esta combinación de estructuras de secuencias como la estructura compacta a desarrollar.
+
+%En todos los casos, las mejores opciones para las secuencias de símbolos son \textit{wm}, y para la secuencia de bytes es \textit{hutu}. Para la secuencia de bits, usando \textit{rrr} se obtiene menor espacio en bits y con \textit{sdb} se obtiene mejor tiempo de reconstrucción en algunos casos, como marknewman-astro y snap-dblp, pero \textit{rrr} obtiene menor tiempo para dblp-2011 con función $r_{r}(u)$, y para coPapersDBLP con todas las funciones de ranking. Por eso, se elige como estructura de datos para la secuencia de bits \textit{rrr}.
+
+%\input{tables/sdslTime}
+
+%\input{figs/sdslBPEAle}
+\input{figs/sdslBPEAle2}
+\input{figs/sdslBPEAle3}
+\input{figs/sdslBPEAle4}
+\input{figs/sdslBPEAle5}
+%\input{figs/sdslBPE}
+\input{figs/sdslBPE2}
+\input{figs/sdslBPE3}
+\input{figs/sdslBPE4}
+\input{figs/sdslBPE5}
+
+\section{Comparación de funciones de ranking}
+
+A continuación se compararán las estructuras compactas resultantes, usando las tres funciones de ranking basadas en la frecuencia del vértice en los cliques maximales $r_{f}(u)$, en la cantidad de vecinos en los cliques del vértice $r_{c}(u)$, y la razón entre ambas funciones $r_{r}(u)$. 
+
+En la Figura~\ref{fig:bpe3} se muestran los BPE de las estructuras compactas finales, aplicando las funciones de ranking en la heurística de clusterización. Se puede apreciar que tanto $r_{f}(u)$ como $r_{c}(u)$ logran un nivel de compresión muy similar con un BPE parecido en todos los casos, y si bien $r_{r}(u)$ obtiene un BPE mayor siempre, tampoco es tan lejano al resultado de las demás funciones. Si este parámetro fuera el único a considerar para elegir la mejor función, $r_{f}(u)$ es siempre la que obtiene el menor BPE, pero es necesario profundizar en la conformación de la estructura.
+
+%\input{tables/bpeRanking}
+\input{figs/bpe3}
+
+En la Figura~\ref{fig:nPartitions} se presentan la cantidad de particiones que contiene las estructuras compactas para cada función de ranking. Se aprecia con bastante claridad que la función $r_{r}(u)$ genera más particiones que las otras dos, y dado que el BPE expuesto en la Figura~\ref{fig:bpe3} no refleja esta diferencia, se puede intuir que las particiones son más pequeñas. Para profundizar en este punto, se estudiará la composición de las secuencias de las estructuras compactas para cada función de ranking.
+
+\input{figs/nPartitions}
+
+En la Figura~\ref{fig:proportionBits}(a) se ilustra la proporción de bits para cada secuencia dentro de la estructura compacta, para cada función de ranking. En la Figura~\ref{fig:proportionBits}(b) se ilustra la misma proporción normalizada. Como se puede observar, la secuencia que más aporta para todos los casos es la de vértices \textit{X}, seguida casi siempre de la secuencia de bytes \textit{BB}, luego \textit{Y} y finalmente la secuencia de bits \textit{B}. Nuevamente las funciones de ranking $r_{f}(u)$ y $r_{c}(u)$ tienen resultados similares, y para la función $r_{r}(u)$ la secuencia \textit{X} aumenta su proporción mientras que \textit{BB} disminuye. Esto podría afectar positivamente el tiempo de respuesta de los algoritmos propuestos, ya que todos requieren comparar los bytes de \textit{BB} de cada partición entre ellos, y si hay menos bytes requerirá menos tiempo.
+
+\input{figs/bitsProp}
+
+Para estudiar la composición de las particiones para cada función de ranking, en la Figura~\ref{fig:maxNodes} se ilustran la cantidad máxima de vértices en la secuencia \textit{X} por partición, y en la Figura~\ref{fig:maxBytes} la cantidad máxima de bytes por vértice en la secuencia \textit{BB} de las estructuras compactas resultantes. Como se puede apreciar, la función $r_{r}(u)$ presenta consistentemente los menores valores entre las tres funciones, lo que permite asegurar que es la que mejor agrupa y usa el espacio de las particiones en la estructura compacta.
+
+\input{figs/maxNodes}
+\input{figs/maxBytes}
+
+En la Figura~\ref{fig:cdfBPN} se puede estudiar la función de distribución acumulativa (CDF) para la cantidad de bytes por vértice en la estructura compacta, para cada función de ranking. Se confirma que para la función $r_{r}(u)$ las particiones contienen menos bytes en la secuencia \textit{BB}, ya que la cantidad de bytes por vértice es significativamente menor.
+
+\input{figs/cdf}
+%\input{figs/cdfCPN}
+
+
+En la Figura~\ref{fig:timesRanking} se ven los tiempos de acceso aleatorio para la obtención de vecinos de cualquier vértice $u \in G(V, E)$ desde las estructuras compactas generadas con las tres funciones de ranking en comparación. Como se esperaba, los tiempos menores se obtienen usando la estructura basada en la función $r_{r}(u)$, ya que no tiene que comparar tantos bytes por particiones como las otras dos.
+
+\input{figs/timesRanking}
+
+Entonces, considerando la gran ventaja en tiempo de acceso y la leve diferencia en compresión, se concluye que la mejor alternativa entre las tres funciones de ranking es $r_{r}(u)$. 
+
+En la Tabla~\ref{table:constructTimes} se muestran los tiempos en segundos de la generación del listado de cliques maximales $\mathcal{C}$ ($t_{\mathcal{C}}$) directo del grafo, el tiempo de generar la estructura compacta desde el listado de cliques ($t_{CS}$), el tiempo total de generar la estructura compacta ($t_{T} = t_{\mathcal{C}} + t_{CS}$) y el tiempo para recuperar el listado de cliques $\mathcal{C}$ desde la estructura compacta ($t'_{\mathcal{C}})$) usando el Algoritmo~\ref{alg:cliques}. 
+
+Se debe notar que el tiempo para recuperar el listado de cliques desde la estructura compacta es menor al requerido desde el grafo directamente. Si bien se puede argumentar que para llegar a la estructura compacta se debe generar el listado desde el grafo, por tanto $t_{\mathcal{C}}$ es necesario pagarlo ineludiblemente, una vez generada la estructura se puede obtener $\mathcal{C}$ de ella, en menor tiempo y sin tener que descomprimir el grafo. Se destaca este contraste en los grafos \texttt{coPapersDBLP} y \texttt{coPapersCiteseer}, donde desde la estructura compacta es sobre 10 veces más rápida.
+
+\input{tables/constructTimes}
+
+A continuación se procede a comparar la opción de compresión seleccionada con los algoritmos del estado del arte ya mencionados.
+
+
+
+
+\section{Comparando con estado del arte}
+En esta sección se compara el nivel de compresión y los tiempos de acceso de la estructura compacta usando la función de ranking $r_{r}(u)$ seleccionada en la sección anterior, con los algoritmos más recientes de WebGraph \cite{boldi2011layered}, Apostolico and Drovandi (AD) \cite{apostolico2009graph}, y k2tree \cite{brisaboa2014compact}.
+
+A continuación se detallan las notaciones a usar en el resto de la sección.
+
+\begin{itemize}
+	\item Para la estructura compacta propuesta, basada en las superposición de cliques maximales, se anotará como $clique_{rr}$.
+	\item En el caso de k2tree, se diferencia cuando el algoritmo usa el orden del grafo original ($k2tree$) del orden por BFS ($k2tree_{BFS}$).
+	\item Para BFS de Apostolico y Drovandi, la notación corresponderá a $AD$.
+	\item En el caso de Webgraph, se diferencia el caso de acceso aleatorio ($WG_{a}$) de acceso secuencial ($WG_{s}$). Esto es necesario ya que para el acceso aleatorio el algoritmo genera una estructura adicional.
+\end{itemize}
+
+Es importante recordar que los algoritmos Webgraph y $AD$ están orientados a comprimir grafos dirigidos. Esto requiere que cada arco de los grafos no dirigidos a probar deben ser anotados en ambos sentidos antes de ser comprimidos por tales. Y mención especial requiere k2-tree, donde la autora proporcionó una versión mejorada del algoritmo, orientado específicamente a grafos no dirigidos.
+
+Con esto presente, en la Tabla~\ref{table:BPEcomp} se comparan los BPE de todos los casos, resaltando los mejores resultados. Para todos los grafos en estudio, la estructura compacta presenta el mejor nivel de compresión, alcanzando particularmente para los grafos \texttt{coPapersDBLP} y \texttt{coPapersCiteseer} un BPE menor a uno. Para \texttt{coPapersDBLP} ningún otro algoritmo se acerca a ese valor, y para \texttt{coPapersCiteseer} solo k2-tree con BFS y AD logran aproximarse al mismo nivel de compresión.
+
+Esto además confirma que la elección de la función de ranking $r_{r}(u)$ es correcta, ya que si bien presenta un BPE más alto de entre las tres funciones sigue siendo el más bajo en la comparativa. Además, el tiempo de acceso es notablemente menor entre las tres opciones, lo que será muy importante al comparar con otros algoritmos, como veremos a continuación.
+
+\input{tables/bpeSmall}
+%\input{tables/bpeSmallDiff}
+
+Para comparar el tiempo de acceso aleatorio, se prueba el Algoritmo~\ref{alg:neighbors} recuperando los vecinos de un millón de vértices aleatorios de $G(V, E)$, y se divide el tiempo que demora dicha solicitud por la cantidad de aristas recuperadas. En la Tabla~\ref{table:timesRandom} se presentan los resultados, sin considerar el caso de Webgraph secuencial ($WG_{s}$), ya que solo se considera acceso aleatorio. %En la Tabla~\ref{table:timesRandomDiff} se comparan los resultados aleatorios.
+
+Como se puede apreciar, Webgraph presenta los menores tiempos de acceso entre todos los algoritmos. Pero se puede decir que el resultado para esta propuesta sí es competitivo, por ejemplo contra k2tree original logra mejores tiempos en casi todos los casos, y para el grafo \texttt{coPapersDBLP} la mayor diferencia es de 1,645 microsegundos, lo que se considera un buen resultado.
+
+\input{tables/timesRandom}
+%\input{tables/timesRandomDiff}
+
+El tiempo de reconstrucción secuencial se midió usando el Algoritmo~\ref{alg:sequential}. En la Tabla~\ref{table:timesSecuencial} se presentan los resultados obtenidos para los algoritmos evaluados. En este caso, si bien el método propuesto es más lento que los demás, para casos como \texttt{marknweman-astro} o \texttt{marknewman-condmat} la diferencia es menor a un segundo, y en otros casos como \texttt{dblp-2010} o \texttt{snap-dblp} es a lo más cercano a dos segundos. El resto de los casos, los grafos tienen una cantidad considerable de arcos, sobre todo \texttt{coPapersDBLP} y \texttt{coPapersCiteseer} que además presentan una relación no proporcional entre cantidad de vértices y cantidad de cliques, como lo muestra la Tabla~\ref{table:gafros3}, lo que afecta bastante a la hora de recuperar el grafo.
+
+Para evaluar mejor la competitividad, en la Figura~\ref{fig:bpetAle} se grafica el BPE con respecto al tiempo de acceso aleatorio en microsegundos, y en la Figura~\ref{fig:bpetSec} el BPE con respecto al tiempo de reconstrucción secuencial en segundos obtenidos para cada algoritmo en cada grafo. 
+
+Se puede apreciar que, para el caso aleatorio, si bien el método de compresión siempre se ubica en el cuadrante de menor BPE y mayor tiempo, otros logran una ubicación de menor calidad, como los casos de los algoritmos de k2tree para los grafos \texttt{dblp-2010}, \texttt{dbpl-2011} y \texttt{snap-dblp} en la Figura~\ref{fig:bpetAle}(c)(d)(e) respectivamente. 
+
+En el caso secuencial, el método propuesto también se encuentra siempre en el mismo cuadrante, pero muy alejado en tiempo de los demás algoritmos, como ya se había estudiado de la Tabla~\ref{table:timesSecuencial}, y tanto en el caso de \texttt{marknewman-astro} (Figura~\ref{fig:bpetSec}(a)) como \texttt{marknewman-condmat} (Figura~\ref{fig:bpetSec}(b)) presentan los mejores resultados.
+
+\input{tables/timesSecuencial} 
+%\input{tables/timesSecuencialDiff} 
+
+\input{figs/bpetAle}
+\input{figs/bpetSec}

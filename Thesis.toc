@@ -1,0 +1,24 @@
+\babel@toc {spanish}{}
+\contentsline {chapter}{Resumen}{\es@scroman {v}}{chapter*.1}
+\contentsline {chapter}{\'{I}ndice de tablas}{\es@scroman {vii}}{chapter*.2}
+\contentsline {chapter}{\'{I}ndice de figuras}{\es@scroman {viii}}{chapter*.3}
+\contentsline {chapter}{\numberline {Cap\'{\i }tulo 1}INTRODUCCI\'ON}{1}{chapter.1}
+\contentsline {chapter}{\numberline {Cap\'{\i }tulo 2}ESTADO DEL ARTE}{2}{chapter.2}
+\contentsline {section}{\numberline {2.1}Webgraph}{2}{section.2.1}
+\contentsline {section}{\numberline {2.2}k2-tree}{4}{section.2.2}
+\contentsline {chapter}{\numberline {Cap\'{\i }tulo 3}MARCO TE\IeC {\'O}RICO}{7}{chapter.3}
+\contentsline {section}{\numberline {3.1}Notaci\IeC {\'o}n y definiciones}{7}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Grafos y cliques maximales}{7}{subsection.3.1.1}
+\contentsline {chapter}{\numberline {Cap\'{\i }tulo 4}M\IeC {\'E}TODO DE COMPRESI\IeC {\'O}N PROPUESTO}{10}{chapter.4}
+\contentsline {section}{\numberline {4.1}Detecci\IeC {\'o}n de cliques maximales}{10}{section.4.1}
+\contentsline {section}{\numberline {4.2}Particionamento del grafo de cliques}{11}{section.4.2}
+\contentsline {section}{\numberline {4.3}Algoritmo de particionamiento o clustering}{12}{section.4.3}
+\contentsline {section}{\numberline {4.4}Representaci\IeC {\'o}n en estructuras compactas}{13}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Secuencias de la representaci\IeC {\'o}n de las particiones}{14}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Algoritmos de consulta}{15}{subsection.4.4.2}
+\contentsline {chapter}{\numberline {Cap\'{\i }tulo 5}RESULTADOS}{20}{chapter.5}
+\contentsline {section}{\numberline {5.1}Grafos y estructura compacta}{20}{section.5.1}
+\contentsline {section}{\numberline {5.2}Comparaci\IeC {\'o}n de funciones de ranking}{25}{section.5.2}
+\contentsline {section}{\numberline {5.3}Comparando con estado del arte}{29}{section.5.3}
+\contentsline {chapter}{\numberline {Cap\'{\i }tulo 6}CONCLUSIONES}{39}{chapter.6}
+\contentsline {chapter}{Bibliograf\'{\i }a}{41}{chapter.6}

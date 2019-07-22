@@ -1,0 +1,19 @@
+\begin{table}
+	\caption{Comparativa de tiempos de reconstrucción secuencial del grafo, en segundos.}
+	\rowcolors{2}{white}{gray!10}
+	\label{table:timesSecuencialDiff}
+	\centering
+	\begin{tabular}{l|r|r|r|r}
+		\toprule
+		Grafo & $clique_{rr}$ & $k2tree_{O}$ & $k2tree_{BFS}$ & $WG_{s}$ \\
+		\midrule	
+		marknewman-astro & 0,15 & \textcolor{Green}{+0.09} & \textcolor{Red}{-0,01} & \textcolor{Red}{-0,137} \\
+		marknewman-condmat & 0,28 & \textcolor{Red}{-0,04} & \textcolor{Red}{-0,06} & \textcolor{Red}{-0,258} \\
+		dblp-2010 & 1,43 & \textcolor{Red}{-1,01} & \textcolor{Red}{-1,02} & \textcolor{Red}{-1,371} \\
+        dblp-2011 & 7,67 & \textcolor{Red}{-5,91} & \textcolor{Red}{-5,39} & \textcolor{Red}{-7,416} \\
+		snap-dblp & 2,23 & \textcolor{Red}{-1,49} & \textcolor{Red}{-1,57} & \textcolor{Red}{-2,147} \\
+        snap-amazon & 6,95 & \textcolor{Red}{-4,38} & \textcolor{Red}{-5,03} & \textcolor{Red}{-6,767} \\
+        ca-coauthors & 11,96 & \textcolor{Red}{-9,46} & \textcolor{Red}{-9,69} & \textcolor{Red}{-11,559} \\
+        \bottomrule
+	\end{tabular}
+\end{table}

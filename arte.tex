@@ -1,0 +1,118 @@
+\chapter{ESTADO DEL ARTE}\label{chap:background}
+\vskip 3.0ex
+
+% \documentclass statement and preamble
+
+El problema de compresión de grafos ha sido abordado de distintas maneras en las últimas décadas. En esta sección se revisan los trabajos más relevantes del área.
+
+\section{The WebGraph Framework, \textit{Boldi y Vigna}}
+Uno de los primeros trabajos en la materia es \textit{WebGraph} de Boldi y Vigna \cite{boldi2004webgraph, boldi2004webgraph2}, apuntado a comprimir grafos dirigidos como el grafo de la Web, aprovechando la distribución potencial de las diferencias entre vecinos sucesivos, reflejados en dos características de sus enlaces ordenados por su \textit{URL}, \textbf{localidad} (hipervínculos donde sus \textit{URL} tienen un prefijo en común y si se ordenan lexicográficamente en una lista estarán muy cerca entre ellos) y \textbf{similitud} (los sitios que tienden a estar juntos en esa lista lexicográfica también tienden a tener muchos sucesores en común). Así, codifican las listas de adyacencias basadas en otras listas de adyacencias y cuán similar sean entre ellas.
+
+Primero, cada nodo se numeran los $N$ nodos del grafo de $0$ a $N - 1$, ordenados de manera lexicográfica según sus \textit{URL}. En una primera aproximación, cada nodo tiene asociado su grado de salida (\textit{Outdegree}) y su listado de adyacencia o sucesores asociado $S(x)$. Luego,  aprovechando la localidad  de los nodos en dichas listas, se pueden representar usando las diferencias entre sus nodos, quiere decir si $S(x) = (s_{1}, s_{2}, ..., s_{k})$ es el listado de sucesores del nodo $x$ con $k$ vecinos, se codifica como $(s_{1} - x, s_{2} - s_{1} - 1, ..., s_{k} - s_{k - 1} - 1)$. En la Tabla~\ref{table:webgraph1} se muestran ambos casos, usando listado de sucesores y usando la diferencia. Para evitar tener que lidiar con números negativos, el primer número en esta nueva secuencia se codifica de la siguiente manera:
+
+\begin{align}
+	w(x) =  \begin{cases}
+					2x & x \geq 0 \\
+					2|x| - 1 & x < 0
+				\end{cases} 
+\end{align}
+
+\input{tables/arte-webgraph-naive}
+
+Avanzando en el modelo de compresión, cada nodo tiene un entero $r$ llamado referencia, si $r = 0$ la lista no está comprimida usando una referencia, y para $r > 0$ la lista $x$ está definida por la diferencia de la lista $x - r$. Un bitmap llamado \textit{copy list} codifica los sucesores que deben ser copiados a la lista, con un $1$ si el nodo referenciado esta presente en dicha lista o no. Adicionalmente se usa una lista extra para agregar todos los nodos remanentes. Las copy list se codifican en \textit{copy blocks}, donde el primer block es $0$ si la copy list comienza con un $0$. Un bloque se representa por l largo de $0$ o $1$ en la lista menos uno, y el último bloque se omite. En las Tablas \ref{table:webgraph2} y \ref{table:webgraph3} se ilustra un ejemplo para ambos casos.
+
+\input{tables/arte-webgraph}
+
+\input{tables/arte-webgraph2}
+
+Como se puede apreciar de los ejemplos, la consecutividad es frecuente en el listado de nodos extra. Este hecho se puede aprovechar en un paso previo a la compresión por brecha, aislando las subsecuencias correspondientes a intervalos de enteros. Sólo los intervalos de largo no menor a un cierto umbral $L_{min}$ son considerados. Entonces, cada listado de nodos extra se comprime de la siguiente manera:
+
+\begin{itemize}
+	\item Un listado de intervalos de enteros. Se representa cada intervalo por su valor extremo izquierdo y su largo. Su valor extremo izquierdo se comprime usando la diferencia entre si mismo y el previo extremo derecho menos dos, ya que debe haber al menos un entero entre el final de un intervalo y el inicio del siguiente. Al largo del intervalo se le resta el umbral $L_{min}$.
+	\item Una lista de nodos residuales, los que no son parte de los intervalos anteriores, comprimida usando la diferencia.
+\end{itemize}
+
+\input{tables/arte-webgraph-final}
+
+Finalmente, en la Tabla~\ref{table:webgraph4} se puede apreciar la representación comprimida resultante, con un umbral $L_{min} = 2$. 
+
+En un trabajo posterior Boldi et. al. \cite{boldi2009permuting}, usando la matriz de adyacencia y basados en aplicar permutaciones a sus filas, logran reordenar y generar una nueva matriz donde las filas, si son similares (contienen 1s en posiciones muy comunes), deben ser consecutivas o en una vecindad acotada. En otro trabajo propusieron un nuevo algoritmo llamado \textit{Layered Label Propagation} \cite{boldi2011layered} (propagación de etiquetas por capas). Su objetivo era poder ocupar las técnicas desarrolladas anteriormente para grafos de redes sociales, donde los vértices no pueden ser ordenados de manera lexicográfica. Usando la matriz de adyacencia, junto con descomponer en tareas el re-ordenamiento de la matriz y aprovechar los procesadores multi-core, logran muy buenos resultados.
+
+
+
+\section{BFS, \textit{Apostolico y Drovandi}}
+Otra alternativa de compresión bastante competitiva, también para grafos dirigidos, es la que presentan Apostolico y Drovandi \cite{apostolico2009graph}, basado en la topología del grafo de la Web en vez de las \textit{URL} subyacentes. En vez de asignarle índices a los nodos según el orden lexicográfico de sus \textit{URL}, realizan un recorrido por \textit{breath-first} o búsqueda en anchura del grafo, numerando cada nodo según el orden en que se expanden. Este proceso y su compresión inducida lo llaman \textit{Fase 1}, y la compresión de las aristas remanentes como \textit{Fase 2}.
+
+En la Fase 1, al expandir un nodo $v_{i} \in V$ se le asignan índices enteros consecutivos a sus $k_{i}$ vecinos, y se guarda el valor $k_{i}$. Cuando el recorrido del grafo se completa, todas las aristas que pertenecen al árbol de búsqueda por anchura quedan codificadas en la secuencia $\{k_{1}, k_{2}, ..., k_{|V|}\}$ llamada \textit{traversal list} (lista de recorrido). En la Figura~\ref{fig:bfs1} se presenta un ejemplo para la Fase 1, donde en (a) se presenta el orden de los nodos asignados por BFS, y en (b) las aristas restantes junto con el listado de recorrido.
+
+\input{figs/arte-bfs1}
+
+Luego comprimen por separado trozos consecutivos de $l$ nodos, siendo $l$ un valor específico que define el nivel de compresión. Cada trozo comprimido $C$, conformado por los nodos $v_{i}, v_{i + 1}, ..., v_{i + l - 1}$, lleva prefijado la secuencia $\{k_{i}, k_{i + 1}, ..., k_{i + l - 1}\}$.
+
+En la Fase 2, codifican la lista de adyacencia $A_{i}$ de cada nodo $v_{i} \in V$ de un trozo $C$ en orden creciente. Cada lista codificada consiste en la diferencia entre elementos adyacentes en la lista y un indicador tipo del set $\{\alpha, \beta, \chi, \phi\}$. Con $A_{i}^{j}$ indicando el elemento $j$ de la lista $A_{i}$, distinguen tres casos:
+
+\begin{enumerate}
+	\item $A_{i - 1}^{j} \leq A_{i}^{j - 1} < A_{i}^{j}$: el código es $\phi \cdot (A_{i}^{j} - A_{i}^{j - 1} - 1)$.
+	\item $A_{i}^{j - 1} < A_{i - 1}^{j} \leq A_{i}^{j}$: el código es $\beta \cdot (A_{i}^{j} - A_{i - 1}^{j})$.
+	\item $A_{i}^{j - 1} < A_{i}^{j} < A_{i - 1}^{j}$: se subdivide en dos subcasos:
+	\begin{enumerate}
+		\item Si $A_{i}^{j} - A_{i}^{j - 1} - 1 \leq A_{i - 1}^{j} - A_{i}^{j} - 1$: el código es $\alpha \cdot (A_{i}^{j} - A_{i}^{j - 1} - 1)$.
+		\item De otro modo: el código es $\chi \cdot (A_{i - 1}^{j} - A_{i}^{j} - 1)$.
+	\end{enumerate}
+\end{enumerate}
+
+Los tipo $\alpha$ y $\phi$ codifican la diferencia con respecto al elemento previo de la lista ($A_{i}^{j - 1}$), mientras $\beta$ y $\chi$ con respecto al elemento en la misma posición de la lista de adyacencia del nodo previo ($A_{i - 1}^{j}$). Cuando $A_{i - 1}^{j}$ no existe se reemplaza por $A_{k}^{j}$, donde $k (k < i - 1 \wedge v_{k} \in C)$ es el índice más cercano a $i$ para cual el grado de $v_{k}$ no es menor que $j$, o por un código tipo $\phi$ en caso que un nodo así no exista.
+
+En la Tabla~\ref{table:bfs-adjacency} se ilustra un ejemplo de listado de adyacencia, y en la Tabla~\ref{table:bfs-coded} su codificación basada en los casos ya mencionados.
+
+\input{tables/arte-bfs-adjacency}
+
+\input{tables/arte-bfs-coded}
+
+Luego, aprovechan distintos tipos de redundancias en los listados de adyacencia, como se puede ver en la Tabla~\ref{table:bfs-exploting}, distinguiendo cuatro casos:
+
+\begin{enumerate}
+	\item Un conjunto de líneas idénticas (ver bloque ancho amarillo en la Tabla~\ref{table:bfs-exploting}) se codifican asignando un multiplicador a la primera línea de la secuencia.
+	\item Los intervalos con grado constante de nodos (ver bloque consecutivo de 9s en la Tabla~\ref{table:bfs-exploting}), se codifican por su diferencia.
+	\item Una secuencia de largo $\mathcal{L}_{min}$ de elementos idénticos (ver el bloque de $\phi1$s en la Tabla~\ref{table:bfs-exploting}), se codifica por su largo.
+	\item Un bloque de filas idénticas (ver gran bloque azul en la Tabla~\ref{table:bfs-exploting}) que superen un umbral $\mathcal{A}_{min}$, se codifica por su largo.
+\end{enumerate}
+
+\input{tables/arte-bfs-exploting}
+
+Para ello introducen un nuevo símbolo $\Sigma$, seguido de un indicador $\Sigma_{F}$ toma valor 2 si la redundancia es de tipo 3, 3 si es de tipo 4, o 1 si son ambas. Dependiendo de la redundancia a codificar, el código se expresa como `$tipo\:\Sigma\:\Sigma_{F}\:gap\:l$'  o `$tipo\:\Sigma\:\Sigma_{F}\:gap\:l\:w\:h$', siendo $tipo$ uno de los símbolos del set $\{\alpha, \beta, \chi, \phi\}$, $gap$ un entero indicando la diferencia, $l$ la cantidad de elementos idénticos en la misma línea, $w$ y $h$ el ancho y alto de las columnas y filas idénticas. En la Tabla~\ref{table:bfs-exploted} se ilustra esta codificación para el caso ejemplo de la Tabla~\ref{table:bfs-exploting}.
+
+\input{tables/arte-bfs-exploted}
+
+Finalmente, usan códigos Huffman para codificar $\alpha, \beta, \chi, \phi$, y proponen una nueva codificación $\pi$ para cifrar diferencias, $\Sigma$, y otros enteros.
+
+
+\section{k2-tree, \textit{Brisaboa, Ladra y Navarro}}
+Una propuesta que aprovecha lo dispersa y agrupada que es la matriz de adyacencia del grafo de la Web es la propuesta por Brisaboa, Ladra y Navarro \cite{brisaboa2009k} donde proponen una estructura llamada k2-tree para ahorrar espacio y poder responder consultas tanto de vecinos directos como reversos. Esto último significa que este método, si bien fue pensado para grafos dirigidos, también se puede aplicar para no dirigidos. En un trabajo posterior, lograron mejorar sus resultados aplicando el ordenamiento por BFS antes de crear su estructura \cite{brisaboa2014compact}.
+
+En este trabajo, proponen representar la matriz de adyacencia con un árbol $k_{2}$-nario de altura $h=\lceil(\log_k n)\rceil$, donde $n$ es el número de vértices en el grafo. Luego subdivide la matriz de adyacencia en $k^2$ submatrices de tamaño $n^{2}/k^{2}$, si una de ellas contiene solo ceros se representa solo con un bit en $0$, de lo contrario se marcan con un $1$ y se vuelven a subdividir de manera recursiva. Esta estructura soporta las consultas de vecinos directos y reversos de manera simétrica, ya que significa revisar las filas o columnas de la matriz. En la Figura~\ref{fig:k2tree} se presenta (a) un ejemplo de una matriz de adyacencia y sus subdivisiones para k2tree, y (b) un diagrama de la estructura final.
+
+\input{figs/arte-k2tree}
+
+Finalmente, la compresión se realiza representando el árbol usando dos arreglos de bits, un bitmap $T$ para representar la estructura del árbol, y un bitmap $L$ para representar las hojas, que representan las celdas de la matriz. Además usan un bitmap adicional para acelerar la resolución de consultas. 
+
+%Una propuesta muy reciente, por Li et. al.\cite{li2019optimal} mejora considerablemente k2-tree proponiendo una manera distinta de subdividir la matriz de adyacencia.
+
+ Francisco et al. \cite{francisco2018exploiting} discute algunos algoritmos de compresión de grafos que permiten explotar en forma amigable la computación de matrices, que además son usados en algoritmos de ranking como PageRank \cite{page1999pagerank}.
+
+
+La compresión de Hernandez y Navarro \cite{hernandez2012compressed} propone una estructura compuesta por un componente que contiene los subgrafos bipartitos completos, y el resto del grafo usando otra representación comprimida existente como k2tree. Los subgrafos bipartitos completos son encontrados en el grafo original y son representados usando estructuras sucintas como wavelet trees y bitmaps comprimidos \cite{gbmp2014sea}. Esta representación comprimida proporciona resolución de consulta de vecinos directos y reversos con tiempos de acceso similares.
+
+Una propuesta de compresión más reciente utiliza gramáticas \cite{maneth2016compressing}. Esta propuesta generaliza Re-Pair \cite{larsson2000off}, que consiste en iterativamente reemplazar los \textit{digrams} (un par de caracteres consecutivas en un string) por un nuevo símbolo hasta que no se pueden seguir reemplazando. La idea de usar gramáticas también ha sido explotada en otros enfoques. Claude y Navarro \cite{claude2010fast} proponen buscar los pares de arcos vecinos más frecuentes y reemplazarlos por nuevos símbolos en forma iterativa hasta que se cumpla un umbral, representando el grafo y el diccionario de símbolos en forma comprimida. En esta propuesta, un \textit{digram} consiste en un par de hipervínculos. Para lograr esta representación, los autores deben encontrar digrams con un número máximo de ocurrencias que no se sobrepongan (que no tengan arcos en común). Encontrar estas ocurrencias es un problema conocido como \textit{maximum matching problem} y es caro computacionalmente ($O(|V|^2\times |E|)$). Independiente de eso y al igual que k2tree, la estructura que proponen mejora con los algoritmos para ordenar los nodos en el grafo, y consiguen mejores resultados en grafos RDF con orden BFS.
+
+
+El trabajo de Fisher y Peters \cite{FISCHER201639} propone un esquema de compresión que consiste en representar el grafo como un árbol donde se representan los vértices repetidos como nodos sombra (shadow nodes). La compresión efectiva de esta representación consiste en representar el árbol usando bitmaps comprimidos y los nodos sombra se representan con una secuencia de símbolos usando wavelet trees (usando la biblioteca \textit{SDSL} \cite{gbmp2014sea}). Sin embargo, esta representación ve limitado su nivel de compresión cuando los grafos a comprimir contienen muchos componentes densos, dado que en este caso la secuencia de nodos sombra puede crecer mucho.   
+
+Entre las mejores propuestas de compresión de grafos que especialmente ofrecen accesos a vecinos directos, se encuentran la de Boldi, Rosa, Santini y Vigna \cite{boldi2011layered} y la de Grabowski y Bieniecki \cite{maneth2016compressing}. Grabowski y Bieniecki usa bloques contiguos de listas de vecinos y consigue muy buen uso de disco, pero aumenta el tiempo de acceso a vecinos directos a medida que aumenta el tamaño del bloque. Desde un punto de vista de tiempo de acceso a vecinos directos, la propuesta de Boldi y Vigna sigue siendo una de las mas rápidas. La propuesta de Hernández y Navarro \cite{tesisCecilia}, proporciona un buen compromiso entre espacio y tiempo de acceso a vecinos directos. En dicho trabajo, se propone una transformación del grafo dirigido original donde se reduce el número de arcos originales usando nodos virtuales para conectar subgrafos densos representados por grafos bipartitos completos, que incluyen cliques, y luego se apliacan distintos algoritmos de ordenamientos de vértices sobre el grafo transformado. En particular, se obtienen mejores resultados aplicando ordenamiento LLP y compresión \cite{boldi2011layered} que ordenamiento BFS (como lo reportado en \cite{Hernandez2014}).
+
+Por otro lado, en el contexto de clustering de grafos masivos, se ha usado como heurística el método de minhashing. Por ejemplo, para encontrar subgrafos bipartitos completos y agrupar listas de adyacencia con similitud de jaccard (Buerher y Chellapilla \cite{BuehrerChellapilla}, Hernández \cite{hernandez2012compressed}).
+Ambos trabajos aplican minhashing a la listas de adyacencia para crear una matriz de $n \times k$ valores de hash. Cada valor de hash en una fila de la matriz corresponde a un mapeo de la lista de adyacencia. Luego, para cada fila de la lista de adyacencia (vecinos directos de un vértice en el grafo) se aplica minhashing $k$ veces. La implementación de Buerher y Chellapilla usa $k=8$ y luego encuentra clusters buscando listas de valores hash que comparten columnas para encontrar clusters. La implementación de Hernández \cite{hernandez2012compressed} sólo usa $k=2$ para comprimir grafos. El reciente trabajo de Ertl \cite{BagMinHash} propone un algoritmo que permite expandir las posibilidades de uso a sets con peso.
+
+Un detalle no menor en este trabajo, es la necesidad de generar el listado de cliques maximales de un grafo. Esto ha sido abordado en varios trabajos, tanto por su complejidad como por su utilidad \cite{eblen2012maximum, hendrix2010theoretical, bomze1999maximum}, y de las propuestas más recientes se destaca el trabajo de Eppstein et. al. \cite{listingcliques,  listingcliques2}, dirigido a encontrar dicho listado para grafos con matrices de adycencia ralas.
+
+

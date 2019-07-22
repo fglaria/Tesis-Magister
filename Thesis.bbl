@@ -1,0 +1,195 @@
+\begin{thebibliography}{10}
+
+\bibitem{apostolico2009graph}
+Alberto Apostolico and Guido Drovandi.
+\newblock Graph compression by bfs.
+\newblock {\em Algorithms}, 2(3):1031--1044, 2009.
+
+\bibitem{boldi2011layered}
+Paolo Boldi, Marco Rosa, Massimo Santini, and Sebastiano Vigna.
+\newblock Layered label propagation: A multiresolution coordinate-free ordering
+  for compressing social networks.
+\newblock In {\em Proceedings of the 20th international conference on World
+  wide web}, pages 587--596. ACM, 2011.
+
+\bibitem{boldi2009permuting}
+Paolo Boldi, Massimo Santini, and Sebastiano Vigna.
+\newblock Permuting web graphs.
+\newblock In {\em International Workshop on Algorithms and Models for the
+  Web-Graph}, pages 116--126. Springer, 2009.
+
+\bibitem{boldi2004webgraph}
+Paolo Boldi and Sebastiano Vigna.
+\newblock The webgraph framework i: compression techniques.
+\newblock In {\em Proceedings of the 13th international conference on World
+  Wide Web}, pages 595--602. ACM, 2004.
+
+\bibitem{boldi2004webgraph2}
+Paolo Boldi and Sebastiano Vigna.
+\newblock The webgraph framework ii: Codes for the world-wide web.
+\newblock In {\em Data Compression Conference, 2004. Proceedings. DCC 2004},
+  page 528. IEEE, 2004.
+
+\bibitem{bomze1999maximum}
+Immanuel~M Bomze, Marco Budinich, Panos~M Pardalos, and Marcello Pelillo.
+\newblock The maximum clique problem.
+\newblock In {\em Handbook of combinatorial optimization}, pages 1--74.
+  Springer, 1999.
+
+\bibitem{brisaboa2011compressed}
+Nieves~R Brisaboa, Rodrigo C{\'a}novas, Francisco Claude, Miguel~A
+  Mart{\'\i}nez-Prieto, and Gonzalo Navarro.
+\newblock Compressed string dictionaries.
+\newblock In {\em International Symposium on Experimental Algorithms}, pages
+  136--147. Springer, 2011.
+
+\bibitem{brisaboa2009k}
+Nieves~R Brisaboa, Susana Ladra, and Gonzalo Navarro.
+\newblock k 2-trees for compact web graph representation.
+\newblock In {\em International Symposium on String Processing and Information
+  Retrieval}, pages 18--30. Springer, 2009.
+
+\bibitem{brisaboa2014compact}
+Nieves~R Brisaboa, Susana Ladra, and Gonzalo Navarro.
+\newblock Compact representation of web graphs with extended functionality.
+\newblock {\em Information Systems}, 39:152--174, 2014.
+
+\bibitem{BuehrerChellapilla}
+Gregory Buehrer and Kumar Chellapilla.
+\newblock A scalable pattern mining approach to web graph compression with
+  communities.
+\newblock In {\em Proceedings of the 2008 International Conference on Web
+  Search and Data Mining}, WSDM '08, pages 95--106, New York, NY, USA, 2008.
+  ACM.
+
+\bibitem{claude2010fast}
+Francisco Claude and Gonzalo Navarro.
+\newblock Fast and compact web graph representations.
+\newblock {\em ACM Transactions on the Web (TWEB)}, 4(4):16, 2010.
+
+\bibitem{claude2015wavelet}
+Francisco Claude, Gonzalo Navarro, and Alberto Ord{\'o}nez.
+\newblock The wavelet matrix: An efficient wavelet tree for large alphabets.
+\newblock {\em Information Systems}, 47:15--32, 2015.
+
+\bibitem{eblen2012maximum}
+John~D Eblen, Charles~A Phillips, Gary~L Rogers, and Michael~A Langston.
+\newblock The maximum clique enumeration problem: algorithms, applications, and
+  implementations.
+\newblock In {\em BMC bioinformatics}, volume~13, page~S5. BioMed Central,
+  2012.
+
+\bibitem{listingcliques2}
+David Eppstein, Maarten L\"{o}ffler, and Darren Strash.
+\newblock Listing all maximal cliques in large sparse real-world graphs.
+\newblock {\em J. Exp. Algorithmics}, 18:3.1:3.1--3.1:3.21, November 2013.
+
+\bibitem{listingcliques}
+David Eppstein and Darren Strash.
+\newblock Listing all maximal cliques in large sparse real-world graphs.
+\newblock In Panos~M. Pardalos and Steffen Rebennack, editors, {\em
+  Experimental Algorithms}, pages 364--375, Berlin, Heidelberg, 2011. Springer
+  Berlin Heidelberg.
+
+\bibitem{BagMinHash}
+Otmar Ertl.
+\newblock Bagminhash - minwise hashing algorithm for weighted sets.
+\newblock {\em CoRR}, abs/1802.03914, 2018.
+
+\bibitem{FISCHER201639}
+Johannes Fischer and Daniel Peters.
+\newblock Glouds: Representing tree-like graphs.
+\newblock {\em Journal of Discrete Algorithms}, 36:39 -- 49, 2016.
+\newblock WALCOM 2015.
+
+\bibitem{francisco2018exploiting}
+Alexandre Francisco, Travis Gagie, Susana Ladra, and Gonzalo Navarro.
+\newblock Exploiting computation-friendly graph compression methods for
+  adjacency-matrix multiplication.
+\newblock In {\em 2018 Data Compression Conference}, pages 307--314. IEEE,
+  2018.
+
+\bibitem{gbmp2014sea}
+Simon Gog, Timo Beller, Alistair Moffat, and Matthias Petri.
+\newblock From theory to practice: Plug and play with succinct data structures.
+\newblock In {\em 13th International Symposium on Experimental Algorithms, (SEA
+  2014)}, pages 326--337, 2014.
+
+\bibitem{grossi2003high}
+Roberto Grossi, Ankur Gupta, and Jeffrey~Scott Vitter.
+\newblock High-order entropy-compressed text indexes.
+\newblock In {\em Proceedings of the fourteenth annual ACM-SIAM symposium on
+  Discrete algorithms}, pages 841--850. Society for Industrial and Applied
+  Mathematics, 2003.
+
+\bibitem{hendrix2010theoretical}
+William Hendrix, Matthew~C Schmidt, Paul Breimyer, and Nagiza~F Samatova.
+\newblock Theoretical underpinnings for maximal clique enumeration on perturbed
+  graphs.
+\newblock {\em Theoretical Computer Science}, 411(26-28):2520--2536, 2010.
+
+\bibitem{hernandez2012compressed}
+Cecilia Hern{\'a}ndez and Gonzalo Navarro.
+\newblock Compressed representation of web and social networks via dense
+  subgraphs.
+\newblock In {\em International Symposium on String Processing and Information
+  Retrieval}, pages 264--276. Springer, 2012.
+
+\bibitem{Hernandez2014}
+Cecilia Hern{\'a}ndez and Gonzalo Navarro.
+\newblock Compressed representations for web and social graphs.
+\newblock {\em Knowledge and Information Systems}, 40(2):279--313, Aug 2014.
+
+\bibitem{huffman1952method}
+David~A Huffman.
+\newblock A method for the construction of minimum-redundancy codes.
+\newblock {\em Proceedings of the IRE}, 40(9):1098--1101, 1952.
+
+\bibitem{larsson2000off}
+N~Jesper Larsson and Alistair Moffat.
+\newblock Off-line dictionary-based compression.
+\newblock {\em Proceedings of the IEEE}, 88(11):1722--1732, 2000.
+
+\bibitem{li2019optimal}
+Fengying Li, Qi~Zhang, Tianlong Gu, and Rongsheng Dong.
+\newblock Optimal representation for web and social network graphs based on
+  $k^{2}$-tree.
+\newblock {\em IEEE Access}, 7:52945--52954, 2019.
+
+\bibitem{makinen2005succinct}
+Veli M{\"a}kinen and Gonzalo Navarro.
+\newblock Succinct suffix arrays based on run-length encoding.
+\newblock In {\em Annual Symposium on Combinatorial Pattern Matching}, pages
+  45--56. Springer, 2005.
+
+\bibitem{maneth2016compressing}
+Sebastian Maneth and Fabian Peternek.
+\newblock Compressing graphs by grammars.
+\newblock In {\em 2016 IEEE 32nd International Conference on Data Engineering
+  (ICDE)}, pages 109--120. IEEE, 2016.
+
+\bibitem{DBLP:journals/corr/abs-cs-0610001}
+Daisuke Okanohara and Kunihiko Sadakane.
+\newblock Practical entropy-compressed rank/select dictionary.
+\newblock {\em CoRR}, abs/cs/0610001, 2006.
+
+\bibitem{page1999pagerank}
+Lawrence Page, Sergey Brin, Rajeev Motwani, and Terry Winograd.
+\newblock The pagerank citation ranking: Bringing order to the web.
+\newblock Technical report, Stanford InfoLab, 1999.
+
+\bibitem{raman2002succinct}
+Rajeev Raman, Venkatesh Raman, and S~Srinivasa Rao.
+\newblock Succinct indexable dictionaries with applications to encoding k-ary
+  trees and multisets.
+\newblock In {\em Proceedings of the thirteenth annual ACM-SIAM symposium on
+  Discrete algorithms}, pages 233--242. Society for Industrial and Applied
+  Mathematics, 2002.
+
+\bibitem{tesisCecilia}
+Cecilia~Hernández Rivas.
+\newblock Managing massive graphs.
+\newblock Universidad de Chile, 2014.
+\newblock Tesis de doctorado.
+
+\end{thebibliography}

@@ -1,0 +1,35 @@
+\documentclass[10pt]{article}
+
+\usepackage{amsmath} %align
+
+\pagenumbering{gobble} % no numbering on pages
+
+\usepackage{graphicx} % includegraphics
+
+
+\begin{document}
+
+\begin{minipage}{\linewidth}
+	\begin{minipage}{0.4\linewidth}
+		\includegraphics[width=\linewidth]{../diagrams/graphs-Graph.png}
+	\end{minipage}
+	\hspace{5mm}
+	\begin{minipage}{0.1\linewidth}
+		\input{../equations/cliquesNodes}
+	\end{minipage}
+	\hspace{5mm}
+	\begin{minipage}{0.3\linewidth}
+		\includegraphics[width=\linewidth]{../diagrams/graphs-Cliques.png}
+	\end{minipage}
+\end{minipage}
+
+\vspace{5mm}
+
+\input{../tables/Rr}
+
+\vspace{5mm}
+
+\input{../tables/sequencesRr}
+
+
+\end{document}

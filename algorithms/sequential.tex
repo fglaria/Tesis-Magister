@@ -1,0 +1,38 @@
+\begin{algorithm}[H]
+\caption{Algoritmo secuencial para reconstruir $G(V, E)$.}
+\caption{Algoritmo secuencial para reconstruir $G(V, E)$.}
+\label{alg:sequential}
+\begin{algorithmic}[1]
+    \REQUIRE $X$, $B$, $BB$, $Y$
+    \ENSURE Returns $G(V, E)$
+
+    \STATE Initialize empty graph $G$
+    \STATE $P \leftarrow rank_{1}(B,|B|)$
+
+    \FOR {$p = 1$ \TO $P$}
+    	\STATE $s \leftarrow select_{1}(B, p)$
+    	\STATE $e \leftarrow select_{1}(B, p + 1)$
+        \STATE $bpu_{p} \leftarrow \frac{Y_{p + 1} - Y_{p}}{e - s}$
+        \STATE $X_{p} \leftarrow X[s..e]$
+
+        \FOR{$j = 0$ \TO $|X_{p}|$}
+            \FOR{$k = j + 1$ \TO $|X_{p}|$}
+            
+            		\IF{$bpu_{p} = 0$}
+                		\STATE Insert (unoriented) edges $(X_{p}[j], X_{p}[k])$ into $G$
+                	\ELSE
+                		\FOR{$b = 1$ \TO $bpu_{p}$}
+                    		\IF {$BB_{p}[bpu_{p} \cdot j + b]$ \& $BB_{p}[bpu_{p} \cdot k + b] \neq 0$}
+                        		\STATE Insert (unoriented) edge $(X_{p}[j], X_{p}[k])$ into $G$
+                        		\STATE $break$
+                    		\ENDIF
+                		\ENDFOR
+                	\ENDIF
+                	
+            \ENDFOR
+        \ENDFOR
+       
+   	\ENDFOR 
+    \RETURN $G$
+\end{algorithmic}
+\end{algorithm}

@@ -1,0 +1,8 @@
+Dataset       CliqueCDS  WG-seq  k2tree  k2tree-BFS 
+markastro       0.15      0.013   0.24     0.14
+markcondmat     0.28      0.022   0.24     0.22
+dblp2010        1.43      0.059   0.42     0.41
+dblp2011        7.67      0.254   1.76     2.28
+snapdblp        2.23      0.083   0.74     0.66
+snapamazon      6.95      0.183   2.57     1.92
+ca-coauthors    11.96	  0.401	  2.50     2.27

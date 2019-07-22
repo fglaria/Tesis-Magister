@@ -1,0 +1,51 @@
+\begin{algorithm}[H]
+\caption{Algoritmo para consultar si dos nodos $u_{1}, u_{2} \in V$ son vecinos.}
+\label{alg:twonodes}
+\begin{algorithmic}[1]
+    \REQUIRE $u_{1}$, $u_{2}$, $X$, $B$, $BB$, $Y$
+    \ENSURE Returns if $(u_{1}, u_{2}) \in E$
+
+    \STATE $occur_{1} \leftarrow rank_{u_{1}}(X, |X|)$
+    \STATE $occur_{2} \leftarrow rank_{u_{2}}(X, |X|)$
+    
+    \STATE $ySize \leftarrow |Y|$
+    
+    \STATE $u1_{p} \leftarrow select_{u_{1}}(X, 1)$
+    	\STATE $p1 \leftarrow rank_{1}(B, u1_{p})$
+    	\STATE $i1 \leftarrow 1$
+
+    \FOR {$i2 = 1$ \TO $occur_{2}$}
+        	\STATE $u2_{p} \leftarrow select_{u_{2}}(X, i2)$
+        	\STATE $p2 \leftarrow rank_{1}(B, u2_{p})$
+        	
+        	\WHILE {$p1 < p2$}
+        		\STATE $i1 \leftarrow i1 + 1$
+        		\IF {$i1 > occur_{1}$}
+        			\RETURN \FALSE
+        		\ENDIF
+        		\STATE $u1_{p} \leftarrow select_{u_{1}}(X, i1)$
+    			\STATE $p1 \leftarrow rank_{1}(B, u1_{p})$
+    		\ENDWHILE
+    		
+    		\IF {$p1 = p2$}
+    			\IF {$ySize < p1$}
+    				\RETURN \TRUE
+    			\ENDIF
+    			
+    			\STATE $s \leftarrow select_{1}(B, p1)$
+    			\STATE $e \leftarrow select_{1}(B, p1 + 1)$
+        		\STATE $bpu_{p} \leftarrow \frac{Y_{p1 + 1} - Y_{p1}}{e - s}$
+        		
+			\FOR{$b = 1$ \TO $bpu_{p}$}
+                	\IF {$BB_{p}[bpu_{p}  \cdot (u1_{p} - s) + b]$ \& $BB_{p}[bpu_{p} \cdot (u2_{p} - s) + b] \neq 0$}
+                		\RETURN \TRUE
+                	\ENDIF
+            	\ENDFOR        		
+        		
+    		\ENDIF
+        
+    \ENDFOR
+
+    \RETURN $\FALSE$
+\end{algorithmic}
+\end{algorithm}

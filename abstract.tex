@@ -1,0 +1,11 @@
+La compresión y manejo eficiente de grandes grafos se vuelve cada día más fundamental en distintos ámbitos, desde lo macro de la representación de la Web y las redes sociales, hasta lo micro de representar componentes biológicos. Su crecimiento ha tenido un aumento constante, y con esto se eleva la exigencia en recursos para almacenarlos, junto con la complejidad de los algoritmos para procesar consultas sobre ellos.
+
+Una alternativa a este problema es buscar una opción de representar estos grafos de manera comprimida que, además de usar menos espacio en disco, permita responder dichas consultas en el menor tiempo posible.
+
+En este trabajo se desarrolla un método de compresión para grafos no dirigidos, que aprovecha la superposición de cliques maximales en la generación de una estructura compacta que permite manejar de manera eficiente dichos grafos, ahorrando en espacio de disco pero pagando su costo en tiempos de acceso.
+
+Si bien el problema de obtener los cliques maximales de un grafo es muy complejo (NP-completo), existen algoritmos para grafos esparsos que logran generar el listado en poco tiempo. Además es un costo que se debe pagar una sola vez, luego de generar la estructura compacta se puede obtener nuevamente el listado de cliques directo de ella.
+
+Finalmente se prueba el rendimiento de esta estructura propuesta con diferentes grafos, estudiando qué características deben tener para aprovechar sus ventajas, y se compara con otros algoritmos relevantes del estado del arte, comprobando su rendimiento tanto en la compresión de grafos como en resolver las consultas sobre ella.
+
+Se identifica que para grafos altamente clusterizados la compresión logra su máxima eficiencia, ocupando menos de un bit por arco, y siempre menos que los demás algoritmos. En cuanto a tiempos de acceso, los resultados más competitivos se logran en acceso aleatorio, y se proponen líneas de investigación para mejorar esto. 

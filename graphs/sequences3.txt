@@ -1,0 +1,4 @@
+sequences.csv
+contiene cuántos bits pesan las secuencias X, B1, B2 e Y, de cada grafo
+    agrupados de a 4, el priemro es por frecuencia, luego connectado y final razon
+        los últimos tres son los totales de cada uno

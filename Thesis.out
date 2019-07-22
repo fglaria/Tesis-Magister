@@ -1,0 +1,22 @@
+\BOOKMARK [0][-]{chapter*.1}{Resumen}{}% 1
+\BOOKMARK [0][-]{chapter.1}{INTRODUCCI\323N}{}% 2
+\BOOKMARK [0][-]{chapter.2}{MARCO TE\323RICO}{}% 3
+\BOOKMARK [1][-]{section.2.1}{Grafos y cliques maximales}{chapter.2}% 4
+\BOOKMARK [1][-]{section.2.2}{Codificaciones}{chapter.2}% 5
+\BOOKMARK [0][-]{chapter.3}{ESTADO DEL ARTE}{}% 6
+\BOOKMARK [1][-]{section.3.1}{The WebGraph Framework, Boldi y Vigna}{chapter.3}% 7
+\BOOKMARK [1][-]{section.3.2}{BFS, Apostolico y Drovandi}{chapter.3}% 8
+\BOOKMARK [1][-]{section.3.3}{k2-tree, Brisaboa, Ladra y Navarro}{chapter.3}% 9
+\BOOKMARK [0][-]{chapter.4}{M\311TODO DE COMPRESI\323N PROPUESTO}{}% 10
+\BOOKMARK [1][-]{section.4.1}{Detecci\363n de cliques maximales}{chapter.4}% 11
+\BOOKMARK [1][-]{section.4.2}{Particionamento del grafo de cliques}{chapter.4}% 12
+\BOOKMARK [1][-]{section.4.3}{Algoritmo de particionamiento o clustering}{chapter.4}% 13
+\BOOKMARK [1][-]{section.4.4}{Representaci\363n en estructuras compactas}{chapter.4}% 14
+\BOOKMARK [2][-]{subsection.4.4.1}{Secuencias de la representaci\363n de las particiones}{section.4.4}% 15
+\BOOKMARK [2][-]{subsection.4.4.2}{Algoritmos de consulta}{section.4.4}% 16
+\BOOKMARK [0][-]{chapter.5}{RESULTADOS}{}% 17
+\BOOKMARK [1][-]{section.5.1}{Grafos y estructura compacta}{chapter.5}% 18
+\BOOKMARK [1][-]{section.5.2}{Comparaci\363n de funciones de ranking}{chapter.5}% 19
+\BOOKMARK [1][-]{section.5.3}{Comparando con estado del arte}{chapter.5}% 20
+\BOOKMARK [0][-]{chapter.6}{CONCLUSIONES}{}% 21
+\BOOKMARK [0][-]{chapter.6}{Bibliograf\355a}{}% 22

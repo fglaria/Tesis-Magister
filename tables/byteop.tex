@@ -1,0 +1,16 @@
+\begin{table}
+    \caption{Ejemplo de operaciones binarias con dos bytes.}
+    \label{table:ejbyteop}
+    \rowcolors{2}{white}{gray!10}
+    \centering  
+     \begin{tabular}{c|c|c|c|c|c}
+     	\toprule
+     	$A$ & $B$ & $A \land B$ & $A \lor B$ & $\neg (A \land B)$ & $\neg (A \lor B)$ \\
+     	\midrule
+     	0xFF & 0x0F & 0x0F & 0xFF & 0xF0 & 0x00 \\
+     	0x00 & 0x01 & 0x00 & 0x01 & 0xFF & 0xFE \\
+     	0xAA & 0x33 & 0x22 & 0xBB & 0xDD & 0x44 \\
+     	0x71 & 0x17 & 0x11 & 0x77 & 0xEE & 0x88 \\
+     	\bottomrule
+     \end{tabular}
+\end{table}

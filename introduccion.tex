@@ -1,0 +1,13 @@
+\chapter{INTRODUCCI\'ON}\label{chap:intro}
+\vskip 3.0ex
+
+%En progreso...
+
+En los últimos años se ha visto un gran crecimiento en grafos de redes sociales y de la web, junto a otros de características similares. Por ejemplo, el número de sitios indexados por los principales motores de búsqueda en la web se estima actualmente en al menos 5,68 miles de millones\footnote{\url{http://www.worldwidewebsize.com/}, consultado el 09 de mayo del 2019.}, o la cantidad de usuarios activos diarios en la red social Facebook es de 1,56 mil millones, con un crecimiento anual de un 8$\%$ \footnote{\href{https://investor.fb.com/investor-news/press-release-details/2019/Facebook-Reports-First-Quarter-2019-Results/default.aspx}{https://investor.fb.com}, informe de resultados del primer trimestre del 2019 de Facebook.}. 
+
+El gran tamaño de los grafos de la Web y redes sociales, trae consigo varios problemas, siendo uno de los más importantes el alto costo en recursos que demanda su procesamiento. Este costo está dado principalmente por el espacio requerido en memoria, donde la jerarquía de memoria de los sistemas computacionales modernos penaliza los tiempos de acceso a medida que los datos se alejan de las unidades de procesamiento. Este problema ha motivado a la comunidad científica a proponer estructuras comprimidas que no sólo requieran menos espacio de almacenamiento, sino también proporcionen resolución de consultas que permitan la navegación del grafo a través de consultas básicas, tales como acceso a vecinos. El objetivo de estas representaciones comprimidas es permitir la simulación de algoritmos de procesamiento de grafos usando mucho menos espacio en memoria que las representaciones sin comprimir.
+
+En el contexto de estructuras de datos que ocupan muy poco espacio, el área de estructuras compactas ha tenido un desarrollo importante desde el punto de vista teórico y práctico en los últimos años. Actualmente, existen estructuras compactas que permiten representar secuencias de bits, bytes y símbolos con soporte de consultas básicas, así como otras estructuras compactas más complejas, como árboles y grafos con soporte de navegación. 
+
+Existen varias propuestas para comprimir grafos. Sin embargo, aún existen algunas características de representación de grafos que no se han explorado. En particular, en este trabajo se propone que es posible definir un método de clustering eficiente para construir una estructura compacta de grafos, basada en la superposición de vértices de los cliques maximales que componen el grafo. En este caso, la compresión del grafo se logra mediante la representación implícita de aristas mediante la representación de los vértices que definen los cliques.
+

@@ -1,0 +1,50 @@
+\begin{algorithm}
+\caption{Algoritmo inicial de consulta.}
+\label{alg:ask}
+\begin{algorithmic}[1]
+\REQUIRE Secuencias $X, B1, B2, Y$, vértice $N$
+\ENSURE Secuencia $V$ de vecinos del vértice $N$
+\STATE $V \leftarrow 0$
+\STATE $X_{N} \leftarrow $ ocurrencias de $N$ en $X$
+\FORALL{$N_{X} \in X_{N}$}
+	\STATE $indexX \leftarrow$ índice de $N_{X}$
+	\STATE $P \leftarrow $ cuántos $1$ hay en $B1$ hasta $indexX$ \COMMENT{Número de partición}
+	\STATE $indexP_{I} \leftarrow $  índice de último 1 en B1 hasta $indexX$  \COMMENT{Inicio de partición}
+	\STATE $indexP_{F} \leftarrow $  índice de siguiente 1 en B1 desde $indexX$ \COMMENT{Fin de partición}
+	\STATE $howManyX \leftarrow indexP_{F} - indexP_{I}$ \COMMENT{Cuántos vértices en partición}
+	\STATE $indexB2 \leftarrow Y[P]$ \COMMENT{Primer byte de partición}
+	\STATE $bytesPerNode \leftarrow (Y[P +1] - indexB2) / howManyX$
+	\IF{$bytesPerNode = 0$}
+		\FORALL{$i_{N} = indexP_{I}$ a $i_{N} = indexP_{F}$}
+			\IF{$i_{N} \neq indexX$}
+				\STATE $V = V \cup X[i_{N}]$
+			\ENDIF
+		\ENDFOR
+	\ELSE
+		\STATE $indexN_{X}B2 \leftarrow indexB2 + bytesPerNode * (indexX - indexP_{I})$
+		\STATE $comparedBytes \leftarrow 0$
+		\STATE $bitmapV \leftarrow $ tantos $0$ como $howManyX$
+		\REPEAT
+			\STATE $byteN_{X} \leftarrow B2[index_{N_{X}B2} + comparedBytes]$
+		
+			\FOR{$i_{N} = indexP_{I}$ a $i_{N} = indexP_{F}$}
+		
+				\IF{$bitmapV[i_{N}] \neq 1$ y $i_{N} \neq indexN_{X}B2$}
+					\STATE $indexPV \leftarrow  indexB2 + bytesPerNode * (i_{N} - indexP_{I})$
+					\STATE $bytePV \leftarrow B2[indexPN + comparedBytes]$
+				
+					\IF{$byteN_{X} \land bytePN \neq 0$}
+						\STATE $bitmapV[i_{N}] \leftarrow 1$
+						\STATE $V = V \cup X[i_{N}]$
+					\ENDIF
+				\ENDIF
+			\ENDFOR
+			\STATE $comparedBytes = comparedBytes + 1$
+		
+		\UNTIL{$comparedBytes = bytesPerNode$ o $\neg bitmapV = 0$}
+	\ENDIF
+
+\ENDFOR
+%\EndFunction
+\end{algorithmic}
+\end{algorithm}

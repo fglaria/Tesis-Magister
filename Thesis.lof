@@ -1,0 +1,25 @@
+\babel@toc {spanish}{}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Ejemplo de k2-tree. (a) Matriz de adyacencia. (b) Diagrama de estructura.}}{4}{figure.2.1}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Ejemplo de grafo y sus cliques maximales.}}{8}{figure.3.1}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces (a) Grafo no dirigido. (b) Lista de cliques maximales. (c) Grafo de cliques.}}{11}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Resultados de las funciones de ranking. (a) Puntaje final. (b) Particiones de cliques.}}{13}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Estructura compacta para particiones $\mathcal {C}\mathcal {P}_{r_{r}}$.}}{15}{figure.4.3}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Distribuci\IeC {\'o}n del grado de los v\IeC {\'e}rtices para cada grafo.}}{22}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Distribuci\IeC {\'o}n del tama\IeC {\~n}o de los cliques maximales para cada grafo.}}{23}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces BPE y Tiempo de acceso aleatorio medio para posibles estructuras compactas, por cada funci\IeC {\'o}n de ranking para cada grafo.}}{26}{figure.5.3}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces BPE y Tiempo de reconstrucci\IeC {\'o}n secuencial medio para posibles estructuras compactas, por cada funci\IeC {\'o}n de ranking para cada grafo.}}{27}{figure.5.4}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces BPE de las estructuras compactas para las funciones de ranking.}}{28}{figure.5.5}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces N\IeC {\'u}mero de particiones en las estructuras compactas para las funciones de ranking.}}{28}{figure.5.6}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces (a) Proporci\IeC {\'o}n de bits por cada secuencia en la estructura compacta, para cada funci\IeC {\'o}n de ranking. (b) Proporci\IeC {\'o}n normalizada.}}{30}{figure.5.7}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces N\IeC {\'u}mero m\IeC {\'a}ximo de v\IeC {\'e}rtices en la secuencia $X$ para las funciones de ranking.}}{31}{figure.5.8}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces N\IeC {\'u}mero m\IeC {\'a}ximo de bytes por nodo para las funciones de ranking.}}{31}{figure.5.9}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces CDF para bytes por v\IeC {\'e}rtice en estructuras compactas para cada funci\IeC {\'o}n de ranking.}}{32}{figure.5.10}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Tiempos de acceso aleatorio para las funciones de ranking.}}{33}{figure.5.11}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces BPE y tiempo de acceso aleatorio en microsegundos de cada algoritmo, para cada grafo.}}{36}{figure.5.12}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces BPE y tiempo de reconstrucci\IeC {\'o}n secuencial en segundos de cada algoritmo, para cada grafo.}}{37}{figure.5.13}
+\addvspace {10\p@ }

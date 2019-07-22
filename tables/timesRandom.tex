@@ -1,0 +1,20 @@
+\begin{table}
+	\caption{Tiempos de acceso aleatorio, en microsegundos por arco.}
+	\rowcolors{2}{white}{gray!10}
+	\label{table:timesRandom}
+	\centering
+	\begin{tabular}{l|r|r|r|r|r}
+		\toprule
+		Grafo & $clique_{rr}$ & $k2tree$ & $k2tree_{BFS}$ & $AD$ & $WG_{a}$ \\
+		\midrule	
+		marknewman-astro & 4,80 & 2,54 & 1,31 & 1,79 & \textbf{0,052} \\
+		marknewman-condmat & 4,92 & 5,46 & 2,75 & 2,32 & \textbf{0,063} \\
+		dblp-2010 & 4,75 & 5,38 & 4,74 & 2,15 & \textbf{0,097} \\
+         dblp-2011 & 7,03 & 11,63 & 11,08 & 2,36 & \textbf{0,114} \\
+		snap-dblp & 6,01 & 10,33 & 7,15 & 2,30 & \textbf{0,125} \\
+         snap-amazon & 19,33 & 14,53 & 7,33 & 2,47 & \textbf{0,087} \\
+         coPapersDBLP & 1,69 & 1,94 & 1,17 & 0,73 & \textbf{0,045} \\
+         coPapersCiteseer & 1.57 & 0.950 & 0.480 & 0.450 & \textbf{0.037} \\
+         \bottomrule
+	\end{tabular}
+\end{table}

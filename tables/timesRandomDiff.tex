@@ -1,0 +1,19 @@
+\begin{table}
+	\caption{Comparativa de tiempos de acceso aleatorio, en microsegundos por arco.}
+	\rowcolors{2}{white}{gray!10}
+	\label{table:timesRandomDiff}
+	\centering
+	\begin{tabular}{l|r|r|r|r|r}
+		\toprule
+		Grafo & $clique_{rr}$ & $k2tree_{O}$ & $k2tree_{BFS}$ & $AD$ & $WG_{a}$ \\
+		\midrule	
+		marknewman-astro & 4,80 & \textcolor{Red}{-2,26} & \textcolor{Red}{-3,49} & \textcolor{Red}{-3,01} & \textcolor{Red}{-4,748} \\
+		marknewman-condmat & 4,92 & \textcolor{Green}{+0,54} & \textcolor{Red}{-2,17} & \textcolor{Red}{-2,60} & \textcolor{Red}{-4,857} \\
+		dblp-2010 & 4,75 & \textcolor{Green}{+0,63} & \textcolor{Red}{-0,01} & \textcolor{Red}{-2,60} & \textcolor{Red}{-4,653} \\
+		dblp-2011 & 7,03 & \textcolor{Green}{+4,60} & \textcolor{Green}{+4,05} & \textcolor{Red}{-4,67} & \textcolor{Red}{-6,916} \\
+		snap-dblp & 6,01 & \textcolor{Green}{+4,32} & \textcolor{Green}{+1,14} & \textcolor{Red}{-3,71} & \textcolor{Red}{-5,885} \\
+		snap-amazon & 19,33 & \textcolor{Red}{-4,80} & \textcolor{Red}{-12,00} & \textcolor{Red}{-16,86} & \textcolor{Red}{-19,243} \\
+		ca-coauthors & 1,69 & \textcolor{Green}{+0,25} & \textcolor{Red}{-0,52} & \textcolor{Red}{-0,96} & \textcolor{Red}{-1,645} \\
+        \bottomrule
+	\end{tabular}
+\end{table}

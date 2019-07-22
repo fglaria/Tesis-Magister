@@ -1,0 +1,9 @@
+times seq in us/edge
+graph nodes edges bpeCL WGseq
+marknewman-astro 16706 242502 0.74 0.58
+marknewman-condmat 40421 351386 0.72 0.62
+dblp-2010 326186 1615400 0.83 0.36
+snap-dblp 317080 2099732 0.97 0.39
+snap-amazon 403394 4886816 1.39 0.37
+dblp-2011 986324 6707236 1.04 0.37
+ca-coauthors 540486 30491458 0.39 0.13

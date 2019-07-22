@@ -1,0 +1,39 @@
+felipeglaria@rafike:~/TESIS/srcratio15$ ./testingSDSL output/markastro/marknewman-astro.cliques.f 16706 0 1
+x_wm b_rrr bb_hutu y_wm: 287 [ms]; V: 16046
+x_wt b_rrr bb_hutu y_wt: 418 [ms]; V: 16046
+x_wm b_rrr bb_huff y_wm: 286 [ms]; V: 16046
+x_wt b_rrr bb_huff y_wt: 398 [ms]; V: 16046
+x_wm b_rrr bb_blcd y_wm: 337 [ms]; V: 16046
+x_wt b_rrr bb_blcd y_wt: 444 [ms]; V: 16046
+x_wm b_sdb bb_hutu y_wm: 271 [ms]; V: 16046
+x_wt b_sdb bb_hutu y_wt: 395 [ms]; V: 16046
+x_wm b_sdb bb_huff y_wm: 283 [ms]; V: 16046
+x_wt b_sdb bb_huff y_wt: 395 [ms]; V: 16046
+x_wm b_sdb bb_blcd y_wm: 332 [ms]; V: 16046
+x_wt b_sdb bb_blcd y_wt: 446 [ms]; V: 16046
+felipeglaria@rafike:~/TESIS/srcratio15$ ./testingSDSL output/markastro/marknewman-astro.cliques.c 16706 0 1
+x_wm b_rrr bb_hutu y_wm: 288 [ms]; V: 16046
+x_wt b_rrr bb_hutu y_wt: 418 [ms]; V: 16046
+x_wm b_rrr bb_huff y_wm: 286 [ms]; V: 16046
+x_wt b_rrr bb_huff y_wt: 406 [ms]; V: 16046
+x_wm b_rrr bb_blcd y_wm: 336 [ms]; V: 16046
+x_wt b_rrr bb_blcd y_wt: 447 [ms]; V: 16046
+x_wm b_sdb bb_hutu y_wm: 273 [ms]; V: 16046
+x_wt b_sdb bb_hutu y_wt: 396 [ms]; V: 16046
+x_wm b_sdb bb_huff y_wm: 285 [ms]; V: 16046
+x_wt b_sdb bb_huff y_wt: 397 [ms]; V: 16046
+x_wm b_sdb bb_blcd y_wm: 332 [ms]; V: 16046
+x_wt b_sdb bb_blcd y_wt: 444 [ms]; V: 16046
+felipeglaria@rafike:~/TESIS/srcratio15$ ./testingSDSL output/markastro/marknewman-astro.cliques 16706 0 1
+x_wm b_rrr bb_hutu y_wm: 300 [ms]; V: 16046
+x_wt b_rrr bb_hutu y_wt: 463 [ms]; V: 16046
+x_wm b_rrr bb_huff y_wm: 300 [ms]; V: 16046
+x_wt b_rrr bb_huff y_wt: 445 [ms]; V: 16046
+x_wm b_rrr bb_blcd y_wm: 317 [ms]; V: 16046
+x_wt b_rrr bb_blcd y_wt: 460 [ms]; V: 16046
+x_wm b_sdb bb_hutu y_wm: 287 [ms]; V: 16046
+x_wt b_sdb bb_hutu y_wt: 442 [ms]; V: 16046
+x_wm b_sdb bb_huff y_wm: 304 [ms]; V: 16046
+x_wt b_sdb bb_huff y_wt: 441 [ms]; V: 16046
+x_wm b_sdb bb_blcd y_wm: 313 [ms]; V: 16046
+x_wt b_sdb bb_blcd y_wt: 461 [ms]; V: 16046

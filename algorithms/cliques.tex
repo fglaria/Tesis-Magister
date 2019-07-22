@@ -1,0 +1,46 @@
+\begin{algorithm}[H]
+\caption{Algoritmo para recuperar listado de cliques maximales $\mathcal{C}$ de $G(V, E)$.}
+\label{alg:cliques}
+\begin{algorithmic}[1]
+    \REQUIRE $X$, $B$, $BB$, $Y$
+    \ENSURE Returns collection of maximal cliques $\mathcal{C}$
+
+    \STATE $\mathcal{C} \leftarrow \emptyset$
+    \STATE $P \leftarrow rank_{1}(B, |B|)$
+
+    \FOR {$p = 1$ \TO $P$}
+        \STATE $s \leftarrow select_{1}(B, p)$
+        \STATE $e \leftarrow select_{1}(B, p + 1)$
+        \STATE $bpu_{p} \leftarrow \frac{Y_{p + 1} - Y_{p}}{e - s}$
+        \STATE $X_{p} \leftarrow X[s..e]$
+        
+        \IF {$bpu_{p} = 0$}
+            \STATE $\mathcal{C} \leftarrow \mathcal{C} \cup {X_{p}[e..s]}$
+       	\ELSE
+
+		\STATE $CC \leftarrow \emptyset$
+        	\FOR{$j = 0$ \TO $|X_{p}| - 1$}
+            	\STATE $cluster \leftarrow 0$
+            	
+            	\FOR{$b = 1$ \TO $bpu_{p}$}
+
+                	\FOR{$k = 1$ \TO $8$}
+                		\STATE $CC[cluster] \leftarrow \emptyset$
+                    	%\IF {($BBr[bpup*j+b]$ and $BBr[bpup*k+b]$)}
+                    	\IF {$BB_{p}[bpu_{p} \cdot j + b][k] = 1$}
+                        	%\STATE Insert vertex $X_{p}[j]$ to $C[cluster]$
+                        	\STATE $CC[cluster] \leftarrow CC[cluster] \cup X_{p}[j]$
+                    	\ENDIF
+                    	\STATE $cluster \leftarrow cluster + 1$
+                	\ENDFOR
+                	
+            	\ENDFOR
+        	\ENDFOR
+        \ENDIF
+        
+        \STATE $\mathcal{C} \leftarrow \mathcal{C} \cup \{CC[1], CC[2], \cdots, CC[cluster]\}$
+    \ENDFOR
+
+    \RETURN $\mathcal{C}$
+\end{algorithmic}
+\end{algorithm}

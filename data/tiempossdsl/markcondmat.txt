@@ -1,0 +1,39 @@
+felipeglaria@rafike:~/TESIS/srcratio15$ ./testingSDSL output/markcondmat/marknewman-condmat.cliques.f 40421 0 1
+x_wm b_rrr bb_hutu y_wm: 510 [ms]; V: 39577
+x_wt b_rrr bb_hutu y_wt: 791 [ms]; V: 39577
+x_wm b_rrr bb_huff y_wm: 520 [ms]; V: 39577
+x_wt b_rrr bb_huff y_wt: 758 [ms]; V: 39577
+x_wm b_rrr bb_blcd y_wm: 604 [ms]; V: 39577
+x_wt b_rrr bb_blcd y_wt: 833 [ms]; V: 39577
+x_wm b_sdb bb_hutu y_wm: 491 [ms]; V: 39577
+x_wt b_sdb bb_hutu y_wt: 755 [ms]; V: 39577
+x_wm b_sdb bb_huff y_wm: 524 [ms]; V: 39577
+x_wt b_sdb bb_huff y_wt: 752 [ms]; V: 39577
+x_wm b_sdb bb_blcd y_wm: 595 [ms]; V: 39577
+x_wt b_sdb bb_blcd y_wt: 832 [ms]; V: 39577
+felipeglaria@rafike:~/TESIS/srcratio15$ ./testingSDSL output/markcondmat/marknewman-condmat.cliques.c 40421 0 1
+x_wm b_rrr bb_hutu y_wm: 509 [ms]; V: 39577
+x_wt b_rrr bb_hutu y_wt: 803 [ms]; V: 39577
+x_wm b_rrr bb_huff y_wm: 520 [ms]; V: 39577
+x_wt b_rrr bb_huff y_wt: 773 [ms]; V: 39577
+x_wm b_rrr bb_blcd y_wm: 611 [ms]; V: 39577
+x_wt b_rrr bb_blcd y_wt: 841 [ms]; V: 39577
+x_wm b_sdb bb_hutu y_wm: 493 [ms]; V: 39577
+x_wt b_sdb bb_hutu y_wt: 767 [ms]; V: 39577
+x_wm b_sdb bb_huff y_wm: 516 [ms]; V: 39577
+x_wt b_sdb bb_huff y_wt: 807 [ms]; V: 39577
+x_wm b_sdb bb_blcd y_wm: 635 [ms]; V: 39577
+x_wt b_sdb bb_blcd y_wt: 885 [ms]; V: 39577
+felipeglaria@rafike:~/TESIS/srcratio15$ ./testingSDSL output/markcondmat/marknewman-condmat.cliques 40421 0 1
+x_wm b_rrr bb_hutu y_wm: 554 [ms]; V: 39577
+x_wt b_rrr bb_hutu y_wt: 932 [ms]; V: 39577
+x_wm b_rrr bb_huff y_wm: 561 [ms]; V: 39577
+x_wt b_rrr bb_huff y_wt: 900 [ms]; V: 39577
+x_wm b_rrr bb_blcd y_wm: 594 [ms]; V: 39577
+x_wt b_rrr bb_blcd y_wt: 922 [ms]; V: 39577
+x_wm b_sdb bb_hutu y_wm: 533 [ms]; V: 39577
+x_wt b_sdb bb_hutu y_wt: 893 [ms]; V: 39577
+x_wm b_sdb bb_huff y_wm: 557 [ms]; V: 39577
+x_wt b_sdb bb_huff y_wt: 891 [ms]; V: 39577
+x_wm b_sdb bb_blcd y_wm: 584 [ms]; V: 39577
+x_wt b_sdb bb_blcd y_wt: 930 [ms]; V: 39577

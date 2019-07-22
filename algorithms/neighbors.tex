@@ -1,0 +1,39 @@
+\begin{algorithm}[H]
+\caption{Algoritmo para recuperar vecinos $N(u)$ de un vértice $u \in V$.}
+\label{alg:neighbors}
+\begin{algorithmic}[1]
+    \REQUIRE $u$, $X$, $B$, $BB$, $Y$
+    \ENSURE Returns $N(u)$
+
+    \STATE Initialize empty graph $N(u)$
+    \STATE $occur \leftarrow rank_{u}(X, |X|)$
+
+    \FOR {$i = 1$ \TO $occur$}
+        	\STATE $u_{p} \leftarrow select_{u}(X, i)$
+        	\STATE $p \leftarrow rank_{1}(B, u_{p})$
+        	\STATE $s \leftarrow select_{1}(B, p)$
+    		\STATE $e \leftarrow select_{1}(B, p + 1)$
+        	\STATE $bpu_{p} \leftarrow \frac{Y_{p + 1} - Y_{p}}{e - s}$
+        	\STATE $X_{p} \leftarrow X[s..e]$
+
+        	\FOR{$j = 0$ \TO $|X_{p}|$}
+       		\IF{$X_{p}[j] \neq u$}
+       		
+       			\IF{$bpu_{p} = 0$}
+            			\STATE Insert $X_{p}[j] \neq u$ to $N(u)$
+            		\ELSE
+            			\FOR{$b = 1$ \TO $bpu_{p}$}
+                			\IF {$BB_{p}[bpu_{p} \cdot j+b]$ \& $BB_{p}[bpu_{p} \cdot (u_{p} - s) + b] \neq 0$}
+                    			\STATE Insert $X_{p}[j]$ into $N(u)$
+                    			\STATE $break$
+                			\ENDIF
+            			\ENDFOR
+            		\ENDIF
+            		
+            	\ENDIF
+        \ENDFOR
+    \ENDFOR
+
+    \RETURN $N(u)$
+\end{algorithmic}
+\end{algorithm}

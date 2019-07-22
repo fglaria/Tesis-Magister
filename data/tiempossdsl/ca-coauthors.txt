@@ -1,0 +1,39 @@
+felipeglaria@rafike:~/TESIS/srcratio15$ ./testingSDSL output/ca-coauthors/ca-coathors.cliques.f 540486 0 1
+x_wm b_rrr bb_hutu y_wm: 22706 [ms]; V: 540486
+x_wt b_rrr bb_hutu y_wt: 30671 [ms]; V: 540486
+x_wm b_rrr bb_huff y_wm: 24125 [ms]; V: 540486
+x_wt b_rrr bb_huff y_wt: 27842 [ms]; V: 540486
+x_wm b_rrr bb_blcd y_wm: 24716 [ms]; V: 540486
+x_wt b_rrr bb_blcd y_wt: 28338 [ms]; V: 540486
+x_wm b_sdb bb_hutu y_wm: 22902 [ms]; V: 540486
+x_wt b_sdb bb_hutu y_wt: 27782 [ms]; V: 540486
+x_wm b_sdb bb_huff y_wm: 24006 [ms]; V: 540486
+x_wt b_sdb bb_huff y_wt: 27762 [ms]; V: 540486
+x_wm b_sdb bb_blcd y_wm: 24562 [ms]; V: 540486
+x_wt b_sdb bb_blcd y_wt: 28346 [ms]; V: 540486
+felipeglaria@rafike:~/TESIS/srcratio15$ ./testingSDSL output/ca-coauthors/ca-coathors.cliques.c 540486 0 1
+x_wm b_rrr bb_hutu y_wm: 22805 [ms]; V: 540486
+x_wt b_rrr bb_hutu y_wt: 30903 [ms]; V: 540486
+x_wm b_rrr bb_huff y_wm: 24124 [ms]; V: 540486
+x_wt b_rrr bb_huff y_wt: 28124 [ms]; V: 540486
+x_wm b_rrr bb_blcd y_wm: 24705 [ms]; V: 540486
+x_wt b_rrr bb_blcd y_wt: 28548 [ms]; V: 540486
+x_wm b_sdb bb_hutu y_wm: 22895 [ms]; V: 540486
+x_wt b_sdb bb_hutu y_wt: 28040 [ms]; V: 540486
+x_wm b_sdb bb_huff y_wm: 24066 [ms]; V: 540486
+x_wt b_sdb bb_huff y_wt: 28054 [ms]; V: 540486
+x_wm b_sdb bb_blcd y_wm: 24554 [ms]; V: 540486
+x_wt b_sdb bb_blcd y_wt: 28580 [ms]; V: 540486
+felipeglaria@rafike:~/TESIS/srcratio15$ ./testingSDSL output/ca-coauthors/ca-coathors.cliques 540486 0 1
+x_wm b_rrr bb_hutu y_wm: 22933 [ms]; V: 540486
+x_wt b_rrr bb_hutu y_wt: 31802 [ms]; V: 540486
+x_wm b_rrr bb_huff y_wm: 24234 [ms]; V: 540486
+x_wt b_rrr bb_huff y_wt: 28987 [ms]; V: 540486
+x_wm b_rrr bb_blcd y_wm: 24318 [ms]; V: 540486
+x_wt b_rrr bb_blcd y_wt: 28991 [ms]; V: 540486
+x_wm b_sdb bb_hutu y_wm: 23000 [ms]; V: 540486
+x_wt b_sdb bb_hutu y_wt: 28973 [ms]; V: 540486
+x_wm b_sdb bb_huff y_wm: 24119 [ms]; V: 540486
+x_wt b_sdb bb_huff y_wt: 28937 [ms]; V: 540486
+x_wm b_sdb bb_blcd y_wm: 24222 [ms]; V: 540486
+x_wt b_sdb bb_blcd y_wt: 29964 [ms]; V: 540486

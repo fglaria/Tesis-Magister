@@ -1,0 +1,319 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Archivo: Thesis.tex
+% Creado: 11-09-2017 - 08:15 por Narciso López
+% Modificado:
+% 16-03-2018 - 13:11 por Narciso López
+%
+% Archivo LaTeX destinado a servir como plantilla para realizar la memoria de 
+% Ingeniería Civil Informática o la Tesis de Magíster/Doctorado en el
+% Departamento de Ingeniería Informática y Ciencias de la Computación de
+% la Universidad de Concepción
+% Para más información sobre las reglas nuevas para escribir una memoria o 
+% tesis visitar:
+% http://www.bibliotecas.udec.cl/sites/default/files/PAUTAS_DE_NORMALIZACION_EN_LA_PRESENTACION_DE_UNA_TESIS_DE_GRADO_O_TITULACION_Mayo.pdf 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt]{ThesisDIICC}
+\usepackage{anysize} 
+%\marginsize{4cm}{2.5cm}{4cm}{2.5cm} 
+%\renewcommand{\rmdefault}{phv} % Arial
+%\renewcommand{\sfdefault}{phv} % Arial
+\usepackage[utf8]{inputenc}
+\usepackage[spanish, es-tabla]{babel}
+
+%\usepackage[toc,page]{appendix}
+%\addto\captionsspanish{%
+%  \renewcommand\appendixname{Anexo}
+%  \renewcommand\appendixpagename{Anexos}
+%  \renewcommand\appendixtocname{Anexos}
+%}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Paso 1: Agrega tus paquetes aquí
+%
+% http://math.kangwon.ac.kr/~yhpark/tex/packages.html
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{setspace}
+
+%\graphicspath{ {../images/} }
+
+\usepackage[table, dvipsnames]{xcolor} % pretty tables
+\usepackage{multirow} % multicolumn on tables
+
+%\usepackage[dvipsnames]{xcolor}
+%\definecolor{Green1}{HTML}{005a32}
+%\colorlet{Mycolor1}{green!10!orange!90!}
+%\definecolor{Mycolor2}{HTML}{00F9DE}
+
+\scriptsize
+\setlength\tabcolsep{3pt} % let tabular* figure out intercolumn whitespace
+
+\usepackage{booktabs} % Table toprule middlerule bottomrule
+
+\usepackage{amsmath} % align equations
+\usepackage{amssymb} % void symbol
+\usepackage{mathtools} % \ceil
+\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+
+\usepackage{bm} % bold math symbols
+
+\usepackage{amsthm} % Theorems (definitions)
+
+\usepackage{amsfonts} % more math symbols
+
+\newtheorem{definition}{Definición}[chapter] % Definition with section numbering
+\newtheorem{problem}{Problema}[chapter] % Definition with section numbering
+
+%\usepackage{pdfpages} %include pdf
+
+
+\usepackage{algorithm} % Writing pseudocode
+\usepackage{algorithmic} % Writing pseudocode
+%\input{spanishAlgorithmic} % Archivo de traducción (https://rosapolis.net/2008/04/21/escribir-algoritmos-en-latex/index.html)
+
+\numberwithin{algorithm}{chapter} % Correct numbering of algorithms
+
+%\usepackage{caption, subcaption} % subcaption for subfigures
+
+\usepackage[%  
+    colorlinks=false,
+    pdfborder={0 0 0},
+    %linkcolor=black
+]{hyperref} % Links on numbers
+
+\usepackage[dvipsnames]{xcolor}
+
+\definecolor{azul}{HTML}{AAFFFF}
+\definecolor{amarillo}{HTML}{FFFFAA}
+\definecolor{verde}{HTML}{E2FFAA}
+\definecolor{rojo}{HTML}{E75A7C}
+\definecolor{cafe}{HTML}{758ECD}
+\definecolor{blanco}{HTML}{FFFFFF}
+
+
+\definecolor{color1}{HTML}{006895}
+\definecolor{color2}{HTML}{00aa4f}
+\definecolor{color3}{HTML}{ff3769}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Paso 2: Descomentar si es un borrador (draft)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\draft
+\singlespace
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Paso 3: Agrega tus definiciones aquí
+%
+% http://en.wikibooks.org/wiki/LaTeX/Customizing_LaTeX
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\ignore}[1]{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Paso 4: Elige tu grado
+%
+% Escribe \eng para Ingeniería Civil Informática
+% Escribe \msc para Magíster en Ciencias de la Computación
+% Escribe \phd para Doctorado en Ciencias de la Computación
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\msc
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Paso 5: Elige tu programa
+%
+% Escribe \programeng para Ingeniería Civil Informática
+% Escribe \programmsc para Programa de Magíster en Ciencias de la Computación
+% Escribe \programphd para Programa de Doctorado en Ciencias de la Computación
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\programmsc
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Paso 6: Título de Memoria y autor
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{\bf Diseño e implementación de método de compresión de grafos basado en clustering de cliques maximales}
+\author{Felipe Alberto Glaría Grego} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Paso 7: Agrega a tu profesor/es guía/s
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\advisor{Lilian Salinas Ayala\\Profesor co-guía: Cecilia Hernández Rivas} 
+%NOMBRE1 NOMBRE2 APELLIDO1 APELLIDO2
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Paso 8: Ajusta fechas de presentación, copyright y defensa 
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\submitdate{Mayo, 2019} % fecha de presentación al Comité
+\defensedate{Mayo, 2019}  % fecha de defensa
+\copyrightyear{2019}         % archivado final
+
+
+\begin{document}
+\frontmatter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Paso 9: Copyright según nuevas normas de biblioteca
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ \begin{copyright}
+ \vskip 2.5ex
+ 
+%	El autor(es) de la tesis debe incluir una de las siguientes opciones: 
+     
+% a)  Ninguna  parte de  esta  tesis  puede  reproducirse  o  transmitirse  bajo  ninguna  forma  o  por ning\'un medio o procedimiento, sin permiso por escrito del autor.  
+
+%b)  
+Se  autoriza  la  reproducci\'on  total  o  parcial,  con  fines  acad\'emicos,  por  cualquier  medio  o procedimiento, incluyendo la cita bibliogr\'afica del documento. 
+
+ \end{copyright}
+ 
+ \clearpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Paso 10: Página de calificaciones
+%
+% Descomentar para ver (opcional)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% \frontmatter
+ 
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Paso 11: Dedicatoria
+%
+% Opcional
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+ \begin{dedication}
+ \vskip 2.5ex
+ A mi familia...
+ \end{dedication}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Paso 12: Agradecimientos
+%
+% Opcional
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ \begin{acknowledgements}
+	\input{gracias}
+ \end{acknowledgements}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Paso 13: Abstract
+%
+% http://research.berkeley.edu/ucday/abstract.html
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}
+	\input{abstract}
+\end{abstract}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Paso 14: Introducción
+%
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mainmatter
+
+
+\input{introduccion}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Paso 15: Estado del Arte
+%
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\input{marcoteorico}
+
+\input{arte}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Paso 16: Cuerpo de la Tesis
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\input{clustering}
+
+\input{resultados}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Paso 17: Conclusiones
+%
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\input{conclusiones}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Paso 18: Bibliografía
+%
+% Para compilar seguir esta secuencia: PDFLaTeX, BibTeX, PDFLaTeX, PDFLaTeX
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Para la presentación de la bibliografía se recomienda seguir el estilo  propuesto por la American Psychological Association (APA), cuyas normas están  disponibles en la "GUÍA BREVE PARA LA PRESENTACIÓN DE REFERENCIAS Y CITAS  BIBLIOGRÁFICAS", descargable desde el sitio web de Sibudec.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliographystyle{plain}
+\bibliography{biblio}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Paso 19: Glosario
+%
+% Opcional
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Paso 20: Anexos
+%
+% Opcional
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{appendices}
+%\let\cleardoublepage\clearpage
+%\input{anexos/grades}
+%\input{anexos/cdf}
+%\end{appendices}
+
+
+
+\end{document}

@@ -1,0 +1,21 @@
+\begin{table}
+	\caption{Tiempos de reconstrucción secuencial del grafo, en segundos.}
+	\rowcolors{2}{white}{gray!10}
+	\label{table:timesSecuencial}
+	\centering
+	\begin{tabular}{l|r|r|r|r}
+		\toprule
+		Grafo & $clique_{rr}$ & $k2tree$ & $k2tree_{BFS}$ & $WG_{s}$ \\
+		\midrule	
+		marknewman-astro & 0,15 & 0,07 & \textbf{0,06} & 0,28 \\
+		marknewman-condmat & 0,28 & \textbf{0,14} & 0,15 & 0,52 \\
+		dblp-2010 & 1,43 & 0,29 & 0,30 & \textbf{1,09} \\
+        dblp-2011 & 7,67 & \textbf{1,57} & 2,10 & 2,41 \\
+		snap-dblp & 2,23 & 0,64 & \textbf{0,52} & 1,20 \\
+        snap-amazon & 6,95 & 2,37 & 1,75 & \textbf{1,30} \\
+        coPapersDBLP & 11,96 & 2,02 & 1,66 & \textbf{1,59} \\
+        coPapersCiteseer & 11,69 & 1,73 & \textbf{1,10} & 1,56 \\
+        \bottomrule
+	\end{tabular}
+\end{table}
+

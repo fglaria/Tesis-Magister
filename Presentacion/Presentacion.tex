@@ -1,0 +1,99 @@
+\PassOptionsToPackage{table}{xcolor}
+\documentclass[12pt,notheorems]{beamer}
+\usetheme{Pittsburgh}
+\usepackage[spanish, es-tabla]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[makeroom]{cancel} % Cancel math
+%\usepackage{caption} % Caption setup
+%\captionsetup{skip=0pt,belowskip=0pt}
+
+\setbeamercovered{transparent} 
+\setbeamertemplate{navigation symbols}{} 
+\setbeamertemplate{footline}[frame number]
+\setbeamertemplate{caption}[numbered]
+\usefonttheme[onlymath]{serif}
+
+
+\usepackage{graphicx} % include figures
+\usepackage{hyperref} % With links
+\usepackage[table]{xcolor} % pretty tables
+\usepackage{booktabs} % Table toprule middlerule bottomrule
+
+\usepackage[group-separator={.}]{siunitx} % point for thousand
+
+\newtheorem{definition}{Definición} % Definition with section numbering
+\newtheorem{problem}{Problema} % Definition with section numbering
+
+\setbeamertemplate{frametitle}[default][left]
+\setbeamerfont{footnote}{size=\tiny}
+\setbeamertemplate{itemize/enumerate body begin}{\footnotesize}
+\setbeamertemplate{itemize/enumerate subbody begin}{\tiny}
+\setbeamerfont{caption}{size=\footnotesize}
+
+
+\newcommand{\backupbegin}{
+   \newcounter{finalframe}
+   \setcounter{finalframe}{\value{framenumber}}
+}
+\newcommand{\backupend}{
+   \setcounter{framenumber}{\value{finalframe}}
+}
+
+\author{Felipe A. Glaría Grego}
+\title{Diseño e implementación de método de compresión de grafos basados en clustering de cliques maximales}
+\subtitle{Defensa de Tesis}
+%\logo{\includegraphics[height=1.5cm]{escudo.png}} 
+\institute{\includegraphics[height=1.5cm]{img/escudo.png}\\Lilian Salinas, Ceciclia Hernández\\Departamento de Ingeniería Informática y Ciencias de la Computación\\Facultad de Ingeniería\\Universidad de Concepción} 
+%\date{} 
+
+%\subject{} 
+\begin{document}
+
+%\maketitle
+\begin{frame}[plain]
+\titlepage
+\end{frame}
+
+%\begin{frame}
+%\tableofcontents
+%\end{frame}
+
+\input{motivacion}
+
+\input{relacionados}
+
+\input{marco}
+
+%\input{hipotesis}
+
+\input{metodo}
+
+%\input{metodologia}
+
+%\input{adelantado}
+
+%\input{planificacion}
+
+{
+\setbeamercolor{background canvas}{bg=black}
+\begin{frame}[plain]
+\centerline{\includegraphics[]{img/handshakeInv.png}}
+\begin{center}
+{\Huge \color{white}Muchas gracias}
+\end{center}
+\end{frame}
+}
+
+\appendix
+\backupbegin
+%\input{anexo/popular}
+%\input{anexo/sdsl}
+%\input{anexo/similitud}
+%\input{anexo/minhash}
+\backupend
+
+\end{document}

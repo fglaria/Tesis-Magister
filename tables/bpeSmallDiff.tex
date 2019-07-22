@@ -1,0 +1,19 @@
+\begin{table}
+	\caption{Comparativa de BPE de algoritmos de compresión.}
+	\rowcolors{2}{white}{gray!10}
+	\label{table:BPEcompDiff}
+	\centering
+	\begin{tabular}{l|r|r|r|r|r|r}
+		\toprule
+		Grafo & $clique_{rr}$ & $k2tree_{O}$ & $k2tree_{BFS}$ & $AD$ & $WG_{a}$ & $WG_{s}$\\
+		\midrule
+		marknewman-astro & 4,45 & \textcolor{Green}{+4,83} & \textcolor{Green}{+3,60} & \textcolor{Green}{+1,22} & \textcolor{Green}{+3,65} & \textcolor{Green}{+2,85} \\
+		marknewman-condmat & 6,20 & \textcolor{Green}{+5,86} & \textcolor{Green}{+4,23} & \textcolor{Green}{+1,66} & \textcolor{Green}{+5,58} & \textcolor{Green}{+4,25} \\
+		dblp-2010 & 6,28 & \textcolor{Green}{+1,17} & \textcolor{Green}{+1,72} & \textcolor{Green}{+0,43} & \textcolor{Green}{+2,39} & \textcolor{Green}{+0,63} \\
+		dblp-2011 & 6,87 & \textcolor{Green}{+3,31} & \textcolor{Green}{+4,50} & \textcolor{Green}{+2,80} & \textcolor{Green}{+3,26} & \textcolor{Green}{+1,84} \\
+		snap-dblp & 7,19 & \textcolor{Green}{+4,02} & \textcolor{Green}{+2,73} & \textcolor{Green}{+0,95} & \textcolor{Green}{+4,61} & \textcolor{Green}{+2,98} \\
+		snap-amazon & 10,49 & \textcolor{Green}{+5,17} & \textcolor{Green}{+1,84} & \textcolor{Green}{+0,47} & \textcolor{Green}{+4,01} & \textcolor{Green}{+2,86} \\
+		ca-coauthors & 0,80 & \textcolor{Green}{+2,49} & \textcolor{Green}{+1,03} & \textcolor{Green}{+1,01} & \textcolor{Green}{+1,91} & \textcolor{Green}{+1,68} \\
+		\bottomrule
+	\end{tabular}
+\end{table}
