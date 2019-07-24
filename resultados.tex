@@ -126,26 +126,26 @@ A continuación se detallan las notaciones a usar en el resto de la sección.
 
 \begin{itemize}
 	\item Para la estructura compacta propuesta, basada en las superposición de cliques maximales, se anotará como $clique_{rr}$.
-	\item En el caso de k2tree, se diferencia cuando el algoritmo usa el orden del grafo original ($k2tree$) del orden por BFS ($k2tree_{BFS}$).
-	\item Para BFS de Apostolico y Drovandi, la notación corresponderá a $AD$.
 	\item En el caso de Webgraph, se diferencia el caso de acceso aleatorio ($WG_{a}$) de acceso secuencial ($WG_{s}$). Esto es necesario ya que para el acceso aleatorio el algoritmo genera una estructura adicional.
+	\item Para BFS de Apostolico y Drovandi, la notación corresponderá a $AD$.
+	\item En el caso de k2tree, se diferencia cuando el algoritmo usa el orden del grafo original ($k2tree$) del orden por BFS ($k2tree_{BFS}$).
 \end{itemize}
 
-Es importante recordar que los algoritmos Webgraph y $AD$ están orientados a comprimir grafos dirigidos. Esto requiere que cada arco de los grafos no dirigidos a probar deben ser anotados en ambos sentidos antes de ser comprimidos por tales. Y mención especial requiere k2-tree, donde la autora proporcionó una versión mejorada del algoritmo, orientado específicamente a grafos no dirigidos.
+Es importante recordar que los algoritmos Webgraph y $AD$ están orientados a comprimir grafos dirigidos. Esto requiere que cada arco de los grafos no dirigidos a evaluar deben ser anotados en ambos sentidos antes de ser comprimidos. 
 
-Con esto presente, en la Tabla~\ref{table:BPEcomp} se comparan los BPE de todos los casos, resaltando los mejores resultados. Para todos los grafos en estudio, la estructura compacta presenta el mejor nivel de compresión, alcanzando particularmente para los grafos \texttt{coPapersDBLP} y \texttt{coPapersCiteseer} un BPE menor a uno. Para \texttt{coPapersDBLP} ningún otro algoritmo se acerca a ese valor, y para \texttt{coPapersCiteseer} solo k2-tree con BFS y AD logran aproximarse al mismo nivel de compresión.
+Mención especial requiere k2-tree, donde la autora proporcionó una versión mejorada del algoritmo, orientado específicamente a grafos no dirigidos, que reduce el espacio necesario para representar el grafo considerando la mitad de la matriz de adyacencia, junto con la capacidad de dicho modelo de entregar los listados de vecinos directos como reversos.
 
-Esto además confirma que la elección de la función de ranking $r_{r}(u)$ es correcta, ya que si bien presenta un BPE más alto de entre las tres funciones sigue siendo el más bajo en la comparativa. Además, el tiempo de acceso es notablemente menor entre las tres opciones, lo que será muy importante al comparar con otros algoritmos, como veremos a continuación.
+Con esto presente, en la Tabla~\ref{table:BPEcomp} se comparan los BPE de todos los casos, resaltando los mejores resultados. Para dos de los grafos comprimidos, \texttt{marknewman-astro} y \texttt{coPapersDBLP}, la propuesta es la que obtiene el menor resultado, seguido muy de cerca por la versión de k2-tree con BFS. Con el grafo \texttt{coPapersCiteseer} se obtiene un resultado muy cercano al mejor caso, y en los demás, los dos mejores resultados los obtienen alguna de las dos versiones de k2-tree, seguido siempre del método propuesto. tanto Webgraph como AD no logran competir en compresión con los demás.
+
+Esto confirma que la la propuesta es competitiva con el estado del arte, solo considerando el nivel de compresión. A continuación se evaluara el rendimiento en tiempos de acceso.
 
 \input{tables/bpeSmall}
-%\input{tables/bpeSmallDiff}
 
-Para comparar el tiempo de acceso aleatorio, se prueba el Algoritmo~\ref{alg:neighbors} recuperando los vecinos de un millón de vértices aleatorios de $G(V, E)$, y se divide el tiempo que demora dicha solicitud por la cantidad de aristas recuperadas. En la Tabla~\ref{table:timesRandom} se presentan los resultados, sin considerar el caso de Webgraph secuencial ($WG_{s}$), ya que solo se considera acceso aleatorio. %En la Tabla~\ref{table:timesRandomDiff} se comparan los resultados aleatorios.
+Para comparar el tiempo de acceso aleatorio, se prueba el Algoritmo~\ref{alg:neighbors} recuperando los vecinos de un millón de vértices aleatorios de $G(V, E)$, y se divide el tiempo que demora dicha solicitud por la cantidad de aristas recuperadas. En la Tabla~\ref{table:timesRandom} se presentan los resultados, sin considerar el caso de Webgraph secuencial ($WG_{s}$), ya que solo se considera acceso aleatorio. 
 
-Como se puede apreciar, Webgraph presenta los menores tiempos de acceso entre todos los algoritmos. Pero se puede decir que el resultado para esta propuesta sí es competitivo, por ejemplo contra k2tree original logra mejores tiempos en casi todos los casos, y para el grafo \texttt{coPapersDBLP} la mayor diferencia es de 1,645 microsegundos, lo que se considera un buen resultado.
+Como se puede apreciar, Webgraph presenta los menores tiempos de acceso entre todos los algoritmos, y AD lo sigue siempre en segundo lugar. Luego para los grafos \texttt{dblp-2010}, \texttt{dblp-2011}, \texttt{snap-dblp} y \texttt{snap-amazon}, el método propuesto logra mejores resultados que ambas versiones de k2-tree, con especial atención a \texttt{dblp-2011} donde logra ser el doble de rápido. Para el resto de los casos, el resultado es bastante competitivo entre esos métodos.
 
 \input{tables/timesRandom}
-%\input{tables/timesRandomDiff}
 
 El tiempo de reconstrucción secuencial se midió usando el Algoritmo~\ref{alg:sequential}. En la Tabla~\ref{table:timesSecuencial} se presentan los resultados obtenidos para los algoritmos evaluados. En este caso, si bien el método propuesto es más lento que los demás, para casos como \texttt{marknweman-astro}, \texttt{marknewman-condmat}, \texttt{dblp-2010} y \texttt{snap-dblp}, la diferencia es menor a un segundo. Para el resto de los casos, los grafos tienen una cantidad considerable de arcos, \texttt{dblp-2011} y \texttt{snap-amazon} tienen la mayor cantidad de cliques, y \texttt{coPapersDBLP} con \texttt{coPapersCiteseer} tienen muchos cliques de hasta 100 vértices, y presentan una relación no proporcional entre cantidad de vértices y cantidad de cliques, como lo muestra la Tabla~\ref{table:gafros3}, lo que afecta bastante a la hora de recuperar dichos grafos.
 

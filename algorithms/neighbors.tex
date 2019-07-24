@@ -22,8 +22,12 @@
        			\IF{$bpu_{p} = 0$}
             			\STATE Insert $X_{p}[j] \neq u$ to $N(u)$
             		\ELSE
+                		\STATE $BB_{p} \leftarrow HuffmanToBytes(BB[Y_{p}], BB[Y_{p + 1}])$
+                		\STATE $iBBj \leftarrow bpu_{p} \cdot j$
+                		\STATE $iBBx \leftarrow bpu_{p} \cdot (u_{p} - s)$
+                		
             			\FOR{$b = 1$ \TO $bpu_{p}$}
-                			\IF {$BB_{p}[bpu_{p} \cdot j+b]$ \& $BB_{p}[bpu_{p} \cdot (u_{p} - s) + b] \neq 0$}
+                			\IF {$BB_{p}[iBBx + b]$ \& $BB_{p}[iBBj + b] \neq 0$}
                     			\STATE Insert $X_{p}[j]$ into $N(u)$
                     			\STATE $break$
                 			\ENDIF

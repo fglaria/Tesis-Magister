@@ -17,17 +17,19 @@
         \IF {$bpu_{p} = 0$}
             \STATE $\mathcal{C} \leftarrow \mathcal{C} \cup {X_{p}[e..s]}$
        	\ELSE
+       		\STATE $BB_{p} \leftarrow HuffmanToBytes(BB[Y_{p}], BB[Y_{p + 1}])$
 
 		\STATE $CC \leftarrow \emptyset$
         	\FOR{$j = 0$ \TO $|X_{p}| - 1$}
             	\STATE $cluster \leftarrow 0$
+            	\STATE $iBBj \leftarrow bpu_{p} \cdot j$
             	
             	\FOR{$b = 1$ \TO $bpu_{p}$}
 
                 	\FOR{$k = 1$ \TO $8$}
                 		\STATE $CC[cluster] \leftarrow \emptyset$
                     	%\IF {($BBr[bpup*j+b]$ and $BBr[bpup*k+b]$)}
-                    	\IF {$BB_{p}[bpu_{p} \cdot j + b][k] = 1$}
+                    	\IF {$BB_{p}[iBBj + b][k] = 1$}
                         	%\STATE Insert vertex $X_{p}[j]$ to $C[cluster]$
                         	\STATE $CC[cluster] \leftarrow CC[cluster] \cup X_{p}[j]$
                     	\ENDIF

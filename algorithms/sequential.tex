@@ -21,8 +21,12 @@
             		\IF{$bpu_{p} = 0$}
                 		\STATE Insert (unoriented) edges $(X_{p}[j], X_{p}[k])$ into $G$
                 	\ELSE
+                		\STATE $BB_{p} \leftarrow HuffmanToBytes(BB[Y_{p}], BB[Y_{p + 1}])$
+                		\STATE $iBBj \leftarrow bpu_{p} \cdot j$
+                		\STATE $iBBk \leftarrow bpu_{p} \cdot k$
+                		
                 		\FOR{$b = 1$ \TO $bpu_{p}$}
-                    		\IF {$BB_{p}[bpu_{p} \cdot j + b]$ \& $BB_{p}[bpu_{p} \cdot k + b] \neq 0$}
+                    		\IF {$BB_{p}[iBBj + b]$ \& $BB_{p}[iBBk + b] \neq 0$}
                         		\STATE Insert (unoriented) edge $(X_{p}[j], X_{p}[k])$ into $G$
                         		\STATE $break$
                     		\ENDIF
