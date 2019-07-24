@@ -89,7 +89,7 @@ Finalmente, usan códigos Huffman para codificar $\alpha, \beta, \chi, \phi$, y 
 
 \section{Using Re-Pair, \textit{Claude y Navarro}}
 %Claude y Navarro \cite{claude2010fast} proponen buscar los pares de arcos vecinos más frecuentes y reemplazarlos por nuevos símbolos en forma iterativa hasta que se cumpla un umbral, representando el grafo y el diccionario de símbolos en forma comprimida. En esta propuesta, un \textit{digram} consiste en un par de hipervínculos. Para lograr esta representación, los autores deben encontrar digrams con un número máximo de ocurrencias que no se sobrepongan (que no tengan arcos en común). Encontrar estas ocurrencias es un problema conocido como \textit{maximum matching problem} y es caro computacionalmente ($O(|V|^2\times |E|)$). Independiente de eso y al igual que k2tree, la estructura que proponen mejora con los algoritmos para ordenar los nodos en el grafo, y consiguen mejores resultados en grafos RDF con orden BFS.
-El trabajo de Claude y Navarro \cite{claude2010fast} propone usar Re-Pair \cite{larsson2000off}, un método de compresión basado en gramática, para comprimir el grafo de la Web. Re-Pair consiste en buscar el par de símbolos más frecuente en una secuencia y reemplazar cada ocurrencia por un nuevo símbolo, el cual se añade a un diccionario como nueva regla. En la Tabla~\ref{table:repair} se muestra un ejemplo simple de Re-Pair, y las reglas conforman el diccionario para descomprimir la secuencia.
+El trabajo de Claude y Navarro \cite{claude2010fast} propone usar Re-Pair \cite{larsson2000off}, un método de compresión basado en gramática, para comprimir el grafo de la Web. Re-Pair consiste en buscar el par de símbolos más frecuente en una secuencia y reemplazar cada ocurrencia por un nuevo símbolo, el cual se añade a un diccionario como nueva regla. En la Tabla~\ref{table:repair} se muestra un ejemplo simple de Re-Pair, donde las reglas conforman el diccionario para descomprimir la secuencia.
 
 \input{tables/arte-repair}
 
@@ -99,7 +99,14 @@ Claude y Navarro \cite{claude2010fast} aplican esta idea a los listados de adyac
 	T = T(G) = \overline{v_{1}} \; v_{1,1}, v_{1,2}, ..., v_{1,a_{1}}, \overline{v_{2}} \; v_{2,1}, v_{2,2}, ..., v_{2,a_{2}}, ..., \overline{v_{n}} \; v_{n,1}, v_{n,2}, ..., v_{n,a_{n}}
 \end{equation}
 
-donde se debe cumplir con $v_{i,j} < v_{i, j+1}$ para cualquier $1 \leq i \leq n$ y $1 \leq j \leq a_{i}$. Esto significa que cada lista de adyacencia concatenada debe partir con su nodo asociado, y todos los nodos de ella deben estar ordenados de menor a mayor.
+\noindent donde se debe cumplir con $v_{i,j} < v_{i, j+1}$ para cualquier $1 \leq i \leq n$ y $1 \leq j \leq a_{i}$. Esto significa que cada lista de adyacencia concatenada debe partir con su nodo referencia, y todos los nodos de ella deben estar ordenados de menor a mayor. Luego se van reemplazando recursivamente, sin incluir los nodos de referencia, los pares de símbolos consecutivos más frecuentes por uno nuevo, hasta que no sea conveniente, y cada reemplazo se guarda como regla. 
+
+Finalmente, se eliminan los nodos de referencia con el cuidado de codificar en dos bitmaps: En $B1$ si tienen nodos adyacentes, y en $B2$ la ubicación de dichos nodos en el arreglo final. En la Figura~\ref{fig:repairCN} se ilustra un ejemplo, donde en (a) se tiene el grafo de ejemplo, en (b) la concatenación $T(G)$ de todos los listados de adyacencia ordenados de menor a mayor, los reemplazos necesarios para su compresión y el arreglo resultante, y en (c) los bitmaps indicadores de los nodos de referencia. Se debe notar que la notación alternativa $\overline{v_{i}}$ se reemplaza por $-v_{i}$ en el arreglo. También presentan otras mejoras, como usar diferencias para codificar los listados de adyacencia o reordenar los nodos para aprovechar mejor Re-Pair.
+
+\input{figs/arte-repairCN}
+
+Una propuesta de compresión más reciente, de Maneth y Peternek \cite{maneth2016compressing}, también generaliza Re-Pair para comprimir grafos, específicamente hipergrafos dirigidos.
+
 
 
 \section{k2-tree, \textit{Brisaboa, Ladra y Navarro}}
@@ -118,7 +125,7 @@ Finalmente, la compresión se realiza representando el árbol usando dos arreglo
 
 La compresión de Hernandez y Navarro \cite{hernandez2012compressed} propone una estructura compuesta por un componente que contiene los subgrafos bipartitos completos, y el resto del grafo usando otra representación comprimida existente como k2tree. Los subgrafos bipartitos completos son encontrados en el grafo original y son representados usando estructuras sucintas como wavelet trees y bitmaps comprimidos \cite{gbmp2014sea}. Esta representación comprimida proporciona resolución de consulta de vecinos directos y reversos con tiempos de acceso similares.
 
-Una propuesta de compresión más reciente utiliza gramáticas \cite{maneth2016compressing}. Esta propuesta generaliza Re-Pair \cite{larsson2000off}, que consiste en iterativamente reemplazar los \textit{digrams} (un par de caracteres consecutivas en un string) por un nuevo símbolo hasta que no se pueden seguir reemplazando. La idea de usar gramáticas también ha sido explotada en otros enfoques. 
+
 
 
 
