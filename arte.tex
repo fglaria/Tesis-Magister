@@ -93,7 +93,7 @@ El trabajo de Claude y Navarro \cite{claude2010fast} propone usar Re-Pair \cite{
 
 \input{tables/arte-repair}
 
-Claude y Navarro \cite{claude2010fast} aplican esta idea a los listados de adyacencia de un grafo. Si $V = \{v_{1}, v_{1}, ..., v_{n}\}$ es el listado de $n$ nodos del grafo $G$, $adj(v_{i}) = \{v_{i,1}, v_{i,2},... , v_{i,a_{i}}\}$ el listado de $a_{i}$ nodos adyacentes a $v_{i}$, y $\overline{v_{i}}$ una alternativa de notación para el nodo $v_{i}$, proponen concatenar todos los listados de adyacencia con la siguiente notación:
+Claude y Navarro \cite{claude2010fast} aplican esta idea a los listados de adyacencia de un grafo dirigido. Si $V = \{v_{1}, v_{1}, ..., v_{n}\}$ es el listado de $n$ nodos del grafo $G$, $adj(v_{i}) = \{v_{i,1}, v_{i,2},... , v_{i,a_{i}}\}$ el listado de $a_{i}$ nodos adyacentes a $v_{i}$, y $\overline{v_{i}}$ una alternativa de notación para el nodo $v_{i}$, proponen concatenar todos los listados de adyacencia con la siguiente notación:
 
 \begin{equation} \label{eq:RepairGrafo}
 	T = T(G) = \overline{v_{1}} \; v_{1,1}, v_{1,2}, ..., v_{1,a_{1}}, \overline{v_{2}} \; v_{2,1}, v_{2,2}, ..., v_{2,a_{2}}, ..., \overline{v_{n}} \; v_{n,1}, v_{n,2}, ..., v_{n,a_{n}}
@@ -106,6 +106,16 @@ Finalmente, se eliminan los nodos de referencia con el cuidado de codificar en d
 \input{figs/arte-repairCN}
 
 Una propuesta de compresión más reciente, de Maneth y Peternek \cite{maneth2016compressing}, también generaliza Re-Pair para comprimir grafos, específicamente hipergrafos dirigidos.
+
+
+\section{Virtual Node Mining, \textit{Buehrer y Chellapilla}}
+Buehrer y Chellapilla \cite{BuehrerChellapilla} aprovechan que muchos grupos de nodos en el grafo de la Web consisten en conjuntos de sitios que comparten los mismas vecinos directos, lo que genera un grafo bipartito completo. Su propuesta reduce la cantidad de aristas, definiendo nodos virtuales que son agregados artificialmente al grafo entre los dos conjuntos del biclique. Esto reduce la cantidad total de aristas, ya que cada biclique une un set de $U$ nodos con uno de $W$ nodos, genera en total $|U \times W|$ aristas, y usando un nodo virtual disminuye a $|U + W|$, un gran ahorro cuando los bicliques son grandes. En la Figura~\ref{fig:virtualNode} se ejemplifica este reemplazo, cambiando las iniciales 16 aristas del biclique en (a) por un nodo virtual $V$ y 8 aristas en (b).
+
+\input{figs/arte-virtualNode}
+
+Este proceso se repite iterativamente hasta que ya no se reducen significativamente más aristas. Luego aplican codificación delta 
+
+
 
 
 

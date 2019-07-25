@@ -3,18 +3,23 @@
 
 En este capítulo se presentan las definiciones de grafos y cliques maximales, y codificaciones ocupadas en este trabajo.
 
-\section{Grafos y cliques maximales} \label{marco:grafoclique}
+\section{Grafos, cliques maximales y métricas de clusterización} \label{marco:grafoclique}
 Se define un \textbf{grafo} $G = (V, E)$ como el conjunto finito de \textit{vértices} o \textit{nodos} $V$ y el conjunto de \textit{aristas} $E \subseteq V \times V$ (arcos). La expresión $V(G)$ representa el conjunto de sus vértices y $E(G)$ el conjunto de sus aristas. El \textit{orden} de un grafo corresponde al total de sus vértices $|V(G)|$, mientras que el \textit{tamaño} de un grafo corresponde al total de sus aristas $|E(G)|$. 
 
 Dos vértices $v_{1}$ y $v_{2} \in V(G)$ son \textbf{adyacentes} o \textbf{vecinos} si $(v_{1}, v_{2}) \in E(G)$ y $v_{1} \neq v_{2}$.  Un grafo es \textbf{no dirigido} cuando la arista conlleva ambos sentidos, quiere decir que $(v_{1}, v_{2}) = (v_{2}, v_{1})$, ambos vértices son vecinos directos entre sí. Caso aparte son los grafos \textbf{dirigidos}, donde las aristas tienen un solo sentido, y $(v_{1}, v_{2}) \neq (v_{2}, v_{1})$. En este caso, $v_{2}$ es llamado \textbf{vecino directo} de $v_{1}$, mientras $v_{1}$ es llamado \textbf{vecino inverso o reverso} de $v_{2}$. Un \textbf{grafo denso} es aquel que su número de aristas es cercano al máximo. Este trabajo está enfocado a utilizar grafos no dirigidos y poco densos. 
 
 El \textbf{grado de un vértice} $d(v)$ se define como la cantidad de vértices en $V(G)$ que son adyacentes con $v$. La \textbf{matriz de adyacencia} de un grafo $G$ corresponde a una matriz binaria cuadrada $|V(G)| \times |V(G)|$ donde cada bit representa si un par de vértices $v_{1}$ y $v_{2} \in V(G)$ son vecinos o no. En resumen, todos sus valores son ceros a menos que haya una arista entre dichos vértices.
 
+\input{figs/bipartito}
+
 Un grafo \textbf{k-degenerate} es no dirigido, donde cada subgrafo tiene un vértice con grado a lo más \textbf{k}. El índice de \textbf{degeneracy} de un grafo, $D(G)$, es el menor valor \textbf{k} para el cual el grafo es \textbf{k-degenerate}.
 
-\input{figs/maxCliqueExample}
+Un grafo es \textbf{bipartito} cuando sus vértices se pueden separar en dos conjuntos separados $U$ y $W$, tal que se cumple $U \cup W = V$ y $U \cap W = \varnothing$. Un grafo es \textbf{bipartito completo} o \textbf{biclique}, cuando todos los vértices de un conjunto son vecinos directos de todos los vértices del otro conjunto. En la Figura~\ref{fig:bipartito} se ilustra un ejemplo de grafo bipartito y un biclique.
+
 
 Un \textbf{clique} es un subgrafo donde todos los vértices son adyacentes entre sí, es decir, $\exists V' \subseteq V(G), \forall v_{1}, v_{2} \in V', (v_{1}, v_{2}) \in E(G) $. Un \textbf{clique maximal} no puede extenderse incluyendo otro vértice adyacente, es decir, no es subconjunto de otro clique más grande. En la Figura~\ref{fig:maxCliqueExample} se presenta ejemplo de un grafo y sus cliques maximales.
+
+\input{figs/maxCliqueExample}
 
 Un \textbf{triángulo} es un subgrafo de tres vértices y tres aristas. Se define $\lambda(v)$ como la cantidad de triángulos donde participa un nodo $v$, y $\lambda(G)$ como la cantidad de triángulos de un grafo, y se calcula sumando el cálculo individual para cada vértice, y dividiendo el total en tres (por cada triángulo se cuentan 3 veces los vértices), como lo muestra la siguiente ecuación
 
@@ -48,10 +53,26 @@ La \textbf{transitividad} de un grafo ($T(G)$) es la probabilidad que un par de 
 Tanto el coeficiente de clusterización como la transitividad son métricas que permiten vislumbrar cuán conectados o clusterizados están los vértices de un grafo, y de sus ecuaciones se puede notar que están relacionados.
 
 \section{Codificaciones}\label{sec:coding}
+
+Existen distintos tipos de codificaciones, según la aplicación. En esta sección se resumen algunas de relevancia para este trabajo, como algunos códigos universales o la codificación Huffman.
+
+\subsection{Códigos universales}
+Los códigos universales para enteros son un tipo de códigos que transforman enteros positivos en secuencias de bits, donde el largo de la secuencia final de bits tiene relación con el entero a codificar. Existen varios códigos de este tipo, algunos son:
+
+\begin{itemize}
+	\item \textbf{Código unario}: Se representa un entero $x$ por una secuencia de $1^{x-1}0$, donde el $0$ indica el término de la secuencia. Por ejemplo, el número $5$ se representa por la secuencia $111110$. Este código no es muy eficiente por si solo, pero se usa de base para otro tipo de códigos.
+	
+	\item \textbf{Código gamma ($\gamma$)}: Se representa un entero $x$ en un par concatenado de \textit{largo} y \textit{offset}. \textit{Offset} es la representación binaria de $x$, pero sin el primer 1. Por ejemplo, para $x=5$ su representación binaria es $101$, por tanto su \textit{offset} es $01$. \textit{Largo} codifica el largo de \textit{offset} en código unario. Para $x=5$, el largo de \textit{offset} es 2 bits, por tanto \textit{largo} es $110$. Concatenando ambas, el código $\gamma$ para $x=5$ es $11001$.
+	
+	\item \textbf{Código delta ($\delta$)}: Este código es una extensión del código $\gamma$ para enteros largos. Básicamente hacen lo mismo, pero el \textit{largo} lo representan en código $\gamma$ en vez de código unario. El código $\delta$ para $x=5$ es $10001$.
+\end{itemize}
+
+\subsection{Codificación Huffman}
 Una codificación muy usada es la propuesta por Huffman\cite{huffman1952method}, que retorna códigos de largo variable. Su conversión se basa en la frecuencia de los símbolos en la secuencia de entrada, codificando los más frecuentes con menos bits. Esta representación requiere tanto la secuencia codificada junto a un vocabulario de símbolos para recuperar la secuencia original. 
+
+\input{figs/huffman}
 
 En la Figura~\ref{fig:huffman} se muestra un ejemplo de esta codificación, donde (a) es la secuencia de entrada, (b) es la secuencia de salida, y (c) es el vocabulario de símbolos dispuesto en un árbol binario. Primero se cuenta la frecuencia de cada símbolo en la secuencia de entrada, dos veces $1$, dos veces $2$, y cinco veces $3$. Luego se crea el árbol binario, partiendo por las hojas de los símbolos menos frecuentes, $1$ y $2$, y creando un nodo con la frecuencia total de ambos casos, en total cuatro. Luego esa rama se añade a otro nodo junto con la hoja del símbolo más probable, $3$, y ambas suman la frecuencia total de nueve símbolos. Así, el símbolo $3$ puede representarse tan solo con un bit en 1, y para los otros casos se necesitarán dos bits.
 
-Para recuperar la secuencia original, se debe recorrer la de salida bit a bit de izquierda a derecha, e ir avanzando en el árbol binario hasta llegar a una hoja. Una desventaja de este método es que necesita decodificar de manera secuencial todo el código para obtener la secuencia original.
 
-\input{figs/huffman}
+Para recuperar la secuencia original, se debe recorrer la de salida bit a bit de izquierda a derecha, e ir avanzando en el árbol binario hasta llegar a una hoja. Una desventaja de este método es que necesita decodificar de manera secuencial todo el código para obtener la secuencia original.
