@@ -11,17 +11,19 @@
 \BOOKMARK [1][-]{section.3.3}{Using Re-Pair, Claude y Navarro}{chapter.3}% 11
 \BOOKMARK [1][-]{section.3.4}{Virtual Node Mining, Buehrer y Chellapilla}{chapter.3}% 12
 \BOOKMARK [1][-]{section.3.5}{k2-tree, Brisaboa, Ladra y Navarro}{chapter.3}% 13
-\BOOKMARK [0][-]{chapter.4}{M\311TODO DE COMPRESI\323N PROPUESTO}{}% 14
-\BOOKMARK [1][-]{section.4.1}{Detecci\363n de cliques maximales}{chapter.4}% 15
-\BOOKMARK [1][-]{section.4.2}{Particionamento del grafo de cliques}{chapter.4}% 16
-\BOOKMARK [1][-]{section.4.3}{Algoritmo de particionamiento o clustering}{chapter.4}% 17
-\BOOKMARK [1][-]{section.4.4}{Representaci\363n en estructuras compactas}{chapter.4}% 18
-\BOOKMARK [2][-]{subsection.4.4.1}{Secuencias de la representaci\363n de las particiones}{section.4.4}% 19
-\BOOKMARK [2][-]{subsection.4.4.2}{Algoritmos de consulta}{section.4.4}% 20
-\BOOKMARK [0][-]{chapter.5}{RESULTADOS}{}% 21
-\BOOKMARK [1][-]{section.5.1}{Grafos}{chapter.5}% 22
-\BOOKMARK [1][-]{section.5.2}{Estructura compacta}{chapter.5}% 23
-\BOOKMARK [1][-]{section.5.3}{Comparaci\363n de funciones de ranking}{chapter.5}% 24
-\BOOKMARK [1][-]{section.5.4}{Comparando con estado del arte}{chapter.5}% 25
-\BOOKMARK [0][-]{chapter.6}{CONCLUSIONES}{}% 26
-\BOOKMARK [0][-]{chapter.6}{Bibliograf\355a}{}% 27
+\BOOKMARK [2][-]{subsection.3.5.1}{List Merging, Grabowski y Bieniecki}{section.3.5}% 14
+\BOOKMARK [2][-]{subsection.3.5.2}{PENDIENTES}{section.3.5}% 15
+\BOOKMARK [0][-]{chapter.4}{M\311TODO DE COMPRESI\323N PROPUESTO}{}% 16
+\BOOKMARK [1][-]{section.4.1}{Detecci\363n de cliques maximales}{chapter.4}% 17
+\BOOKMARK [1][-]{section.4.2}{Particionamento del grafo de cliques}{chapter.4}% 18
+\BOOKMARK [1][-]{section.4.3}{Algoritmo de particionamiento o clustering}{chapter.4}% 19
+\BOOKMARK [1][-]{section.4.4}{Representaci\363n en estructuras compactas}{chapter.4}% 20
+\BOOKMARK [2][-]{subsection.4.4.1}{Secuencias de la representaci\363n de las particiones}{section.4.4}% 21
+\BOOKMARK [2][-]{subsection.4.4.2}{Algoritmos de consulta}{section.4.4}% 22
+\BOOKMARK [0][-]{chapter.5}{RESULTADOS}{}% 23
+\BOOKMARK [1][-]{section.5.1}{Grafos}{chapter.5}% 24
+\BOOKMARK [1][-]{section.5.2}{Estructura compacta}{chapter.5}% 25
+\BOOKMARK [1][-]{section.5.3}{Comparaci\363n de funciones de ranking}{chapter.5}% 26
+\BOOKMARK [1][-]{section.5.4}{Comparando con estado del arte}{chapter.5}% 27
+\BOOKMARK [0][-]{chapter.6}{CONCLUSIONES}{}% 28
+\BOOKMARK [0][-]{chapter.6}{Bibliograf\355a}{}% 29

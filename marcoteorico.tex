@@ -52,11 +52,11 @@ La \textbf{transitividad} de un grafo ($T(G)$) es la probabilidad que un par de 
 
 Tanto el coeficiente de clusterización como la transitividad son métricas que permiten vislumbrar cuán conectados o clusterizados están los vértices de un grafo, y de sus ecuaciones se puede notar que están relacionados.
 
-\section{Codificaciones}\label{sec:coding}
+\section{Codificaciones}
 
 Existen distintos tipos de codificaciones, según la aplicación. En esta sección se resumen algunas de relevancia para este trabajo, como algunos códigos universales o la codificación Huffman.
 
-\subsection{Códigos universales}
+\subsection{Códigos universales}\label{sec:Ucoding}
 Los códigos universales para enteros son un tipo de códigos que transforman enteros positivos en secuencias de bits, donde el largo de la secuencia final de bits tiene relación con el entero a codificar. Existen varios códigos de este tipo, algunos son:
 
 \begin{itemize}
@@ -67,7 +67,7 @@ Los códigos universales para enteros son un tipo de códigos que transforman en
 	\item \textbf{Código delta ($\delta$)}: Este código es una extensión del código $\gamma$ para enteros largos. Básicamente hacen lo mismo, pero el \textit{largo} lo representan en código $\gamma$ en vez de código unario. El código $\delta$ para $x=5$ es $10001$.
 \end{itemize}
 
-\subsection{Codificación Huffman}
+\subsection{Codificación Huffman}\label{sec:huffman}
 Una codificación muy usada es la propuesta por Huffman\cite{huffman1952method}, que retorna códigos de largo variable. Su conversión se basa en la frecuencia de los símbolos en la secuencia de entrada, codificando los más frecuentes con menos bits. Esta representación requiere tanto la secuencia codificada junto a un vocabulario de símbolos para recuperar la secuencia original. 
 
 \input{figs/huffman}

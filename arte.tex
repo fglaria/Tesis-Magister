@@ -6,7 +6,7 @@
 El problema de compresión de grafos ha sido abordado de distintas maneras en las últimas décadas. En esta sección se revisan los trabajos más relevantes del área.
 
 \section{The WebGraph Framework, \textit{Boldi y Vigna}}
-Uno de los primeros trabajos en la materia es \textit{WebGraph} de Boldi y Vigna \cite{boldi2004webgraph, boldi2004webgraph2}, apuntado a comprimir grafos dirigidos como el grafo de la Web, aprovechando la distribución potencial de las diferencias entre vecinos sucesivos, reflejados en dos características de sus enlaces ordenados por su \textit{URL}, \textbf{localidad} (hipervínculos donde sus \textit{URL} tienen un prefijo en común y si se ordenan lexicográficamente en una lista estarán muy cerca entre ellos) y \textbf{similitud} (los sitios que tienden a estar juntos en esa lista lexicográfica también tienden a tener muchos sucesores en común). Así, codifican las listas de adyacencias basadas en otras listas de adyacencias y cuán similar sean entre ellas.
+Uno de los primeros trabajos en la materia es \textit{WebGraph} de Boldi y Vigna \cite{boldi2004webgraph}, apuntado a comprimir grafos dirigidos como el grafo de la Web, aprovechando la distribución potencial de las diferencias entre vecinos sucesivos, reflejados en dos características de sus enlaces ordenados por su \textit{URL}, \textbf{localidad} (hipervínculos donde sus \textit{URL} tienen un prefijo en común y si se ordenan lexicográficamente en una lista estarán muy cerca entre ellos) y \textbf{similitud} (los sitios que tienden a estar juntos en esa lista lexicográfica también tienden a tener muchos sucesores en común). Así, codifican las listas de adyacencias basadas en otras listas de adyacencias y cuán similar sean entre ellas.
 
 Primero, cada nodo se numeran los $N$ nodos del grafo de $0$ a $N - 1$, ordenados de manera lexicográfica según sus \textit{URL}. En una primera aproximación, cada nodo tiene asociado su grado de salida (\textit{Outdegree}) y su listado de adyacencia o sucesores asociado $S(x)$. Luego,  aprovechando la localidad  de los nodos en dichas listas, se pueden representar usando las diferencias entre sus nodos, quiere decir si $S(x) = (s_{1}, s_{2}, ..., s_{k})$ es el listado de sucesores del nodo $x$ con $k$ vecinos, se codifica como $(s_{1} - x, s_{2} - s_{1} - 1, ..., s_{k} - s_{k - 1} - 1)$. En la Tabla~\ref{table:webgraph1} se muestran ambos casos, usando listado de sucesores y usando la diferencia. Para evitar tener que lidiar con números negativos, el primer número en esta nueva secuencia se codifica de la siguiente manera:
 
@@ -109,14 +109,13 @@ Una propuesta de compresión más reciente, de Maneth y Peternek \cite{maneth201
 
 
 \section{Virtual Node Mining, \textit{Buehrer y Chellapilla}}
-Buehrer y Chellapilla \cite{BuehrerChellapilla} aprovechan que muchos grupos de nodos en el grafo de la Web consisten en conjuntos de sitios que comparten los mismas vecinos directos, lo que genera un grafo bipartito completo. Su propuesta reduce la cantidad de aristas, definiendo nodos virtuales que son agregados artificialmente al grafo entre los dos conjuntos del biclique. Esto reduce la cantidad total de aristas, ya que cada biclique une un set de $U$ nodos con uno de $W$ nodos, genera en total $|U \times W|$ aristas, y usando un nodo virtual disminuye a $|U + W|$, un gran ahorro cuando los bicliques son grandes. En la Figura~\ref{fig:virtualNode} se ejemplifica este reemplazo, cambiando las iniciales 16 aristas del biclique en (a) por un nodo virtual $V$ y 8 aristas en (b).
+Buehrer y Chellapilla \cite{BuehrerChellapilla} aprovechan que muchos grupos de nodos en el grafo de la Web consisten en conjuntos de sitios que comparten los mismas vecinos directos, lo que genera un grafo bipartito completo. Su propuesta reduce la cantidad de aristas, definiendo nodos virtuales que son agregados artificialmente al grafo entre los dos conjuntos del biclique. Esto reduce la cantidad total de aristas, ya que cada biclique une un set de $U$ nodos con uno de $W$ nodos, genera en total $|U \times W|$ aristas, y usando un nodo virtual disminuye a $|U + W|$, un gran ahorro cuando los bicliques son grandes. En la Figura~\ref{fig:virtualNode} se ejemplifica este reemplazo, cambiando de las iniciales 30 aristas del biclique en (a), 19 por un nodo virtual VN en (b), quedando solo 11 aristas restantes.
 
 \input{figs/arte-virtualNode}
 
-Este proceso se repite iterativamente hasta que ya no se reducen significativamente más aristas. Luego aplican codificación delta 
+Este proceso se repite iterativamente hasta que ya no se reducen significativamente más aristas. Luego aplican codificación delta (ver sección~\ref{sec:Ucoding}) sobre el grafo reducido. La propuesta logra una buena compresión, pero no reportan los tiempos de acceso. Además, su resultado no se ve afectado por el orden de numeración de los nodos, y permite actualizaciones.
 
-
-
+Anh y Moffat \cite{anh2010local} también aprovechan esta localidad y similaridad en los listados de adyacencia, dividiendo en grupos de $h$ listas consecutivas. Luego reducen las listas aplicando reglas gramáticas como Re-Pair \cite{larsson2000off} de manera recursiva, y finalmente aplican codificaciones como el código $\zeta$ \cite{boldi2005codes}.
 
 
 \section{k2-tree, \textit{Brisaboa, Ladra y Navarro}}
@@ -128,12 +127,41 @@ Este modelo propone representar la matriz de adyacencia con un árbol $k_{2}$-na
 
 Finalmente, la compresión se realiza representando el árbol usando dos arreglos de bits, un bitmap $T$ para representar la estructura del árbol, y un bitmap $L$ para representar las hojas, que representan las celdas de la matriz. Además usan un bitmap adicional para acelerar la resolución de consultas. 
 
+En 2011, Hernández y Navarro \cite{hernandez2011compression} propusieron combinar varios métodos: Primero reducir la cantidad de aristas con nodos virtuales \cite{BuehrerChellapilla},  y luego comprimir usando las propuestas de k2-tree \cite{brisaboa2009k} y el trabajo anterior basado en Re-Pair \cite{claude2010fast}, logrando resultados de compresión bastante competitivos, pero sacrificando tiempos de acceso.
+
 %Una propuesta muy reciente, por Li et. al.\cite{li2019optimal} mejora considerablemente k2-tree proponiendo una manera distinta de subdividir la matriz de adyacencia.
+
+\subsection{List Merging, \textit{Grabowski y Bieniecki}}
+Grabowski y Bieniecki proponen agrupar los listados de adyacencia en bloques de $h$ listas cada uno, de manera similar a lo propuesto por Anh y Moffat \cite{anh2010local}. Cada bloque luego es descompuesto en dos arreglos: el primero es \textit{long list}, un arreglo de todos los índices de los vértices presentes en el bloque de listados de adyacencia, sin repetir ninguno. El segundo es \textit{flags}, un arreglo de bits que permite la reconstrucción de las listas agrupadas. 
+
+El arreglo de enteros \textit{long list} es reducido usando las diferencias, terminada en cero y codificada en bytes. El arreglo de bits \textit{flags} indica la pertenencia de los índices en \textit{long list} a sus listas de adyacencias asociadas. El número de bits por cada índice es $h$, definido como un múltiplo de 8. su largo queda definido por el largo de \textit{long list}. Este arreglo puede no comprimirse (en cual caso lo llaman \textit{LM-bitmap}), o codificarse usando las diferencias entre los 1 sucesivos, escritas en bytes individuales (\textit{LM-diff}).
+
+Ambas secuencias, \textit{long list} y ya sea \textit{LM-bitmap} o \textit{LM-diff}, luego son concatenadas y comprimidas usando el algoritmo Deflate. Este algoritmo consiste en una serie de bloques, todos precedidos por una cabecera de 3 bits, que indican lo siguiente:
+
+\begin{itemize}
+	\item Primer bit:
+	\begin{itemize}
+		\item 0: No es el último bloque de la secuencia.
+		\item 1: Es el último bloque de la secuencia.
+	\end{itemize}
+	\item Segundo y tercer bit:
+	\begin{itemize}
+		\item 00: Bloque sin codificar.
+		\item 01: Bloque codificado con Huffman, con un árbol de Huffman ya definido.
+		\item 10: Bloque codificado con Huffman y su árbol asociado.
+		\item 11: Reservado; No usar.
+	\end{itemize}
+\end{itemize}
+
+Para más detalles sobre la codificación Huffman, ver la Sección~\ref{sec:huffman}.
+
+\subsection{PENDIENTES}
+
 
  Francisco et al. \cite{francisco2018exploiting} discute algunos algoritmos de compresión de grafos que permiten explotar en forma amigable la computación de matrices, que además son usados en algoritmos de ranking como PageRank \cite{page1999pagerank}.
 
 
-La compresión de Hernandez y Navarro \cite{hernandez2012compressed} propone una estructura compuesta por un componente que contiene los subgrafos bipartitos completos, y el resto del grafo usando otra representación comprimida existente como k2tree. Los subgrafos bipartitos completos son encontrados en el grafo original y son representados usando estructuras sucintas como wavelet trees y bitmaps comprimidos \cite{gbmp2014sea}. Esta representación comprimida proporciona resolución de consulta de vecinos directos y reversos con tiempos de acceso similares.
+En 2012, Hernandez y Navarro \cite{hernandez2012compressed} propone una estructura compuesta por un componente que contiene los subgrafos bipartitos completos, y el resto del grafo usando otra representación comprimida existente como k2tree. Los subgrafos bipartitos completos son encontrados en el grafo original y son representados usando estructuras sucintas como wavelet trees y bitmaps comprimidos \cite{gbmp2014sea}. Esta representación comprimida proporciona resolución de consulta de vecinos directos y reversos con tiempos de acceso similares.
 
 
 
@@ -142,10 +170,8 @@ La compresión de Hernandez y Navarro \cite{hernandez2012compressed} propone una
 
 El trabajo de Fisher y Peters \cite{FISCHER201639} propone un esquema de compresión que consiste en representar el grafo como un árbol donde se representan los vértices repetidos como nodos sombra (shadow nodes). La compresión efectiva de esta representación consiste en representar el árbol usando bitmaps comprimidos y los nodos sombra se representan con una secuencia de símbolos usando wavelet trees (usando la biblioteca \textit{SDSL} \cite{gbmp2014sea}). Sin embargo, esta representación ve limitado su nivel de compresión cuando los grafos a comprimir contienen muchos componentes densos, dado que en este caso la secuencia de nodos sombra puede crecer mucho.   
 
-Entre las mejores propuestas de compresión de grafos que especialmente ofrecen accesos a vecinos directos, se encuentran la de Boldi, Rosa, Santini y Vigna \cite{boldi2011layered} y la de Grabowski y Bieniecki \cite{maneth2016compressing}. Grabowski y Bieniecki usa bloques contiguos de listas de vecinos y consigue muy buen uso de disco, pero aumenta el tiempo de acceso a vecinos directos a medida que aumenta el tamaño del bloque. Desde un punto de vista de tiempo de acceso a vecinos directos, la propuesta de Boldi y Vigna sigue siendo una de las mas rápidas. La propuesta de Hernández y Navarro \cite{tesisCecilia}, proporciona un buen compromiso entre espacio y tiempo de acceso a vecinos directos. En dicho trabajo, se propone una transformación del grafo dirigido original donde se reduce el número de arcos originales usando nodos virtuales para conectar subgrafos densos representados por grafos bipartitos completos, que incluyen cliques, y luego se apliacan distintos algoritmos de ordenamientos de vértices sobre el grafo transformado. En particular, se obtienen mejores resultados aplicando ordenamiento LLP y compresión \cite{boldi2011layered} que ordenamiento BFS (como lo reportado en \cite{Hernandez2014}).
+La propuesta de Hernández y Navarro \cite{tesisCecilia}, proporciona un buen compromiso entre espacio y tiempo de acceso a vecinos directos. En dicho trabajo, se propone una transformación del grafo dirigido original donde se reduce el número de arcos originales usando nodos virtuales para conectar subgrafos densos representados por grafos bipartitos completos, que incluyen cliques, y luego se apliacan distintos algoritmos de ordenamientos de vértices sobre el grafo transformado. En particular, se obtienen mejores resultados aplicando ordenamiento LLP y compresión \cite{boldi2011layered} que ordenamiento BFS (como lo reportado en \cite{Hernandez2014}).
 
-Por otro lado, en el contexto de clustering de grafos masivos, se ha usado como heurística el método de minhashing. Por ejemplo, para encontrar subgrafos bipartitos completos y agrupar listas de adyacencia con similitud de jaccard (Buerher y Chellapilla \cite{BuehrerChellapilla}, Hernández \cite{hernandez2012compressed}).
-Ambos trabajos aplican minhashing a la listas de adyacencia para crear una matriz de $n \times k$ valores de hash. Cada valor de hash en una fila de la matriz corresponde a un mapeo de la lista de adyacencia. Luego, para cada fila de la lista de adyacencia (vecinos directos de un vértice en el grafo) se aplica minhashing $k$ veces. La implementación de Buerher y Chellapilla usa $k=8$ y luego encuentra clusters buscando listas de valores hash que comparten columnas para encontrar clusters. La implementación de Hernández \cite{hernandez2012compressed} sólo usa $k=2$ para comprimir grafos. El reciente trabajo de Ertl \cite{BagMinHash} propone un algoritmo que permite expandir las posibilidades de uso a sets con peso.
 
 Un detalle no menor en este trabajo, es la necesidad de generar el listado de cliques maximales de un grafo. Esto ha sido abordado en varios trabajos, tanto por su complejidad como por su utilidad \cite{eblen2012maximum, hendrix2010theoretical, bomze1999maximum}, y de las propuestas más recientes se destaca el trabajo de Eppstein et. al. \cite{listingcliques,  listingcliques2}, dirigido a encontrar dicho listado para grafos con matrices de adycencia ralas.
 
