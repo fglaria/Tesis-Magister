@@ -149,16 +149,26 @@ Como se puede apreciar, Webgraph presenta los menores tiempos de acceso entre to
 
 El tiempo de reconstrucción secuencial se midió usando el Algoritmo~\ref{alg:sequential}. En la Tabla~\ref{table:timesSecuencial} se presentan los resultados obtenidos para los algoritmos evaluados. En este caso, si bien el método propuesto es más lento que los demás, para casos como \texttt{marknweman-astro}, \texttt{marknewman-condmat}, \texttt{dblp-2010} y \texttt{snap-dblp}, la diferencia es menor a un segundo. Para el resto de los casos, los grafos tienen una cantidad considerable de arcos, \texttt{dblp-2011} y \texttt{snap-amazon} tienen la mayor cantidad de cliques, y \texttt{coPapersDBLP} con \texttt{coPapersCiteseer} tienen muchos cliques de hasta 100 vértices, y presentan una relación no proporcional entre cantidad de vértices y cantidad de cliques, como lo muestra la Tabla~\ref{table:gafros3}, lo que afecta bastante a la hora de recuperar dichos grafos.
 
-Para evaluar mejor la competitividad, en la Figura~\ref{fig:bpetAle} se grafica el BPE con respecto al tiempo de acceso aleatorio en microsegundos, y en la Figura~\ref{fig:bpetSec} el BPE con respecto al tiempo de reconstrucción secuencial en segundos obtenidos para cada algoritmo en cada grafo. 
+Para evaluar mejor la competitividad, en la Figura~\ref{fig:bpetAle1}, Figura~\ref{fig:bpetAle2}, Figura~\ref{fig:bpetAle3}, y Figura~\ref{fig:bpetAle4} se grafican los BPE con respecto a los tiempo de acceso aleatorio en microsegundos, y en la Figura~\ref{fig:bpetSec1}, Figura~\ref{fig:bpetSec2}, Figura~\ref{fig:bpetSec3}, y Figura~\ref{fig:bpetSec4} los BPE con respecto a los tiempos de reconstrucción secuencial en segundos, obtenidos para cada algoritmo y cada grafo.
 
 Se puede apreciar que, para el caso aleatorio, si bien el método de compresión siempre se ubica en el cuadrante de menor BPE y mayor tiempo, otros logran una ubicación de menor calidad, como los casos de los algoritmos de k2tree para los grafos \texttt{dblp-2010}, \texttt{dbpl-2011} y \texttt{snap-dblp} en la Figura~\ref{fig:bpetAle}(c)(d)(e) respectivamente. 
 
 En el caso secuencial, el método propuesto también se encuentra siempre en el mismo cuadrante, pero muy alejado en tiempo de los demás algoritmos, como ya se había estudiado de la Tabla~\ref{table:timesSecuencial}, y tanto en el caso de \texttt{marknewman-astro} (Figura~\ref{fig:bpetSec}(a)) como \texttt{marknewman-condmat} (Figura~\ref{fig:bpetSec}(b)) presentan los mejores resultados.
 
+En cuanto a detectar si dos nodos son vecinos o no, la estructura planteada es la única que tiene dicha consulta implementada y no requiere descomprimir para responder directamente. Tanto Webgraph como AD, al usar diferencias para codificar los listados de adyacencia, primero requieren obtener el listado de vecinos de un nodo y luego revisar si el segundo nodo pertenece o no a dicha lista. La propuesta de k2tree podría responder dicha consulta, ya que codifica la matriz de adyacencia de tal manera que podría revisar directamente la vecindad de dos nodos, pero no la tiene implementada.
+
 \input{tables/timesSecuencial} 
 %\input{tables/timesSecuencialDiff} 
 
-\input{figs/bpetAle}
-\input{figs/bpetSec}
+%\input{figs/bpetAle}
+\input{figs/bpetAle1}
+\input{figs/bpetAle2}
+\input{figs/bpetAle3}
+\input{figs/bpetAle4}
+%\input{figs/bpetSec}
+\input{figs/bpetSec1}
+\input{figs/bpetSec2}
+\input{figs/bpetSec3}
+\input{figs/bpetSec4}
 
-En cuanto a detectar si dos nodos son vecinos o no, la estructura planteada es la única que tiene dicha consulta implementada y no requiere descomprimir para responder directamente. Tanto Webgraph como AD, al usar diferencias para codificar los listados de adyacencia, primero requieren obtener el listado de vecinos de un nodo y luego revisar si el segundo nodo pertenece o no a dicha lista. La propuesta de k2tree podría responder dicha consulta, ya que codifica la matriz de adyacencia de tal manera que podría revisar directamente la vecindad de dos nodos, pero no la tiene implementada.
+

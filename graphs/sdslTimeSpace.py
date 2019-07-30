@@ -93,13 +93,15 @@ functions = {
     "R": "$r_{r}$"
 }
 
+s=800
+
 
 for graph in space:
     for fIndex, f in enumerate(space[graph]):
 
         for sIndex, sData in enumerate(space[graph][f]):
             tData = time[graph][f][sIndex]
-            plt.scatter(sData, tData, s=400, c=colors[f], marker=markers[sIndex], linewidths=1, edgecolors="#000000", label=f)
+            plt.scatter(sData, tData, s=s, c=colors[f], marker=markers[sIndex], linewidths=1, edgecolors="#000000", label=f)
 
         # print (f)
         # break

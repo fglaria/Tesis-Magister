@@ -1,0 +1,87 @@
+SDSL
+[12] Francisco Claude, Gonzalo Navarro, and Alberto Ordo ́nez. The wavelet matrix: An efficient wavelet tree for large alphabets. Information Systems, 47:15–32, 2015.
+[20] Roberto Grossi, Ankur Gupta, and Jeffrey Scott Vitter. High-order entropy- compressed text indexes. In Proceedings of the fourteenth annual ACM-SIAM sym- posium on Discrete algorithms, pages 841–850. Society for Industrial and Applied Mathematics, 2003.
+[31] Rajeev Raman, Venkatesh Raman, and S Srinivasa Rao. Succinct indexable dictionaries with applications to encoding k-ary trees and multisets. In Proceedings of the thirteenth annual ACM-SIAM symposium on Discrete algorithms, pages 233–242. Society for Industrial and Applied Mathematics, 2002.
+[29] Daisuke Okanohara and Kunihiko Sadakane. Practical entropy-compressed rank/select dictionary. CoRR, abs/cs/0610001, 2006.
+
+[19] Simon Gog, Timo Beller, Alistair Moffat, and Matthias Petri. From theory to prac- tice: Plug and play with succinct data structures. In 13th International Symposium on Experimental Algorithms, (SEA 2014), pages 326–337, 2014.
+
+Huffman code
+[24] David A Huffman. A method for the construction of minimum-redundancy codes. Proceedings of the IRE, 40(9):1098–1101, 1952.
+
+Webgraph compression 2004
+[4] Paolo Boldi and Sebastiano Vigna. The webgraph framework i: compression techni- ques. In Proceedings of the 13th international conference on World Wide Web, pages 595–602. ACM, 2004.
+[5] Paolo Boldi and Sebastiano Vigna. The webgraph framework ii: Codes for the world- wide web. In Data Compression Conference, 2004. Proceedings. DCC 2004, page 528. IEEE, 2004.
+[3] Paolo Boldi, Massimo Santini, and Sebastiano Vigna. Permuting web graphs. In International Workshop on Algorithms and Models for the Web-Graph, pages 116– 126. Springer, 2009.
+[2] Paolo Boldi, Marco Rosa, Massimo Santini, and Sebastiano Vigna. Layered label propagation: A multiresolution coordinate-free ordering for compressing social net- works. In Proceedings of the 20th international conference on World wide web, pages 587–596. ACM, 2011.
+
+BFS compression 2009
+[1] Alberto Apostolico and Guido Drovandi. Graph compression by bfs. Algorithms, 2(3):1031–1044, 2009.
+
+Using Re-Pair
+[11] Francisco Claude and Gonzalo Navarro. Fast and compact web graph representations. ACM Transactions on the Web (TWEB), 4(4):16, 2010.
+[25] N Jesper Larsson and Alistair Moffat. Off-line dictionary-based compression. Proceedings of the IEEE, 88(11):1722–1732, 2000.
+
+[28] Sebastian Maneth and Fabian Peternek. Compressing graphs by grammars. In 2016 IEEE 32nd International Conference on Data Engineering (ICDE), pages 109–120. IEEE, 2016.
+
+Virtual Node Mining
+[10] Gregory Buehrer and Kumar Chellapilla. A scalable pattern mining approach to web graph compression with communities. In Proceedings of the 2008 International Conference on Web Search and Data Mining, WSDM ’08, pages 95–106, New York, NY, USA, 2008. ACM.
+[??] Anh y Moffat
+
+k2-tree 2009
+[8] Nieves R Brisaboa, Susana Ladra, and Gonzalo Navarro. k 2-trees for compact web graph representation. In International Symposium on String Processing and Information Retrieval, pages 18–30. Springer, 2009.
+[9] Nieves R Brisaboa, Susana Ladra, and Gonzalo Navarro. Compact representation of web graphs with extended functionality. Information Systems, 39:152–174, 2014.
+[??] Hernández and Navarro. Compression of web and social graphs supporting neighbor and community queries. 2011.
+
+[26] Fengying Li, Qi Zhang, Tianlong Gu, and Rongsheng Dong. Optimal representation for web and social network graphs based on k2-tree. IEEE Access, 7:52945–52954, 2019.
+
+
+
+
+
+
+
+Clique
+[6] Immanuel M Bomze, Marco Budinich, Panos M Pardalos, and Marcello Pelillo. The maximum clique problem. In Handbook of combinatorial optimization, pages 1–74. Springer, 1999.
+
+[13] John D Eblen, Charles A Phillips, Gary L Rogers, and Michael A Langston. The maximum clique enumeration problem: algorithms, applications, and implementations. In BMC bioinformatics, volume 13, page S5. BioMed Central, 2012.
+
+[15] David Eppstein and Darren Strash. Listing all maximal cliques in large sparse real- world graphs. In Panos M. Pardalos and Steffen Rebennack, editors, Experimental Algorithms, pages 364–375, Berlin, Heidelberg, 2011. Springer Berlin Heidelberg.
+
+[14] David Eppstein, Maarten Lo ̈ffler, and Darren Strash. Listing all maximal cliques in large sparse real-world graphs. J. Exp. Algorithmics, 18:3.1:3.1–3.1:3.21, November 2013.
+
+[21] William Hendrix, Matthew C Schmidt, Paul Breimyer, and Nagiza F Samatova. Theoretical underpinnings for maximal clique enumeration on perturbed graphs. Theoretical Computer Science, 411(26-28):2520–2536, 2010.
+
+
+
+
+
+
+
+
+
+
+[17] Johannes Fischer and Daniel Peters. Glouds: Representing tree-like graphs. Journal of Discrete Algorithms, 36:39 – 49, 2016. WALCOM 2015.
+
+[18] Alexandre Francisco, Travis Gagie, Susana Ladra, and Gonzalo Navarro. Exploiting computation-friendly graph compression methods for adjacency-matrix multiplica- tion. In 2018 Data Compression Conference, pages 307–314. IEEE, 2018.
+
+[22] Cecilia Herna ́ndez and Gonzalo Navarro. Compressed representation of web and so- cial networks via dense subgraphs. In International Symposium on String Processing and Information Retrieval, pages 264–276. Springer, 2012.
+
+[23] Cecilia Hern ́andez and Gonzalo Navarro. Compressed representations for web and social graphs. Knowledge and Information Systems, 40(2):279–313, Aug 2014.
+
+[30] Lawrence Page, Sergey Brin, Rajeev Motwani, and Terry Winograd. The pagerank citation ranking: Bringing order to the web. Technical report, Stanford InfoLab, 1999.
+
+[32] Cecilia Hern ́andez Rivas. Managing massive graphs. Universidad de Chile, 2014. Tesis de doctorado.
+
+
+
+
+
+
+NO SE USAN
+[7] Nieves R Brisaboa, Rodrigo Ca ́novas, Francisco Claude, Miguel A Mart ́ınez-Prieto, and Gonzalo Navarro. Compressed string dictionaries. In International Symposium on Experimental Algorithms, pages 136–147. Springer, 2011.
+
+[27] Veli Ma ̈kinen and Gonzalo Navarro. Succinct suffix arrays based on run-length en- coding. In Annual Symposium on Combinatorial Pattern Matching, pages 45–56. Springer, 2005.
+
+[16] Otmar Ertl. Bagminhash - minwise hashing algorithm for weighted sets. CoRR, abs/1802.03914, 2018.
+

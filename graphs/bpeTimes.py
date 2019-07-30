@@ -7,7 +7,8 @@ import numpy as np
 # from matplotlib.pyplot import figure
 # figure(num=None, figsize=(64, 48), dpi=100, facecolor='w', edgecolor='k')
 
-matplotlib.rcParams.update({'font.size': 22})
+# matplotlib.rcParams.update({'font.size': 22})
+matplotlib.rcParams.update({'font.size': 28})
 
 fig = plt.figure()
 ax = plt.subplot(111)
@@ -45,52 +46,76 @@ colors = {
 }
 # 'b', 'g', 'r', 'c', 'm', 'y', 'k', 'w'
 
+# bpe = {
+#     "marknewman-astro": (4.45, 9.28, 8.05, 5.67, 8.10, 7.30),
+#     "marknewman-condmat": (6.20, 12.06, 10.43, 7.86, 11.78, 10.45),
+#     "dblp-2010": (6.27, 7.45, 8.00, 6.71, 8.67, 6.91),
+#     "dblp-2011": (6.87, 10.18, 11.37, 9.67, 10.13, 8.71),
+#     "snap-dblp": (7.19, 11.21, 9.92, 8.14, 11.80, 10.17),
+#     "snap-amazon": (10.49, 15.66, 12.33, 10.96, 14.50, 13.35),
+#     "coPapersDBLP": (0.80, 3.29, 1.83, 1.81, 2.71, 2.48),
+#     "coPapersCiteseer": (0.52, 2.35, 0.87, 0.85, 1.79 , 1.63)
+# }
 bpe = {
-    "marknewman-astro": (4.45, 9.28, 8.05, 5.67, 8.10, 7.30),
-    "marknewman-condmat": (6.20, 12.06, 10.43, 7.86, 11.78, 10.45),
-    "dblp-2010": (6.27, 7.45, 8.00, 6.71, 8.67, 6.91),
-    "dblp-2011": (6.87, 10.18, 11.37, 9.67, 10.13, 8.71),
-    "snap-dblp": (7.19, 11.21, 9.92, 8.14, 11.80, 10.17),
-    "snap-amazon": (10.49, 15.66, 12.33, 10.96, 14.50, 13.35),
-    "coPapersDBLP": (0.80, 3.29, 1.83, 1.81, 2.71, 2.48),
-    "coPapersCiteseer": (0.52, 2.35, 0.87, 0.85, 1.79 , 1.63)
+    "marknewman-astro": (3.96, 4.89, 4.34, 5.67, 8.10, 7.30),
+    "marknewman-condmat": (5.74, 6.28, 5.60, 7.86, 11.78, 10.45),
+    "dblp-2010": (5.84, 4.23, 4.30, 6.71, 8.67, 6.91),
+    "dblp-2011": (6.58, 5.48, 5.89, 9.67, 10.13, 8.71),
+    "snap-dblp": (6.89, 5.88, 5.23, 8.14, 11.80, 10.17),
+    "snap-amazon": (10.44, 8.02, 6.38, 10.96, 14.50, 13.35),
+    "coPapersDBLP": (0.78, 1.67, 0.94, 1.81, 2.71, 2.48),
+    "coPapersCiteseer": (0.52, 1.21, 0.45, 0.85, 1.79 , 1.63)
 }
+
+
 
 algoSec = ("$clique_{rr}$", "$k2tree$", "$k2tree_{BFS}$", "$WG_{s}$")
 
 # tSec = {
-#     "marknewman-astro": (0.16, 0.24, 0.14, 0.013),
-#     "marknewman-condmat": (0.28, 0.24, 0.22, 0.022),
-#     "dblp-2010": (1.36, 0.42, 0.41, 0.059),
-#     "dblp-2011": (7.01, 1.76, 2.28, 0.254),
-#     "snap-dblp": (2.05, 0.74, 0.66, 0.083),
-#     "snap-amazon": (6.90, 2.57, 1.92, 0.183),
-#     "ca-coauthors": (11.96, 2.50, 2.27, 0.401)
+#     "marknewman-astro": (0.15, 0.07, 0.06, 0.28),
+#     "marknewman-condmat": (0.28, 0.14, 0.15, 0.52),
+#     "dblp-2010": (1.43, 0.29, 0.30, 1.09),
+#     "dblp-2011": (7.67, 1.57, 2.10, 2.41),
+#     "snap-dblp": (2.23, 0.64, 0.52, 1.20),
+#     "snap-amazon": (6.95, 2.37, 1.75, 1.30),
+#     "coPapersDBLP": (11.96, 2.02, 1.66, 1.59),
+#     "coPapersCiteseer": (11.69, 1.73, 1.10, 1.56)
 # }
-
 tSec = {
-    "marknewman-astro": (0.15, 0.07, 0.06, 0.28),
-    "marknewman-condmat": (0.28, 0.14, 0.15, 0.52),
-    "dblp-2010": (1.43, 0.29, 0.30, 1.09),
-    "dblp-2011": (7.67, 1.57, 2.10, 2.41),
-    "snap-dblp": (2.23, 0.64, 0.52, 1.20),
-    "snap-amazon": (6.95, 2.37, 1.75, 1.30),
-    "coPapersDBLP": (11.96, 2.02, 1.66, 1.59),
-    "coPapersCiteseer": (11.69, 1.73, 1.10, 1.56)
+    "marknewman-astro": (0.09, 0.03, 0.02, 0.28),
+    "marknewman-condmat": (0.16, 0.07, 0.04, 0.52),
+    "dblp-2010": (0.82, 0.18, 0.16, 1.09),
+    "dblp-2011": (4.45, 1.10, 1.31, 2.41),
+    "snap-dblp": (1.26, 0.58, 0.35, 1.20),
+    "snap-amazon": (4.53, 1.36, 1.13, 1.30),
+    "coPapersDBLP": (5.81, 1.45, 1.01, 1.59),
+    "coPapersCiteseer": (5.46, 1.33, 0.65, 1.56)
 }
 
 algoAleat = ("$clique_{rr}$", "$k2tree$", "$k2tree_{BFS}$", "$AD$", "$WG_{a}$")
 
+# tAleat = {
+#     "marknewman-astro": (4.80, 2.54, 1.31, 1.79, 0.052),
+#     "marknewman-condmat": (4.92, 5.46, 2.75, 2.32, 0.063),
+#     "dblp-2010": (4.75, 5.38, 4.74, 2.15, 0.097),
+#     "dblp-2011": (7.03, 11.63, 11.08, 2.36, 0.114),
+#     "snap-dblp": (6.01, 10.33, 7.15, 2.30, 0.125),
+#     "snap-amazon": (19.33, 14.53, 7.33, 2.47, 0.087),
+#     "coPapersDBLP": (1.69, 1.94, 1.17, 0.73, 0.045),
+#     "coPapersCiteseer": (1.57, 0.950, 0.480, 0.450, 0.037)
+# }
 tAleat = {
-    "marknewman-astro": (4.80, 2.54, 1.31, 1.79, 0.052),
-    "marknewman-condmat": (4.92, 5.46, 2.75, 2.32, 0.063),
-    "dblp-2010": (4.75, 5.38, 4.74, 2.15, 0.097),
-    "dblp-2011": (7.03, 11.63, 11.08, 2.36, 0.114),
-    "snap-dblp": (6.01, 10.33, 7.15, 2.30, 0.125),
-    "snap-amazon": (19.33, 14.53, 7.33, 2.47, 0.087),
-    "coPapersDBLP": (1.69, 1.94, 1.17, 0.73, 0.045),
-    "coPapersCiteseer": (1.57, 0.950, 0.480, 0.450, 0.037)
+    "marknewman-astro": (2.67, 2.58, 1.33, 1.79, 0.052),
+    "marknewman-condmat": (3.16, 5.53, 2.81, 2.32, 0.063),
+    "dblp-2010": (3.70, 5.55, 4.84, 2.15, 0.097),
+    "dblp-2011": (4.66, 11.43, 10.69, 2.36, 0.114),
+    "snap-dblp": (4.07, 10.35, 6.93, 2.30, 0.125),
+    "snap-amazon": (6.99, 13.97, 7.13, 2.47, 0.087),
+    "coPapersDBLP": (1.51, 1.89, 1.16, 0.73, 0.045),
+    "coPapersCiteseer": (1.30, 0.95, 0.50, 0.45, 0.037)
 }
+
+s=1400
 
 # fontP = FontProperties()
 # fontP.set_size('small')
@@ -109,13 +134,14 @@ for graph in graphs:
     # for iA, algo in enumerate(algoBPE):
     #     # If algorithm in secuencial, add point
     #     if algo in algoSec:
-    #         plt.scatter(bpe[graph][iA], tSec[graph][algoSec.index(algo)], s=400, marker=markers[algo], color=colors[algo], linewidths=1, edgecolors="#000000", label=algo)
+    #         plt.scatter(bpe[graph][iA], tSec[graph][algoSec.index(algo)], s=s, marker=markers[algo], color=colors[algo], linewidths=1, edgecolors="#000000", label=algo)
 
     # # ax.legend(loc='upper center', bbox_to_anchor=(0.5, 1.05), fontsize='small',
     # #     ncol=4, fancybox=True, shadow=True)
 
     # # plt.title("BPE vs. Tiempo acceso secuencial para " + graph)
-    # plt.title(graph, fontsize=20)
+    # # plt.title(graph, fontsize=20)
+    # plt.title(graph, fontsize=28)
     # plt.grid(True)
     # # plt.figure(figsize=(3,4))
     # # plt.legend(fontsize=15)
@@ -130,10 +156,11 @@ for graph in graphs:
     # If algorithm in aleatory, add point
     for iA, algo in enumerate(algoBPE):
         if algo in algoAleat:
-            plt.scatter(bpe[graph][iA], tAleat[graph][algoAleat.index(algo)], s=400, marker=markers[algo], color=colors[algo], linewidths=1, edgecolors="#000000", label=algo)
+            plt.scatter(bpe[graph][iA], tAleat[graph][algoAleat.index(algo)], s=s, marker=markers[algo], color=colors[algo], linewidths=1, edgecolors="#000000", label=algo)
 
     # plt.title("BPE vs. Tiempo acceso aleatorio para " + graph)
-    plt.title(graph, fontsize=20)
+    # plt.title(graph, fontsize=20)
+    plt.title(graph, fontsize=28)
     plt.grid(True)
     # plt.legend(fontsize=15)
     plt.xlabel("BPE")
