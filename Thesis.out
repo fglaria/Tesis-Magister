@@ -13,22 +13,24 @@
 \BOOKMARK [2][-]{subsection.3.1.4}{Virtual Node Mining, Buehrer y Chellapilla}{section.3.1}% 13
 \BOOKMARK [2][-]{subsection.3.1.5}{k2-tree, Brisaboa, Ladra y Navarro}{section.3.1}% 14
 \BOOKMARK [2][-]{subsection.3.1.6}{List Merging, Grabowski y Bieniecki}{section.3.1}% 15
-\BOOKMARK [1][-]{section.3.2}{Estructuras compactas}{chapter.3}% 16
-\BOOKMARK [2][-]{subsection.3.2.1}{Secuencias binarias}{section.3.2}% 17
-\BOOKMARK [2][-]{subsection.3.2.2}{Wavelet Tree y Wavelet Matrix}{section.3.2}% 18
-\BOOKMARK [1][-]{section.3.3}{Detecci\363n de cliques maximales}{chapter.3}% 19
-\BOOKMARK [1][-]{section.3.4}{PENDIENTES}{chapter.3}% 20
-\BOOKMARK [0][-]{chapter.4}{M\311TODO DE COMPRESI\323N PROPUESTO}{}% 21
-\BOOKMARK [1][-]{section.4.1}{Detecci\363n de cliques maximales}{chapter.4}% 22
-\BOOKMARK [1][-]{section.4.2}{Particionamento del grafo de cliques}{chapter.4}% 23
-\BOOKMARK [1][-]{section.4.3}{Algoritmo de particionamiento o clustering}{chapter.4}% 24
-\BOOKMARK [1][-]{section.4.4}{Representaci\363n en estructuras compactas}{chapter.4}% 25
-\BOOKMARK [2][-]{subsection.4.4.1}{Secuencias de la representaci\363n de las particiones}{section.4.4}% 26
-\BOOKMARK [2][-]{subsection.4.4.2}{Algoritmos de consulta}{section.4.4}% 27
-\BOOKMARK [0][-]{chapter.5}{RESULTADOS}{}% 28
-\BOOKMARK [1][-]{section.5.1}{Grafos}{chapter.5}% 29
-\BOOKMARK [1][-]{section.5.2}{Estructura compacta}{chapter.5}% 30
-\BOOKMARK [1][-]{section.5.3}{Comparaci\363n de funciones de ranking}{chapter.5}% 31
-\BOOKMARK [1][-]{section.5.4}{Comparando con estado del arte}{chapter.5}% 32
-\BOOKMARK [0][-]{chapter.6}{CONCLUSIONES}{}% 33
-\BOOKMARK [0][-]{chapter.6}{Bibliograf\355a}{}% 34
+\BOOKMARK [2][-]{subsection.3.1.7}{GLOUDS, Fischer y Peters}{section.3.1}% 16
+\BOOKMARK [1][-]{section.3.2}{Estructuras compactas}{chapter.3}% 17
+\BOOKMARK [2][-]{subsection.3.2.1}{Secuencias binarias}{section.3.2}% 18
+\BOOKMARK [2][-]{subsection.3.2.2}{Wavelet Tree y Wavelet Matrix}{section.3.2}% 19
+\BOOKMARK [2][-]{subsection.3.2.3}{SDSL - Succinct Data Structure Library}{section.3.2}% 20
+\BOOKMARK [1][-]{section.3.3}{Detecci\363n de cliques maximales}{chapter.3}% 21
+\BOOKMARK [1][-]{section.3.4}{PENDIENTES}{chapter.3}% 22
+\BOOKMARK [0][-]{chapter.4}{M\311TODO DE COMPRESI\323N PROPUESTO}{}% 23
+\BOOKMARK [1][-]{section.4.1}{Detecci\363n de cliques maximales}{chapter.4}% 24
+\BOOKMARK [1][-]{section.4.2}{Particionamento del grafo de cliques}{chapter.4}% 25
+\BOOKMARK [1][-]{section.4.3}{Algoritmo de particionamiento o clustering}{chapter.4}% 26
+\BOOKMARK [1][-]{section.4.4}{Representaci\363n en estructuras compactas}{chapter.4}% 27
+\BOOKMARK [2][-]{subsection.4.4.1}{Secuencias de la representaci\363n de las particiones}{section.4.4}% 28
+\BOOKMARK [2][-]{subsection.4.4.2}{Algoritmos de consulta}{section.4.4}% 29
+\BOOKMARK [0][-]{chapter.5}{RESULTADOS}{}% 30
+\BOOKMARK [1][-]{section.5.1}{Grafos}{chapter.5}% 31
+\BOOKMARK [1][-]{section.5.2}{Estructura compacta}{chapter.5}% 32
+\BOOKMARK [1][-]{section.5.3}{Comparaci\363n de funciones de ranking}{chapter.5}% 33
+\BOOKMARK [1][-]{section.5.4}{Comparando con estado del arte}{chapter.5}% 34
+\BOOKMARK [0][-]{chapter.6}{CONCLUSIONES}{}% 35
+\BOOKMARK [0][-]{chapter.6}{Bibliograf\355a}{}% 36

@@ -159,6 +159,32 @@ Ambas secuencias, \textit{long list} y ya sea \textit{LM-bitmap} o \textit{LM-di
 Para más detalles sobre la codificación Huffman, ver la Sección~\ref{sec:huffman}.
 
 
+\subsection{GLOUDS, \textit{Fischer y Peters}}
+Fischer y Peters \cite{fischer2016glouds} proponen una nueva estructura de datos sucintos para comprimir grafos con forma de árbol, llamada \textit{GLOUDS (Graph Level Order Unary Degree Sequence)}. La idea del algoritmo es representar mediante otra estructura de datos sucintos para árboles de expansión, llamada \textit{LOUDS (Level Order Unary Degree Sequence)} \cite{jacobson1989space}, y agregarle información adicional para los nodos extra.
+
+\input{figs/arte-spanningTree}
+
+\input{figs/arte-LOUDS}
+
+Un árbol de expansión $T$ de un grafo $G$  con $n$ vértices y $m$ aristas, es un árbol que cubre todos los $n$ vértices de $G$ con la mínima cantidad de aristas posibles, sin generar ciclos. En la Figura~\ref{fig:spanningTree} se muestran algunos ejemplos de árboles de expansión para un grafo simple. Un grafo con forma de árbol no tiene una cantidad de aristas adicionales muy alta, con respecto a un árbol de expansión.
+
+La estructura \textit{LOUDS} \cite{jacobson1989space} está diseñada para comprimir árboles de expansión. Primero, por conveniencia, agrandan el árbol con un nodo \textit{super-raíz} artificial conectado al nodo raíz original. Luego van construyendo un bitmap $B$, avanzando por el árbol mediante BFS. Por cada nodo con $k$ hijos, se agregan $1^{k}0$ bits a $B$ (con $k=3$ sería $1110$). Esto representa a cada nodo del árbol dos veces: una vez con un $1$ cuando aparece el nodo como hijo, y con un $0$ cuando aparece como padre. Para $n$ nodos, el bitmap $B$ tiene $2n + 1$ bits de largo. En la Figura~\ref{fig:LOUDS} se muestra un ejemplo de esta representación. Los nodos quedan identificados según el nivel de BFS donde aparecen.
+
+Basado en esta idea, \textit{GLOUDS} \cite{fischer2016glouds} propone una nueva estructura para grafos con forma de árbol. Para esto define las siguientes características de un grafo $G$:
+
+\begin{itemize}
+	\item $c \leq n$, la cantidad de nodos raíz de $G$ (el tamaño mínimo del set de nodos desde donde se alcanzan todos los nodos restantes). 
+	\item $k = m - n + 1$, la cantidad de aristas adicionales, con respecto al árbol de expansión $T$ de $G$.
+	\item $h \leq k$, la cantidad de nodos adicionales.
+\end{itemize}
+
+Por simpleza, parten asumiendo que existe un nodo $r$ desde donde se pueden alcanzar todos los nodos restantes ($c = 1$). Desde $r$, realizan el recorrido por BFS de $G$, lo que llaman BFT, y $T_{G}^{BFT}$ el árbol resultante. Agrandan $T_{G}^{BFT}$ tal que por cada vértice $w$ ya visitado durante la BFT del nodo $v$ en una etapa anterior, realizan una copia llamada \textit{nodo sombra} y la agregan como hijo al nodo $v$ en $T_{G}^{BFT}$. Finalmente agregan el nodo \textit{super-raíz}, y llaman al árbol final $T_{G}$, que tiene exactamente $m + 2$ nodos. En la Figura~\ref{fig:GLOUDS} se ilustra un ejemplo de GLOUDS, en (a) el grafo $G$, y en (b) el árbol $T_{G}$ final.
+
+\input{figs/arte-glouds}
+
+Luego proponen una representación de $T_{G}$ similar a la de LOUDS, pero que permita diferenciar los nodos sombra de los demás. Para esto, cambian el bitmap por una secuencia de trits, con posibles valores del conjunto $\{0, 1, 2\}$. Luego, la secuencia $B$ se genera de la misma manera, pero cuando aparece un nodo sombra en el recorrido BFS se agrega un $2$. Estos nodos no se vuelven a representar con un $0$. Le llaman al vector de trits $B$ CLOUDS, y tiene un largo de $n + m + c$ trits. En la Figura~\ref{fig:LOUDS}~(c) se muestra el resultado para el ejemplo ya mencionado. Además, necesita un arreglo $H[0, k)$ que anota los nodos sombra que aparecen en B.
+
+
 
 \section{Estructuras compactas} \label{sec:compactEstruct}
 En esta sección se detallan las posibles estructuras compactas basadas en secuencias que se evaluarán para la compresión de la estructura planteada. Las operaciones básicas que permiten son \textbf{$Rank$}, \textbf{$Select$} y \textbf{$Access$}, las cuales se detallan a continuación:
@@ -196,6 +222,9 @@ Luego, para crear la wavelet matrix, liberan a la estructura de la suposición q
 
 También prueban otras alternativas de representación, como usar Huffman \cite{huffman1952method} tanto para la representación sin punteros del wavelet-tree como para la wavelet matrix. Su resultado apunta a la superioridad tanto en tiempo como espacio en disco de wavelet matrix sobre wavelet-tree, lo que se tendrá en consideración a la hora de evaluarlos como alternativas de compresión.
 
+\subsection{SDSL - Succinct Data Structure Library}
+Gog, Beller, Moffat y Petri \cite{gbmp2014sea} desarrollan la librería \texttt{SDSL}\footnote{\url{https://github.com/simongog/sdsl-lite}} (Succinct Data Structure Library), desarrollada en \texttt{C++11} y registrada bajo \texttt{GPLv3}, donde se pueden utilizar las estructuras planteadas en las secciones anteriores, entre muchas otras más.
+
 
 
 \section{Detección de cliques maximales} \label{sec:Cliques}
@@ -218,11 +247,7 @@ Eppstein et al. \cite{eppstein2010listing} prueban que el orden de procesamiento
 
 \section{PENDIENTES}
 
-
  Francisco et al. \cite{francisco2018exploiting} discute algunos algoritmos de compresión de grafos que permiten explotar en forma amigable la computación de matrices, que además son usados en algoritmos de ranking como PageRank \cite{page1999pagerank}.
-
-
-El trabajo de Fisher y Peters \cite{FISCHER201639} propone un esquema de compresión que consiste en representar el grafo como un árbol donde se representan los vértices repetidos como nodos sombra (shadow nodes). La compresión efectiva de esta representación consiste en representar el árbol usando bitmaps comprimidos y los nodos sombra se representan con una secuencia de símbolos usando wavelet trees (usando la biblioteca \textit{SDSL} \cite{gbmp2014sea}). Sin embargo, esta representación ve limitado su nivel de compresión cuando los grafos a comprimir contienen muchos componentes densos, dado que en este caso la secuencia de nodos sombra puede crecer mucho.   
 
 La propuesta de Hernández y Navarro \cite{tesisCecilia}, proporciona un buen compromiso entre espacio y tiempo de acceso a vecinos directos. En dicho trabajo, se propone una transformación del grafo dirigido original donde se reduce el número de arcos originales usando nodos virtuales para conectar subgrafos densos representados por grafos bipartitos completos, que incluyen cliques, y luego se apliacan distintos algoritmos de ordenamientos de vértices sobre el grafo transformado. En particular, se obtienen mejores resultados aplicando ordenamiento LLP y compresión \cite{boldi2011layered} que ordenamiento BFS (como lo reportado en \cite{Hernandez2014}).
 

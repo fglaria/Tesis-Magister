@@ -9,7 +9,14 @@ Todas las pruebas y experimentos se realizaron en una computadora con un procesa
 
 \section{Grafos}
 
-Los grafos a evaluar son todos no densos y no dirigidos. Se consideran los ocho grafos \texttt{dblp-2010} y \texttt{dblp-2011} de WebGraph\footnote{\url{http://law.di.unimi.it/datasets.php}},  \texttt{snap-dblp} y \texttt{snap-amazon} de SNAP\footnote{\url{https://snap.stanford.edu/data/}}, \texttt{marknewman-astro} y \texttt{marknewman-condmat} de Quick-Cliques\footnote{\url{http://www.dcs.gla.ac.uk/~pat/jchoco/clique/enumeration/quick-cliques/doc/}}, y \texttt{coPapersDBLP} junto a \texttt{coPapersCiteseer} de Network repository\footnote{\url{http://networkrepository.com/}}.
+Los grafos a evaluar son todos no densos y no dirigidos. Se consideran siguientes los ocho grafos:
+
+\begin{itemize}
+	\item \texttt{dblp-2010} y \texttt{dblp-2011} de WebGraph\footnote{\url{http://law.di.unimi.it/datasets.php}}.
+	\item \texttt{snap-dblp} y \texttt{snap-amazon} de SNAP\footnote{\url{https://snap.stanford.edu/data/}}.
+	\item \texttt{marknewman-astro} y \texttt{marknewman-condmat} de Quick-Cliques\footnote{\url{http://www.dcs.gla.ac.uk/~pat/jchoco/clique/enumeration/quick-cliques/doc/}}.
+	\item \texttt{coPapersDBLP} junto a \texttt{coPapersCiteseer} de Network repository\footnote{\url{http://networkrepository.com/}}.
+\end{itemize}
 
 En la Tabla~\ref{table:gafros3} se muestran la cantidad de vértices (\boldsymbol{$|V|$}), aristas (\boldsymbol{$|E|$}), cliques maximales (\boldsymbol{$|\mathcal{C}|$}), grado medio (\boldsymbol{$\overline{d}$}) y máximo (\boldsymbol{$d_{max}$}) de los vértices de los grafos, valor de degeneracy (\boldsymbol{$D(G)$}), coeficiente de clusterización (\boldsymbol{$C(G)$}) y transitividad (\boldsymbol{$T(G)$}). De ella se pueden apreciar varias características importantes de los grafos.
 
@@ -42,7 +49,7 @@ La mayoría de los grafos contienen muchos cliques con menos de 50 vértices, a 
 
 \section{Estructura compacta}
 
-Para generar la estructura compacta se usa la librería \texttt{sdsl-lite}\footnote{\url{https://github.com/simongog/sdsl-lite}} desarrollada por Gog et al.\cite{gbmp2014sea}. Las estructuras de datos sucintas a evaluar dependen del tipo de secuencia a compactar.
+Para generar la estructura compacta se usa \texttt{SDSL}\footnote{\url{https://github.com/simongog/sdsl-lite}} desarrollada por Gog et al.\cite{gbmp2014sea}. Las estructuras de datos sucintas a evaluar dependen del tipo de secuencia a compactar.
 
 \begin{itemize}
 	\item Para las secuencias de símbolos, se consideran las estructuras basadas en wavelet matrix (\textit{wm}) \cite{claude2015wavelet} y wavelet tree (\textit{wt}) \cite{grossi2003high}.

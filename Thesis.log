@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  31 JUL 2019 04:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  31 JUL 2019 16:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -798,7 +798,7 @@ Package epstopdf Info: Source file: <udeclogo.eps>
 pdf udeclogo.eps>
 (epstopdf)             \includegraphics on input line 176.
 Package epstopdf Info: Output file is already uptodate.
-<udeclogo-eps-converted-to.pdf, id=122, 88.33pt x 96.36pt>
+<udeclogo-eps-converted-to.pdf, id=150, 88.33pt x 96.36pt>
 File: udeclogo-eps-converted-to.pdf Graphic file (type pdf)
 <use udeclogo-eps-converted-to.pdf>
 Package pdftex.def Info: udeclogo-eps-converted-to.pdf  used on input line 176.
@@ -1048,7 +1048,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 6.
 (./figs/bipartito.tex
-<img/graphs-bipartito.pdf, id=167, 845.07718pt x 598.15468pt>
+<img/graphs-bipartito.pdf, id=196, 845.07718pt x 598.15468pt>
 File: img/graphs-bipartito.pdf Graphic file (type pdf)
 <use img/graphs-bipartito.pdf>
 Package pdftex.def Info: img/graphs-bipartito.pdf  used on input line 5.
@@ -1090,7 +1090,7 @@ pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/graphs-bipartito.pdf):
  PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <
 array>); ignored.
 >] (./figs/maxCliqueExample.tex
-<img/maxCliqueExample.pdf, id=191, 595.26389pt x 436.5108pt>
+<img/maxCliqueExample.pdf, id=219, 595.26389pt x 436.5108pt>
 File: img/maxCliqueExample.pdf Graphic file (type pdf)
 <use img/maxCliqueExample.pdf>
 Package pdftex.def Info: img/maxCliqueExample.pdf  used on input line 3.
@@ -1191,7 +1191,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 72.
  [4] (./figs/huffman.tex
-<img/graphs-huffman.pdf, id=225, 845.07718pt x 598.15468pt>
+<img/graphs-huffman.pdf, id=253, 845.07718pt x 598.15468pt>
 File: img/graphs-huffman.pdf Graphic file (type pdf)
 <use img/graphs-huffman.pdf>
 Package pdftex.def Info: img/graphs-huffman.pdf  used on input line 17.
@@ -1336,7 +1336,7 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 44.
 
 (./figs/arte-bfs1.tex
-<img/arte/graphs-BFS-F1.pdf, id=272, 845.07718pt x 598.15468pt>
+<img/arte/graphs-BFS-F1.pdf, id=300, 845.07718pt x 598.15468pt>
 File: img/arte/graphs-BFS-F1.pdf Graphic file (type pdf)
 <use img/arte/graphs-BFS-F1.pdf>
 Package pdftex.def Info: img/arte/graphs-BFS-F1.pdf  used on input line 5.
@@ -1473,7 +1473,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 106.
  [11] (./figs/arte-repairCN.tex
-<img/arte/graphs-repair.pdf, id=345, 845.07718pt x 598.15468pt>
+<img/arte/graphs-repair.pdf, id=373, 845.07718pt x 598.15468pt>
 File: img/arte/graphs-repair.pdf Graphic file (type pdf)
 <use img/arte/graphs-repair.pdf>
 Package pdftex.def Info: img/arte/graphs-repair.pdf  used on input line 6.
@@ -1523,7 +1523,7 @@ pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/arte/graphs-repair.pdf
 ): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type
  <array>); ignored.
 >] (./figs/arte-virtualNode.tex
-<img/arte/graphs-virtual2.pdf, id=367, 845.07718pt x 598.15468pt>
+<img/arte/graphs-virtual2.pdf, id=395, 845.07718pt x 598.15468pt>
 File: img/arte/graphs-virtual2.pdf Graphic file (type pdf)
 <use img/arte/graphs-virtual2.pdf>
 Package pdftex.def Info: img/arte/graphs-virtual2.pdf  used on input line 6.
@@ -1553,12 +1553,12 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 124.
 (./figs/arte-k2tree.tex
-<img/arte/k2-tree-matrix.pdf, id=375, 794.97pt x 614.295pt>
+<img/arte/k2-tree-matrix.pdf, id=403, 794.97pt x 614.295pt>
 File: img/arte/k2-tree-matrix.pdf Graphic file (type pdf)
 <use img/arte/k2-tree-matrix.pdf>
 Package pdftex.def Info: img/arte/k2-tree-matrix.pdf  used on input line 5.
 (pdftex.def)             Requested size: 163.8125pt x 199.94812pt.
-<img/arte/graphs-k2tree.pdf, id=377, 845.07718pt x 598.15468pt>
+<img/arte/graphs-k2tree.pdf, id=405, 845.07718pt x 598.15468pt>
 File: img/arte/graphs-k2tree.pdf Graphic file (type pdf)
 <use img/arte/graphs-k2tree.pdf>
 Package pdftex.def Info: img/arte/graphs-k2tree.pdf  used on input line 11.
@@ -1648,75 +1648,212 @@ pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/arte/graphs-k2tree.pdf
  <array>); ignored.
 >]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 163.
+(babel)             in language  on input line 162.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 163.
+(babel)             in language  on input line 162.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 163.
+(babel)             in language  on input line 162.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 163.
+(babel)             in language  on input line 162.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 163.
+(babel)             in language  on input line 162.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 163.
+(babel)             in language  on input line 162.
+
+
+LaTeX Warning: Citation `fischer2016glouds' on page 15 undefined on input line 
+163.
+
+
+LaTeX Warning: Citation `jacobson1989space' on page 15 undefined on input line 
+163.
+
+(./figs/arte-spanningTree.tex
+<img/arte/graphs-spanningTree.pdf, id=457, 845.07718pt x 598.15468pt>
+File: img/arte/graphs-spanningTree.pdf Graphic file (type pdf)
+<use img/arte/graphs-spanningTree.pdf>
+Package pdftex.def Info: img/arte/graphs-spanningTree.pdf  used on input line 5
+.
+(pdftex.def)             Requested size: 65.00905pt x 54.57045pt.
+File: img/arte/graphs-spanningTree.pdf Graphic file (type pdf)
+<use img/arte/graphs-spanningTree.pdf>
+Package pdftex.def Info: img/arte/graphs-spanningTree.pdf  used on input line 1
+1.
+(pdftex.def)             Requested size: 205.5319pt x 54.57045pt.
+) (./figs/arte-LOUDS.tex
+<img/arte/LOUDS.jpg, id=460, 284.88834pt x 90.19296pt>
+File: img/arte/LOUDS.jpg Graphic file (type jpg)
+<use img/arte/LOUDS.jpg>
+Package pdftex.def Info: img/arte/LOUDS.jpg  used on input line 5.
+(pdftex.def)             Requested size: 214.92105pt x 118.6128pt.
+
+Overfull \hbox (10.06259pt too wide) in paragraph at lines 5--6
+ [][] 
+ []
+
+File: img/arte/LOUDS.jpg Graphic file (type jpg)
+<use img/arte/LOUDS.jpg>
+Package pdftex.def Info: img/arte/LOUDS.jpg  used on input line 11.
+(pdftex.def)             Requested size: 214.92102pt x 38.31248pt.
+
+Overfull \hbox (10.06256pt too wide) in paragraph at lines 11--12
+ [][] 
+ []
+
+)
+
+LaTeX Warning: Citation `jacobson1989space' on page 15 undefined on input line 
+171.
+
+LaTeX Info: Redefining \. on input line 173.
+LaTeX Info: Redefining \% on input line 173.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 174.
+(babel)             in language  on input line 173.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 174.
+(babel)             in language  on input line 173.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 174.
+(babel)             in language  on input line 173.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 174.
+(babel)             in language  on input line 173.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 174.
+(babel)             in language  on input line 173.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 174.
+(babel)             in language  on input line 173.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 184.
+(babel)             in language  on input line 173.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 184.
+(babel)             in language  on input line 173.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 184.
+(babel)             in language  on input line 173.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 184.
+(babel)             in language  on input line 173.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 184.
+(babel)             in language  on input line 173.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 184.
-LaTeX Info: Redefining \. on input line 186.
-LaTeX Info: Redefining \% on input line 186.
+(babel)             in language  on input line 173.
+[15 <./img/arte/graphs-spanningTree.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/arte/graphs-spanningTr
+ee.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets'
+, type <array>); ignored.
+>]
+
+LaTeX Warning: Citation `fischer2016glouds' on page 16 undefined on input line 
+173.
+
+(./figs/arte-GLOUDS.tex
+<img/arte/GLOUDS.jpg, id=483, 313.21819pt x 203.94594pt>
+File: img/arte/GLOUDS.jpg Graphic file (type jpg)
+<use img/arte/GLOUDS.jpg>
+Package pdftex.def Info: img/arte/GLOUDS.jpg  used on input line 6.
+(pdftex.def)             Requested size: 202.4215pt x 94.4092pt.
+File: img/arte/GLOUDS.jpg Graphic file (type jpg)
+<use img/arte/GLOUDS.jpg>
+Package pdftex.def Info: img/arte/GLOUDS.jpg  used on input line 12.
+(pdftex.def)             Requested size: 202.4215pt x 130.94554pt.
+File: img/arte/GLOUDS.jpg Graphic file (type jpg)
+<use img/arte/GLOUDS.jpg>
+Package pdftex.def Info: img/arte/GLOUDS.jpg  used on input line 20.
+(pdftex.def)             Requested size: 292.77933pt x 94.2827pt.
+)
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 186.
+(babel)             in language  on input line 189.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 186.
+(babel)             in language  on input line 189.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 186.
+(babel)             in language  on input line 189.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 186.
+(babel)             in language  on input line 189.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 186.
+(babel)             in language  on input line 189.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 186.
+(babel)             in language  on input line 189.
+LaTeX Info: Redefining \. on input line 191.
+LaTeX Info: Redefining \% on input line 191.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 186.
+(babel)             in language  on input line 191.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 186.
+(babel)             in language  on input line 191.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 186.
+(babel)             in language  on input line 191.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 186.
+(babel)             in language  on input line 191.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 186.
+(babel)             in language  on input line 191.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 186.
- [15] (./figs/arte-wavelet-tree.tex
-<img/arte/graphs-wavelet-tree.pdf, id=440, 845.07718pt x 598.15468pt>
+(babel)             in language  on input line 191.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 191.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 191.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 191.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 191.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 191.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 191.
+ [16 <./img/arte/LOUDS.jpg>]
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 200.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 200.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 200.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 200.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 200.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 200.
+LaTeX Info: Redefining \. on input line 203.
+LaTeX Info: Redefining \% on input line 203.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 203.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 203.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 203.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 203.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 203.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 203.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 203.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 203.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 203.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 203.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 203.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 203.
+ [17 <./img/arte/GLOUDS.jpg>]
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 210.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 210.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 210.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 210.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 210.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 210.
+ (./figs/arte-wavelet-tree.tex
+<img/arte/graphs-wavelet-tree.pdf, id=508, 845.07718pt x 598.15468pt>
 File: img/arte/graphs-wavelet-tree.pdf Graphic file (type pdf)
 <use img/arte/graphs-wavelet-tree.pdf>
 Package pdftex.def Info: img/arte/graphs-wavelet-tree.pdf  used on input line 5
 .
 (pdftex.def)             Requested size: 172.50638pt x 105.65735pt.
-<img/arte/graphs-wavelet-tree2.pdf, id=442, 845.07718pt x 598.15468pt>
+<img/arte/graphs-wavelet-tree2.pdf, id=510, 845.07718pt x 598.15468pt>
 File: img/arte/graphs-wavelet-tree2.pdf Graphic file (type pdf)
 <use img/arte/graphs-wavelet-tree2.pdf>
 Package pdftex.def Info: img/arte/graphs-wavelet-tree2.pdf  used on input line 
@@ -1728,33 +1865,33 @@ Overfull \hbox (25.90305pt too wide) in paragraph at lines 12--13
  []
 
 )
-LaTeX Info: Redefining \. on input line 194.
-LaTeX Info: Redefining \% on input line 194.
+LaTeX Info: Redefining \. on input line 216.
+LaTeX Info: Redefining \% on input line 216.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 194.
+(babel)             in language  on input line 216.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 194.
+(babel)             in language  on input line 216.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 194.
+(babel)             in language  on input line 216.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 194.
+(babel)             in language  on input line 216.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 194.
+(babel)             in language  on input line 216.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 194.
+(babel)             in language  on input line 216.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 194.
+(babel)             in language  on input line 216.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 194.
+(babel)             in language  on input line 216.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 194.
+(babel)             in language  on input line 216.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 194.
+(babel)             in language  on input line 216.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 194.
+(babel)             in language  on input line 216.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 194.
- [16 <./img/arte/graphs-wavelet-tree.pdf
+(babel)             in language  on input line 216.
+ [18 <./img/arte/graphs-wavelet-tree.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/arte/graphs-wavelet-tr
 ee.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets'
@@ -1765,7 +1902,7 @@ pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/arte/graphs-wavelet-tr
 ee2.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets
 ', type <array>); ignored.
 >] (./figs/arte-wavelet-matrix.tex
-<img/arte/graphs-wavelet-matrix.pdf, id=469, 845.07718pt x 598.15468pt>
+<img/arte/graphs-wavelet-matrix.pdf, id=537, 845.07718pt x 598.15468pt>
 File: img/arte/graphs-wavelet-matrix.pdf Graphic file (type pdf)
 <use img/arte/graphs-wavelet-matrix.pdf>
 Package pdftex.def Info: img/arte/graphs-wavelet-matrix.pdf  used on input line
@@ -1788,96 +1925,108 @@ Package pdftex.def Info: img/arte/graphs-wavelet-matrix.pdf  used on input line
 (pdftex.def)             Requested size: 91.20319pt x 111.07756pt.
 )
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 201.
+(babel)             in language  on input line 225.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 201.
+(babel)             in language  on input line 225.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 201.
+(babel)             in language  on input line 225.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 201.
+(babel)             in language  on input line 225.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 201.
+(babel)             in language  on input line 225.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 201.
-
-
-LaTeX Warning: Citation `karp1972reducibility' on page 17 undefined on input li
-ne 202.
-
-
-LaTeX Warning: Citation `bron1973algorithm' on page 17 undefined on input line 
-202.
-
-
-LaTeX Warning: Citation `eppstein2010listing' on page 17 undefined on input lin
-e 202.
-
-
-LaTeX Warning: Citation `eppstein2011listing' on page 17 undefined on input lin
-e 202.
-
-
-LaTeX Warning: Citation `eppstein2011listing' on page 17 undefined on input lin
-e 202.
-
-
-LaTeX Warning: Citation `eppstein2010listing' on page 17 undefined on input lin
-e 202.
-
-
-LaTeX Warning: Citation `eppstein2010listing' on page 17 undefined on input lin
-e 204.
-
-
-LaTeX Warning: Citation `bron1973algorithm' on page 17 undefined on input line 
-204.
-
-
-LaTeX Warning: Citation `bron1973algorithm' on page 17 undefined on input line 
-208.
-
-LaTeX Info: Redefining \. on input line 209.
-LaTeX Info: Redefining \% on input line 209.
+(babel)             in language  on input line 225.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 209.
+(babel)             in language  on input line 230.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 209.
+(babel)             in language  on input line 230.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 209.
+(babel)             in language  on input line 230.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 209.
+(babel)             in language  on input line 230.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 209.
+(babel)             in language  on input line 230.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 209.
+(babel)             in language  on input line 230.
+
+
+LaTeX Warning: Citation `karp1972reducibility' on page 19 undefined on input li
+ne 231.
+
+
+LaTeX Warning: Citation `bron1973algorithm' on page 19 undefined on input line 
+231.
+
+
+LaTeX Warning: Citation `eppstein2010listing' on page 19 undefined on input lin
+e 231.
+
+
+LaTeX Warning: Citation `eppstein2011listing' on page 19 undefined on input lin
+e 231.
+
+
+LaTeX Warning: Citation `eppstein2011listing' on page 19 undefined on input lin
+e 231.
+
+
+LaTeX Warning: Citation `eppstein2010listing' on page 19 undefined on input lin
+e 231.
+
+LaTeX Info: Redefining \. on input line 232.
+LaTeX Info: Redefining \% on input line 232.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 209.
+(babel)             in language  on input line 232.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 209.
+(babel)             in language  on input line 232.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 209.
+(babel)             in language  on input line 232.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 209.
+(babel)             in language  on input line 232.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 209.
+(babel)             in language  on input line 232.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 209.
-[17 <./img/arte/graphs-wavelet-matrix.pdf
+(babel)             in language  on input line 232.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 232.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 232.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 232.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 232.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 232.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 232.
+[19 <./img/arte/graphs-wavelet-matrix.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/arte/graphs-wavelet-ma
 trix.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSet
 s', type <array>); ignored.
 >]
 
-LaTeX Warning: Citation `tomita2006worst' on page 18 undefined on input line 21
-0.
+LaTeX Warning: Citation `eppstein2010listing' on page 20 undefined on input lin
+e 233.
 
 
-LaTeX Warning: Citation `eppstein2010listing' on page 18 undefined on input lin
-e 212.
+LaTeX Warning: Citation `bron1973algorithm' on page 20 undefined on input line 
+233.
+
+
+LaTeX Warning: Citation `bron1973algorithm' on page 20 undefined on input line 
+237.
+
+
+LaTeX Warning: Citation `tomita2006worst' on page 20 undefined on input line 23
+9.
+
+
+LaTeX Warning: Citation `eppstein2010listing' on page 20 undefined on input lin
+e 241.
 
 (./figs/arte-degenOrder.tex
-<img/arte/graphs-degeneracyOrder.png, id=497, 1026.83624pt x 635.37375pt>
+<img/arte/graphs-degeneracyOrder.png, id=569, 1026.83624pt x 635.37375pt>
 File: img/arte/graphs-degeneracyOrder.png Graphic file (type png)
 <use img/arte/graphs-degeneracyOrder.png>
 Package pdftex.def Info: img/arte/graphs-degeneracyOrder.png  used on input lin
@@ -1890,45 +2039,44 @@ e 11.
 (pdftex.def)             Requested size: 287.51219pt x 59.86295pt.
 )
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 219.
+(babel)             in language  on input line 248.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 219.
+(babel)             in language  on input line 248.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 219.
+(babel)             in language  on input line 248.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 219.
+(babel)             in language  on input line 248.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 219.
+(babel)             in language  on input line 248.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 219.
-LaTeX Info: Redefining \. on input line 226.
-LaTeX Info: Redefining \% on input line 226.
+(babel)             in language  on input line 248.
+LaTeX Info: Redefining \. on input line 253.
+LaTeX Info: Redefining \% on input line 253.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 226.
+(babel)             in language  on input line 253.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 226.
+(babel)             in language  on input line 253.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 226.
+(babel)             in language  on input line 253.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 226.
+(babel)             in language  on input line 253.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 226.
+(babel)             in language  on input line 253.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 226.
+(babel)             in language  on input line 253.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 226.
+(babel)             in language  on input line 253.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 226.
+(babel)             in language  on input line 253.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 226.
+(babel)             in language  on input line 253.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 226.
+(babel)             in language  on input line 253.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 226.
+(babel)             in language  on input line 253.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 226.
- [18 <./img/arte/graphs-degeneracyOrder.png>])
-(./clustering.tex
+(babel)             in language  on input line 253.
+ [20]) (./clustering.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 Package babel Info: Redefining spanish shorthand <<
@@ -1955,7 +2103,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 1.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1.
- [19]
+ [21 <./img/arte/graphs-degeneracyOrder.png>]
 Cap\'{\i }tulo 4.
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 1.
@@ -1981,26 +2129,13 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 9.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 9.
-
-LaTeX Warning: Reference `def:cliqueGraph' on page 20 undefined on input line 1
-1.
-
-
-LaTeX Warning: Reference `fig:gafoEj' on page 20 undefined on input line 31.
-
-
-LaTeX Warning: Reference `fig:gafoEj' on page 20 undefined on input line 31.
-
-
-LaTeX Warning: Reference `fig:gafoEj' on page 20 undefined on input line 31.
-
-<img/graphs-Graph2.pdf, id=533, 572.1375pt x 284.02109pt>
+<img/graphs-Graph2.pdf, id=609, 572.1375pt x 284.02109pt>
 File: img/graphs-Graph2.pdf Graphic file (type pdf)
 <use img/graphs-Graph2.pdf>
 Package pdftex.def Info: img/graphs-Graph2.pdf  used on input line 38.
 (pdftex.def)             Requested size: 182.09486pt x 90.39455pt.
 (./equations/cliquesNodes2.tex)
-<img/graphs-Cliques2.pdf, id=535, 204.765pt x 277.035pt>
+<img/graphs-Cliques2.pdf, id=611, 204.765pt x 277.035pt>
 File: img/graphs-Cliques2.pdf Graphic file (type pdf)
 <use img/graphs-Cliques2.pdf>
 Package pdftex.def Info: img/graphs-Cliques2.pdf  used on input line 48.
@@ -2041,13 +2176,9 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 61.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 61.
- [20
+ [22
 
 ]
-
-LaTeX Warning: Reference `item:particiones2' on page 21 undefined on input line
- 78.
-
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 85.
 Package babel Info: Redefining spanish shorthand >>
@@ -2060,10 +2191,6 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 85.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 85.
-
-LaTeX Warning: Reference `def:rankingFunctions' on page 21 undefined on input l
-ine 87.
-
 LaTeX Info: Redefining \. on input line 88.
 LaTeX Info: Redefining \% on input line 88.
 Package babel Info: Redefining spanish shorthand <<
@@ -2090,7 +2217,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 88.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 88.
-[21 <./img/graphs-Graph2.pdf
+ [23 <./img/graphs-Graph2.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/graphs-Graph2.pdf): PD
 F inclusion: invalid other resource which is no dict (key 'ProcSets', type <arr
@@ -2100,41 +2227,10 @@ ay>); ignored.
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/graphs-Cliques2.pdf): 
 PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <a
 rray>); ignored.
->]
-
-LaTeX Warning: Reference `alg:clustering' on page 22 undefined on input line 96
-.
-
-
-LaTeX Warning: Reference `alg:clustering' on page 22 undefined on input line 96
-.
-
-
-LaTeX Warning: Reference `alg:clustering:rankarray' on page 22 undefined on inp
-ut line 96.
-
-(./algorithms/clusteringAlg.tex
+>] (./algorithms/clusteringAlg.tex
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 2.
-)
-
-LaTeX Warning: Reference `def:rankingFunctions' on page 22 undefined on input l
-ine 102.
-
-(./equations/rankingFunctions.tex)
-
-LaTeX Warning: Reference `eq:rankFunF' on page 22 undefined on input line 106.
-
-
-LaTeX Warning: Reference `eq:rankFunC' on page 22 undefined on input line 106.
-
-
-LaTeX Warning: Reference `eq:rankFunR' on page 22 undefined on input line 106.
-
-
-LaTeX Warning: Reference `fig:sequences' on page 22 undefined on input line 106
-.
-
+) (./equations/rankingFunctions.tex)
 LaTeX Info: Redefining \. on input line 107.
 LaTeX Info: Redefining \% on input line 107.
 Package babel Info: Redefining spanish shorthand <<
@@ -2161,7 +2257,8 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 107.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 107.
-[22] (./tables/Rr2.tex) (./tables/CP2.tex)
+ [24]
+(./tables/Rr2.tex) (./tables/CP2.tex)
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 132.
 Package babel Info: Redefining spanish shorthand >>
@@ -2174,11 +2271,6 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 132.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 132.
-
-
-LaTeX Warning: Reference `sec:PartitionAlgoritms' on page 23 undefined on input
- line 134.
-
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 136.
 Package babel Info: Redefining spanish shorthand >>
@@ -2220,155 +2312,78 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 138.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 138.
- [23]
-
-LaTeX Warning: Reference `def:sequences' on page 24 undefined on input line 146
-.
-
-
-LaTeX Warning: Reference `eq:bbp' on page 24 undefined on input line 146.
-
-
-LaTeX Warning: Reference `fig:compactStructure' on page 24 undefined on input l
-ine 173.
-
-LaTeX Info: Redefining \. on input line 175.
-LaTeX Info: Redefining \% on input line 175.
+ [25]
+LaTeX Info: Redefining \. on input line 176.
+LaTeX Info: Redefining \% on input line 176.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 175.
+(babel)             in language  on input line 176.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 175.
+(babel)             in language  on input line 176.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 175.
+(babel)             in language  on input line 176.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 175.
+(babel)             in language  on input line 176.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 175.
+(babel)             in language  on input line 176.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 175.
+(babel)             in language  on input line 176.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 175.
+(babel)             in language  on input line 176.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 175.
+(babel)             in language  on input line 176.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 175.
+(babel)             in language  on input line 176.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 175.
+(babel)             in language  on input line 176.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 175.
+(babel)             in language  on input line 176.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 175.
-[24] (./tables/CP2ordered.tex) (./tables/structure.tex)
-Overfull \hbox (5.57089pt too wide) in paragraph at lines 1--188
+(babel)             in language  on input line 176.
+
+[26] (./tables/CP2ordered.tex) (./tables/structure.tex)
+Overfull \hbox (5.57089pt too wide) in paragraph at lines 1--190
  [][] 
  []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 198.
+(babel)             in language  on input line 200.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 198.
+(babel)             in language  on input line 200.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 198.
+(babel)             in language  on input line 200.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 198.
+(babel)             in language  on input line 200.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 198.
+(babel)             in language  on input line 200.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 198.
-
-LaTeX Warning: Reference `alg:sequential' on page 25 undefined on input line 19
-9.
-
-
-LaTeX Warning: Reference `alg:neighbors' on page 25 undefined on input line 199
-.
-
-
-LaTeX Warning: Reference `alg:twonodes' on page 25 undefined on input line 199.
-
-
-
-LaTeX Warning: Reference `alg:cliques' on page 25 undefined on input line 199.
-
-
-LaTeX Warning: Reference `alg:sequential' on page 25 undefined on input line 20
-1.
-
-LaTeX Info: Redefining \. on input line 204.
-LaTeX Info: Redefining \% on input line 204.
+(babel)             in language  on input line 200.
+LaTeX Info: Redefining \. on input line 206.
+LaTeX Info: Redefining \% on input line 206.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 204.
+(babel)             in language  on input line 206.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 204.
+(babel)             in language  on input line 206.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 204.
+(babel)             in language  on input line 206.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 204.
+(babel)             in language  on input line 206.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 204.
+(babel)             in language  on input line 206.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 204.
+(babel)             in language  on input line 206.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 204.
+(babel)             in language  on input line 206.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 204.
+(babel)             in language  on input line 206.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 204.
+(babel)             in language  on input line 206.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 204.
+(babel)             in language  on input line 206.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 204.
+(babel)             in language  on input line 206.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 204.
-[25]
-
-LaTeX Warning: Reference `alg:neighbors' on page 26 undefined on input line 205
-.
-
-
-LaTeX Warning: Reference `alg:twonodes' on page 26 undefined on input line 209.
-
-
-
-LaTeX Warning: Reference `alg:cliques' on page 26 undefined on input line 211.
-
-
-LaTeX Warning: Reference `alg:sequential' on page 26 undefined on input line 21
-3.
-
-(./algorithms/sequential.tex)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 217.
-LaTeX Info: Redefining \% on input line 217.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 217.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 217.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 217.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 217.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 217.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 217.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 217.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 217.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 217.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 217.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 217.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 217.
- [26]
-(./algorithms/neighbors.tex)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+(babel)             in language  on input line 206.
+[27]
 LaTeX Info: Redefining \. on input line 219.
 LaTeX Info: Redefining \% on input line 219.
 Package babel Info: Redefining spanish shorthand <<
@@ -2395,38 +2410,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 219.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 219.
- [27]
-(./algorithms/twonodes.tex)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 221.
-LaTeX Info: Redefining \% on input line 221.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 221.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 221.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 221.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 221.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 221.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 221.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 221.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 221.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 221.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 221.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 221.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 221.
- [28]
-(./algorithms/cliques.tex)
+ [28] (./algorithms/sequential.tex) (./algorithms/neighbors.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 223.
@@ -2455,7 +2439,67 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 223.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 223.
- [29])
+ [29]
+(./algorithms/twonodes.tex)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 225.
+LaTeX Info: Redefining \% on input line 225.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 225.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 225.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 225.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 225.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 225.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 225.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 225.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 225.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 225.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 225.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 225.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 225.
+ [30]
+(./algorithms/cliques.tex)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 227.
+LaTeX Info: Redefining \% on input line 227.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 227.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 227.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 227.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 227.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 227.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 227.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 227.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 227.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 227.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 227.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 227.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 227.
+ [31])
 (./resultados.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -2483,7 +2527,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 1.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1.
- [30]
+ [32]
 Cap\'{\i }tulo 5.
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 1.
@@ -2510,70 +2554,70 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 10.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 22.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 22.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 22.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 22.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 22.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 22.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 22.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 22.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 22.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 22.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 22.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 22.
-[31
+(babel)             in language  on input line 28.
+[33
 
 ] (./tables/grafos3.tex) (./figs/grades.tex
-<img/grades/marknewman-astro.pdf, id=794, 462.52798pt x 346.89601pt>
+<img/grades/marknewman-astro.pdf, id=888, 462.52798pt x 346.89601pt>
 File: img/grades/marknewman-astro.pdf Graphic file (type pdf)
 <use img/grades/marknewman-astro.pdf>
 Package pdftex.def Info: img/grades/marknewman-astro.pdf  used on input line 7.
 
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<img/grades/marknewman-condmat.pdf, id=795, 462.52798pt x 346.89601pt>
+<img/grades/marknewman-condmat.pdf, id=889, 462.52798pt x 346.89601pt>
 File: img/grades/marknewman-condmat.pdf Graphic file (type pdf)
 <use img/grades/marknewman-condmat.pdf>
 Package pdftex.def Info: img/grades/marknewman-condmat.pdf  used on input line 
 13.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<img/grades/dblp-2010.pdf, id=796, 462.52798pt x 346.89601pt>
+<img/grades/dblp-2010.pdf, id=890, 462.52798pt x 346.89601pt>
 File: img/grades/dblp-2010.pdf Graphic file (type pdf)
 <use img/grades/dblp-2010.pdf>
 Package pdftex.def Info: img/grades/dblp-2010.pdf  used on input line 23.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<img/grades/dblp-2011.pdf, id=797, 462.52798pt x 346.89601pt>
+<img/grades/dblp-2011.pdf, id=891, 462.52798pt x 346.89601pt>
 File: img/grades/dblp-2011.pdf Graphic file (type pdf)
 <use img/grades/dblp-2011.pdf>
 Package pdftex.def Info: img/grades/dblp-2011.pdf  used on input line 29.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<img/grades/snap-dblp.pdf, id=798, 462.52798pt x 346.89601pt>
+<img/grades/snap-dblp.pdf, id=892, 462.52798pt x 346.89601pt>
 File: img/grades/snap-dblp.pdf Graphic file (type pdf)
 <use img/grades/snap-dblp.pdf>
 Package pdftex.def Info: img/grades/snap-dblp.pdf  used on input line 44.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<img/grades/snap-amazon.pdf, id=799, 462.52798pt x 346.89601pt>
+<img/grades/snap-amazon.pdf, id=893, 462.52798pt x 346.89601pt>
 File: img/grades/snap-amazon.pdf Graphic file (type pdf)
 <use img/grades/snap-amazon.pdf>
 Package pdftex.def Info: img/grades/snap-amazon.pdf  used on input line 50.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<img/grades/coPapersDBLP.pdf, id=800, 462.52798pt x 346.89601pt>
+<img/grades/coPapersDBLP.pdf, id=894, 462.52798pt x 346.89601pt>
 File: img/grades/coPapersDBLP.pdf Graphic file (type pdf)
 <use img/grades/coPapersDBLP.pdf>
 Package pdftex.def Info: img/grades/coPapersDBLP.pdf  used on input line 60.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<img/grades/coPapersCiteseer.pdf, id=801, 462.52798pt x 346.89601pt>
+<img/grades/coPapersCiteseer.pdf, id=895, 462.52798pt x 346.89601pt>
 File: img/grades/coPapersCiteseer.pdf Graphic file (type pdf)
 <use img/grades/coPapersCiteseer.pdf>
 Package pdftex.def Info: img/grades/coPapersCiteseer.pdf  used on input line 67
@@ -2584,46 +2628,46 @@ Package pdftex.def Info: img/grades/coPapersCiteseer.pdf  used on input line 67
 LaTeX Warning: Float too large for page by 85.31946pt on input line 81.
 
 ) (./figs/cliqueDist2.tex
-<img/cliqueDist2/marknewman-astro.pdf, id=802, 462.52798pt x 346.89601pt>
+<img/cliqueDist2/marknewman-astro.pdf, id=896, 462.52798pt x 346.89601pt>
 File: img/cliqueDist2/marknewman-astro.pdf Graphic file (type pdf)
 <use img/cliqueDist2/marknewman-astro.pdf>
 Package pdftex.def Info: img/cliqueDist2/marknewman-astro.pdf  used on input li
 ne 8.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<img/cliqueDist2/marknewman-condmat.pdf, id=803, 462.52798pt x 346.89601pt>
+<img/cliqueDist2/marknewman-condmat.pdf, id=897, 462.52798pt x 346.89601pt>
 File: img/cliqueDist2/marknewman-condmat.pdf Graphic file (type pdf)
 <use img/cliqueDist2/marknewman-condmat.pdf>
 Package pdftex.def Info: img/cliqueDist2/marknewman-condmat.pdf  used on input 
 line 14.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<img/cliqueDist2/dblp-2010.pdf, id=804, 462.52798pt x 346.89601pt>
+<img/cliqueDist2/dblp-2010.pdf, id=898, 462.52798pt x 346.89601pt>
 File: img/cliqueDist2/dblp-2010.pdf Graphic file (type pdf)
 <use img/cliqueDist2/dblp-2010.pdf>
 Package pdftex.def Info: img/cliqueDist2/dblp-2010.pdf  used on input line 24.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<img/cliqueDist2/dblp-2011.pdf, id=805, 462.52798pt x 346.89601pt>
+<img/cliqueDist2/dblp-2011.pdf, id=899, 462.52798pt x 346.89601pt>
 File: img/cliqueDist2/dblp-2011.pdf Graphic file (type pdf)
 <use img/cliqueDist2/dblp-2011.pdf>
 Package pdftex.def Info: img/cliqueDist2/dblp-2011.pdf  used on input line 30.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<img/cliqueDist2/snap-dblp.pdf, id=806, 462.52798pt x 346.89601pt>
+<img/cliqueDist2/snap-dblp.pdf, id=900, 462.52798pt x 346.89601pt>
 File: img/cliqueDist2/snap-dblp.pdf Graphic file (type pdf)
 <use img/cliqueDist2/snap-dblp.pdf>
 Package pdftex.def Info: img/cliqueDist2/snap-dblp.pdf  used on input line 40.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<img/cliqueDist2/snap-amazon.pdf, id=807, 462.52798pt x 346.89601pt>
+<img/cliqueDist2/snap-amazon.pdf, id=901, 462.52798pt x 346.89601pt>
 File: img/cliqueDist2/snap-amazon.pdf Graphic file (type pdf)
 <use img/cliqueDist2/snap-amazon.pdf>
 Package pdftex.def Info: img/cliqueDist2/snap-amazon.pdf  used on input line 46
 .
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<img/cliqueDist2/coPapersDBLP.pdf, id=808, 462.52798pt x 346.89601pt>
+<img/cliqueDist2/coPapersDBLP.pdf, id=902, 462.52798pt x 346.89601pt>
 File: img/cliqueDist2/coPapersDBLP.pdf Graphic file (type pdf)
 <use img/cliqueDist2/coPapersDBLP.pdf>
 Package pdftex.def Info: img/cliqueDist2/coPapersDBLP.pdf  used on input line 5
 7.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<img/cliqueDist2/coPapersCiteseer.pdf, id=809, 462.52798pt x 346.89601pt>
+<img/cliqueDist2/coPapersCiteseer.pdf, id=903, 462.52798pt x 346.89601pt>
 File: img/cliqueDist2/coPapersCiteseer.pdf Graphic file (type pdf)
 <use img/cliqueDist2/coPapersCiteseer.pdf>
 Package pdftex.def Info: img/cliqueDist2/coPapersCiteseer.pdf  used on input li
@@ -2635,71 +2679,75 @@ LaTeX Warning: Float too large for page by 85.31946pt on input line 79.
 
 )
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 43.
+(babel)             in language  on input line 50.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 43.
+(babel)             in language  on input line 50.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 43.
+(babel)             in language  on input line 50.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 43.
+(babel)             in language  on input line 50.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 43.
+(babel)             in language  on input line 50.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 43.
-LaTeX Info: Redefining \. on input line 49.
-LaTeX Info: Redefining \% on input line 49.
+(babel)             in language  on input line 50.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 55.
+LaTeX Info: Redefining \% on input line 55.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 49.
- [32]
-LaTeX Info: Redefining \. on input line 49.
-LaTeX Info: Redefining \% on input line 49.
+(babel)             in language  on input line 55.
+ [34]
+LaTeX Info: Redefining \. on input line 55.
+LaTeX Info: Redefining \% on input line 55.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 49.
- [33 <./img/grades/marknewman-astro.pdf> <./img/grades/marknewman-condmat.pdf
+(babel)             in language  on input line 55.
+
+[35 <./img/grades/marknewman-astro.pdf> <./img/grades/marknewman-condmat.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/grades/marknewman-cond
 mat.pdf): PDF inclusion: multiple pdfs with page group included in a single pag
@@ -2729,33 +2777,33 @@ f): PDF inclusion: multiple pdfs with page group included in a single page
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/grades/coPapersCitesee
 r.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-LaTeX Info: Redefining \. on input line 49.
-LaTeX Info: Redefining \% on input line 49.
+LaTeX Info: Redefining \. on input line 55.
+LaTeX Info: Redefining \% on input line 55.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 49.
- [34 <./img/cliqueDist2/marknewman-astro.pdf> <./img/cliqueDist2/marknewman-con
+(babel)             in language  on input line 55.
+ [36 <./img/cliqueDist2/marknewman-astro.pdf> <./img/cliqueDist2/marknewman-con
 dmat.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/cliqueDist2/marknewman
@@ -2787,24 +2835,15 @@ LP.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/cliqueDist2/coPapersCi
 teseer.pdf): PDF inclusion: multiple pdfs with page group included in a single 
 page
->]
-
-LaTeX Warning: Reference `alg:sequential' on page 35 undefined on input line 55
-.
-
-
-LaTeX Warning: Reference `alg:neighbors' on page 35 undefined on input line 55.
-
-
-(./figs/sdslBPEAle2.tex
-<img/sdsl/aleatorioBig/marknewman-astro.pdf, id=1326, 1344.94475pt x 712.58218p
+>] (./figs/sdslBPEAle2.tex
+<img/sdsl/aleatorioBig/marknewman-astro.pdf, id=1420, 1344.94475pt x 712.58218p
 t>
 File: img/sdsl/aleatorioBig/marknewman-astro.pdf Graphic file (type pdf)
 <use img/sdsl/aleatorioBig/marknewman-astro.pdf>
 Package pdftex.def Info: img/sdsl/aleatorioBig/marknewman-astro.pdf  used on in
 put line 7.
 (pdftex.def)             Requested size: 364.19667pt x 192.95428pt.
-<img/sdsl/label.pdf, id=1327, 614.295pt x 794.97pt>
+<img/sdsl/label.pdf, id=1421, 614.295pt x 794.97pt>
 File: img/sdsl/label.pdf Graphic file (type pdf)
 <use img/sdsl/label.pdf>
 Package pdftex.def Info: img/sdsl/label.pdf  used on input line 11.
@@ -2814,7 +2853,7 @@ Overfull \hbox (51.40364pt too wide) in paragraph at lines 11--12
  [][] 
  []
 
-<img/sdsl/aleatorioBig/marknewman-condmat.pdf, id=1329, 1344.94475pt x 712.5821
+<img/sdsl/aleatorioBig/marknewman-condmat.pdf, id=1423, 1344.94475pt x 712.5821
 8pt>
 File: img/sdsl/aleatorioBig/marknewman-condmat.pdf Graphic file (type pdf)
 <use img/sdsl/aleatorioBig/marknewman-condmat.pdf>
@@ -2831,7 +2870,7 @@ Overfull \hbox (51.40364pt too wide) in paragraph at lines 25--26
  []
 
 ) (./figs/sdslBPEAle3.tex
-<img/sdsl/aleatorioBig/dblp-2010.pdf, id=1331, 1344.94475pt x 712.58218pt>
+<img/sdsl/aleatorioBig/dblp-2010.pdf, id=1425, 1344.94475pt x 712.58218pt>
 File: img/sdsl/aleatorioBig/dblp-2010.pdf Graphic file (type pdf)
 <use img/sdsl/aleatorioBig/dblp-2010.pdf>
 Package pdftex.def Info: img/sdsl/aleatorioBig/dblp-2010.pdf  used on input lin
@@ -2846,7 +2885,7 @@ Overfull \hbox (51.40364pt too wide) in paragraph at lines 11--12
  [][] 
  []
 
-<img/sdsl/aleatorioBig/dblp-2011.pdf, id=1333, 1344.94475pt x 712.58218pt>
+<img/sdsl/aleatorioBig/dblp-2011.pdf, id=1427, 1344.94475pt x 712.58218pt>
 File: img/sdsl/aleatorioBig/dblp-2011.pdf Graphic file (type pdf)
 <use img/sdsl/aleatorioBig/dblp-2011.pdf>
 Package pdftex.def Info: img/sdsl/aleatorioBig/dblp-2011.pdf  used on input lin
@@ -2862,7 +2901,7 @@ Overfull \hbox (51.40364pt too wide) in paragraph at lines 25--26
  []
 
 ) (./figs/sdslBPEAle4.tex
-<img/sdsl/aleatorioBig/snap-dblp.pdf, id=1335, 1344.94475pt x 712.58218pt>
+<img/sdsl/aleatorioBig/snap-dblp.pdf, id=1429, 1344.94475pt x 712.58218pt>
 File: img/sdsl/aleatorioBig/snap-dblp.pdf Graphic file (type pdf)
 <use img/sdsl/aleatorioBig/snap-dblp.pdf>
 Package pdftex.def Info: img/sdsl/aleatorioBig/snap-dblp.pdf  used on input lin
@@ -2877,7 +2916,7 @@ Overfull \hbox (51.40364pt too wide) in paragraph at lines 11--12
  [][] 
  []
 
-<img/sdsl/aleatorioBig/snap-amazon.pdf, id=1337, 1344.94475pt x 712.58218pt>
+<img/sdsl/aleatorioBig/snap-amazon.pdf, id=1431, 1344.94475pt x 712.58218pt>
 File: img/sdsl/aleatorioBig/snap-amazon.pdf Graphic file (type pdf)
 <use img/sdsl/aleatorioBig/snap-amazon.pdf>
 Package pdftex.def Info: img/sdsl/aleatorioBig/snap-amazon.pdf  used on input l
@@ -2893,7 +2932,7 @@ Overfull \hbox (51.40364pt too wide) in paragraph at lines 25--26
  []
 
 ) (./figs/sdslBPEAle5.tex
-<img/sdsl/aleatorioBig/coPapersDBLP.pdf, id=1339, 1344.94475pt x 712.58218pt>
+<img/sdsl/aleatorioBig/coPapersDBLP.pdf, id=1433, 1344.94475pt x 712.58218pt>
 File: img/sdsl/aleatorioBig/coPapersDBLP.pdf Graphic file (type pdf)
 <use img/sdsl/aleatorioBig/coPapersDBLP.pdf>
 Package pdftex.def Info: img/sdsl/aleatorioBig/coPapersDBLP.pdf  used on input 
@@ -2908,7 +2947,7 @@ Overfull \hbox (51.40364pt too wide) in paragraph at lines 11--12
  [][] 
  []
 
-<img/sdsl/aleatorioBig/coPapersCiteseer.pdf, id=1341, 1344.94475pt x 712.58218p
+<img/sdsl/aleatorioBig/coPapersCiteseer.pdf, id=1435, 1344.94475pt x 712.58218p
 t>
 File: img/sdsl/aleatorioBig/coPapersCiteseer.pdf Graphic file (type pdf)
 <use img/sdsl/aleatorioBig/coPapersCiteseer.pdf>
@@ -2925,7 +2964,7 @@ Overfull \hbox (51.40364pt too wide) in paragraph at lines 25--26
  []
 
 ) (./figs/sdslBPE2.tex
-<img/sdsl/secuencialBig/marknewman-astro.pdf, id=1343, 1344.94475pt x 712.58218
+<img/sdsl/secuencialBig/marknewman-astro.pdf, id=1437, 1344.94475pt x 712.58218
 pt>
 File: img/sdsl/secuencialBig/marknewman-astro.pdf Graphic file (type pdf)
 <use img/sdsl/secuencialBig/marknewman-astro.pdf>
@@ -2941,7 +2980,7 @@ Overfull \hbox (51.40364pt too wide) in paragraph at lines 11--12
  [][] 
  []
 
-<img/sdsl/secuencialBig/marknewman-condmat.pdf, id=1345, 1344.94475pt x 712.582
+<img/sdsl/secuencialBig/marknewman-condmat.pdf, id=1439, 1344.94475pt x 712.582
 18pt>
 File: img/sdsl/secuencialBig/marknewman-condmat.pdf Graphic file (type pdf)
 <use img/sdsl/secuencialBig/marknewman-condmat.pdf>
@@ -2958,7 +2997,7 @@ Overfull \hbox (51.40364pt too wide) in paragraph at lines 25--26
  []
 
 ) (./figs/sdslBPE3.tex
-<img/sdsl/secuencialBig/dblp-2010.pdf, id=1347, 1344.94475pt x 712.58218pt>
+<img/sdsl/secuencialBig/dblp-2010.pdf, id=1441, 1344.94475pt x 712.58218pt>
 File: img/sdsl/secuencialBig/dblp-2010.pdf Graphic file (type pdf)
 <use img/sdsl/secuencialBig/dblp-2010.pdf>
 Package pdftex.def Info: img/sdsl/secuencialBig/dblp-2010.pdf  used on input li
@@ -2973,7 +3012,7 @@ Overfull \hbox (51.40364pt too wide) in paragraph at lines 11--12
  [][] 
  []
 
-<img/sdsl/secuencialBig/dblp-2011.pdf, id=1349, 1344.94475pt x 712.58218pt>
+<img/sdsl/secuencialBig/dblp-2011.pdf, id=1443, 1344.94475pt x 712.58218pt>
 File: img/sdsl/secuencialBig/dblp-2011.pdf Graphic file (type pdf)
 <use img/sdsl/secuencialBig/dblp-2011.pdf>
 Package pdftex.def Info: img/sdsl/secuencialBig/dblp-2011.pdf  used on input li
@@ -2989,7 +3028,7 @@ Overfull \hbox (51.40364pt too wide) in paragraph at lines 25--26
  []
 
 ) (./figs/sdslBPE4.tex
-<img/sdsl/secuencialBig/snap-dblp.pdf, id=1351, 1344.94475pt x 712.58218pt>
+<img/sdsl/secuencialBig/snap-dblp.pdf, id=1445, 1344.94475pt x 712.58218pt>
 File: img/sdsl/secuencialBig/snap-dblp.pdf Graphic file (type pdf)
 <use img/sdsl/secuencialBig/snap-dblp.pdf>
 Package pdftex.def Info: img/sdsl/secuencialBig/snap-dblp.pdf  used on input li
@@ -3004,7 +3043,7 @@ Overfull \hbox (51.40364pt too wide) in paragraph at lines 11--12
  [][] 
  []
 
-<img/sdsl/secuencialBig/snap-amazon.pdf, id=1353, 1344.94475pt x 712.58218pt>
+<img/sdsl/secuencialBig/snap-amazon.pdf, id=1447, 1344.94475pt x 712.58218pt>
 File: img/sdsl/secuencialBig/snap-amazon.pdf Graphic file (type pdf)
 <use img/sdsl/secuencialBig/snap-amazon.pdf>
 Package pdftex.def Info: img/sdsl/secuencialBig/snap-amazon.pdf  used on input 
@@ -3020,7 +3059,7 @@ Overfull \hbox (51.40364pt too wide) in paragraph at lines 25--26
  []
 
 ) (./figs/sdslBPE5.tex
-<img/sdsl/secuencialBig/coPapersDBLP.pdf, id=1355, 1344.94475pt x 712.58218pt>
+<img/sdsl/secuencialBig/coPapersDBLP.pdf, id=1449, 1344.94475pt x 712.58218pt>
 File: img/sdsl/secuencialBig/coPapersDBLP.pdf Graphic file (type pdf)
 <use img/sdsl/secuencialBig/coPapersDBLP.pdf>
 Package pdftex.def Info: img/sdsl/secuencialBig/coPapersDBLP.pdf  used on input
@@ -3035,7 +3074,7 @@ Overfull \hbox (51.40364pt too wide) in paragraph at lines 11--12
  [][] 
  []
 
-<img/sdsl/secuencialBig/coPapersCiteseer.pdf, id=1357, 1344.94475pt x 712.58218
+<img/sdsl/secuencialBig/coPapersCiteseer.pdf, id=1451, 1344.94475pt x 712.58218
 pt>
 File: img/sdsl/secuencialBig/coPapersCiteseer.pdf Graphic file (type pdf)
 <use img/sdsl/secuencialBig/coPapersCiteseer.pdf>
@@ -3053,78 +3092,71 @@ Overfull \hbox (51.40364pt too wide) in paragraph at lines 25--26
 
 )
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 77.
+(babel)             in language  on input line 89.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 77.
+(babel)             in language  on input line 89.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 77.
+(babel)             in language  on input line 89.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 77.
+(babel)             in language  on input line 89.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 77.
+(babel)             in language  on input line 89.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 77.
- (./figs/bpe3.tex
-<img/bpe3.pdf, id=1360, 1344.94475pt x 712.58218pt>
-File: img/bpe3.pdf Graphic file (type pdf)
-<use img/bpe3.pdf>
-Package pdftex.def Info: img/bpe3.pdf  used on input line 3.
-(pdftex.def)             Requested size: 455.24411pt x 241.19829pt.
-)
-LaTeX Info: Redefining \. on input line 87.
-LaTeX Info: Redefining \% on input line 87.
+(babel)             in language  on input line 89.
+LaTeX Info: Redefining \. on input line 92.
+LaTeX Info: Redefining \% on input line 92.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 87.
- [35]
-LaTeX Info: Redefining \. on input line 87.
-LaTeX Info: Redefining \% on input line 87.
+(babel)             in language  on input line 92.
+ [37]
+LaTeX Info: Redefining \. on input line 92.
+LaTeX Info: Redefining \% on input line 92.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 87.
- [36 <./img/sdsl/label.pdf
+(babel)             in language  on input line 92.
+ [38 <./img/sdsl/label.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/sdsl/label.pdf): PDF i
 nclusion: invalid other resource which is no dict (key 'ProcSets', type <array>
@@ -3140,33 +3172,33 @@ pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/sdsl/aleatorioBig/mark
 newman-condmat.pdf): PDF inclusion: multiple pdfs with page group included in a
  single page
 >]
-LaTeX Info: Redefining \. on input line 87.
-LaTeX Info: Redefining \% on input line 87.
+LaTeX Info: Redefining \. on input line 92.
+LaTeX Info: Redefining \% on input line 92.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 87.
- [37 <./img/sdsl/aleatorioBig/dblp-2010.pdf
+(babel)             in language  on input line 92.
+ [39 <./img/sdsl/aleatorioBig/dblp-2010.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/sdsl/aleatorioBig/dblp
 -2010.pdf): PDF inclusion: multiple pdfs with page group included in a single p
@@ -3177,33 +3209,33 @@ pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/sdsl/aleatorioBig/dblp
 -2011.pdf): PDF inclusion: multiple pdfs with page group included in a single p
 age
 >]
-LaTeX Info: Redefining \. on input line 87.
-LaTeX Info: Redefining \% on input line 87.
+LaTeX Info: Redefining \. on input line 92.
+LaTeX Info: Redefining \% on input line 92.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 87.
- [38 <./img/sdsl/aleatorioBig/snap-dblp.pdf
+(babel)             in language  on input line 92.
+ [40 <./img/sdsl/aleatorioBig/snap-dblp.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/sdsl/aleatorioBig/snap
 -dblp.pdf): PDF inclusion: multiple pdfs with page group included in a single p
@@ -3214,33 +3246,33 @@ pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/sdsl/aleatorioBig/snap
 -amazon.pdf): PDF inclusion: multiple pdfs with page group included in a single
  page
 >]
-LaTeX Info: Redefining \. on input line 87.
-LaTeX Info: Redefining \% on input line 87.
+LaTeX Info: Redefining \. on input line 92.
+LaTeX Info: Redefining \% on input line 92.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 87.
- [39 <./img/sdsl/aleatorioBig/coPapersDBLP.pdf
+(babel)             in language  on input line 92.
+ [41 <./img/sdsl/aleatorioBig/coPapersDBLP.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/sdsl/aleatorioBig/coPa
 persDBLP.pdf): PDF inclusion: multiple pdfs with page group included in a singl
@@ -3251,33 +3283,33 @@ pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/sdsl/aleatorioBig/coPa
 persCiteseer.pdf): PDF inclusion: multiple pdfs with page group included in a s
 ingle page
 >]
-LaTeX Info: Redefining \. on input line 87.
-LaTeX Info: Redefining \% on input line 87.
+LaTeX Info: Redefining \. on input line 92.
+LaTeX Info: Redefining \% on input line 92.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 87.
- [40 <./img/sdsl/secuencialBig/marknewman-astro.pdf
+(babel)             in language  on input line 92.
+ [42 <./img/sdsl/secuencialBig/marknewman-astro.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/sdsl/secuencialBig/mar
 knewman-astro.pdf): PDF inclusion: multiple pdfs with page group included in a 
@@ -3288,33 +3320,33 @@ pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/sdsl/secuencialBig/mar
 knewman-condmat.pdf): PDF inclusion: multiple pdfs with page group included in 
 a single page
 >]
-LaTeX Info: Redefining \. on input line 87.
-LaTeX Info: Redefining \% on input line 87.
+LaTeX Info: Redefining \. on input line 92.
+LaTeX Info: Redefining \% on input line 92.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 87.
- [41 <./img/sdsl/secuencialBig/dblp-2010.pdf
+(babel)             in language  on input line 92.
+ [43 <./img/sdsl/secuencialBig/dblp-2010.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/sdsl/secuencialBig/dbl
 p-2010.pdf): PDF inclusion: multiple pdfs with page group included in a single 
@@ -3325,33 +3357,33 @@ pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/sdsl/secuencialBig/dbl
 p-2011.pdf): PDF inclusion: multiple pdfs with page group included in a single 
 page
 >]
-LaTeX Info: Redefining \. on input line 87.
-LaTeX Info: Redefining \% on input line 87.
+LaTeX Info: Redefining \. on input line 92.
+LaTeX Info: Redefining \% on input line 92.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 87.
- [42 <./img/sdsl/secuencialBig/snap-dblp.pdf
+(babel)             in language  on input line 92.
+ [44 <./img/sdsl/secuencialBig/snap-dblp.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/sdsl/secuencialBig/sna
 p-dblp.pdf): PDF inclusion: multiple pdfs with page group included in a single 
@@ -3362,33 +3394,33 @@ pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/sdsl/secuencialBig/sna
 p-amazon.pdf): PDF inclusion: multiple pdfs with page group included in a singl
 e page
 >]
-LaTeX Info: Redefining \. on input line 87.
-LaTeX Info: Redefining \% on input line 87.
+LaTeX Info: Redefining \. on input line 92.
+LaTeX Info: Redefining \% on input line 92.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 87.
- [43 <./img/sdsl/secuencialBig/coPapersDBLP.pdf
+(babel)             in language  on input line 92.
+ [45 <./img/sdsl/secuencialBig/coPapersDBLP.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/sdsl/secuencialBig/coP
 apersDBLP.pdf): PDF inclusion: multiple pdfs with page group included in a sing
@@ -3398,101 +3430,108 @@ le page
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/sdsl/secuencialBig/coP
 apersCiteseer.pdf): PDF inclusion: multiple pdfs with page group included in a 
 single page
->] (./figs/nPartitions.tex
-<img/Npartitions3.pdf, id=2075, 1344.94475pt x 712.58218pt>
+>] (./figs/bpe3.tex
+<img/bpe3.pdf, id=2166, 1344.94475pt x 712.58218pt>
+File: img/bpe3.pdf Graphic file (type pdf)
+<use img/bpe3.pdf>
+Package pdftex.def Info: img/bpe3.pdf  used on input line 3.
+(pdftex.def)             Requested size: 455.24411pt x 241.19829pt.
+) (./figs/nPartitions.tex
+<img/Npartitions3.pdf, id=2169, 1344.94475pt x 712.58218pt>
 File: img/Npartitions3.pdf Graphic file (type pdf)
 <use img/Npartitions3.pdf>
 Package pdftex.def Info: img/Npartitions3.pdf  used on input line 3.
 (pdftex.def)             Requested size: 455.24411pt x 241.19829pt.
-) (./figs/bitsProp.tex
-<img/bits.pdf, id=2078, 1344.94475pt x 712.58218pt>
+)
+LaTeX Info: Redefining \. on input line 103.
+LaTeX Info: Redefining \% on input line 103.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 103.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 103.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 103.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 103.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 103.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 103.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 103.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 103.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 103.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 103.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 103.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 103.
+ [46 <./img/bpe3.pdf>]
+(./figs/bitsProp.tex
+<img/bits.pdf, id=2229, 1344.94475pt x 712.58218pt>
 File: img/bits.pdf Graphic file (type pdf)
 <use img/bits.pdf>
 Package pdftex.def Info: img/bits.pdf  used on input line 5.
 (pdftex.def)             Requested size: 455.24411pt x 241.19829pt.
-<img/bitsNorm.pdf, id=2079, 1344.94475pt x 712.58218pt>
+<img/bitsNorm.pdf, id=2230, 1344.94475pt x 712.58218pt>
 File: img/bitsNorm.pdf Graphic file (type pdf)
 <use img/bitsNorm.pdf>
 Package pdftex.def Info: img/bitsNorm.pdf  used on input line 11.
 (pdftex.def)             Requested size: 455.24411pt x 241.19829pt.
 ) (./figs/maxNodes.tex
-<img/maxNodes.pdf, id=2082, 1344.94475pt x 712.58218pt>
+<img/maxNodes.pdf, id=2233, 1344.94475pt x 712.58218pt>
 File: img/maxNodes.pdf Graphic file (type pdf)
 <use img/maxNodes.pdf>
 Package pdftex.def Info: img/maxNodes.pdf  used on input line 3.
 (pdftex.def)             Requested size: 455.24411pt x 241.19829pt.
-)
-(./figs/maxBytes.tex
-<img/maxBytes.pdf, id=2083, 1344.94475pt x 712.58218pt>
+) (./figs/maxBytes.tex
+<img/maxBytes.pdf, id=2234, 1344.94475pt x 712.58218pt>
 File: img/maxBytes.pdf Graphic file (type pdf)
 <use img/maxBytes.pdf>
 Package pdftex.def Info: img/maxBytes.pdf  used on input line 3.
 (pdftex.def)             Requested size: 455.24411pt x 241.19829pt.
 )
-LaTeX Info: Redefining \. on input line 100.
-LaTeX Info: Redefining \% on input line 100.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 100.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 100.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 100.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 100.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 100.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 100.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 100.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 100.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 100.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 100.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 100.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 100.
- [44 <./img/bpe3.pdf>] (./figs/cdf.tex
-<img/cdf/marknewman-astro.pdf, id=2144, 462.52798pt x 346.89601pt>
+(./figs/cdf.tex
+<img/cdf/marknewman-astro.pdf, id=2236, 462.52798pt x 346.89601pt>
 File: img/cdf/marknewman-astro.pdf Graphic file (type pdf)
 <use img/cdf/marknewman-astro.pdf>
 Package pdftex.def Info: img/cdf/marknewman-astro.pdf  used on input line 7.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<img/cdf/marknewman-condmat.pdf, id=2145, 462.52798pt x 346.89601pt>
+<img/cdf/marknewman-condmat.pdf, id=2237, 462.52798pt x 346.89601pt>
 File: img/cdf/marknewman-condmat.pdf Graphic file (type pdf)
 <use img/cdf/marknewman-condmat.pdf>
 Package pdftex.def Info: img/cdf/marknewman-condmat.pdf  used on input line 13.
 
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<img/cdf/dblp-2010.pdf, id=2146, 462.52798pt x 346.89601pt>
+<img/cdf/dblp-2010.pdf, id=2238, 462.52798pt x 346.89601pt>
 File: img/cdf/dblp-2010.pdf Graphic file (type pdf)
 <use img/cdf/dblp-2010.pdf>
 Package pdftex.def Info: img/cdf/dblp-2010.pdf  used on input line 23.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<img/cdf/dblp-2011.pdf, id=2147, 462.52798pt x 346.89601pt>
+<img/cdf/dblp-2011.pdf, id=2239, 462.52798pt x 346.89601pt>
 File: img/cdf/dblp-2011.pdf Graphic file (type pdf)
 <use img/cdf/dblp-2011.pdf>
 Package pdftex.def Info: img/cdf/dblp-2011.pdf  used on input line 29.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<img/cdf/snap-dblp.pdf, id=2148, 462.52798pt x 346.89601pt>
+<img/cdf/snap-dblp.pdf, id=2240, 462.52798pt x 346.89601pt>
 File: img/cdf/snap-dblp.pdf Graphic file (type pdf)
 <use img/cdf/snap-dblp.pdf>
 Package pdftex.def Info: img/cdf/snap-dblp.pdf  used on input line 39.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<img/cdf/snap-amazon.pdf, id=2149, 462.52798pt x 346.89601pt>
+<img/cdf/snap-amazon.pdf, id=2241, 462.52798pt x 346.89601pt>
 File: img/cdf/snap-amazon.pdf Graphic file (type pdf)
 <use img/cdf/snap-amazon.pdf>
 Package pdftex.def Info: img/cdf/snap-amazon.pdf  used on input line 45.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<img/cdf/coPapersDBLP.pdf, id=2150, 462.52798pt x 346.89601pt>
+<img/cdf/coPapersDBLP.pdf, id=2242, 462.52798pt x 346.89601pt>
 File: img/cdf/coPapersDBLP.pdf Graphic file (type pdf)
 <use img/cdf/coPapersDBLP.pdf>
 Package pdftex.def Info: img/cdf/coPapersDBLP.pdf  used on input line 55.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<img/cdf/coPapersCiteseer.pdf, id=2151, 462.52798pt x 346.89601pt>
+<img/cdf/coPapersCiteseer.pdf, id=2243, 462.52798pt x 346.89601pt>
 File: img/cdf/coPapersCiteseer.pdf Graphic file (type pdf)
 <use img/cdf/coPapersCiteseer.pdf>
 Package pdftex.def Info: img/cdf/coPapersCiteseer.pdf  used on input line 61.
@@ -3502,132 +3541,128 @@ Package pdftex.def Info: img/cdf/coPapersCiteseer.pdf  used on input line 61.
 LaTeX Warning: Float too large for page by 99.81946pt on input line 75.
 
 ) (./figs/timesRanking.tex
-<img/timesRanking.pdf, id=2153, 1344.94475pt x 712.58218pt>
+<img/timesRanking.pdf, id=2245, 1344.94475pt x 712.58218pt>
 File: img/timesRanking.pdf Graphic file (type pdf)
 <use img/timesRanking.pdf>
 Package pdftex.def Info: img/timesRanking.pdf  used on input line 3.
 (pdftex.def)             Requested size: 455.24411pt x 241.19829pt.
 )
-
-LaTeX Warning: Reference `alg:cliques' on page 45 undefined on input line 111.
-
-(./tables/constructTimes.tex)
-LaTeX Info: Redefining \. on input line 118.
-LaTeX Info: Redefining \% on input line 118.
+LaTeX Info: Redefining \. on input line 123.
+LaTeX Info: Redefining \% on input line 123.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 118.
- [45 <./img/Npartitions3.pdf>]
-LaTeX Info: Redefining \. on input line 118.
-LaTeX Info: Redefining \% on input line 118.
+(babel)             in language  on input line 123.
+ [47 <./img/Npartitions3.pdf>]
+LaTeX Info: Redefining \. on input line 123.
+LaTeX Info: Redefining \% on input line 123.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 118.
- [46 <./img/bits.pdf> <./img/bitsNorm.pdf
+(babel)             in language  on input line 123.
+ [48 <./img/bits.pdf> <./img/bitsNorm.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/bitsNorm.pdf): PDF inc
 lusion: multiple pdfs with page group included in a single page
 >]
-LaTeX Info: Redefining \. on input line 118.
-LaTeX Info: Redefining \% on input line 118.
+LaTeX Info: Redefining \. on input line 123.
+LaTeX Info: Redefining \% on input line 123.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 118.
- [47 <./img/maxNodes.pdf> <./img/maxBytes.pdf
+(babel)             in language  on input line 123.
+ [49 <./img/maxNodes.pdf> <./img/maxBytes.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/maxBytes.pdf): PDF inc
 lusion: multiple pdfs with page group included in a single page
 >]
-LaTeX Info: Redefining \. on input line 118.
-LaTeX Info: Redefining \% on input line 118.
+LaTeX Info: Redefining \. on input line 123.
+LaTeX Info: Redefining \% on input line 123.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 118.
- [48 <./img/cdf/marknewman-astro.pdf> <./img/cdf/marknewman-condmat.pdf
+(babel)             in language  on input line 123.
+ [50 <./img/cdf/marknewman-astro.pdf> <./img/cdf/marknewman-condmat.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/cdf/marknewman-condmat
 .pdf): PDF inclusion: multiple pdfs with page group included in a single page
@@ -3655,138 +3690,126 @@ pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/cdf/coPapersDBLP.pdf):
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/cdf/coPapersCiteseer.p
 df): PDF inclusion: multiple pdfs with page group included in a single page
->]
-LaTeX Info: Redefining \. on input line 118.
-LaTeX Info: Redefining \% on input line 118.
+>] (./tables/constructTimes.tex)
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 134.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 134.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 134.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 134.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 134.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 134.
+LaTeX Info: Redefining \. on input line 141.
+LaTeX Info: Redefining \% on input line 141.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 141.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 141.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 141.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 141.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 141.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 118.
- [49 <./img/timesRanking.pdf>]
+(babel)             in language  on input line 141.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 122.
+(babel)             in language  on input line 141.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 122.
+(babel)             in language  on input line 141.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 122.
+(babel)             in language  on input line 141.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 122.
+(babel)             in language  on input line 141.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 122.
+(babel)             in language  on input line 141.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 122.
- (./tables/bpeSmall.tex)
-
-LaTeX Warning: Reference `alg:neighbors' on page 50 undefined on input line 144
-.
-
-LaTeX Info: Redefining \. on input line 147.
-LaTeX Info: Redefining \% on input line 147.
+(babel)             in language  on input line 141.
+ [51 <./img/timesRanking.pdf>]
+(./tables/bpeSmall.tex)
+LaTeX Info: Redefining \. on input line 157.
+LaTeX Info: Redefining \% on input line 157.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 147.
+(babel)             in language  on input line 157.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 147.
+(babel)             in language  on input line 157.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 147.
+(babel)             in language  on input line 157.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 147.
+(babel)             in language  on input line 157.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 147.
+(babel)             in language  on input line 157.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 147.
+(babel)             in language  on input line 157.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 147.
+(babel)             in language  on input line 157.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 147.
+(babel)             in language  on input line 157.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 147.
+(babel)             in language  on input line 157.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 147.
+(babel)             in language  on input line 157.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 147.
+(babel)             in language  on input line 157.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 147.
-[50] (./tables/timesRandom.tex)
-
-LaTeX Warning: Reference `alg:sequential' on page 51 undefined on input line 15
-0.
-
-
-Overfull \hbox (1.22392pt too wide) in paragraph at lines 150--151
+(babel)             in language  on input line 157.
+ [52] (./tables/timesRandom.tex)
+Overfull \hbox (1.22392pt too wide) in paragraph at lines 162--163
 \OT1/cmtt/m/n/12 snap-amazon \OT1/cmr/m/n/12 tie-nen la ma-yor can-ti-dad de cl
 i-ques, y \OT1/cmtt/m/n/12 coPapersDBLP \OT1/cmr/m/n/12 con \OT1/cmtt/m/n/12 co
 PapersCiteseer
  []
 
 
-LaTeX Warning: Reference `fig:bpetAle1' on page 51 undefined on input line 152.
+LaTeX Warning: Reference `fig:bpetAle1' on page 53 undefined on input line 164.
 
 
-
-Underfull \vbox (badness 4859) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 153.
-LaTeX Info: Redefining \% on input line 153.
+LaTeX Info: Redefining \. on input line 165.
+LaTeX Info: Redefining \% on input line 165.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 153.
+(babel)             in language  on input line 165.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 153.
+(babel)             in language  on input line 165.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 153.
+(babel)             in language  on input line 165.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 153.
+(babel)             in language  on input line 165.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 153.
+(babel)             in language  on input line 165.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 153.
+(babel)             in language  on input line 165.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 153.
+(babel)             in language  on input line 165.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 153.
+(babel)             in language  on input line 165.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 153.
+(babel)             in language  on input line 165.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 153.
+(babel)             in language  on input line 165.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 153.
+(babel)             in language  on input line 165.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 153.
- [51]
+(babel)             in language  on input line 165.
+[53]
 
-LaTeX Warning: Reference `fig:bpetSec' on page 52 undefined on input line 156.
+LaTeX Warning: Reference `fig:bpetSec' on page 54 undefined on input line 168.
 
 
-LaTeX Warning: Reference `fig:bpetSec' on page 52 undefined on input line 156.
+LaTeX Warning: Reference `fig:bpetSec' on page 54 undefined on input line 168.
 
 (./tables/timesSecuencial.tex) (./figs/bpetAle1.tex
-<img/bpeTimes/aleatorio/marknewman-astro.pdf, id=2807, 1344.94475pt x 712.58218
+<img/bpeTimes/aleatorio/marknewman-astro.pdf, id=2905, 1344.94475pt x 712.58218
 pt>
 File: img/bpeTimes/aleatorio/marknewman-astro.pdf Graphic file (type pdf)
 <use img/bpeTimes/aleatorio/marknewman-astro.pdf>
 Package pdftex.def Info: img/bpeTimes/aleatorio/marknewman-astro.pdf  used on i
 nput line 7.
 (pdftex.def)             Requested size: 364.19667pt x 192.95428pt.
-<img/bpeTimes/labelAle.pdf, id=2808, 614.295pt x 794.97pt>
+<img/bpeTimes/labelAle.pdf, id=2906, 614.295pt x 794.97pt>
 File: img/bpeTimes/labelAle.pdf Graphic file (type pdf)
 <use img/bpeTimes/labelAle.pdf>
 Package pdftex.def Info: img/bpeTimes/labelAle.pdf  used on input line 11.
@@ -3796,7 +3819,7 @@ Overfull \hbox (6.87833pt too wide) in paragraph at lines 11--12
  [][] 
  []
 
-<img/bpeTimes/aleatorio/marknewman-condmat.pdf, id=2810, 1344.94475pt x 712.582
+<img/bpeTimes/aleatorio/marknewman-condmat.pdf, id=2908, 1344.94475pt x 712.582
 18pt>
 File: img/bpeTimes/aleatorio/marknewman-condmat.pdf Graphic file (type pdf)
 <use img/bpeTimes/aleatorio/marknewman-condmat.pdf>
@@ -3813,7 +3836,7 @@ Overfull \hbox (6.87833pt too wide) in paragraph at lines 25--26
  []
 
 ) (./figs/bpetAle2.tex
-<img/bpeTimes/aleatorio/dblp-2010.pdf, id=2812, 1344.94475pt x 712.58218pt>
+<img/bpeTimes/aleatorio/dblp-2010.pdf, id=2910, 1344.94475pt x 712.58218pt>
 File: img/bpeTimes/aleatorio/dblp-2010.pdf Graphic file (type pdf)
 <use img/bpeTimes/aleatorio/dblp-2010.pdf>
 Package pdftex.def Info: img/bpeTimes/aleatorio/dblp-2010.pdf  used on input li
@@ -3828,7 +3851,7 @@ Overfull \hbox (6.87833pt too wide) in paragraph at lines 11--12
  [][] 
  []
 
-<img/bpeTimes/aleatorio/dblp-2011.pdf, id=2814, 1344.94475pt x 712.58218pt>
+<img/bpeTimes/aleatorio/dblp-2011.pdf, id=2912, 1344.94475pt x 712.58218pt>
 File: img/bpeTimes/aleatorio/dblp-2011.pdf Graphic file (type pdf)
 <use img/bpeTimes/aleatorio/dblp-2011.pdf>
 Package pdftex.def Info: img/bpeTimes/aleatorio/dblp-2011.pdf  used on input li
@@ -3844,7 +3867,7 @@ Overfull \hbox (6.87833pt too wide) in paragraph at lines 25--26
  []
 
 ) (./figs/bpetAle3.tex
-<img/bpeTimes/aleatorio/snap-dblp.pdf, id=2816, 1344.94475pt x 712.58218pt>
+<img/bpeTimes/aleatorio/snap-dblp.pdf, id=2914, 1344.94475pt x 712.58218pt>
 File: img/bpeTimes/aleatorio/snap-dblp.pdf Graphic file (type pdf)
 <use img/bpeTimes/aleatorio/snap-dblp.pdf>
 Package pdftex.def Info: img/bpeTimes/aleatorio/snap-dblp.pdf  used on input li
@@ -3859,7 +3882,7 @@ Overfull \hbox (6.87833pt too wide) in paragraph at lines 11--12
  [][] 
  []
 
-<img/bpeTimes/aleatorio/snap-amazon.pdf, id=2818, 1344.94475pt x 712.58218pt>
+<img/bpeTimes/aleatorio/snap-amazon.pdf, id=2916, 1344.94475pt x 712.58218pt>
 File: img/bpeTimes/aleatorio/snap-amazon.pdf Graphic file (type pdf)
 <use img/bpeTimes/aleatorio/snap-amazon.pdf>
 Package pdftex.def Info: img/bpeTimes/aleatorio/snap-amazon.pdf  used on input 
@@ -3875,7 +3898,7 @@ Overfull \hbox (6.87833pt too wide) in paragraph at lines 25--26
  []
 
 ) (./figs/bpetAle4.tex
-<img/bpeTimes/aleatorio/coPapersDBLP.pdf, id=2820, 1344.94475pt x 712.58218pt>
+<img/bpeTimes/aleatorio/coPapersDBLP.pdf, id=2918, 1344.94475pt x 712.58218pt>
 File: img/bpeTimes/aleatorio/coPapersDBLP.pdf Graphic file (type pdf)
 <use img/bpeTimes/aleatorio/coPapersDBLP.pdf>
 Package pdftex.def Info: img/bpeTimes/aleatorio/coPapersDBLP.pdf  used on input
@@ -3890,7 +3913,7 @@ Overfull \hbox (6.87833pt too wide) in paragraph at lines 11--12
  [][] 
  []
 
-<img/bpeTimes/aleatorio/coPapersCiteseer.pdf, id=2822, 1344.94475pt x 712.58218
+<img/bpeTimes/aleatorio/coPapersCiteseer.pdf, id=2920, 1344.94475pt x 712.58218
 pt>
 File: img/bpeTimes/aleatorio/coPapersCiteseer.pdf Graphic file (type pdf)
 <use img/bpeTimes/aleatorio/coPapersCiteseer.pdf>
@@ -3907,14 +3930,14 @@ Overfull \hbox (6.87833pt too wide) in paragraph at lines 25--26
  []
 
 ) (./figs/bpetSec1.tex
-<img/bpeTimes/secuencial/marknewman-astro.pdf, id=2824, 1344.94475pt x 712.5821
+<img/bpeTimes/secuencial/marknewman-astro.pdf, id=2922, 1344.94475pt x 712.5821
 8pt>
 File: img/bpeTimes/secuencial/marknewman-astro.pdf Graphic file (type pdf)
 <use img/bpeTimes/secuencial/marknewman-astro.pdf>
 Package pdftex.def Info: img/bpeTimes/secuencial/marknewman-astro.pdf  used on 
 input line 7.
 (pdftex.def)             Requested size: 364.19667pt x 192.95428pt.
-<img/bpeTimes/labelSec.pdf, id=2825, 614.295pt x 794.97pt>
+<img/bpeTimes/labelSec.pdf, id=2923, 614.295pt x 794.97pt>
 File: img/bpeTimes/labelSec.pdf Graphic file (type pdf)
 <use img/bpeTimes/labelSec.pdf>
 Package pdftex.def Info: img/bpeTimes/labelSec.pdf  used on input line 11.
@@ -3924,7 +3947,7 @@ Overfull \hbox (6.87833pt too wide) in paragraph at lines 11--12
  [][] 
  []
 
-<img/bpeTimes/secuencial/marknewman-condmat.pdf, id=2827, 1344.94475pt x 712.58
+<img/bpeTimes/secuencial/marknewman-condmat.pdf, id=2925, 1344.94475pt x 712.58
 218pt>
 File: img/bpeTimes/secuencial/marknewman-condmat.pdf Graphic file (type pdf)
 <use img/bpeTimes/secuencial/marknewman-condmat.pdf>
@@ -3941,7 +3964,7 @@ Overfull \hbox (6.87833pt too wide) in paragraph at lines 25--26
  []
 
 ) (./figs/bpetSec2.tex
-<img/bpeTimes/secuencial/dblp-2010.pdf, id=2829, 1344.94475pt x 712.58218pt>
+<img/bpeTimes/secuencial/dblp-2010.pdf, id=2927, 1344.94475pt x 712.58218pt>
 File: img/bpeTimes/secuencial/dblp-2010.pdf Graphic file (type pdf)
 <use img/bpeTimes/secuencial/dblp-2010.pdf>
 Package pdftex.def Info: img/bpeTimes/secuencial/dblp-2010.pdf  used on input l
@@ -3956,7 +3979,7 @@ Overfull \hbox (6.87833pt too wide) in paragraph at lines 11--12
  [][] 
  []
 
-<img/bpeTimes/secuencial/dblp-2011.pdf, id=2831, 1344.94475pt x 712.58218pt>
+<img/bpeTimes/secuencial/dblp-2011.pdf, id=2929, 1344.94475pt x 712.58218pt>
 File: img/bpeTimes/secuencial/dblp-2011.pdf Graphic file (type pdf)
 <use img/bpeTimes/secuencial/dblp-2011.pdf>
 Package pdftex.def Info: img/bpeTimes/secuencial/dblp-2011.pdf  used on input l
@@ -3972,7 +3995,7 @@ Overfull \hbox (6.87833pt too wide) in paragraph at lines 25--26
  []
 
 ) (./figs/bpetSec3.tex
-<img/bpeTimes/secuencial/snap-dblp.pdf, id=2833, 1344.94475pt x 712.58218pt>
+<img/bpeTimes/secuencial/snap-dblp.pdf, id=2931, 1344.94475pt x 712.58218pt>
 File: img/bpeTimes/secuencial/snap-dblp.pdf Graphic file (type pdf)
 <use img/bpeTimes/secuencial/snap-dblp.pdf>
 Package pdftex.def Info: img/bpeTimes/secuencial/snap-dblp.pdf  used on input l
@@ -3987,7 +4010,7 @@ Overfull \hbox (6.87833pt too wide) in paragraph at lines 11--12
  [][] 
  []
 
-<img/bpeTimes/secuencial/snap-amazon.pdf, id=2835, 1344.94475pt x 712.58218pt>
+<img/bpeTimes/secuencial/snap-amazon.pdf, id=2933, 1344.94475pt x 712.58218pt>
 File: img/bpeTimes/secuencial/snap-amazon.pdf Graphic file (type pdf)
 <use img/bpeTimes/secuencial/snap-amazon.pdf>
 Package pdftex.def Info: img/bpeTimes/secuencial/snap-amazon.pdf  used on input
@@ -4003,7 +4026,7 @@ Overfull \hbox (6.87833pt too wide) in paragraph at lines 25--26
  []
 
 ) (./figs/bpetSec4.tex
-<img/bpeTimes/secuencial/coPapersDBLP.pdf, id=2837, 1344.94475pt x 712.58218pt>
+<img/bpeTimes/secuencial/coPapersDBLP.pdf, id=2935, 1344.94475pt x 712.58218pt>
 
 File: img/bpeTimes/secuencial/coPapersDBLP.pdf Graphic file (type pdf)
 <use img/bpeTimes/secuencial/coPapersDBLP.pdf>
@@ -4019,7 +4042,7 @@ Overfull \hbox (6.87833pt too wide) in paragraph at lines 11--12
  [][] 
  []
 
-<img/bpeTimes/secuencial/coPapersCiteseer.pdf, id=2839, 1344.94475pt x 712.5821
+<img/bpeTimes/secuencial/coPapersCiteseer.pdf, id=2937, 1344.94475pt x 712.5821
 8pt>
 File: img/bpeTimes/secuencial/coPapersCiteseer.pdf Graphic file (type pdf)
 <use img/bpeTimes/secuencial/coPapersCiteseer.pdf>
@@ -4062,7 +4085,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 1.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1.
- [52]
+ [54]
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 Package babel Info: Redefining spanish shorthand <<
@@ -4089,7 +4112,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 1.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1.
- [53 <./img/bpeTimes/labelAle.pdf
+ [55 <./img/bpeTimes/labelAle.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/bpeTimes/labelAle.pdf)
 : PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type 
@@ -4131,7 +4154,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 1.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1.
- [54 <./img/bpeTimes/aleatorio/dblp-2010.pdf
+ [56 <./img/bpeTimes/aleatorio/dblp-2010.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/bpeTimes/aleatorio/dbl
 p-2010.pdf): PDF inclusion: multiple pdfs with page group included in a single 
@@ -4168,7 +4191,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 1.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1.
- [55 <./img/bpeTimes/aleatorio/snap-dblp.pdf
+ [57 <./img/bpeTimes/aleatorio/snap-dblp.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/bpeTimes/aleatorio/sna
 p-dblp.pdf): PDF inclusion: multiple pdfs with page group included in a single 
@@ -4205,7 +4228,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 1.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1.
- [56 <./img/bpeTimes/aleatorio/coPapersDBLP.pdf
+ [58 <./img/bpeTimes/aleatorio/coPapersDBLP.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/bpeTimes/aleatorio/coP
 apersDBLP.pdf): PDF inclusion: multiple pdfs with page group included in a sing
@@ -4242,7 +4265,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 1.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1.
- [57 <./img/bpeTimes/labelSec.pdf
+ [59 <./img/bpeTimes/labelSec.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/bpeTimes/labelSec.pdf)
 : PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type 
@@ -4284,7 +4307,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 1.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1.
- [58 <./img/bpeTimes/secuencial/dblp-2010.pdf
+ [60 <./img/bpeTimes/secuencial/dblp-2010.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/bpeTimes/secuencial/db
 lp-2010.pdf): PDF inclusion: multiple pdfs with page group included in a single
@@ -4321,7 +4344,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 1.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1.
- [59 <./img/bpeTimes/secuencial/snap-dblp.pdf
+ [61 <./img/bpeTimes/secuencial/snap-dblp.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/bpeTimes/secuencial/sn
 ap-dblp.pdf): PDF inclusion: multiple pdfs with page group included in a single
@@ -4358,7 +4381,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 1.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1.
- [60 <./img/bpeTimes/secuencial/coPapersDBLP.pdf
+ [62 <./img/bpeTimes/secuencial/coPapersDBLP.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/bpeTimes/secuencial/co
 PapersDBLP.pdf): PDF inclusion: multiple pdfs with page group included in a sin
@@ -4382,14 +4405,6 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 1.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1.
-
-LaTeX Warning: Reference `alg:neighbors' on page 61 undefined on input line 10.
-
-
-
-LaTeX Warning: Reference `alg:sequential' on page 61 undefined on input line 12
-.
-
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 18.
 Package babel Info: Redefining spanish shorthand >>
@@ -4414,7 +4429,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 18.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 18.
-[61
+[63
 
 ]) (./Thesis.bbl
 LaTeX Info: Redefining \. on input line 1.
@@ -4443,7 +4458,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 1.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1.
- [62]
+ [64]
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 1.
 Package babel Info: Redefining spanish shorthand >>
@@ -4480,7 +4495,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 74.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 74.
- [63
+ [65
 
 
 ]
@@ -4510,7 +4525,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 153.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 153.
- [64]
+ [66]
 Underfull \hbox (badness 2564) in paragraph at lines 172--175
 []\OT1/cmr/m/n/12 Daisuke Oka-noha-ra and Ku-nihi-ko Sa-da-ka-ne.  Prac-ti-cal 
 entropy-compressed
@@ -4543,7 +4558,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 325.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 325.
- [65]
+ [67]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 325.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 325.
  (./Thesis.aux
@@ -4552,15 +4567,9 @@ LaTeX Info: Redefining \% on input line 23.
 )
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 325.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 325.
+Package rerunfilecheck Info: File `Thesis.out' has not changed.
+(rerunfilecheck)             Checksum: EF10E36F33DD1077D04D6DE8B3955371;2662.
 
-
-Package rerunfilecheck Warning: File `Thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Thesis.out':
-(rerunfilecheck)             Before: 8A6667AF4FEE1B6CF574AE22939604AD;2048
-(rerunfilecheck)             After:  9A803C306D4073F2C2E860AB5F665497;2492.
 
 LaTeX Warning: There were undefined references.
 
@@ -4570,10 +4579,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 325.
  ) 
 Here is how much of TeX's memory you used:
- 19220 strings out of 492649
- 355137 string characters out of 6129622
- 441936 words of memory out of 5000000
- 22117 multiletter control sequences out of 15000+600000
+ 19268 strings out of 492649
+ 356030 string characters out of 6129622
+ 443587 words of memory out of 5000000
+ 22144 multiletter control sequences out of 15000+600000
  20627 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,15n,54p,1291b,1044s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -4601,10 +4610,10 @@ e/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/
 018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/20
 18/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/201
 8/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Thesis.pdf (70 pages, 1815817 bytes).
+Output written on Thesis.pdf (72 pages, 2213758 bytes).
 PDF statistics:
- 3738 PDF objects out of 4296 (max. 8388607)
- 1572 compressed objects within 16 object streams
- 366 named destinations out of 1000 (max. 500000)
- 956 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3841 PDF objects out of 4296 (max. 8388607)
+ 1660 compressed objects within 17 object streams
+ 374 named destinations out of 1000 (max. 500000)
+ 1069 words of extra memory for PDF output out of 10000 (max. 10000000)
 
