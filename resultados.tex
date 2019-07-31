@@ -50,7 +50,9 @@ Para generar la estructura compacta se usa la librería \texttt{sdsl-lite}\footn
 	%\item Para la secuencia de bytes, se consideran las estructuras basadas en Hu-Tucker (\textit{hutu}) \cite{brisaboa2011compressed}, y Huffman (\textit{huff}) \cite{makinen2005succinct}.
 \end{itemize}
 
-La secuencia de bytes $BB$ se comprime usando código Huffman\cite{huffman1952method} directamente (ver Sección~\ref{sec:huffman}). Esto significa que la secuencia final de $BB$ se transforma en una secuencia de bits, lo que requiere actualizar los índices de inicio de sus particiones en la secuencia $Y$, y así poder decodificar directamente los bytes de las particiones correspondientes. Esto también conlleva que, por cada consulta a una partición, primero hay que decodificar todos los bytes correspondientes antes de poder usarlos para detectar si los nodos asociados son vecinos o no.
+La secuencia de bytes $BB$ se comprime usando código Huffman\cite{huffman1952method} directamente (ver Sección~\ref{sec:huffman}). Esto significa que la secuencia final de $BB$ se transforma en una secuencia de bits, lo que requiere actualizar los índices de inicio de sus particiones en la secuencia $Y$, y así poder decodificar directamente los bytes de las particiones correspondientes. Esto también conlleva que, por cada consulta a una partición, primero hay que decodificar todos los bytes correspondientes de esa partición antes de poder usarlos para detectar si los nodos asociados son vecinos o no.
+
+\textcolor{red}{Creo suficiente no entrar más en detalle sobre este cambio, debido a que no es muy complejo.}
 
 Se toman como factores de selección el nivel de compresión en bits y tanto el tiempo de reconstrucción secuencial, usando el Algoritmo~\ref{alg:sequential}, como el tiempo de acceso aleatorio al recuperar los vecinos de un millón de nodos, usando el Algoritmo~\ref{alg:neighbors}, para cada grafo y cada función de ranking con cada una de las estructuras antes planteadas.
 
@@ -59,8 +61,11 @@ Se toman como factores de selección el nivel de compresión en bits y tanto el 
 %\input{tables/sdslBitsRf}
 %\input{tables/sdslBitsRc}
 %\input{tables/sdslBitsRr}
+\textcolor{red}{Aquí antes mostraba las tablas con los tamaños en bytes de cada estructura compacta. Las eliminé, ya que creo no aportan en mucho comparado con la comparativa entre BPE y espacio.}
 
 Para ello, se decide construir la estructura compacta para cada grafo y cada función de ranking, con todas las posibles combinaciones para las secuencias. En la Figura~\ref{fig:sdslBPE2}, Figura~\ref{fig:sdslBPE3}, Figura~\ref{fig:sdslBPE4}, y Figura~\ref{fig:sdslBPE5}, se compara para cada grafo el BPE de las ocho posibles combinaciones para cada función de ranking con respecto al tiempo secuencial de reconstrucción del grafo. Y en la Figura~\ref{fig:sdslBPEAle2}, Figura~\ref{fig:sdslBPEAle3}, Figura~\ref{fig:sdslBPEAle4} y Figura~\ref{fig:sdslBPEAle5}, el BPE con respecto al tiempo de acceso aleatorio al recuperar los vecinos de un millón de nodos.
+
+\textcolor{red}{No estoy seguro que esta sea la mejor manera de anotar tantas figuras.}
 
 En la mayoría de los casos, la estructura que presenta la mejor relación entre BPE y tiempos es la de secuencias de símbolos con \textit{wm}, secuencia de bytes con \textit{hutu}, y secuencia de bits con \textit{sdb}.  Las opciones que presentan menores tiempos aumentan en BPE, y viceversa. Por tanto, se elige esta combinación de estructuras de secuencias como la estructura compacta a desarrollar.
 
@@ -133,7 +138,7 @@ A continuación se detallan las notaciones a usar en el resto de la sección.
 
 Es importante recordar que los algoritmos Webgraph y $AD$ están orientados a comprimir grafos dirigidos. Esto requiere que cada arco de los grafos no dirigidos a evaluar deben ser anotados en ambos sentidos antes de ser comprimidos. 
 
-Mención especial requiere k2-tree, donde la autora proporcionó una versión mejorada del algoritmo, orientado específicamente a grafos no dirigidos, que reduce el espacio necesario para representar el grafo considerando la mitad de la matriz de adyacencia, junto con la capacidad de dicho modelo de entregar los listados de vecinos directos como reversos.
+Mención especial requiere k2-tree, donde la autora proporcionó una versión mejorada del algoritmo orientado específicamente a grafos no dirigidos, que reduce el espacio necesario para representar el grafo considerando la mitad de la matriz de adyacencia, junto con la capacidad de dicho modelo de entregar los listados de vecinos directos como reversos.
 
 Con esto presente, en la Tabla~\ref{table:BPEcomp} se comparan los BPE de todos los casos, resaltando los mejores resultados. Para dos de los grafos comprimidos, \texttt{marknewman-astro} y \texttt{coPapersDBLP}, la propuesta es la que obtiene el menor resultado, seguido muy de cerca por la versión de k2-tree con BFS. Con el grafo \texttt{coPapersCiteseer} se obtiene un resultado muy cercano al mejor caso, y en los demás, los dos mejores resultados los obtienen alguna de las dos versiones de k2-tree, seguido siempre del método propuesto. tanto Webgraph como AD no logran competir en compresión con los demás.
 
@@ -170,5 +175,3 @@ En cuanto a detectar si dos nodos son vecinos o no, la estructura planteada es l
 \input{figs/bpetSec2}
 \input{figs/bpetSec3}
 \input{figs/bpetSec4}
-
-

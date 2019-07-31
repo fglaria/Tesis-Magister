@@ -10,9 +10,9 @@ Esto consta de tres etapas. La primera consta de listar todos los cliques maxima
 
 La representación del grafo mediante su grafo de cliques (ver Definición \ref{def:cliqueGraph}) conlleva un problema, listar los cliques maximales de un grafo. Enumerarlos todos es un problema complejo desde un punto de vista teórico y práctico. 
 
-Eppstein et. al. \cite{listingcliques,  listingcliques2} proponen un algoritmo rápido para listar cliques maximales de grafos poco densos. La complejidad de su algoritmo es $O(dn3^{d/3})$ en tiempo y $O(n+m)$ en espacio, siendo $d$ el índice de \textit{degeneracy}, $n$ la cantidad de vértices, y $m$ la cantidad de aristas del grafo. 
+Eppstein et. al. \cite{listingcliques,  listingcliques2} proponen un algoritmo rápido para listar cliques maximales de grafos poco densos. La complejidad de su algoritmo es $O(dn3^{d/3})$ en tiempo y $O(n+m)$ en espacio, siendo $d$ el índice de \textit{degeneracy}, $n$ la cantidad de vértices, y $m$ la cantidad de aristas del grafo (ver Sección~\ref{sec:Cliques}).
 
-Luego, el problema se concentra en encontrar un método eficiente para dividir en particiones el grafo de cliques, que permita tanto ahorrar espacio como responder consultas sobre el grafo de manera rápida.
+Este algoritmo está disponible en el repositorio \textbf{Quick Cliques}\footnote{\url{https://github.com/darrenstrash/quick-cliques}}, implementado por los mismos autores. Luego, el problema se concentra en encontrar un método eficiente para dividir en particiones el grafo de cliques, que permita tanto ahorrar espacio como responder consultas sobre el grafo de manera rápida.
 
 Con el listado de cliques maximales, se puede obtener el grafo de cliques del grafo, el cual se define a continuación. 
 
@@ -170,6 +170,8 @@ También se debe notar el caso especial, cuando un clique maximal queda solo en 
 	\end{align}
 \end{definition}
 
+\textcolor{red}{Cambié la definición de Y, para dejar en claro que si una partición no tiene bytes en BB, tampoco tendrá un Y asociado.}
+
 En la Figura~\ref{fig:compactStructure} se presenta la estructura resultante del ejemplo, usando las particiones $\mathcal{C}\mathcal{P}_{rr}$ reordenadas. Como se puede apreciar, solo la primera partición tiene dos cliques, por tanto será la única que agregue bytes en la secuencia $BB$, codificando la pertenencia de cada clique en un bit del byte, requiriendo entonces solo un byte por vértice en $X$.
 
 La secuencia $X$ se conforma por todos los vértices que conforman los cliques en cada partición, ordenados de menor a mayor. La secuencia $B$ escribe un 1 en cada inicio de una partición más uno extra para indicar el final. Para la secuencia $BB$, los cliques involucrados son $C_{0}: \{0, 1, 2\}$ y $C_{1}: \{0, 2, 3, 4\}$, ambos contienen los vértices $0$ y $2$, codificado con sus bytes en $3$, el vértice $1$ solo está presente en $C_{0}$ y se codifica con su respectivo byte en $1$, y los vértices $3$ y $4$ solo participan en $C_{1}$ y sus bytes toman el valor $2$. Finalmente la secuencia $Y$ se inicia con un  5 por la cantidad de cliques presentes en la primera partición, y como las siguientes solo tienen un clique, no se agregan más enteros.
@@ -212,6 +214,8 @@ El algoritmo para recuperar el listado de cliques maximales (Algoritmo~\ref{alg:
 
 Al recorrer las particiones de manera secuencial, comienza de igual manera que el Algoritmo~\ref{alg:sequential}. Primero obtiene la cantidad de particiones $P$, luego por cada una de ellas obtiene sus índices de inicio ($s$) y final ($e$) en $B$, calcula la cantidad de bytes por vértice $bpu_{p}$, y copia a RAM los vértices de la partición. Si $bpu_{p}$ es cero, quiere decir que todos los vértices pertenecen al mismo clique, por tanto los agrega como un clique directamente. Y si $bpu_{p}$ es distinto de cero, revisa por cada vértice y cada bit de cada byte la pertenencia de dicho vértice a un clique maximal; si el bit es uno lo agrega, y si es cero lo omite. Finalmente, agrega cada clique detectado al listado final de cliques maximales. La complejidad del algoritmo es $O(P_{0} \cdot N)$ cuando $bpu_{p}$ es igual a cero, y $O(P_{1} \cdot N \cdot 8 \cdot bpu_{p})$ cuando no lo es, siendo $P_{0}$ el número de particiones con cero bytes por vértice, $P_{1}$ las particiones que sí tienen bytes por vértice, y $N$ el largo de las particiones.
 
+\textcolor{red}{Las notaciones de complejidad de los algoritmos me causan duda, separando siempre cuando hay o no bytes en BB.}
+\textcolor{red}{Por favor revisar el algoritmo de consulta si dos nodos son vecinos. Además, realicé algunos cambios menores en los demás algoritmos, por favor revisar igual.}
 
 \input{algorithms/sequential}
 
