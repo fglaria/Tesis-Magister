@@ -68,7 +68,19 @@ Los códigos universales para enteros son un tipo de códigos que transforman en
 \end{itemize}
 
 \subsection{Codificación Huffman}\label{sec:huffman}
-Una codificación muy usada es la propuesta por Huffman\cite{huffman1952method}, que retorna códigos de largo variable. Su conversión se basa en la frecuencia de los símbolos en la secuencia de entrada, codificando los más frecuentes con menos bits. Esta representación requiere tanto la secuencia codificada junto a un vocabulario de símbolos para recuperar la secuencia original. 
+Una codificación muy usada es la propuesta por Huffman\cite{huffman1952method}, que retorna códigos binarios de largo variable. Su conversión se basa en la frecuencia de los símbolos en la secuencia de entrada, codificando los más frecuentes con menos bits. Para recuperar la secuencia original, esta representación requiere tanto la secuencia codificada junto a un vocabulario de símbolos.
+
+Una codificación binaria de largo fijo, le asigna la misma cantidad de bits a todos los símbolos por codificar. Una de largo variable le asigna menos bits a los símbolos más frecuentes, y más bits a los menos frecuentes, cuidando que las secuencias binarias cortas no sean prefijos de las más largas. La Figura~\ref{fig:fixedVarLength} se tiene la frecuencia de seis símbolos en una secuencia de 100.000 caracteres, y se comparan ambos códigos. Para el caso de largo fijo, se requieren 3 bits por cada símbolo en la secuencia, un total de 300.000 bits. Para el caso de largo variable, el símbolo más frecuente \texttt{a} requiere un bit, y los menos frecuentes requieren 4 bits. Así, la secuencia requiere:
+
+\begin{align*}
+	(45 \cdot 1 + 13 \cdot 3 + 12 \cdot 3 + 16 \cdot 3 + 9 \cdot 4 + 5 \cdot 4) \cdot \textrm{1.000} = \textrm{224.000 bits}
+\end{align*}
+
+\noindent lo que significa una reducción cercana al $20\%$. En la Figura~\ref{fig:fixVarTrees} se ilustran los árboles de las codificaciones de la Figura~\ref{fig:fixedVarLength}, en (a) el correspondiente a código de largo fijo, y en (b) el de largo variable. 
+
+\input{figs/fixedVarLength}
+
+\input{figs/fixVarTrees}
 
 \input{figs/huffman}
 

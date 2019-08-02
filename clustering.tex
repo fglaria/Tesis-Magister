@@ -3,14 +3,14 @@
 
 En esta sección se procede a desarrollar el algoritmo de compresión de grafos dispersos, usando estructuras compactas y aprovechando la redundancia de vértices del grafo en sus cliques maximales.
 
-Esto consta de tres etapas. La primera consta de listar todos los cliques maximales del grafo, utilizando el algoritmo de Eppstein et. al. \cite{listingcliques,  listingcliques2}. Luego se define una heurística eficiente para agrupar o particionar los cliques, aprovechando la superposición entre ellos. Finalmente se define una estructura compacta basada en secuencias para almacenar las particiones. 
+Esto consta de tres etapas. La primera consta de listar todos los cliques maximales del grafo. Luego se define una heurística eficiente para agrupar o particionar los cliques, aprovechando la superposición entre ellos. Finalmente se define una estructura compacta basada en secuencias para almacenar las particiones. 
 
 
 \section{Detección de cliques maximales}
 
 La representación del grafo mediante su grafo de cliques (ver Definición \ref{def:cliqueGraph}) conlleva un problema, listar los cliques maximales de un grafo. Enumerarlos todos es un problema complejo desde un punto de vista teórico y práctico. 
 
-Eppstein et. al. \cite{listingcliques,  listingcliques2} proponen un algoritmo rápido para listar cliques maximales de grafos poco densos. La complejidad de su algoritmo es $O(dn3^{d/3})$ en tiempo y $O(n+m)$ en espacio, siendo $d$ el índice de \textit{degeneracy}, $n$ la cantidad de vértices, y $m$ la cantidad de aristas del grafo (ver Sección~\ref{sec:Cliques}).
+Eppstein et. al. \cite{eppstein2010listing, eppstein2011listing} proponen un algoritmo rápido para listar cliques maximales de grafos poco densos. La complejidad de su algoritmo es $O(dn3^{d/3})$ en tiempo y $O(n+m)$ en espacio, siendo $d$ el índice de \textit{degeneracy}, $n$ la cantidad de vértices, y $m$ la cantidad de aristas del grafo (ver Sección~\ref{sec:Cliques}).
 
 Este algoritmo está disponible en el repositorio \textbf{Quick Cliques}\footnote{\url{https://github.com/darrenstrash/quick-cliques}}, implementado por los mismos autores. Luego, el problema se concentra en encontrar un método eficiente para dividir en particiones el grafo de cliques, que permita tanto ahorrar espacio como responder consultas sobre el grafo de manera rápida.
 

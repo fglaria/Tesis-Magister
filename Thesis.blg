@@ -3,46 +3,44 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: Thesis.aux
 The style file: plain.bst
 Database file #1: biblio.bib
-Warning--can't use both volume and number fields in eblen2012maximum
-You've used 32 entries,
+You've used 33 entries,
             2118 wiz_defined-function locations,
-            700 strings with 9629 characters,
-and the built_in function-call counts, 12996 in all, are:
-= -- 1361
-> -- 536
-< -- 18
-+ -- 216
-- -- 176
-* -- 857
-:= -- 2015
-add.period$ -- 114
-call.type$ -- 32
-change.case$ -- 184
+            694 strings with 9655 characters,
+and the built_in function-call counts, 13381 in all, are:
+= -- 1411
+> -- 521
+< -- 19
++ -- 211
+- -- 170
+* -- 867
+:= -- 2048
+add.period$ -- 116
+call.type$ -- 33
+change.case$ -- 185
 chr.to.int$ -- 0
 cite$ -- 33
-duplicate$ -- 533
-empty$ -- 1033
-format.name$ -- 176
-if$ -- 2864
+duplicate$ -- 566
+empty$ -- 1093
+format.name$ -- 170
+if$ -- 2971
 int.to.chr$ -- 0
-int.to.str$ -- 32
-missing$ -- 30
-newline$ -- 165
+int.to.str$ -- 33
+missing$ -- 32
+newline$ -- 168
 num.names$ -- 66
-pop$ -- 200
+pop$ -- 212
 preamble$ -- 1
 purify$ -- 151
 quote$ -- 0
-skip$ -- 401
+skip$ -- 424
 stack$ -- 0
-substring$ -- 929
-swap$ -- 184
-text.length$ -- 18
+substring$ -- 973
+swap$ -- 197
+text.length$ -- 19
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 128
-warning$ -- 1
-while$ -- 131
-width$ -- 34
-write$ -- 377
-(There was 1 warning)
+type$ -- 132
+warning$ -- 0
+while$ -- 140
+width$ -- 35
+write$ -- 384

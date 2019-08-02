@@ -1,36 +1,37 @@
 \BOOKMARK [0][-]{chapter*.1}{Resumen}{}% 1
-\BOOKMARK [0][-]{chapter.1}{INTRODUCCI\323N}{}% 2
-\BOOKMARK [0][-]{chapter.2}{MARCO TE\323RICO}{}% 3
-\BOOKMARK [1][-]{section.2.1}{Grafos, cliques maximales y m\351tricas de clusterizaci\363n}{chapter.2}% 4
-\BOOKMARK [1][-]{section.2.2}{Codificaciones}{chapter.2}% 5
-\BOOKMARK [2][-]{subsection.2.2.1}{C\363digos universales}{section.2.2}% 6
-\BOOKMARK [2][-]{subsection.2.2.2}{Codificaci\363n Huffman}{section.2.2}% 7
-\BOOKMARK [0][-]{chapter.3}{ESTADO DEL ARTE}{}% 8
-\BOOKMARK [1][-]{section.3.1}{Compresi\363n de grafos}{chapter.3}% 9
-\BOOKMARK [2][-]{subsection.3.1.1}{The WebGraph Framework, Boldi y Vigna}{section.3.1}% 10
-\BOOKMARK [2][-]{subsection.3.1.2}{BFS, Apostolico y Drovandi}{section.3.1}% 11
-\BOOKMARK [2][-]{subsection.3.1.3}{Using Re-Pair, Claude y Navarro}{section.3.1}% 12
-\BOOKMARK [2][-]{subsection.3.1.4}{Virtual Node Mining, Buehrer y Chellapilla}{section.3.1}% 13
-\BOOKMARK [2][-]{subsection.3.1.5}{k2-tree, Brisaboa, Ladra y Navarro}{section.3.1}% 14
-\BOOKMARK [2][-]{subsection.3.1.6}{List Merging, Grabowski y Bieniecki}{section.3.1}% 15
-\BOOKMARK [2][-]{subsection.3.1.7}{GLOUDS, Fischer y Peters}{section.3.1}% 16
-\BOOKMARK [1][-]{section.3.2}{Estructuras compactas}{chapter.3}% 17
-\BOOKMARK [2][-]{subsection.3.2.1}{Secuencias binarias}{section.3.2}% 18
-\BOOKMARK [2][-]{subsection.3.2.2}{Wavelet Tree y Wavelet Matrix}{section.3.2}% 19
-\BOOKMARK [2][-]{subsection.3.2.3}{SDSL - Succinct Data Structure Library}{section.3.2}% 20
-\BOOKMARK [1][-]{section.3.3}{Detecci\363n de cliques maximales}{chapter.3}% 21
-\BOOKMARK [1][-]{section.3.4}{PENDIENTES}{chapter.3}% 22
-\BOOKMARK [0][-]{chapter.4}{M\311TODO DE COMPRESI\323N PROPUESTO}{}% 23
-\BOOKMARK [1][-]{section.4.1}{Detecci\363n de cliques maximales}{chapter.4}% 24
-\BOOKMARK [1][-]{section.4.2}{Particionamento del grafo de cliques}{chapter.4}% 25
-\BOOKMARK [1][-]{section.4.3}{Algoritmo de particionamiento o clustering}{chapter.4}% 26
-\BOOKMARK [1][-]{section.4.4}{Representaci\363n en estructuras compactas}{chapter.4}% 27
-\BOOKMARK [2][-]{subsection.4.4.1}{Secuencias de la representaci\363n de las particiones}{section.4.4}% 28
-\BOOKMARK [2][-]{subsection.4.4.2}{Algoritmos de consulta}{section.4.4}% 29
-\BOOKMARK [0][-]{chapter.5}{RESULTADOS}{}% 30
-\BOOKMARK [1][-]{section.5.1}{Grafos}{chapter.5}% 31
-\BOOKMARK [1][-]{section.5.2}{Estructura compacta}{chapter.5}% 32
-\BOOKMARK [1][-]{section.5.3}{Comparaci\363n de funciones de ranking}{chapter.5}% 33
-\BOOKMARK [1][-]{section.5.4}{Comparando con estado del arte}{chapter.5}% 34
-\BOOKMARK [0][-]{chapter.6}{CONCLUSIONES}{}% 35
-\BOOKMARK [0][-]{chapter.6}{Bibliograf\355a}{}% 36
+\BOOKMARK [0][-]{chapter*.2}{\315ndice de tablas}{}% 2
+\BOOKMARK [0][-]{chapter*.3}{\315ndice de figuras}{}% 3
+\BOOKMARK [0][-]{chapter.1}{INTRODUCCI\323N}{}% 4
+\BOOKMARK [0][-]{chapter.2}{MARCO TE\323RICO}{}% 5
+\BOOKMARK [1][-]{section.2.1}{Grafos, cliques maximales y m\351tricas de clusterizaci\363n}{chapter.2}% 6
+\BOOKMARK [1][-]{section.2.2}{Codificaciones}{chapter.2}% 7
+\BOOKMARK [2][-]{subsection.2.2.1}{C\363digos universales}{section.2.2}% 8
+\BOOKMARK [2][-]{subsection.2.2.2}{Codificaci\363n Huffman}{section.2.2}% 9
+\BOOKMARK [0][-]{chapter.3}{ESTADO DEL ARTE}{}% 10
+\BOOKMARK [1][-]{section.3.1}{Compresi\363n de grafos}{chapter.3}% 11
+\BOOKMARK [2][-]{subsection.3.1.1}{The WebGraph Framework, Boldi y Vigna}{section.3.1}% 12
+\BOOKMARK [2][-]{subsection.3.1.2}{BFS, Apostolico y Drovandi}{section.3.1}% 13
+\BOOKMARK [2][-]{subsection.3.1.3}{Using Re-Pair, Claude y Navarro}{section.3.1}% 14
+\BOOKMARK [2][-]{subsection.3.1.4}{Virtual Node Mining, Buehrer y Chellapilla}{section.3.1}% 15
+\BOOKMARK [2][-]{subsection.3.1.5}{k2-tree, Brisaboa, Ladra y Navarro}{section.3.1}% 16
+\BOOKMARK [2][-]{subsection.3.1.6}{List Merging, Grabowski y Bieniecki}{section.3.1}% 17
+\BOOKMARK [2][-]{subsection.3.1.7}{GLOUDS, Fischer y Peters}{section.3.1}% 18
+\BOOKMARK [1][-]{section.3.2}{Estructuras compactas}{chapter.3}% 19
+\BOOKMARK [2][-]{subsection.3.2.1}{Secuencias binarias}{section.3.2}% 20
+\BOOKMARK [2][-]{subsection.3.2.2}{Wavelet Tree y Wavelet Matrix}{section.3.2}% 21
+\BOOKMARK [2][-]{subsection.3.2.3}{SDSL - Succinct Data Structure Library}{section.3.2}% 22
+\BOOKMARK [1][-]{section.3.3}{Detecci\363n de cliques maximales}{chapter.3}% 23
+\BOOKMARK [0][-]{chapter.4}{M\311TODO DE COMPRESI\323N PROPUESTO}{}% 24
+\BOOKMARK [1][-]{section.4.1}{Detecci\363n de cliques maximales}{chapter.4}% 25
+\BOOKMARK [1][-]{section.4.2}{Particionamento del grafo de cliques}{chapter.4}% 26
+\BOOKMARK [1][-]{section.4.3}{Algoritmo de particionamiento o clustering}{chapter.4}% 27
+\BOOKMARK [1][-]{section.4.4}{Representaci\363n en estructuras compactas}{chapter.4}% 28
+\BOOKMARK [2][-]{subsection.4.4.1}{Secuencias de la representaci\363n de las particiones}{section.4.4}% 29
+\BOOKMARK [2][-]{subsection.4.4.2}{Algoritmos de consulta}{section.4.4}% 30
+\BOOKMARK [0][-]{chapter.5}{RESULTADOS}{}% 31
+\BOOKMARK [1][-]{section.5.1}{Grafos}{chapter.5}% 32
+\BOOKMARK [1][-]{section.5.2}{Estructura compacta}{chapter.5}% 33
+\BOOKMARK [1][-]{section.5.3}{Comparaci\363n de funciones de ranking}{chapter.5}% 34
+\BOOKMARK [1][-]{section.5.4}{Comparando con estado del arte}{chapter.5}% 35
+\BOOKMARK [0][-]{chapter.6}{CONCLUSIONES}{}% 36
+\BOOKMARK [0][-]{chapter.6}{Bibliograf\355a}{}% 37

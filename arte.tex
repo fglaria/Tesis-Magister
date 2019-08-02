@@ -40,6 +40,9 @@ Finalmente, en la Tabla~\ref{table:webgraph4} se puede apreciar la representaci�
 
 En un trabajo posterior Boldi et. al. \cite{boldi2009permuting}, usando la matriz de adyacencia y basados en aplicar permutaciones a sus filas, logran reordenar y generar una nueva matriz donde las filas, si son similares (contienen 1s en posiciones muy comunes), deben ser consecutivas o en una vecindad acotada. En otro trabajo propusieron un nuevo algoritmo llamado \textit{Layered Label Propagation} \cite{boldi2011layered} (propagación de etiquetas por capas). Su objetivo era poder ocupar las técnicas desarrolladas anteriormente para grafos de redes sociales, donde los vértices no pueden ser ordenados de manera lexicográfica. Usando la matriz de adyacencia, junto con descomponer en tareas el re-ordenamiento de la matriz y aprovechar los procesadores multi-core, logran muy buenos resultados.
 
+Francisco, Gagie, Ladra y Navarro \cite{francisco2018exploiting} estudian cómo potenciar el cálculo del producto de matrices con vectores de una manera eficiente, por ejemplo para PageRank\cite{page1999pagerank}.  Además, demuestran que se puede aprovechar el formato de algunos esquemas de compresión, en particular el de Boldi y Vigna, para hacer el cálculo en un tiempo proporcional al tamaño de la matriz comprimida.
+ %discute algunos algoritmos de compresión de grafos que permiten explotar en forma amigable la computación de matrices. En particular, muestran como el formato de WebGraph  que además son usados en algoritmos de ranking como PageRank \cite{page1999pagerank}.
+
 
 \subsection{BFS, \textit{Apostolico y Drovandi}}
 Otra alternativa de compresión bastante competitiva, también para grafos dirigidos, es la que presentan Apostolico y Drovandi \cite{apostolico2009graph}, basado en la topología del grafo de la Web en vez de las \textit{URL} subyacentes. En vez de asignarle índices a los nodos según el orden lexicográfico de sus \textit{URL}, realizan un recorrido por \textit{breath-first} o búsqueda en anchura del grafo, numerando cada nodo según el orden en que se expanden. Este proceso y su compresión inducida lo llaman \textit{Fase 1}, y la compresión de las aristas remanentes como \textit{Fase 2}.
@@ -87,7 +90,7 @@ Para ello introducen un nuevo símbolo $\Sigma$, seguido de un indicador $\Sigma
 
 Finalmente, usan códigos Huffman para codificar $\alpha, \beta, \chi, \phi$, y proponen una nueva codificación $\pi$ para cifrar diferencias, $\Sigma$, y otros enteros.
 
-\textcolor{red}{¿Es muy extendida esta explicación? Quizás podría detallarse el método un poco menos.}
+\textcolor{red}{¿Es muy extendida esta explicación? Quizás podría detallar el método un poco menos.}
 
 
 \subsection{Using Re-Pair, \textit{Claude y Navarro}}
@@ -130,7 +133,9 @@ Este modelo propone representar la matriz de adyacencia con un árbol $k_{2}$-na
 
 Finalmente, la compresión se realiza representando el árbol usando dos arreglos de bits, un bitmap $T$ para representar la estructura del árbol, y un bitmap $L$ para representar las hojas, que representan las celdas de la matriz. Además usan un bitmap adicional para acelerar la resolución de consultas. 
 
-En 2011, Hernández y Navarro \cite{hernandez2011compression} propusieron combinar varios métodos: Primero reducir la cantidad de aristas con nodos virtuales \cite{BuehrerChellapilla},  y luego comprimir usando las propuestas de k2-tree \cite{brisaboa2009k} y el trabajo anterior basado en Re-Pair \cite{claude2010fast}, logrando resultados de compresión bastante competitivos, pero sacrificando tiempos de acceso. En 2012, Hernandez y Navarro \cite{hernandez2012compressed} proponen una estructura bastante similar, pero los bicliques son representados usando estructuras sucintas como wavelet trees y bitmaps comprimidos (ver Sección \ref{sec:compactEstruct}). Esta representación comprimida proporciona resolución de consulta de vecinos directos y reversos.
+En 2011, Hernández y Navarro \cite{hernandez2011compression} propusieron combinar varios métodos: Primero reducir la cantidad de aristas con nodos virtuales \cite{BuehrerChellapilla},  y luego comprimir usando las propuestas de k2-tree \cite{brisaboa2009k} y el trabajo anterior basado en Re-Pair \cite{claude2010fast}, logrando resultados de compresión bastante competitivos, pero sacrificando tiempos de acceso. En trabajos posteriores, Hernandez y Navarro \cite{hernandez2012compressed, hernandez2014compressed} proponen una estructura bastante similar, pero los bicliques son representados usando estructuras sucintas como wavelet trees y bitmaps comprimidos (ver Sección \ref{sec:compactEstruct}). Esta representación comprimida proporciona resolución de consulta de vecinos directos y reversos. Francisco et. al. \cite{francisco2018exploiting} destacan que esta propuesta también presenta un formato adecuado para potenciar los cálculos de cómputo de matrices por vectores.
+
+
 
 %Una propuesta muy reciente, por Li et. al.\cite{li2019optimal} mejora considerablemente k2-tree proponiendo una manera distinta de subdividir la matriz de adyacencia.
 
@@ -243,11 +248,3 @@ Eppstein et al. \cite{eppstein2010listing} prueban que el orden de procesamiento
 \input{figs/arte-degenOrder}
 
 %Luego, Eppstein y Strash \cite{eppstein2011listing} implementan una variante al algoritmo propuesto, donde 
-
-
-\section{PENDIENTES}
-
- Francisco et al. \cite{francisco2018exploiting} discute algunos algoritmos de compresión de grafos que permiten explotar en forma amigable la computación de matrices, que además son usados en algoritmos de ranking como PageRank \cite{page1999pagerank}.
-
-La propuesta de Hernández y Navarro \cite{tesisCecilia}, proporciona un buen compromiso entre espacio y tiempo de acceso a vecinos directos. En dicho trabajo, se propone una transformación del grafo dirigido original donde se reduce el número de arcos originales usando nodos virtuales para conectar subgrafos densos representados por grafos bipartitos completos, que incluyen cliques, y luego se apliacan distintos algoritmos de ordenamientos de vértices sobre el grafo transformado. En particular, se obtienen mejores resultados aplicando ordenamiento LLP y compresión \cite{boldi2011layered} que ordenamiento BFS (como lo reportado en \cite{Hernandez2014}).
-

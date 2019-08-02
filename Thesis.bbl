@@ -1,5 +1,11 @@
 \begin{thebibliography}{10}
 
+\bibitem{anh2010local}
+Vo~Ngoc Anh and Alistair Moffat.
+\newblock Local modeling for webgraph compression.
+\newblock In {\em 2010 Data Compression Conference}, pages 519--519. IEEE,
+  2010.
+
 \bibitem{apostolico2009graph}
 Alberto Apostolico and Guido Drovandi.
 \newblock Graph compression by bfs.
@@ -24,24 +30,16 @@ Paolo Boldi and Sebastiano Vigna.
 \newblock In {\em Proceedings of the 13th international conference on World
   Wide Web}, pages 595--602. ACM, 2004.
 
-\bibitem{boldi2004webgraph2}
+\bibitem{boldi2005codes}
 Paolo Boldi and Sebastiano Vigna.
-\newblock The webgraph framework ii: Codes for the world-wide web.
-\newblock In {\em Data Compression Conference, 2004. Proceedings. DCC 2004},
-  page 528. IEEE, 2004.
+\newblock Codes for the world wide web.
+\newblock {\em Internet mathematics}, 2(4):407--429, 2005.
 
 \bibitem{bomze1999maximum}
 Immanuel~M Bomze, Marco Budinich, Panos~M Pardalos, and Marcello Pelillo.
 \newblock The maximum clique problem.
 \newblock In {\em Handbook of combinatorial optimization}, pages 1--74.
   Springer, 1999.
-
-\bibitem{brisaboa2011compressed}
-Nieves~R Brisaboa, Rodrigo C{\'a}novas, Francisco Claude, Miguel~A
-  Mart{\'\i}nez-Prieto, and Gonzalo Navarro.
-\newblock Compressed string dictionaries.
-\newblock In {\em International Symposium on Experimental Algorithms}, pages
-  136--147. Springer, 2011.
 
 \bibitem{brisaboa2009k}
 Nieves~R Brisaboa, Susana Ladra, and Gonzalo Navarro.
@@ -53,6 +51,11 @@ Nieves~R Brisaboa, Susana Ladra, and Gonzalo Navarro.
 Nieves~R Brisaboa, Susana Ladra, and Gonzalo Navarro.
 \newblock Compact representation of web graphs with extended functionality.
 \newblock {\em Information Systems}, 39:152--174, 2014.
+
+\bibitem{bron1973algorithm}
+Coen Bron and Joep Kerbosch.
+\newblock Algorithm 457: finding all cliques of an undirected graph.
+\newblock {\em Communications of the ACM}, 16(9):575--577, 1973.
 
 \bibitem{BuehrerChellapilla}
 Gregory Buehrer and Kumar Chellapilla.
@@ -79,28 +82,22 @@ John~D Eblen, Charles~A Phillips, Gary~L Rogers, and Michael~A Langston.
 \newblock In {\em BMC bioinformatics}, volume~13, page~S5. BioMed Central,
   2012.
 
-\bibitem{listingcliques2}
-David Eppstein, Maarten L\"{o}ffler, and Darren Strash.
-\newblock Listing all maximal cliques in large sparse real-world graphs.
-\newblock {\em J. Exp. Algorithmics}, 18:3.1:3.1--3.1:3.21, November 2013.
+\bibitem{eppstein2010listing}
+David Eppstein, Maarten L{\"o}ffler, and Darren Strash.
+\newblock Listing all maximal cliques in sparse graphs in near-optimal time.
+\newblock In {\em International Symposium on Algorithms and Computation}, pages
+  403--414. Springer, 2010.
 
-\bibitem{listingcliques}
+\bibitem{eppstein2011listing}
 David Eppstein and Darren Strash.
 \newblock Listing all maximal cliques in large sparse real-world graphs.
-\newblock In Panos~M. Pardalos and Steffen Rebennack, editors, {\em
-  Experimental Algorithms}, pages 364--375, Berlin, Heidelberg, 2011. Springer
-  Berlin Heidelberg.
+\newblock In {\em International Symposium on Experimental Algorithms}, pages
+  364--375. Springer, 2011.
 
-\bibitem{BagMinHash}
-Otmar Ertl.
-\newblock Bagminhash - minwise hashing algorithm for weighted sets.
-\newblock {\em CoRR}, abs/1802.03914, 2018.
-
-\bibitem{FISCHER201639}
+\bibitem{fischer2016glouds}
 Johannes Fischer and Daniel Peters.
 \newblock Glouds: Representing tree-like graphs.
-\newblock {\em Journal of Discrete Algorithms}, 36:39 -- 49, 2016.
-\newblock WALCOM 2015.
+\newblock {\em Journal of Discrete Algorithms}, 36:39--49, 2016.
 
 \bibitem{francisco2018exploiting}
 Alexandre Francisco, Travis Gagie, Susana Ladra, and Gonzalo Navarro.
@@ -128,6 +125,13 @@ William Hendrix, Matthew~C Schmidt, Paul Breimyer, and Nagiza~F Samatova.
   graphs.
 \newblock {\em Theoretical Computer Science}, 411(26-28):2520--2536, 2010.
 
+\bibitem{hernandez2011compression}
+Cecilia Hern{\'a}ndez and Gonzalo Navarro.
+\newblock Compression of web and social graphs supporting neighbor and
+  community queries.
+\newblock In {\em Proc. 5th ACM Workshop on Social Network Mining and Analysis
+  (SNA-KDD). ACM}, 2011.
+
 \bibitem{hernandez2012compressed}
 Cecilia Hern{\'a}ndez and Gonzalo Navarro.
 \newblock Compressed representation of web and social networks via dense
@@ -135,32 +139,32 @@ Cecilia Hern{\'a}ndez and Gonzalo Navarro.
 \newblock In {\em International Symposium on String Processing and Information
   Retrieval}, pages 264--276. Springer, 2012.
 
-\bibitem{Hernandez2014}
+\bibitem{hernandez2014compressed}
 Cecilia Hern{\'a}ndez and Gonzalo Navarro.
 \newblock Compressed representations for web and social graphs.
-\newblock {\em Knowledge and Information Systems}, 40(2):279--313, Aug 2014.
+\newblock {\em Knowledge and information systems}, 40(2):279--313, 2014.
 
 \bibitem{huffman1952method}
 David~A Huffman.
 \newblock A method for the construction of minimum-redundancy codes.
 \newblock {\em Proceedings of the IRE}, 40(9):1098--1101, 1952.
 
+\bibitem{jacobson1989space}
+Guy Jacobson.
+\newblock Space-efficient static trees and graphs.
+\newblock In {\em 30th Annual Symposium on Foundations of Computer Science},
+  pages 549--554. IEEE, 1989.
+
+\bibitem{karp1972reducibility}
+Richard~M Karp.
+\newblock Reducibility among combinatorial problems.
+\newblock In {\em Complexity of computer computations}, pages 85--103.
+  Springer, 1972.
+
 \bibitem{larsson2000off}
 N~Jesper Larsson and Alistair Moffat.
 \newblock Off-line dictionary-based compression.
 \newblock {\em Proceedings of the IEEE}, 88(11):1722--1732, 2000.
-
-\bibitem{li2019optimal}
-Fengying Li, Qi~Zhang, Tianlong Gu, and Rongsheng Dong.
-\newblock Optimal representation for web and social network graphs based on
-  $k^{2}$-tree.
-\newblock {\em IEEE Access}, 7:52945--52954, 2019.
-
-\bibitem{makinen2005succinct}
-Veli M{\"a}kinen and Gonzalo Navarro.
-\newblock Succinct suffix arrays based on run-length encoding.
-\newblock In {\em Annual Symposium on Combinatorial Pattern Matching}, pages
-  45--56. Springer, 2005.
 
 \bibitem{maneth2016compressing}
 Sebastian Maneth and Fabian Peternek.
@@ -186,10 +190,10 @@ Rajeev Raman, Venkatesh Raman, and S~Srinivasa Rao.
   Discrete algorithms}, pages 233--242. Society for Industrial and Applied
   Mathematics, 2002.
 
-\bibitem{tesisCecilia}
-Cecilia~Hernández Rivas.
-\newblock Managing massive graphs.
-\newblock Universidad de Chile, 2014.
-\newblock Tesis de doctorado.
+\bibitem{tomita2006worst}
+Etsuji Tomita, Akira Tanaka, and Haruhisa Takahashi.
+\newblock The worst-case time complexity for generating all maximal cliques and
+  computational experiments.
+\newblock {\em Theoretical Computer Science}, 363(1):28--42, 2006.
 
 \end{thebibliography}
