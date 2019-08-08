@@ -86,12 +86,27 @@ Para agilizar la búsqueda, el código prefijo se puede representar como un árb
 
 \input{figs/fixVarTrees}
 
-La codificación Huffman aprovecha todo lo anterior, utilizando una heurística \textit{greedy} para la construcción de su estructura y su compresión final. Asumiendo que se tiene una secuencia $C$ de $n$ caracteres, y que cada carácter $c \in C$ tiene una frecuencia $f[c]$ en $C$. El algoritmo crea un árbol desde los nodos hojas hacia el nodo raíz, creando inicialmente $|C|$ hojas, y ejecutando $|C| - 1$ conexiones para llegar al árbol final. Luego identifica los dos elementos menos frecuentes y los junta en un nuevo elemento, con frecuencia igual a la suma de los dos juntados. Esto continúa hasta que todos los nodos hojas están conectados al árbol. 
+La codificación Huffman aprovecha todo lo anterior, utilizando una heurística \textit{greedy} para la construcción de su estructura y su compresión final. Asumiendo que se tiene una secuencia $C$ de $n$ caracteres, y que cada carácter $c \in C$ tiene una frecuencia $f[c]$ en $C$. El algoritmo crea un árbol desde los nodos hojas hacia el nodo raíz, inicialmente con $|C|$ hojas, y ejecutando $|C| - 1$ conexiones para llegar al árbol final. Luego identifica los dos elementos menos frecuentes y los conecta a un nuevo elemento, con frecuencia igual a la suma de ambos. Esto continúa hasta que todos los nodos hojas están conectados al árbol. En la Figura~\ref{fig:huffman2} se ilustra este proceso para la secuencia ejemplo de la Figura~\ref{fig:fixVarTrees}(b), y a continuación se detalla el proceso:
+
+\begin{enumerate}
+	\item \textbf{Figura~\ref{fig:huffman2}(a)}: Se crean los $|C| = 6$ nodos hoja para cada carácter.
+	\item \textbf{Figura~\ref{fig:huffman2}(b)}: Se identifican los dos nodos de caracteres menos frecuentes, $f$ con $f[f] = 5$ y $e$ con $f[e] = 9$ (en miles), y se conectan a un nuevo nodo con frecuencia $5 + 9 = 14$.
+	\item \textbf{Figura~\ref{fig:huffman2}(c)}: Los siguientes nodos menos frecuentes son $c$ con $f[c] = 12$ y $b$ con $f[b] = 13$, y se conectan a otro nodo nuevo con frecuencia $12 + 13 = 25$.
+	\item \textbf{Figura~\ref{fig:huffman2}(d)}: El nodo creado que conecta $f$ con $e$ posee la menor frecuencia ($14$), y junto al nodo $d$ con $f[d] = 16$ se conectan en un nuevo nodo con frecuencia $14 + 16 = 30$.
+	\item \textbf{Figura~\ref{fig:huffman2}(e)}: Para juntar a los nuevos nodos de menor frecuencia, $25$ y $30$ respectivamente, se crea un nuevo nodo con frecuencia $25 + 30 = 55$.
+	\item \textbf{Figura~\ref{fig:huffman2}(f)}: Finalmente, se conecta el último nodo hoja restante, $a$ con $f[a] = 45$, con el reciente nodo creado de frecuencia $55$, mediante el nodo raíz con frecuencia $45 + 55 = 100$, confirmando la correcta creación del árbol.
+\end{enumerate}
+
+Se visualiza que se crearon $|C| - 1 = 6 - 1 = 5$ nodos para conectar todo el árbol. Con este resultado, se puede reconstruir de manera secuencial una secuencia codificada, simplemente recorriendo el árbol desde el nodo raíz hasta llegar a un nodo hoja, sustituir esa subsecuencia de bits por el valor de dicho nodo, y continuar con el resto de la secuencia de igual manera hasta el final. Retomando el ejemplo de secuencia $001011101$, en la Figura~\ref{fig:huffmanBack} se visualizan los tres casos a decodificar: en (a) los primeros bits $0$ llegan al nodo hoja de \texttt{a}, en (b) la secuencia $101$ llega al nodo \texttt{b}, y en (c) la secuencia $1101$ llega al nodo \texttt{e}, dando en (d) la equivalencia entre bits y caracteres con resultado \texttt{aabe}.
 
 %\input{figs/huffman}
 \input{figs/huffman2}
 
-En la Figura~\ref{fig:huffman} se muestra un ejemplo de esta codificación, donde (a) es la secuencia de entrada, (b) es la secuencia de salida, y (c) es el vocabulario de símbolos dispuesto en un árbol binario. Primero se cuenta la frecuencia de cada símbolo en la secuencia de entrada, dos veces $1$, dos veces $2$, y cinco veces $3$. Luego se crea el árbol binario, partiendo por las hojas de los símbolos menos frecuentes, $1$ y $2$, y creando un nodo con la frecuencia total de ambos casos, en total cuatro. Luego esa rama se añade a otro nodo junto con la hoja del símbolo más probable, $3$, y ambas suman la frecuencia total de nueve símbolos. Así, el símbolo $3$ puede representarse tan solo con un bit en 1, y para los otros casos se necesitarán dos bits.
+\input{figs/huffmanBack}
 
 
-Para recuperar la secuencia original, se debe recorrer la de salida bit a bit de izquierda a derecha, e ir avanzando en el árbol binario hasta llegar a una hoja. Una desventaja de este método es que necesita decodificar de manera secuencial todo el código para obtener la secuencia original.
+
+%En la Figura~\ref{fig:huffman} se muestra un ejemplo de esta codificación, donde (a) es la secuencia de entrada, (b) es la secuencia de salida, y (c) es el vocabulario de símbolos dispuesto en un árbol binario. Primero se cuenta la frecuencia de cada símbolo en la secuencia de entrada, dos veces $1$, dos veces $2$, y cinco veces $3$. Luego se crea el árbol binario, partiendo por las hojas de los símbolos menos frecuentes, $1$ y $2$, y creando un nodo con la frecuencia total de ambos casos, en total cuatro. Luego esa rama se añade a otro nodo junto con la hoja del símbolo más probable, $3$, y ambas suman la frecuencia total de nueve símbolos. Así, el símbolo $3$ puede representarse tan solo con un bit en 1, y para los otros casos se necesitarán dos bits.
+%
+%
+%Para recuperar la secuencia original, se debe recorrer la de salida bit a bit de izquierda a derecha, e ir avanzando en el árbol binario hasta llegar a una hoja. Una desventaja de este método es que necesita decodificar de manera secuencial todo el código para obtener la secuencia original.
