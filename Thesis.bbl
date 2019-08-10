@@ -125,6 +125,17 @@ William Hendrix, Matthew~C Schmidt, Paul Breimyer, and Nagiza~F Samatova.
   graphs.
 \newblock {\em Theoretical Computer Science}, 411(26-28):2520--2536, 2010.
 
+\bibitem{herings2001measuring}
+P~Herings, Gerard Van~der Laan, and Dolf Talman.
+\newblock Measuring the power of nodes in digraphs.
+\newblock {\em Gerard and Talman, Dolf JJ, Measuring the Power of Nodes in
+  Digraphs (October 5, 2001)}, 2001.
+
+\bibitem{herings2005positional}
+P~Jean-Jacques Herings, Gerard Van Der~Laan, and Dolf Talman.
+\newblock The positional power of nodes in digraphs.
+\newblock {\em Social Choice and Welfare}, 24(3):439--454, 2005.
+
 \bibitem{hernandez2011compression}
 Cecilia Hern{\'a}ndez and Gonzalo Navarro.
 \newblock Compression of web and social graphs supporting neighbor and
@@ -160,6 +171,11 @@ Richard~M Karp.
 \newblock Reducibility among combinatorial problems.
 \newblock In {\em Complexity of computer computations}, pages 85--103.
   Springer, 1972.
+
+\bibitem{kleinberg1999authoritative}
+Jon~M Kleinberg.
+\newblock Authoritative sources in a hyperlinked environment.
+\newblock {\em Journal of the ACM (JACM)}, 46(5):604--632, 1999.
 
 \bibitem{larsson2000off}
 N~Jesper Larsson and Alistair Moffat.
