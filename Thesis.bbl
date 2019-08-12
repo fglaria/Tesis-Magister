@@ -11,6 +11,18 @@ Alberto Apostolico and Guido Drovandi.
 \newblock Graph compression by bfs.
 \newblock {\em Algorithms}, 2(3):1031--1044, 2009.
 
+\bibitem{bakshy2012role}
+Eytan Bakshy, Itamar Rosenn, Cameron Marlow, and Lada Adamic.
+\newblock The role of social networks in information diffusion.
+\newblock In {\em Proceedings of the 21st international conference on World
+  Wide Web}, pages 519--528. ACM, 2012.
+
+\bibitem{becchetti2008link}
+Luca Becchetti, Carlos Castillo, Debora Donato, Ricardo Baeza-Yates, and
+  Stefano Leonardi.
+\newblock Link analysis for web spam detection.
+\newblock {\em ACM Transactions on the Web (TWEB)}, 2(1):2, 2008.
+
 \bibitem{boldi2011layered}
 Paolo Boldi, Marco Rosa, Massimo Santini, and Sebastiano Vigna.
 \newblock Layered label propagation: A multiresolution coordinate-free ordering
@@ -65,6 +77,37 @@ Gregory Buehrer and Kumar Chellapilla.
   Search and Data Mining}, WSDM '08, pages 95--106, New York, NY, USA, 2008.
   ACM.
 
+\bibitem{castillo2007know}
+Carlos Castillo, Debora Donato, Aristides Gionis, Vanessa Murdock, and Fabrizio
+  Silvestri.
+\newblock Know your neighbors: Web spam detection using the web topology.
+\newblock In {\em Proceedings of the 30th annual international ACM SIGIR
+  conference on Research and development in information retrieval}, pages
+  423--430. ACM, 2007.
+
+\bibitem{cha2009measurement}
+Meeyoung Cha, Alan Mislove, and Krishna~P Gummadi.
+\newblock A measurement-driven analysis of information propagation in the
+  flickr social network.
+\newblock In {\em Proceedings of the 18th international conference on World
+  wide web}, pages 721--730. ACM, 2009.
+
+\bibitem{chen2013identifying}
+Duan-Bing Chen, Hui Gao, Linyuan L{\"u}, and Tao Zhou.
+\newblock Identifying influential nodes in large-scale directed networks: the
+  role of clustering.
+\newblock {\em PloS one}, 8(10):e77455, 2013.
+
+\bibitem{chen2013information}
+Wei Chen, Laks~VS Lakshmanan, and Carlos Castillo.
+\newblock Information and influence propagation in social networks.
+\newblock {\em Synthesis Lectures on Data Management}, 5(4):1--177, 2013.
+
+\bibitem{chen2012efficient}
+Yi-Cheng Chen, Wen-Chih Peng, and Suh-Yin Lee.
+\newblock Efficient algorithms for influence maximization in social networks.
+\newblock {\em Knowledge and information systems}, 33(3):577--601, 2012.
+
 \bibitem{claude2010fast}
 Francisco Claude and Gonzalo Navarro.
 \newblock Fast and compact web graph representations.
@@ -74,6 +117,17 @@ Francisco Claude and Gonzalo Navarro.
 Francisco Claude, Gonzalo Navarro, and Alberto Ord{\'o}nez.
 \newblock The wavelet matrix: An efficient wavelet tree for large alphabets.
 \newblock {\em Information Systems}, 47:15--32, 2015.
+
+\bibitem{donato2005mining}
+Debora Donato, Stefano Leonardi, Stefano Millozzi, and Panayiotis Tsaparas.
+\newblock Mining the inner structure of the web graph.
+\newblock In {\em WebDB}, pages 145--150. Citeseer, 2005.
+
+\bibitem{dourisboure2007extraction}
+Yon Dourisboure, Filippo Geraci, and Marco Pellegrini.
+\newblock Extraction and classification of dense communities in the web.
+\newblock In {\em Proceedings of the 16th international conference on World
+  Wide Web}, pages 461--470. ACM, 2007.
 
 \bibitem{eblen2012maximum}
 John~D Eblen, Charles~A Phillips, Gary~L Rogers, and Michael~A Langston.
@@ -98,6 +152,11 @@ David Eppstein and Darren Strash.
 Johannes Fischer and Daniel Peters.
 \newblock Glouds: Representing tree-like graphs.
 \newblock {\em Journal of Discrete Algorithms}, 36:39--49, 2016.
+
+\bibitem{flake2002self}
+Gary~William Flake, Steve Lawrence, C~Lee Giles, and Frans~M Coetzee.
+\newblock Self-organization and identification of web communities.
+\newblock {\em Computer}, pages 66--71, 2002.
 
 \bibitem{francisco2018exploiting}
 Alexandre Francisco, Travis Gagie, Susana Ladra, and Gonzalo Navarro.
@@ -172,10 +231,32 @@ Richard~M Karp.
 \newblock In {\em Complexity of computer computations}, pages 85--103.
   Springer, 1972.
 
+\bibitem{kitsak2010identification}
+Maksim Kitsak, Lazaros~K Gallos, Shlomo Havlin, Fredrik Liljeros, Lev Muchnik,
+  H~Eugene Stanley, and Hern{\'a}n~A Makse.
+\newblock Identification of influential spreaders in complex networks.
+\newblock {\em Nature physics}, 6(11):888, 2010.
+
 \bibitem{kleinberg1999authoritative}
 Jon~M Kleinberg.
 \newblock Authoritative sources in a hyperlinked environment.
 \newblock {\em Journal of the ACM (JACM)}, 46(5):604--632, 1999.
+
+\bibitem{kolari2004web}
+Pranam Kolari and Anupam Joshi.
+\newblock Web mining: Research and practice.
+\newblock {\em Computing in science \& engineering}, 6(4):49--53, 2004.
+
+\bibitem{kumar1999trawling}
+Ravi Kumar, Prabhakar Raghavan, Sridhar Rajagopalan, and Andrew Tomkins.
+\newblock Trawling the web for emerging cyber-communities.
+\newblock {\em Computer networks}, 31(11-16):1481--1493, 1999.
+
+\bibitem{lappas2010finding}
+Theodoros Lappas, Evimaria Terzi, Dimitrios Gunopulos, and Heikki Mannila.
+\newblock Finding effectors in social networks.
+\newblock In {\em Proceedings of the 16th ACM SIGKDD international conference
+  on Knowledge discovery and data mining}, pages 1059--1068. ACM, 2010.
 
 \bibitem{larsson2000off}
 N~Jesper Larsson and Alistair Moffat.
@@ -188,6 +269,20 @@ Sebastian Maneth and Fabian Peternek.
 \newblock In {\em 2016 IEEE 32nd International Conference on Data Engineering
   (ICDE)}, pages 109--120. IEEE, 2016.
 
+\bibitem{mihalcea2004graph}
+Rada Mihalcea.
+\newblock Graph-based ranking algorithms for sentence extraction, applied to
+  text summarization.
+\newblock In {\em Proceedings of the ACL Interactive Poster and Demonstration
+  Sessions}, pages 170--173, 2004.
+
+\bibitem{mislove2007measurement}
+Alan Mislove, Massimiliano Marcon, Krishna~P Gummadi, Peter Druschel, and Bobby
+  Bhattacharjee.
+\newblock Measurement and analysis of online social networks.
+\newblock In {\em Proceedings of the 7th ACM SIGCOMM conference on Internet
+  measurement}, pages 29--42. ACM, 2007.
+
 \bibitem{DBLP:journals/corr/abs-cs-0610001}
 Daisuke Okanohara and Kunihiko Sadakane.
 \newblock Practical entropy-compressed rank/select dictionary.
@@ -198,6 +293,12 @@ Lawrence Page, Sergey Brin, Rajeev Motwani, and Terry Winograd.
 \newblock The pagerank citation ranking: Bringing order to the web.
 \newblock Technical report, Stanford InfoLab, 1999.
 
+\bibitem{papadimitriou2010web}
+Panagiotis Papadimitriou, Ali Dasdan, and Hector Garcia-Molina.
+\newblock Web graph similarity for anomaly detection.
+\newblock {\em Journal of Internet Services and Applications}, 1(1):19--30,
+  2010.
+
 \bibitem{raman2002succinct}
 Rajeev Raman, Venkatesh Raman, and S~Srinivasa Rao.
 \newblock Succinct indexable dictionaries with applications to encoding k-ary
@@ -206,10 +307,42 @@ Rajeev Raman, Venkatesh Raman, and S~Srinivasa Rao.
   Discrete algorithms}, pages 233--242. Society for Industrial and Applied
   Mathematics, 2002.
 
+\bibitem{saito2007large}
+Hiroo Saito, Masashi Toyoda, Masaru Kitsuregawa, and Kazuyuki Aihara.
+\newblock A large-scale study of link spam detection by graph algorithms.
+\newblock In {\em Proceedings of the 3rd international workshop on Adversarial
+  information retrieval on the web}, pages 45--48. ACM, 2007.
+
+\bibitem{saito2012efficient}
+Kazumi Saito, Masahiro Kimura, Kouzou Ohara, and Hiroshi Motoda.
+\newblock Efficient discovery of influential nodes for sis models in social
+  networks.
+\newblock {\em Knowledge and information systems}, 30(3):613--635, 2012.
+
+\bibitem{sozio2010community}
+Mauro Sozio and Aristides Gionis.
+\newblock The community-search problem and how to plan a successful cocktail
+  party.
+\newblock In {\em Proceedings of the 16th ACM SIGKDD international conference
+  on Knowledge discovery and data mining}, pages 939--948. ACM, 2010.
+
 \bibitem{tomita2006worst}
 Etsuji Tomita, Akira Tanaka, and Haruhisa Takahashi.
 \newblock The worst-case time complexity for generating all maximal cliques and
   computational experiments.
 \newblock {\em Theoretical Computer Science}, 363(1):28--42, 2006.
+
+\bibitem{ye2010measuring}
+Shaozhi Ye and S~Felix Wu.
+\newblock Measuring message propagation and social influence on twitter. com.
+\newblock In {\em International conference on social informatics}, pages
+  216--231. Springer, 2010.
+
+\bibitem{zhou2014maximizing}
+Chuan Zhou, Peng Zhang, Wenyu Zang, and Li~Guo.
+\newblock Maximizing the long-term integral influence in social networks under
+  the voter model.
+\newblock In {\em Proceedings of the 23rd International Conference on World
+  Wide Web}, pages 423--424. ACM, 2014.
 
 \end{thebibliography}
