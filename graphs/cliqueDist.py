@@ -83,6 +83,7 @@ for index, graph in enumerate(graphNames):
     # plt.xlabel(u"Tamaño de cliques")
     # plt.xlim(left=0, right=max(cliqueSizes[graph].keys()) + 1)
     plt.xlim(left=0, right=338)
+    plt.ylim(bottom=0, top=1000000)
     # plt.xlim(left=0)
     # plt.ylabel("# de cliques")
     # plt.ticklabel_format(style='sci', axis='y', scilimits=(0,0))

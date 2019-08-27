@@ -8,50 +8,32 @@ from numpy import genfromtxt
 matplotlib.rcParams.update({'font.size': 22})
 
 if(3 > len(sys.argv)):
-    print("ERROR: Modo de uso: " + sys.argv[0] + " ROUTE TYPE(P|N|C|B|nn|cc|bb)")
+    print("ERROR: Modo de uso: " + sys.argv[0] + " ROUTE TYPE(N|C|B)")
     sys.exit(1)
 
 route = sys.argv[1]
 inType = sys.argv[2]
 
-possibleTypes = ("P", "N", "C", "B", "nn", "cc", "bb")
+possibleTypes = ("N", "C", "B")
 
 
 if(inType not in possibleTypes):
     print("ERROR: Invalid type(P|N|C): " + inType)
     sys.exit(1)
 
-if("P" == inType):
-    title = u"Número de particiones para cada función de ranking."
-    ylabel = u"Número de particiones"
-elif("N" == inType):
-    title = u"Cantidad máxima de vertices en secuencia $X$ por partición para cada función de ranking."
-    ylabel = u"Cantidad de vértices"
-elif("C" == inType):
-    title = u"Cantidad máxima de cliques por partición para cada función de ranking."
-    ylabel = u"Cantidad de cliques"
-elif("B" == inType):
-    title = u"Cantidad máxima de bytes por vértice para cada función de ranking."
-    ylabel = u"Cantidad de bytes"
-elif("nn" == inType):
+if("N" == inType):
     title = u"Cantidad de vértices por partición para cada función de ranking."
     ylabel = u"Cantidad de particiones"
-elif("cc" == inType):
+elif("C" == inType):
     title = u"Cantidad de cliques por partición para cada función de ranking."
     ylabel = u"Cantidad de particiones"
-elif("bb" == inType):
+elif("B" == inType):
     title = u"Cantidad de bytes por vértice por partición para cada función de ranking."
     ylabel = u"Cantidad de particiones"
 
-# nodesPerPart = []
 bytesPerNode = []
-# cliquePerPart = []
 
-filenames = (
-    "stats.r.out.csv",
-    "stats.c.out.csv",
-    "stats.f.out.csv"
-)
+filename = "stats.r.out.csv"
 
 graphFolders = (
     "marknewman-astro",

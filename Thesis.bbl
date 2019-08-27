@@ -269,13 +269,6 @@ Sebastian Maneth and Fabian Peternek.
 \newblock In {\em 2016 IEEE 32nd International Conference on Data Engineering
   (ICDE)}, pages 109--120. IEEE, 2016.
 
-\bibitem{mihalcea2004graph}
-Rada Mihalcea.
-\newblock Graph-based ranking algorithms for sentence extraction, applied to
-  text summarization.
-\newblock In {\em Proceedings of the ACL Interactive Poster and Demonstration
-  Sessions}, pages 170--173, 2004.
-
 \bibitem{mislove2007measurement}
 Alan Mislove, Massimiliano Marcon, Krishna~P Gummadi, Peter Druschel, and Bobby
   Bhattacharjee.

@@ -12,11 +12,11 @@
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Ejemplo para Re-Pair aplicado a grafos por Claude y Navarro. (a) Grafo de ejemplo. (b) Listado concatenado $T(G)$ y resultado final luego de tres reemplazos y eliminar nodos de referencia. (c) Bitmaps indicadores de nodos de referencia removidos.}}{15}{figure.3.2}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Ejemplo de reemplazo por nodo virtual. (a) Biclique. (b) Biclique con reemplazo de aristas por nodo virtual $V$.}}{16}{figure.3.3}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Ejemplo de k2-tree. (a) Matriz de adyacencia. (b) Diagrama de estructura.}}{17}{figure.3.4}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Ejemplos de \IeC {\'a}rboles de expansi\IeC {\'o}n. (a) Grafo simple. (b)~Posibles \IeC {\'a}rboles de expansi\IeC {\'o}n para el grafo.}}{18}{figure.3.5}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Ejemplos de \IeC {\'a}rboles de expansi\IeC {\'o}n. (a) Grafo simple. (b)~Posibles \IeC {\'a}rboles de expansi\IeC {\'o}n para el grafo.}}{19}{figure.3.5}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Ejemplo de un \IeC {\'a}rbol de expansi\IeC {\'o}n y su LOUDS. (a) \IeC {\'A}rbol de expansi\IeC {\'o}n y los bits generados por cada nivel de BFS. (b)~Bitmap $B$ de LOUDS.}}{19}{figure.3.6}
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Ejemplo de la generaci\IeC {\'o}n de GLOUDS. (a) Grafo $G$. (b)~\IeC {\'A}rbol $T_{G}$. (c)~GLOUDS $B$ y el arreglo $H$ de nodos sombra.}}{20}{figure.3.7}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Ejemplos de wavelet-tree. (a) Ejemplo b\IeC {\'a}sico de subdivisi\IeC {\'o}n de secuencia ordenada. (b) Ejemplo pr\IeC {\'a}ctico con alfabetos y bitmaps por nodo.}}{21}{figure.3.8}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Ejemplos para wavelet-matrix. (a) Un wavelet tree. (b) El mismo wavelet tree sin punteros. (c) La wavelet matrix correpondiente.}}{22}{figure.3.9}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Ejemplos de wavelet-tree. (a) Ejemplo b\IeC {\'a}sico de subdivisi\IeC {\'o}n de secuencia ordenada. (b) Ejemplo pr\IeC {\'a}ctico con alfabetos y bitmaps por nodo.}}{22}{figure.3.8}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Ejemplos para wavelet-matrix. (a) Un wavelet tree. (b) El mismo wavelet tree sin punteros. (c) La wavelet matrix correpondiente.}}{23}{figure.3.9}
 \contentsline {figure}{\numberline {3.10}{\ignorespaces Ejemplo de ordenamiento por \textit {degeneracy}. (a) Grafo con \textit {degeneracy} 3. (b)~ Posible ordenamiento de nodos por \textit {degeneracy}.}}{24}{figure.3.10}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces (a) Grafo no dirigido. (b) Lista de cliques maximales. (c) Grafo de cliques.}}{26}{figure.4.1}

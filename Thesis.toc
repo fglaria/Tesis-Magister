@@ -15,12 +15,12 @@
 \contentsline {subsection}{\numberline {3.1.3}Using Re-Pair, \textit {Claude y Navarro}}{14}{subsection.3.1.3}
 \contentsline {subsection}{\numberline {3.1.4}Virtual Node Mining, \textit {Buehrer y Chellapilla}}{16}{subsection.3.1.4}
 \contentsline {subsection}{\numberline {3.1.5}k2-tree, \textit {Brisaboa, Ladra y Navarro}}{16}{subsection.3.1.5}
-\contentsline {subsection}{\numberline {3.1.6}List Merging, \textit {Grabowski y Bieniecki}}{17}{subsection.3.1.6}
+\contentsline {subsection}{\numberline {3.1.6}List Merging, \textit {Grabowski y Bieniecki}}{18}{subsection.3.1.6}
 \contentsline {subsection}{\numberline {3.1.7}GLOUDS, \textit {Fischer y Peters}}{18}{subsection.3.1.7}
 \contentsline {section}{\numberline {3.2}Estructuras compactas}{20}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Secuencias binarias}{21}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Wavelet Tree y Wavelet Matrix}{21}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}SDSL - Succinct Data Structure Library}{23}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.3}SDSL - Succinct Data Structure Library}{22}{subsection.3.2.3}
 \contentsline {section}{\numberline {3.3}Detecci\IeC {\'o}n de cliques maximales}{23}{section.3.3}
 \contentsline {chapter}{\numberline {Cap\'{\i }tulo 4}M\IeC {\'E}TODO DE COMPRESI\IeC {\'O}N PROPUESTO}{25}{chapter.4}
 \contentsline {section}{\numberline {4.1}Detecci\IeC {\'o}n de cliques maximales}{25}{section.4.1}
