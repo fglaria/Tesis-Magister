@@ -8,8 +8,7 @@ Los algoritmos a comparar son actuales en el estado del arte para compresión de
 Todas las pruebas y experimentos se realizaron en una computadora con un procesador Intel i7 2.70GHz CPU con 12GB de RAM, y los algoritmos fueron implementados con el compilador g++ 8.2.1 con la opción de optimización O3.
 
 \section{Grafos}
-
-Los grafos a evaluar son todos no densos y no dirigidos. Se consideran siguientes los ocho grafos:
+Para evaluar el rendimiento del método propuesto y comparar los resultados con el estado del arte, se seleccionan 8 grafos no densos y no dirigidos, ya que el método apunta a lograr una mejor compresión para grafos con estas características. Los 8 grafos son los siguientes:
 
 \begin{itemize}
 	\item \texttt{dblp-2010} y \texttt{dblp-2011} de WebGraph\footnote{\url{http://law.di.unimi.it/datasets.php}}.
@@ -38,7 +37,7 @@ La distribución del grado de los vértices para cada grafo se presenta en la \a
 \input{figs/grades}
 \input{figs/cliqueDist2}
 
-La distribución de los tamaños de los cliques maximales para cada grafo se muestra en la \autoref{fig:cliqueDist2}. Es importante notar que el gráfico del grafo \texttt{coPapersCiteseer} está truncado para efectos de comparación, pero tiene muy pocos cliques por sobre el límite fijado gráficamente.
+La distribución de los tamaños de los cliques maximales para cada grafo se muestra en la \autoref{fig:cliqueDist2}. Es importante notar que el gráfico del grafo \texttt{coPapersCiteseer} está truncado para efectos de comparación, pero tiene muy pocos cliques maximales por sobre el límite fijado gráficamente. Además, el grafo \texttt{snap-amazon} posee la mayor cantidad de cliques maximales pequeños.
 
 La mayoría de los grafos contienen muchos cliques con menos de 50 vértices, a excepción de los grafos \texttt{snap-amazon}, \texttt{coPapersDBLP} y \texttt{coPapersCiteseer}. El primero contiene solo cliques pequeños, de no más de 20 vértices. Los otros dos grafos contienen una cantidad considerable de cliques de hasta 100 vértices. Esto permitirá contrastar los resultados del método propuesto entre grafos con distintas cantidades de cliques maximales grandes.
 
@@ -46,24 +45,24 @@ La mayoría de los grafos contienen muchos cliques con menos de 50 vértices, a 
 
 \section{Estructura compacta}
 
-Para generar la estructura compacta se usa \texttt{SDSL}\footnote{\url{https://github.com/simongog/sdsl-lite}} desarrollada por Gog et al.\cite{gbmp2014sea}. Las estructuras de datos sucintas a evaluar dependen del tipo de secuencia a compactar.
+Para generar la estructura compacta se usa \texttt{SDSL}\footnote{\url{https://github.com/simongog/sdsl-lite}} desarrollada por Gog et al.\cite{gbmp2014sea}, y se implementó Huffman con acceso aleatorio \cite{huffman1952method}. Las estructuras de datos sucintas a evaluar dependen del tipo de secuencia a compactar.
 
 \begin{itemize}
 	\item Para las secuencias de símbolos, se consideran las estructuras basadas en wavelet matrix (\textit{wm}) \cite{claude2015wavelet} y wavelet tree (\textit{wt}) \cite{grossi2003high}.
 	\item Para la secuencia de bits, se consideran las estructuras basadas en bitmaps comprimidos de Raman, Raman y Rao (\textit{rrr}) \cite{raman2002succinct}, y Okanohara y Sadakane (\textit{sdb}) \cite{DBLP:journals/corr/abs-cs-0610001}.
 \end{itemize}
 
-La secuencia de bytes $BB$ se comprime usando código Huffman\cite{huffman1952method} directamente (ver \autoref{sec:huffman}). Esto significa que la secuencia final de $BB$ se transforma en una secuencia de bits, lo que requiere actualizar los índices de inicio de sus particiones en la secuencia $Y$, y así poder decodificar directamente los bytes de las particiones correspondientes. Esto también conlleva que, por cada consulta a una partición, primero hay que decodificar todos los bytes correspondientes de esa partición antes de poder usarlos para detectar si los nodos asociados son vecinos o no.
+La secuencia de bytes $BB$ se comprime usando código Huffman\cite{huffman1952method}. Esto significa que $BB$ se transforma en una secuencia de bits, lo que requiere actualizar los índices de inicio de sus particiones en la secuencia $Y$, para poder obtener la secuencia de bytes equivalentes, de acuerdo a un desplazamiento en $BB$. Esto también conlleva que, por cada consulta a una partición, primero hay que decodificar todos los bytes correspondientes de esa partición antes de poder usarlos para detectar si los nodos asociados son vecinos o no. Esta codificación se implementó, ya que no es parte de la librería SDSL.
 
-\textcolor{red}{Creo suficiente no entrar más en detalle sobre este cambio, debido a que no es muy complejo.}
+%\textcolor{red}{Creo suficiente no entrar más en detalle sobre este cambio, debido a que no es muy complejo.}
 
-Se toman como factores de selección el nivel de compresión en bits y tanto el tiempo de reconstrucción secuencial, usando el Algoritmo~\ref{alg:sequential}, como el tiempo de acceso aleatorio al recuperar los vecinos de un millón de nodos, usando el Algoritmo~\ref{alg:neighbors}, para cada grafo y cada función de ranking con cada una de las estructuras antes planteadas.
+Como factores de selección, se consideran el nivel de compresión en bits, y tanto el tiempo de reconstrucción secuencial usando el Algoritmo~\ref{alg:sequential}, como el tiempo de acceso aleatorio al recuperar los vecinos de un millón de nodos, usando el Algoritmo~\ref{alg:neighbors}, para cada grafo y cada función de ranking con cada una de las estructuras antes planteadas.
 
-\textcolor{red}{Aquí antes mostraba las tablas con los tamaños en bytes de cada estructura compacta. Las eliminé, ya que creo no aportan en mucho comparado con la comparativa entre BPE y espacio.}
+%\textcolor{red}{Aquí antes mostraba las tablas con los tamaños en bytes de cada estructura compacta. Las eliminé, ya que creo no aportan en mucho comparado con la comparativa entre BPE y espacio.}
 
 Para ello, se decide construir la estructura compacta para cada grafo y cada función de ranking, con todas las posibles combinaciones para las secuencias. En la \autoref{fig:sdslBPE2}, \autoref{fig:sdslBPE3}, \autoref{fig:sdslBPE4}, y \autoref{fig:sdslBPE5}, se compara para cada grafo el BPE de las ocho posibles combinaciones para cada función de ranking con respecto al tiempo secuencial de reconstrucción del grafo. Y en la \autoref{fig:sdslBPEAle2}, \autoref{fig:sdslBPEAle3}, \autoref{fig:sdslBPEAle4} y \autoref{fig:sdslBPEAle5}, el BPE con respecto al tiempo de acceso aleatorio al recuperar los vecinos de un millón de nodos.
 
-\textcolor{red}{No estoy seguro que esta sea la mejor manera de anotar tantas figuras.}
+%\textcolor{red}{No estoy seguro que esta sea la mejor manera de anotar tantas figuras.}
 
 En la mayoría de los casos, la estructura que presenta la mejor relación entre BPE y tiempos es la de secuencias de símbolos con \textit{wm}, secuencia de bytes con \textit{hutu}, y secuencia de bits con \textit{sdb}.  Las opciones que presentan menores tiempos aumentan en BPE, y viceversa. Por tanto, se elige esta combinación de estructuras de secuencias como la estructura compacta a desarrollar.
 
@@ -83,7 +82,8 @@ A continuación se compararán las estructuras compactas resultantes, usando las
 
 En la \autoref{fig:bpe3} se muestran los BPE de las estructuras compactas finales, aplicando las funciones de ranking en la heurística de clusterización. Se puede apreciar que tanto $r_{f}(u)$ como $r_{c}(u)$ logran un nivel de compresión muy similar con un BPE parecido en todos los casos, y si bien $r_{r}(u)$ obtiene un BPE mayor siempre, tampoco es tan lejano al resultado de las demás funciones. Si este parámetro fuera el único a considerar para elegir la mejor función, $r_{f}(u)$ es siempre la que obtiene el menor BPE, pero es necesario profundizar en la conformación de la estructura.
 
-\input{figs/bpe3}
+%\input{figs/bpe3}
+\input{tables/bpe3}
 
 En la \autoref{fig:nPartitions} se presentan la cantidad de particiones que contiene las estructuras compactas para cada función de ranking. Se aprecia con bastante claridad que la función $r_{r}(u)$ genera más particiones que las otras dos, y dado que el BPE expuesto en la \autoref{fig:bpe3} no refleja esta diferencia, se puede intuir que las particiones son más pequeñas. Para profundizar en este punto, se estudiará la composición de las secuencias de las estructuras compactas para cada función de ranking.
 
