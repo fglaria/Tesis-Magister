@@ -8,9 +8,9 @@ Esto consta de tres etapas. La primera consta de listar todos los cliques maxima
 
 \section{Detección de cliques maximales}
 
-La representación del grafo mediante su grafo de cliques (ver Definición \ref{def:cliqueGraph}) conlleva un problema, listar los cliques maximales de un grafo. Enumerarlos todos es un problema complejo desde un punto de vista teórico y práctico. 
+La representación del grafo mediante su grafo de cliques (ver Definición~\ref{def:cliqueGraph}) conlleva un problema, listar los cliques maximales de un grafo. Enumerarlos todos es un problema complejo desde un punto de vista teórico y práctico. 
 
-Eppstein et. al. \cite{eppstein2010listing, eppstein2011listing} proponen un algoritmo rápido para listar cliques maximales de grafos poco densos. La complejidad de su algoritmo es $O(dn3^{d/3})$ en tiempo y $O(n+m)$ en espacio, siendo $d$ el índice de \textit{degeneracy}, $n$ la cantidad de vértices, y $m$ la cantidad de aristas del grafo (ver Sección~\ref{sec:Cliques}).
+Eppstein et. al. \cite{eppstein2010listing, eppstein2011listing} proponen un algoritmo rápido para listar cliques maximales de grafos poco densos. La complejidad de su algoritmo es $O(dn3^{d/3})$ en tiempo y $O(n+m)$ en espacio, siendo $d$ el índice de \textit{degeneracy}, $n$ la cantidad de vértices, y $m$ la cantidad de aristas del grafo (ver \autoref{sec:Cliques}).
 
 Este algoritmo está disponible en el repositorio \textbf{Quick Cliques}\footnote{\url{https://github.com/darrenstrash/quick-cliques}}, implementado por los mismos autores. Luego, el problema se concentra en encontrar un método eficiente para dividir en particiones el grafo de cliques, que permita tanto ahorrar espacio como responder consultas sobre el grafo de manera rápida.
 
@@ -28,7 +28,7 @@ Con el listado de cliques maximales, se puede obtener el grafo de cliques del gr
 	\end{enumerate}
 \end{definition}
 
-En la Figura \ref{fig:gafoEj} (a) se muestra un grafo no dirigido de ejemplo, en la Figura \ref{fig:gafoEj} (b) su listado de cliques maximales, y en la Figura \ref{fig:gafoEj} (c) el grafo de cliques resultante.
+En la \autoref{fig:gafoEj} (a) se muestra un grafo no dirigido de ejemplo, en la \autoref{fig:gafoEj} (b) su listado de cliques maximales, y en la \autoref{fig:gafoEj} (c) el grafo de cliques resultante.
 
 
 \begin{figure}
@@ -75,9 +75,7 @@ Se desean encontrar particiones del grafo de cliques que exploten dicha redundan
 	
 \end{problem}
 
-Esto indica que cada partición es un subgrafo del grafo de cliques maximales del grafo $G(V,E)$. El punto~\ref{item:particiones2} es importante, ya que prohíbe que un clique se repita en una partición, no así un subset de vértices de grafo $G(V,E)$ que sí puede estar en varias particiones a la vez.
-
-%Se presentan tres alternativas. La primera consta en conocer con qué frecuencia aparece cada vértice en todos los cliques, y agruparlos según los nodos más frecuentes. La segunda consta en evaluar por nodo, cuántos nodos están conectados a él por clique, para luego agruparlos según los nodos más conectados. Finalmente, se agrupa mediante la razón entre ambos métodos.
+Esto indica que cada partición es un subgrafo del grafo de cliques maximales del grafo $G(V,E)$. El punto \ref{item:particiones2} es importante, ya que prohíbe que un clique se repita en una partición, no así un subset de vértices de grafo $G(V,E)$ que sí puede estar en varias particiones a la vez.
 
 A continuación se plantea una heurística que, basada en el listado de cliques maximales $\mathcal{C} = \{c_{1}, c_{2}, ..., c_{N} \}$ y funciones de ranking, genere el particionamiento del grafo de cliques sin necesidad de generar dicho grafo.
 
@@ -103,7 +101,7 @@ Las funciones de ranking (Definición~\ref{def:rankingFunctions}) que se propone
 
 \input{equations/rankingFunctions}
 
-La función $r_{f}(u)$ (ec. \ref{eq:rankFunF}) indica en cuántos cliques está presente el vértice $u$, la función $r_{c}(u)$ (ec. \ref{eq:rankFunC}) entrega la suma del tamaño de los cliques donde está presente el vértice $u$, y la función $r_{r}(u)$ (ec. \ref{eq:rankFunR}) es la razón entre $r_{c}(u)$ y $r_{f}(u)$. En la Figura~\ref{fig:sequences} se muestra el resultado de las funciones de ranking para el caso ejemplo, y las particiones de cliques resultantes para cada una.
+La función $r_{f}(u)$ (\autoref{eq:rankFunF}) indica en cuántos cliques está presente el vértice $u$, la función $r_{c}(u)$ (\autoref{eq:rankFunC}) entrega la suma del tamaño de los cliques donde está presente el vértice $u$, y la función $r_{r}(u)$ (\autoref{eq:rankFunR}) es la razón entre $r_{c}(u)$ y $r_{f}(u)$. En la \autoref{fig:sequences} se muestra el resultado de las funciones de ranking para el caso ejemplo, y las particiones de cliques resultantes para cada una.
 
 \begin{figure}
     \centering
@@ -131,7 +129,7 @@ La función $r_{f}(u)$ (ec. \ref{eq:rankFunF}) indica en cuántos cliques está 
 
 \section{Representación en estructuras compactas}
 
-En esta sección se detalla la estructura compacta para representar $G(V, E)$ usando las particiones $\mathcal{C}\mathcal{P}$ obtenida en la Sección~\ref{sec:PartitionAlgoritms}. Se consideran estructuras de datos compactas  basadas en símbolos y secuencias de bits, con soporte para las operaciones de \textit{rank()}, \textit{select()} y \textit{access()}.
+En esta sección se detalla la estructura compacta para representar $G(V, E)$ usando las particiones $\mathcal{C}\mathcal{P}$ obtenida en la \autoref{sec:PartitionAlgoritms}. Se consideran estructuras de datos compactas  basadas en símbolos y secuencias de bits, con soporte para las operaciones de \textit{rank()}, \textit{select()} y \textit{access()}.
 
 \subsection{Secuencias de la representación de las particiones}
 La representación de las particiones consta de cuatro elementos, dos secuencias de enteros \textbf{X} e \textbf{Y}, un mapa de bits \textbf{B}, y una secuencia de bytes \textbf{BB}, las cuales se describen a continuación.
@@ -143,7 +141,7 @@ La representación de las particiones consta de cuatro elementos, dos secuencias
 	\item La secuencia de enteros \textbf{Y} indica cuántos bytes omitir en \textbf{BB} para acceder rápidamente a la partición deseada.
 \end{itemize}
 
-La definición formal de la estructura se presenta en la Definición~\ref{def:sequences}. Se puede observar de la ecuación \ref{eq:bbp} que $BB_{p} \in BB$ es una matriz de bytes, donde cada fila representa un vértice $u$ en $X_{p} \in X$, y las columnas corresponden a los bytes usados por los vértices para marcar los cliques donde participan en la partición. 
+La definición formal de la estructura se presenta en la Definición~\ref{def:sequences}. Se puede observar de la \autoref{eq:bbp} que $BB_{p} \in BB$ es una matriz de bytes, donde cada fila representa un vértice $u$ en $X_{p} \in X$, y las columnas corresponden a los bytes usados por los vértices para marcar los cliques donde participan en la partición. 
 
 También se debe notar el caso especial, cuando un clique maximal queda solo en una partición, no ocupa espacio en su $BB_{p}$ correspondiente. Para poder reconocer estos casos, se agrupan al final de la estructura compacta todas estas particiones, y con esto se puede ahorrar espacio tanto en $BB$ como en $Y$.
 
@@ -172,7 +170,7 @@ También se debe notar el caso especial, cuando un clique maximal queda solo en 
 
 \textcolor{red}{Cambié la definición de Y, para dejar en claro que si una partición no tiene bytes en BB, tampoco tendrá un Y asociado.}
 
-En la Figura~\ref{fig:compactStructure} se presenta la estructura resultante del ejemplo, usando las particiones $\mathcal{C}\mathcal{P}_{rr}$ reordenadas. Como se puede apreciar, solo la primera partición tiene dos cliques, por tanto será la única que agregue bytes en la secuencia $BB$, codificando la pertenencia de cada clique en un bit del byte, requiriendo entonces solo un byte por vértice en $X$.
+En la \autoref{fig:compactStructure} se presenta la estructura resultante del ejemplo, usando las particiones $\mathcal{C}\mathcal{P}_{rr}$ reordenadas. Como se puede apreciar, solo la primera partición tiene dos cliques, por tanto será la única que agregue bytes en la secuencia $BB$, codificando la pertenencia de cada clique en un bit del byte, requiriendo entonces solo un byte por vértice en $X$.
 
 La secuencia $X$ se conforma por todos los vértices que conforman los cliques en cada partición, ordenados de menor a mayor. La secuencia $B$ escribe un 1 en cada inicio de una partición más uno extra para indicar el final. Para la secuencia $BB$, los cliques involucrados son $C_{0}: \{0, 1, 2\}$ y $C_{1}: \{0, 2, 3, 4\}$, ambos contienen los vértices $0$ y $2$, codificado con sus bytes en $3$, el vértice $1$ solo está presente en $C_{0}$ y se codifica con su respectivo byte en $1$, y los vértices $3$ y $4$ solo participan en $C_{1}$ y sus bytes toman el valor $2$. Finalmente la secuencia $Y$ se inicia con un  5 por la cantidad de cliques presentes en la primera partición, y como las siguientes solo tienen un clique, no se agregan más enteros.
 

@@ -1,7 +1,6 @@
 \chapter{ESTADO DEL ARTE}\label{chap:background}
 \vskip 3.0ex
 
-% \documentclass statement and preamble
 En este capítulo se realiza una revisión del trabajo previo realizado en compresión de grafos, se profundiza sobre las posibles estructuras compactas a utilizar, y se detalla el problema y la solución a utilizar para la detección de cliques maximales.
 
 \section{Compresión de grafos}
@@ -10,7 +9,7 @@ El problema de compresión de grafos ha sido abordado de distintas maneras en la
 \subsection{The WebGraph Framework, \textit{Boldi y Vigna}}
 Uno de los primeros trabajos en la materia es \textit{WebGraph} de Boldi y Vigna \cite{boldi2004webgraph}, apuntado a comprimir grafos dirigidos como el grafo de la Web, aprovechando la distribución potencial de las diferencias entre vecinos sucesivos, reflejados en dos características de sus enlaces ordenados por su \textit{URL}, \textbf{localidad} (hipervínculos donde sus \textit{URL} tienen un prefijo en común y si se ordenan lexicográficamente en una lista estarán muy cerca entre ellos) y \textbf{similitud} (los sitios que tienden a estar juntos en esa lista lexicográfica también tienden a tener muchos sucesores en común). Así, codifican las listas de adyacencias basadas en otras listas de adyacencias y cuán similar sean entre ellas.
 
-Primero, cada nodo se numeran los $N$ nodos del grafo de $0$ a $N - 1$, ordenados de manera lexicográfica según sus \textit{URL}. En una primera aproximación, cada nodo tiene asociado su grado de salida (\textit{Outdegree}) y su listado de adyacencia o sucesores asociado $S(x)$. Luego,  aprovechando la localidad  de los nodos en dichas listas, se pueden representar usando las diferencias entre sus nodos, quiere decir si $S(x) = (s_{1}, s_{2}, ..., s_{k})$ es el listado de sucesores del nodo $x$ con $k$ vecinos, se codifica como $(s_{1} - x, s_{2} - s_{1} - 1, ..., s_{k} - s_{k - 1} - 1)$. En la Tabla~\ref{table:webgraph1} se muestran ambos casos, usando listado de sucesores y usando la diferencia. Para evitar tener que lidiar con números negativos, el primer número en esta nueva secuencia se codifica de la siguiente manera:
+Primero, cada nodo se numeran los $N$ nodos del grafo de $0$ a $N - 1$, ordenados de manera lexicográfica según sus \textit{URL}. En una primera aproximación, cada nodo tiene asociado su grado de salida (\textit{Outdegree}) y su listado de adyacencia o sucesores asociado $S(x)$. Luego,  aprovechando la localidad  de los nodos en dichas listas, se pueden representar usando las diferencias entre sus nodos, quiere decir si $S(x) = (s_{1}, s_{2}, ..., s_{k})$ es el listado de sucesores del nodo $x$ con $k$ vecinos, se codifica como $(s_{1} - x, s_{2} - s_{1} - 1, ..., s_{k} - s_{k - 1} - 1)$. En la \autoref{table:webgraph1} se muestran ambos casos, usando listado de sucesores y usando la diferencia. Para evitar tener que lidiar con números negativos, el primer número en esta nueva secuencia se codifica de la siguiente manera:
 
 \begin{align}
 	w(x) =  \begin{cases}
@@ -21,7 +20,7 @@ Primero, cada nodo se numeran los $N$ nodos del grafo de $0$ a $N - 1$, ordenado
 
 \input{tables/arte-webgraph-naive}
 
-Avanzando en el modelo de compresión, cada nodo tiene un entero $r$ llamado referencia, si $r = 0$ la lista no está comprimida usando una referencia, y para $r > 0$ la lista $x$ está definida por la diferencia de la lista $x - r$. Un bitmap llamado \textit{copy list} codifica los sucesores que deben ser copiados a la lista, con un $1$ si el nodo referenciado esta presente en dicha lista o no. Adicionalmente se usa una lista extra para agregar todos los nodos remanentes. Las copy list se codifican en \textit{copy blocks}, donde el primer block es $0$ si la copy list comienza con un $0$. Un bloque se representa por l largo de $0$ o $1$ en la lista menos uno, y el último bloque se omite. En las Tablas \ref{table:webgraph2} y \ref{table:webgraph3} se ilustra un ejemplo para ambos casos.
+Avanzando en el modelo de compresión, cada nodo tiene un entero $r$ llamado referencia, si $r = 0$ la lista no está comprimida usando una referencia, y para $r > 0$ la lista $x$ está definida por la diferencia de la lista $x - r$. Un bitmap llamado \textit{copy list} codifica los sucesores que deben ser copiados a la lista, con un $1$ si el nodo referente esta presente en dicha lista o no. Adicionalmente se usa una lista extra para agregar todos los nodos remanentes. Las copy list se codifican en \textit{copy blocks}, donde el primer block es $0$ si la copy list comienza con un $0$. Un bloque se representa por l largo de $0$ o $1$ en la lista menos uno, y el último bloque se omite. En la \autoref{table:webgraph2} y \autoref{table:webgraph3} se ilustran ejemplos para ambos casos.
 
 \input{tables/arte-webgraph}
 
@@ -36,18 +35,17 @@ Como se puede apreciar de los ejemplos, la consecutividad es frecuente en el lis
 
 \input{tables/arte-webgraph-final}
 
-Finalmente, en la Tabla~\ref{table:webgraph4} se puede apreciar la representación comprimida resultante, con un umbral $L_{min} = 2$. 
+Finalmente, en la \autoref{table:webgraph4} se puede apreciar la representación comprimida resultante, con un umbral $L_{min} = 2$. 
 
-En un trabajo posterior Boldi et. al. \cite{boldi2009permuting}, usando la matriz de adyacencia y basados en aplicar permutaciones a sus filas, logran reordenar y generar una nueva matriz donde las filas, si son similares (contienen 1s en posiciones muy comunes), deben ser consecutivas o en una vecindad acotada. En otro trabajo propusieron un nuevo algoritmo llamado \textit{Layered Label Propagation} \cite{boldi2011layered} (propagación de etiquetas por capas). Su objetivo era poder ocupar las técnicas desarrolladas anteriormente para grafos de redes sociales, donde los vértices no pueden ser ordenados de manera lexicográfica. Usando la matriz de adyacencia, junto con descomponer en tareas el re-ordenamiento de la matriz y aprovechar los procesadores multi-core, logran muy buenos resultados.
+En un trabajo posterior Boldi et. al. \cite{boldi2009permuting}, usando la matriz de adyacencia y basados en aplicar permutaciones a sus filas, logran re-ordenar y generar una nueva matriz donde las filas, si son similares (contienen 1s en posiciones muy comunes), deben ser consecutivas o en una vecindad acotada. En otro trabajo propusieron un nuevo algoritmo llamado \textit{Layered Label Propagation} \cite{boldi2011layered} (propagación de etiquetas por capas). Su objetivo era poder ocupar las técnicas desarrolladas anteriormente para grafos de redes sociales, donde los vértices no pueden ser ordenados de manera lexicográfica. Usando la matriz de adyacencia, junto con descomponer en tareas el re-ordenamiento de la matriz y aprovechar los procesadores multi-core, logran muy buenos resultados.
 
 Francisco, Gagie, Ladra y Navarro \cite{francisco2018exploiting} estudian cómo potenciar el cálculo del producto de matrices con vectores de una manera eficiente, por ejemplo para PageRank\cite{page1999pagerank}.  Además, demuestran que se puede aprovechar el formato de algunos esquemas de compresión, en particular el de Boldi y Vigna, para hacer el cálculo en un tiempo proporcional al tamaño de la matriz comprimida.
- %discute algunos algoritmos de compresión de grafos que permiten explotar en forma amigable la computación de matrices. En particular, muestran como el formato de WebGraph  que además son usados en algoritmos de ranking como PageRank \cite{page1999pagerank}.
 
 
 \subsection{BFS, \textit{Apostolico y Drovandi}}
 Otra alternativa de compresión bastante competitiva, también para grafos dirigidos, es la que presentan Apostolico y Drovandi \cite{apostolico2009graph}, basado en la topología del grafo de la Web en vez de las \textit{URL} subyacentes. En vez de asignarle índices a los nodos según el orden lexicográfico de sus \textit{URL}, realizan un recorrido por \textit{breath-first} o búsqueda en anchura del grafo, numerando cada nodo según el orden en que se expanden. Este proceso y su compresión inducida lo llaman \textit{Fase 1}, y la compresión de las aristas remanentes como \textit{Fase 2}.
 
-En la Fase 1, al expandir un nodo $v_{i} \in V$ se le asignan índices enteros consecutivos a sus $k_{i}$ vecinos, y se guarda el valor $k_{i}$. Cuando el recorrido del grafo se completa, todas las aristas que pertenecen al árbol de búsqueda por anchura quedan codificadas en la secuencia $\{k_{1}, k_{2}, ..., k_{|V|}\}$ llamada \textit{traversal list} (lista de recorrido). En la Figura~\ref{fig:bfs1} se presenta un ejemplo para la Fase 1, donde en (a) se presenta el orden de los nodos asignados por BFS, y en (b) las aristas restantes junto con el listado de recorrido.
+En la Fase 1, al expandir un nodo $v_{i} \in V$ se le asignan índices enteros consecutivos a sus $k_{i}$ vecinos, y se guarda el valor $k_{i}$. Cuando el recorrido del grafo se completa, todas las aristas que pertenecen al árbol de búsqueda por anchura quedan codificadas en la secuencia $\{k_{1}, k_{2}, ..., k_{|V|}\}$ llamada \textit{traversal list} (lista de recorrido). En la \autoref{fig:bfs1} se presenta un ejemplo para la Fase 1, donde en (a) se presenta el orden de los nodos asignados por BFS, y en (b) las aristas restantes junto con el listado de recorrido.
 
 \input{figs/arte-bfs1}
 
@@ -67,24 +65,24 @@ En la Fase 2, codifican la lista de adyacencia $A_{i}$ de cada nodo $v_{i} \in V
 
 Los tipo $\alpha$ y $\phi$ codifican la diferencia con respecto al elemento previo de la lista ($A_{i}^{j - 1}$), mientras $\beta$ y $\chi$ con respecto al elemento en la misma posición de la lista de adyacencia del nodo previo ($A_{i - 1}^{j}$). Cuando $A_{i - 1}^{j}$ no existe se reemplaza por $A_{k}^{j}$, donde $k (k < i - 1 \wedge v_{k} \in C)$ es el índice más cercano a $i$ para cual el grado de $v_{k}$ no es menor que $j$, o por un código tipo $\phi$ en caso que un nodo así no exista.
 
-En la Tabla~\ref{table:bfs-adjacency} se ilustra un ejemplo de listado de adyacencia, y en la Tabla~\ref{table:bfs-coded} su codificación basada en los casos ya mencionados.
+En la \autoref{table:bfs-adjacency} se ilustra un ejemplo de listado de adyacencia, y en la \autoref{table:bfs-coded} su codificación basada en los casos ya mencionados.
 
 \input{tables/arte-bfs-adjacency}
 
 \input{tables/arte-bfs-coded}
 
-Luego, aprovechan distintos tipos de redundancias en los listados de adyacencia, como se puede ver en la Tabla~\ref{table:bfs-exploting}, distinguiendo cuatro casos:
+Luego, aprovechan distintos tipos de redundancias en los listados de adyacencia, como se puede ver en la \autoref{table:bfs-exploting}, distinguiendo cuatro casos:
 
 \begin{enumerate}
-	\item Un conjunto de líneas idénticas (ver bloque ancho amarillo en la Tabla~\ref{table:bfs-exploting}) se codifican asignando un multiplicador a la primera línea de la secuencia.
-	\item Los intervalos con grado constante de nodos (ver bloque consecutivo de 9s en la Tabla~\ref{table:bfs-exploting}), se codifican por su diferencia.
-	\item Una secuencia de largo $\mathcal{L}_{min}$ de elementos idénticos (ver el bloque de $\phi1$s en la Tabla~\ref{table:bfs-exploting}), se codifica por su largo.
-	\item Un bloque de filas idénticas (ver gran bloque azul en la Tabla~\ref{table:bfs-exploting}) que superen un umbral $\mathcal{A}_{min}$, se codifica por su largo.
+	\item Un conjunto de líneas idénticas (ver bloque ancho amarillo en la \autoref{table:bfs-exploting}) se codifican asignando un multiplicador a la primera línea de la secuencia.
+	\item Los intervalos con grado constante de nodos (ver bloque consecutivo de 9s en la \autoref{table:bfs-exploting}), se codifican por su diferencia.
+	\item Una secuencia de largo $\mathcal{L}_{min}$ de elementos idénticos (ver el bloque de $\phi1$s en la \autoref{table:bfs-exploting}), se codifica por su largo.
+	\item Un bloque de filas idénticas (ver gran bloque azul en la \autoref{table:bfs-exploting}) que superen un umbral $\mathcal{A}_{min}$, se codifica por su largo.
 \end{enumerate}
 
 \input{tables/arte-bfs-exploting}
 
-Para ello introducen un nuevo símbolo $\Sigma$, seguido de un indicador $\Sigma_{F}$ toma valor 2 si la redundancia es de tipo 3, 3 si es de tipo 4, o 1 si son ambas. Dependiendo de la redundancia a codificar, el código se expresa como `$tipo\:\Sigma\:\Sigma_{F}\:gap\:l$'  o `$tipo\:\Sigma\:\Sigma_{F}\:gap\:l\:w\:h$', siendo $tipo$ uno de los símbolos del set $\{\alpha, \beta, \chi, \phi\}$, $gap$ un entero indicando la diferencia, $l$ la cantidad de elementos idénticos en la misma línea, $w$ y $h$ el ancho y alto de las columnas y filas idénticas. En la Tabla~\ref{table:bfs-exploted} se ilustra esta codificación para el caso ejemplo de la Tabla~\ref{table:bfs-exploting}.
+Para ello introducen un nuevo símbolo $\Sigma$, seguido de un indicador $\Sigma_{F}$ toma valor 2 si la redundancia es de tipo 3, 3 si es de tipo 4, o 1 si son ambas. Dependiendo de la redundancia a codificar, el código se expresa como `$tipo\:\Sigma\:\Sigma_{F}\:gap\:l$'  o `$tipo\:\Sigma\:\Sigma_{F}\:gap\:l\:w\:h$', siendo $tipo$ uno de los símbolos del set $\{\alpha, \beta, \chi, \phi\}$, $gap$ un entero indicando la diferencia, $l$ la cantidad de elementos idénticos en la misma línea, $w$ y $h$ el ancho y alto de las columnas y filas idénticas. En la \autoref{table:bfs-exploted} se ilustra esta codificación para el caso ejemplo de la \autoref{table:bfs-exploting}.
 
 \input{tables/arte-bfs-exploted}
 
@@ -94,7 +92,7 @@ Finalmente, usan códigos Huffman para codificar $\alpha, \beta, \chi, \phi$, y 
 
 
 \subsection{Using Re-Pair, \textit{Claude y Navarro}}
-El trabajo de Claude y Navarro \cite{claude2010fast} propone usar Re-Pair \cite{larsson2000off}, un método de compresión basado en gramática, para comprimir grafos dirigidos como el grafo de la Web. Re-Pair consiste en buscar el par de símbolos más frecuente en una secuencia y reemplazar cada ocurrencia por un nuevo símbolo, el cual se añade a un diccionario como nueva regla. En la Tabla~\ref{table:repair} se muestra un ejemplo simple de Re-Pair, donde las reglas conforman el diccionario para descomprimir la secuencia.
+El trabajo de Claude y Navarro \cite{claude2010fast} propone usar Re-Pair \cite{larsson2000off}, un método de compresión basado en gramática, para comprimir grafos dirigidos como el grafo de la Web. Re-Pair consiste en buscar el par de símbolos más frecuente en una secuencia y reemplazar cada ocurrencia por un nuevo símbolo, el cual se añade a un diccionario como nueva regla. En la \autoref{table:repair} se muestra un ejemplo simple de Re-Pair, donde las reglas conforman el diccionario para descomprimir la secuencia.
 
 \input{tables/arte-repair}
 
@@ -106,7 +104,7 @@ Claude y Navarro \cite{claude2010fast} aplican esta idea a los listados de adyac
 
 \noindent donde se debe cumplir con $v_{i,j} < v_{i, j+1}$ para cualquier $1 \leq i \leq n$ y $1 \leq j \leq a_{i}$. Esto significa que cada lista de adyacencia concatenada debe partir con su nodo referencia, y todos los nodos de ella deben estar ordenados de menor a mayor. Luego se van reemplazando recursivamente, sin incluir los nodos de referencia, los pares de símbolos consecutivos más frecuentes por uno nuevo, hasta que no sea conveniente, y cada reemplazo se guarda como regla. 
 
-Finalmente, se eliminan los nodos de referencia con el cuidado de codificar en dos bitmaps: En $B1$ si tienen nodos adyacentes, y en $B2$ la ubicación de dichos nodos en el arreglo final. En la Figura~\ref{fig:repairCN} se ilustra un ejemplo, donde en (a) se tiene el grafo de ejemplo, en (b) la concatenación $T(G)$ de todos los listados de adyacencia ordenados de menor a mayor, los reemplazos necesarios para su compresión y el arreglo resultante, y en (c) los bitmaps indicadores de los nodos de referencia. Se debe notar que la notación alternativa $\overline{v_{i}}$ se reemplaza por $-v_{i}$ en el arreglo. También presentan otras mejoras, como usar diferencias para codificar los listados de adyacencia o reordenar los nodos para aprovechar mejor Re-Pair.
+Finalmente, se eliminan los nodos de referencia con el cuidado de codificar en dos bitmaps: En $B1$ si tienen nodos adyacentes, y en $B2$ la ubicación de dichos nodos en el arreglo final. En la \autoref{fig:repairCN} se ilustra un ejemplo, donde en (a) se tiene el grafo de ejemplo, en (b) la concatenación $T(G)$ de todos los listados de adyacencia ordenados de menor a mayor, los reemplazos necesarios para su compresión y el arreglo resultante, y en (c) los bitmaps indicadores de los nodos de referencia. Se debe notar que la notación alternativa $\overline{v_{i}}$ se reemplaza por $-v_{i}$ en el arreglo. También presentan otras mejoras, como usar diferencias para codificar los listados de adyacencia o re-ordenar los nodos para aprovechar mejor Re-Pair.
 
 \input{figs/arte-repairCN}
 
@@ -114,11 +112,11 @@ Una propuesta de compresión más reciente, de Maneth y Peternek \cite{maneth201
 
 
 \subsection{Virtual Node Mining, \textit{Buehrer y Chellapilla}}
-Buehrer y Chellapilla \cite{BuehrerChellapilla} aprovechan que muchos grupos de nodos en el grafo de la Web consisten en conjuntos de sitios que comparten los mismos vecinos directos, lo que genera un grafo bipartito completo. Su propuesta reduce la cantidad de aristas en grafos dirigidos, definiendo nodos virtuales que son agregados artificialmente al grafo entre los dos conjuntos del biclique. Esto reduce la cantidad total de aristas, ya que cada biclique une un set de $U$ nodos con uno de $W$ nodos, genera en total $|U \times W|$ aristas, y usando un nodo virtual disminuye a $|U + W|$, un gran ahorro cuando los bicliques son grandes. En la Figura~\ref{fig:virtualNode} se ejemplifica este reemplazo, cambiando de las iniciales 30 aristas del biclique en (a), 19 por un nodo virtual VN en (b), quedando solo 11 aristas restantes.
+Buehrer y Chellapilla \cite{BuehrerChellapilla} aprovechan que muchos grupos de nodos en el grafo de la Web consisten en conjuntos de sitios que comparten los mismos vecinos directos, lo que genera un grafo bipartito completo. Su propuesta reduce la cantidad de aristas en grafos dirigidos, definiendo nodos virtuales que son agregados artificialmente al grafo entre los dos conjuntos del biclique. Esto reduce la cantidad total de aristas, ya que cada biclique une un set de $U$ nodos con uno de $W$ nodos, genera en total $|U \times W|$ aristas, y usando un nodo virtual disminuye a $|U + W|$, un gran ahorro cuando los bicliques son grandes. En la \autoref{fig:virtualNode} se ejemplifica este reemplazo, cambiando de las iniciales 30 aristas del biclique en (a), 19 por un nodo virtual VN en (b), quedando solo 11 aristas restantes.
 
 \input{figs/arte-virtualNode}
 
-Este proceso se repite iterativamente hasta que ya no se reducen significativamente más aristas. Luego aplican codificación delta (ver sección~\ref{sec:Ucoding}) sobre el grafo reducido. La propuesta logra una buena compresión, pero no reportan los tiempos de acceso. Además, su resultado no se ve afectado por el orden de numeración de los nodos, y permite actualizaciones.
+Este proceso se repite iterativamente hasta que ya no se reducen significativamente más aristas. Luego aplican codificación delta (ver \autoref{sec:Ucoding}) sobre el grafo reducido. La propuesta logra una buena compresión, pero no reportan los tiempos de acceso. Además, su resultado no se ve afectado por el orden de numeración de los nodos, y permite actualizaciones.
 
 Anh y Moffat \cite{anh2010local} también aprovechan esta localidad y similaridad en los listados de adyacencia, dividiendo en grupos de $h$ listas consecutivas. Luego reducen las listas aplicando reglas gramáticas como Re-Pair \cite{larsson2000off} de manera recursiva, y finalmente aplican codificaciones como el código $\zeta$ \cite{boldi2005codes}.
 
@@ -126,7 +124,7 @@ Anh y Moffat \cite{anh2010local} también aprovechan esta localidad y similarida
 \subsection{k2-tree, \textit{Brisaboa, Ladra y Navarro}}
 Una propuesta que aprovecha lo dispersa y agrupada que es la matriz de adyacencia del grafo de la Web es la propuesta por Brisaboa, Ladra y Navarro \cite{brisaboa2009k} donde proponen una estructura llamada k2-tree para ahorrar espacio y poder responder consultas tanto de vecinos directos como reversos. Esto último significa que este método, si bien fue pensado para grafos dirigidos, también se puede aplicar para no dirigidos. En un trabajo posterior, lograron mejorar sus resultados aplicando el ordenamiento por BFS antes de crear su estructura \cite{brisaboa2014compact}.
 
-Este modelo propone representar la matriz de adyacencia con un árbol $k_{2}$-nario de altura $h=\lceil(\log_k n)\rceil$, donde $n$ es el número de vértices en el grafo. Luego subdivide la matriz de adyacencia en $k^2$ submatrices de tamaño $n^{2}/k^{2}$, si una de ellas contiene solo ceros se representa solo con un bit en $0$, de lo contrario se marcan con un $1$ y se vuelven a subdividir de manera recursiva. Esta estructura soporta las consultas de vecinos directos y reversos de manera simétrica, ya que significa revisar las filas o columnas de la matriz. En la Figura~\ref{fig:k2tree} se presenta (a) un ejemplo de una matriz de adyacencia y sus subdivisiones para k2tree, y (b) un diagrama de la estructura final.
+Este modelo propone representar la matriz de adyacencia con un árbol $k_{2}$-nario de altura $h=\lceil(\log_k n)\rceil$, donde $n$ es el número de vértices en el grafo. Luego subdivide la matriz de adyacencia en $k^2$ submatrices de tamaño $n^{2}/k^{2}$, si una de ellas contiene solo ceros se representa solo con un bit en $0$, de lo contrario se marcan con un $1$ y se vuelven a subdividir de manera recursiva. Esta estructura soporta las consultas de vecinos directos y reversos de manera simétrica, ya que significa revisar las filas o columnas de la matriz. En la \autoref{fig:k2tree} se presenta (a) un ejemplo de una matriz de adyacencia y sus subdivisiones para k2tree, y (b) un diagrama de la estructura final.
 
 \input{figs/arte-k2tree}
 
@@ -135,15 +133,14 @@ Finalmente, la compresión se realiza representando el árbol usando dos arreglo
 En 2011, Hernández y Navarro \cite{hernandez2011compression} propusieron combinar varios métodos: Primero reducir la cantidad de aristas con nodos virtuales \cite{BuehrerChellapilla},  y luego comprimir usando la propuestas de k2-tree~\cite{brisaboa2009k}. Con esto, el número de aristas del grafo original se reduce cerca de diez veces, y el número de vértices aumenta en un $10\%$. Este enfoque proporciona resultados competitivos principalmente en grafos de la Web, pero no en grafos de redes sociales.
 
 En trabajos posteriores, Hernandez y Navarro \cite{hernandez2012compressed, hernandez2014compressed} proponen una estructura bastante similar, que consiste en obtener subgrafos bipartitos de grafos dirigidos, o no dirigidos con aristas duplicadas, usando una heurística de cantidad de aristas a representar. Luego se obtiene un conjunto de subgrafos bipartitos y un grafo restante. Finalmente se construye una estructura compacta, basada en wavelet trees y bitmaps comprimidos para representar la colección de subgrafos, y el resto del grado se comprime con otras técnicas como k2tree~\cite{brisaboa2009k}. Esta estructura permite obtener los vecinos directos y reversos de grafos dirigidos, o grafos no dirigidos representados como dirigidos.
-%donde los bicliques son representados usando estructuras sucintas como wavelet trees y bitmaps comprimidos (ver Sección \ref{sec:compactEstruct}). Esta representación comprimida proporciona resolución de consulta de vecinos directos y reversos. Francisco et. al. \cite{francisco2018exploiting} destacan que esta propuesta también presenta un formato adecuado para potenciar los cálculos de cómputo de matrices por vectores.
 
 
 \subsection{List Merging, \textit{Grabowski y Bieniecki}}
-Grabowski y Bieniecki~\cite{grabowski2014tight} proponen agrupar los listados de adyacencia de grafos dirigos en bloques de $h$ listas cada uno, de manera similar a lo propuesto por Anh y Moffat~\cite{anh2010local}. Cada bloque luego es descompuesto en dos arreglos: el primero es \textit{long list}, un arreglo de todos los índices de los vértices presentes en el bloque de listados de adyacencia, sin repetir ninguno. El segundo es \textit{flags}, un arreglo de bits que permite la reconstrucción de las listas agrupadas. 
+Grabowski y Bieniecki~\cite{grabowski2014tight} proponen agrupar los listados de adyacencia de grafos dirigidos en bloques de $h$ listas cada uno, de manera similar a lo propuesto por Anh y Moffat~\cite{anh2010local}. Cada bloque luego es descompuesto en dos arreglos: el primero es \textit{long list}, un arreglo de todos los índices de los vértices presentes en el bloque de listados de adyacencia, sin repetir ninguno. El segundo es \textit{flags}, un arreglo de bits que permite la reconstrucción de las listas agrupadas. 
 
 El arreglo de enteros \textit{long list} es reducido usando las diferencias, terminada en cero y codificada en bytes. El arreglo de bits \textit{flags} indica la pertenencia de los índices en \textit{long list} a sus listas de adyacencias asociadas. El número de bits por cada índice es $h$, definido como un múltiplo de 8. su largo queda definido por el largo de \textit{long list}. Este arreglo puede no comprimirse (en cual caso lo llaman \textit{LM-bitmap}), o codificarse usando las diferencias entre los 1 sucesivos, escritas en bytes individuales (\textit{LM-diff}).
 
-Ambas secuencias, \textit{long list} y ya sea \textit{LM-bitmap} o \textit{LM-diff}, luego son concatenadas y comprimidas usando el algoritmo Deflate. Este algoritmo consiste en una serie de bloques, todos precedidos por una cabecera de 3 bits, que indican lo siguiente:
+Ambas secuencias, \textit{long list} y ya sea \textit{LM-bitmap} o \textit{LM-diff}, luego son concatenadas y comprimidas usando el algoritmo \textit{Deflate}. Este algoritmo consiste en una serie de bloques, todos precedidos por una cabecera de 3 bits, que indican lo siguiente:
 
 \begin{itemize}
 	\item Primer bit:
@@ -160,7 +157,7 @@ Ambas secuencias, \textit{long list} y ya sea \textit{LM-bitmap} o \textit{LM-di
 	\end{itemize}
 \end{itemize}
 
-Para más detalles sobre la codificación Huffman, ver la Sección~\ref{sec:huffman}.
+Para más detalles sobre la codificación Huffman, ver la \autoref{sec:huffman}.
 
 
 \subsection{GLOUDS, \textit{Fischer y Peters}}
@@ -170,9 +167,9 @@ Fischer y Peters \cite{fischer2016glouds} proponen una nueva estructura de datos
 
 \input{figs/arte-LOUDS}
 
-Un árbol de expansión $T$ de un grafo $G$  con $n$ vértices y $m$ aristas, es un árbol que cubre todos los $n$ vértices de $G$ con la mínima cantidad de aristas posibles, sin generar ciclos. En la Figura~\ref{fig:spanningTree} se muestran algunos ejemplos de árboles de expansión para un grafo simple. Un grafo con forma de árbol no tiene una cantidad de aristas adicionales muy alta, con respecto a un árbol de expansión.
+Un árbol de expansión $T$ de un grafo $G$  con $n$ vértices y $m$ aristas, es un árbol que cubre todos los $n$ vértices de $G$ con la mínima cantidad de aristas posibles, sin generar ciclos. En la \autoref{fig:spanningTree} se muestran algunos ejemplos de árboles de expansión para un grafo simple. Un grafo con forma de árbol no tiene una cantidad de aristas adicionales muy alta, con respecto a un árbol de expansión.
 
-La estructura \textit{LOUDS} \cite{jacobson1989space} está diseñada para comprimir árboles de expansión. Primero, por conveniencia, agrandan el árbol con un nodo \textit{super-raíz} artificial conectado al nodo raíz original. Luego van construyendo un bitmap $B$, avanzando por el árbol mediante BFS. Por cada nodo con $k$ hijos, se agregan $1^{k}0$ bits a $B$ (con $k=3$ sería $1110$). Esto representa a cada nodo del árbol dos veces: una vez con un $1$ cuando aparece el nodo como hijo, y con un $0$ cuando aparece como padre. Para $n$ nodos, el bitmap $B$ tiene $2n + 1$ bits de largo. En la Figura~\ref{fig:LOUDS} se muestra un ejemplo de esta representación. Los nodos quedan identificados según el nivel de BFS donde aparecen.
+La estructura \textit{LOUDS} \cite{jacobson1989space} está diseñada para comprimir árboles de expansión. Primero, por conveniencia, agrandan el árbol con un nodo \textit{super-raíz} artificial conectado al nodo raíz original. Luego van construyendo un bitmap $B$, avanzando por el árbol mediante BFS. Por cada nodo con $k$ hijos, se agregan $1^{k}0$ bits a $B$ (con $k=3$ sería $1110$). Esto representa a cada nodo del árbol dos veces: una vez con un $1$ cuando aparece el nodo como hijo, y con un $0$ cuando aparece como padre. Para $n$ nodos, el bitmap $B$ tiene $2n + 1$ bits de largo. En la \autoref{fig:LOUDS} se muestra un ejemplo de esta representación. Los nodos quedan identificados según el nivel de BFS donde aparecen.
 
 Basado en esta idea, \textit{GLOUDS} \cite{fischer2016glouds} propone una nueva estructura para grafos con forma de árbol. Para esto define las siguientes características de un grafo $G$:
 
@@ -182,11 +179,11 @@ Basado en esta idea, \textit{GLOUDS} \cite{fischer2016glouds} propone una nueva 
 	\item $h \leq k$, la cantidad de nodos adicionales.
 \end{itemize}
 
-Por simpleza, parten asumiendo que existe un nodo $r$ desde donde se pueden alcanzar todos los nodos restantes ($c = 1$). Desde $r$, realizan el recorrido por BFS de $G$, lo que llaman BFT, y $T_{G}^{BFT}$ el árbol resultante. Agrandan $T_{G}^{BFT}$ tal que por cada vértice $w$ ya visitado durante la BFT del nodo $v$ en una etapa anterior, realizan una copia llamada \textit{nodo sombra} y la agregan como hijo al nodo $v$ en $T_{G}^{BFT}$. Finalmente agregan el nodo \textit{super-raíz}, y llaman al árbol final $T_{G}$, que tiene exactamente $m + 2$ nodos. En la Figura~\ref{fig:GLOUDS} se ilustra un ejemplo de GLOUDS, en (a) el grafo $G$, y en (b) el árbol $T_{G}$ final.
+Por simpleza, parten asumiendo que existe un nodo $r$ desde donde se pueden alcanzar todos los nodos restantes ($c = 1$). Desde $r$, realizan el recorrido por BFS de $G$, lo que llaman BFT, y $T_{G}^{BFT}$ el árbol resultante. Agrandan $T_{G}^{BFT}$ tal que por cada vértice $w$ ya visitado durante la BFT del nodo $v$ en una etapa anterior, realizan una copia llamada \textit{nodo sombra} y la agregan como hijo al nodo $v$ en $T_{G}^{BFT}$. Finalmente agregan el nodo \textit{super-raíz}, y llaman al árbol final $T_{G}$, que tiene exactamente $m + 2$ nodos. En la \autoref{fig:GLOUDS} se ilustra un ejemplo de GLOUDS, en (a) el grafo $G$, y en (b) el árbol $T_{G}$ final.
 
 \input{figs/arte-glouds}
 
-Luego proponen una representación de $T_{G}$ similar a la de LOUDS, pero que permita diferenciar los nodos sombra de los demás. Para esto, cambian el bitmap por una secuencia de trits, con posibles valores del conjunto $\{0, 1, 2\}$. Luego, la secuencia $B$ se genera de la misma manera, pero cuando aparece un nodo sombra en el recorrido BFS se agrega un $2$. Estos nodos no se vuelven a representar con un $0$. Le llaman al vector de trits $B$ CLOUDS, y tiene un largo de $n + m + c$ trits. En la Figura~\ref{fig:LOUDS}~(c) se muestra el resultado para el ejemplo ya mencionado. Además, necesita un arreglo $H[0, k)$ que anota los nodos sombra que aparecen en B.
+Luego proponen una representación de $T_{G}$ similar a la de LOUDS, pero que permita diferenciar los nodos sombra de los demás. Para esto, cambian el bitmap por una secuencia de trits, con posibles valores del conjunto $\{0, 1, 2\}$. Luego, la secuencia $B$ se genera de la misma manera, pero cuando aparece un nodo sombra en el recorrido BFS se agrega un $2$. Estos nodos no se vuelven a representar con un $0$. Le llaman al vector de trits $B$ CLOUDS, y tiene un largo de $n + m + c$ trits. En la \autoref{fig:LOUDS}~(c) se muestra el resultado para el ejemplo ya mencionado. Además, necesita un arreglo $H[0, k)$ que anota los nodos sombra que aparecen en B.
 
 
 En este trabajo, se considerarán en la comparación final los métodos considerados más eficientes, en términos de construcción y resultados en compresión y tiempos de accesos a vecinos.
@@ -215,15 +212,15 @@ Okanohara y Sadakane \cite{DBLP:journals/corr/abs-cs-0610001} proponen una mejor
 
 
 \subsection{Wavelet Tree y Wavelet Matrix}
-Grossi, Gupta y Vitter \cite{grossi2003high} proponen una estructura llamada \textbf{wavelet tree} para codificar secuencias, la cual consiste en un árbol binario donde la raíz y cada nodo interno son bitmaps. Si el símbolo en la secuencia pertenece a la primera mitad del alfabeto de la secuencia de entrada, se marca con un $0$ en su correspondiente bit del bitmap asociado, y se escribe en el nodo hijo izquierdo. Si pertenece a la segunda mitad del alfabeto, se marca con un $1$ en el bitmap y se escribe en el nodo hijo derecho. En la Figura~\ref{fig:wavelet-tree} se muestran dos ejemplos de wavelet-tree. En (a) se tiene un ejemplo simple de la subdivisión de una secuencia ordenada. En (b) se presenta un ejemplo práctico de los alfabetos, la subdivisión de la secuencia y los bitmaps por nodo del wavelet-tree.
+Grossi, Gupta y Vitter \cite{grossi2003high} proponen una estructura llamada \textbf{wavelet tree} para codificar secuencias, la cual consiste en un árbol binario donde la raíz y cada nodo interno son bitmaps. Si el símbolo en la secuencia pertenece a la primera mitad del alfabeto de la secuencia de entrada, se marca con un $0$ en su correspondiente bit del bitmap asociado, y se escribe en el nodo hijo izquierdo. Si pertenece a la segunda mitad del alfabeto, se marca con un $1$ en el bitmap y se escribe en el nodo hijo derecho. En la \autoref{fig:wavelet-tree} se muestran dos ejemplos de wavelet-tree. En (a) se tiene un ejemplo simple de la subdivisión de una secuencia ordenada. En (b) se presenta un ejemplo práctico de los alfabetos, la subdivisión de la secuencia y los bitmaps por nodo del wavelet-tree.
 
 \input{figs/arte-wavelet-tree}
 
-Se construye de la siguiente manera. Dada una secuencia $S$ de largo $n = |S|$, donde $S[i] \in \Sigma$ y $\sigma = |\Sigma|$, se tiene: La raíz del árbol consiste en un bitmap $B$ donde $B[i] = 0$ si $S[i] \in [0, \frac{\sigma}{2}]$ y $B[i] = 1$ si $S[i] \in [\frac{\sigma}{2} + 1, \sigma]$. El siguiente nivel del árbol se construye basado en los símbolos asociados al nodo por el bitmap $B$ padre. Para $B[i] = 0$, se crea el bitmap hijo de la izquierda, y el alfabeto asociado a esos símbolos nuevamente se divide en dos, asignando valor a dicho bitmap siguiendo el mismo procedimiento descrito anteriormente. De manera similar, para $B[i] = 1$ se crea el bitmap derecho y se sidue el mismo procedimiento. Esto se repite por cada nodo hasta llegar a símbolos únicos en cada nodo terminal. Se requiere guardar los punteros a cada nodo hijo izquierdo y derecho, con los que se permite la navegación por el árbol.
+Se construye de la siguiente manera. Dada una secuencia $S$ de largo $n = |S|$, donde $S[i] \in \Sigma$ y $\sigma = |\Sigma|$, se tiene: La raíz del árbol consiste en un bitmap $B$ donde $B[i] = 0$ si $S[i] \in [0, \frac{\sigma}{2}]$ y $B[i] = 1$ si $S[i] \in [\frac{\sigma}{2} + 1, \sigma]$. El siguiente nivel del árbol se construye basado en los símbolos asociados al nodo por el bitmap $B$ padre. Para $B[i] = 0$, se crea el bitmap hijo de la izquierda, y el alfabeto asociado a esos símbolos nuevamente se divide en dos, asignando valor a dicho bitmap siguiendo el mismo procedimiento descrito anteriormente. De manera similar, para $B[i] = 1$ se crea el bitmap derecho y se sigue el mismo procedimiento. Esto se repite por cada nodo hasta llegar a símbolos únicos en cada nodo terminal. Se requiere guardar los punteros a cada nodo hijo izquierdo y derecho, con los que se permite la navegación por el árbol.
 
 Mejorando la propuesta de wavelet tree \cite{grossi2003high}, Claude, Navarro y Ordóñez \cite{claude2015wavelet} proponen una nueva estructura llamada \textbf{wavelet matrix}. Primero crean una versión de wavelet tree sin punteros, reemplazando cada bitmap por nodo por solo un bitmap por nivel, y contando la cantidad de ceros pueden determinar las subdivisiones pertinentes en cada nivel. 
 
-Luego, para crear la wavelet matrix, liberan a la estructura de la suposición que los hijos de un nodo $v$ deben ir alineados. Esto les permite diseñar un mecanismo de clasificación mas sencillo entre un nivel y otro: todos los ceros pasan a la izquierda y todos los unos a la derecha. Por cada nivel, guardan en un entero $z_{\ell}$ la cantidad de ceros del nivel $\ell$. En la Figura~\ref{fig:wavelet-matrix} se presentan en (a) un wavelet tree de ejemplo, en (b) su correspondiente wavelet tree sin punteros, y en (c) su wavelet matrix, donde las líneas verticales representan el valor de $z_{\ell}$ para cada nivel.
+Luego, para crear la wavelet matrix, liberan a la estructura de la suposición que los hijos de un nodo $v$ deben ir alineados. Esto les permite diseñar un mecanismo de clasificación mas sencillo entre un nivel y otro: todos los ceros pasan a la izquierda y todos los unos a la derecha. Por cada nivel, guardan en un entero $z_{\ell}$ la cantidad de ceros del nivel $\ell$. En la \autoref{fig:wavelet-matrix} se presentan en (a) un wavelet tree de ejemplo, en (b) su correspondiente wavelet tree sin punteros, y en (c) su wavelet matrix, donde las líneas verticales representan el valor de $z_{\ell}$ para cada nivel.
 
 \input{figs/arte-wavelet-matrix}
 
@@ -235,7 +232,7 @@ Gog, Beller, Moffat y Petri \cite{gbmp2014sea} desarrollan la librería \texttt{
 
 
 \section{Detección de cliques maximales} \label{sec:Cliques}
-La detección de cliques maximales en un grafo es un problema NP-Hard \cite{karp1972reducibility}. Se han buscado una solución desde varios enfonques \cite{bron1973algorithm, eblen2012maximum, hendrix2010theoretical, bomze1999maximum, eppstein2010listing, eppstein2011listing}. siendo la más destacada para este trabajo lo propuesto por Eppstein y Strash \cite{eppstein2011listing}, basado en el trabajo de Eppstein, Löffler y Strash \cite{eppstein2010listing}, enfocado a grafos poco densos.
+La detección de cliques maximales en un grafo es un problema NP-Hard \cite{karp1972reducibility}. Se han buscado una solución desde varios enfoques \cite{bron1973algorithm, eblen2012maximum, hendrix2010theoretical, bomze1999maximum, eppstein2010listing, eppstein2011listing}. siendo la más destacada para este trabajo lo propuesto por Eppstein y Strash \cite{eppstein2011listing}, basado en el trabajo de Eppstein, Löffler y Strash \cite{eppstein2010listing}, enfocado a grafos poco densos.
 
 Eppstein et al. \cite{eppstein2010listing} presentan una modificación al algoritmo de Bron–Kerbosch \cite{bron1973algorithm}, que permite encontrar los cliques maximales de un grafo poco denso, con $n$ nodos y \textit{degeneracy} $d$, en un tiempo $O(dn3^{d/3})$.
 
@@ -245,8 +242,7 @@ El algoritmo de Bron–Kerbosch \cite{bron1973algorithm} es un algoritmo \textit
 
 También describen la heurística llamada \textit{pivoting}, que limita la cantidad de llamadas recursivas realizadas por el algoritmo. Para cualquier nodo $u \in P \cup X$, llamado \textit{pivot}, cualquier clique maximal debe contener algún nodo no vecino de $u$, incluido si mismo. Por tanto, se retrasa que los vértices en $P \cap \Gamma(u)$ sean añadidos al clique, beneficiando realizar menos llamadas recursivas. Tomita et al. \cite{tomita2006worst} demuestran que eligiendo el \textit{pivot} $u$ para maximizar $|P \cap \Gamma(u)|$, se garantiza un orden de tiempo $O(3^{n/3})$.
 
-Eppstein et al. \cite{eppstein2010listing} prueban que el orden de procesamiento de los vértices de $G$ por el algoritmo de Bron–Kerbosch también es importante. Lo primero que hacen es un ordenamiento por \textit{degeneracy} de los nodos del grafo, y en ese orden hacen las llamadas recursivas del algoritmo, usando la regla de \textit{pivot} de Tomita. En la Figura~\ref{fig:degenOrder} se ilustra un ejemplo de ordenamiento por \textit{degeneracy}. Gracias a esto, garantizan que su algoritmo propuesto logra listar todos los cliques maximales en un tiempo $O(dn3^{d/3})$.
+Eppstein et al. \cite{eppstein2010listing} prueban que el orden de procesamiento de los vértices de $G$ por el algoritmo de Bron–Kerbosch también es importante. Lo primero que hacen es un ordenamiento por \textit{degeneracy} de los nodos del grafo, y en ese orden hacen las llamadas recursivas del algoritmo, usando la regla de \textit{pivot} de Tomita. En la \autoref{fig:degenOrder} se ilustra un ejemplo de ordenamiento por \textit{degeneracy}. Gracias a esto, garantizan que su algoritmo propuesto logra listar todos los cliques maximales en un tiempo $O(dn3^{d/3})$.
 
 \input{figs/arte-degenOrder}
 
-%Luego, Eppstein y Strash \cite{eppstein2011listing} implementan una variante al algoritmo propuesto, donde 

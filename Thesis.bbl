@@ -171,6 +171,12 @@ Simon Gog, Timo Beller, Alistair Moffat, and Matthias Petri.
 \newblock In {\em 13th International Symposium on Experimental Algorithms, (SEA
   2014)}, pages 326--337, 2014.
 
+\bibitem{grabowski2014tight}
+Szymon Grabowski and Wojciech Bieniecki.
+\newblock Tight and simple web graph compression for forward and reverse
+  neighbor queries.
+\newblock {\em Discrete Applied Mathematics}, 163:298--306, 2014.
+
 \bibitem{grossi2003high}
 Roberto Grossi, Ankur Gupta, and Jeffrey~Scott Vitter.
 \newblock High-order entropy-compressed text indexes.
