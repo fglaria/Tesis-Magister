@@ -3,22 +3,22 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-colors = ("#377eb8", "#e41a1c", "#4daf4a", "#984ea3", "#ff7f00", "#ffff33")
+colors = ("#55dde0", "#377eb8", "#e41a1c", "#4daf4a", "#984ea3", "#ff7f00", "#ffff33")
 
 # Markers
-markers = ("o", "s", "P", "D", "v", "^", ">", "<")
-# markers = ("p", ".", "d", "*", "H", "h")
+#markers = ("o", "s", "P", "D", "v", "^", ">", "<")
+markers = ("X", "p", ".", "d", "*", "H", "h")
 
 x = np.arange(len(markers))
 
 for i, m in enumerate(markers):
-    # plt.scatter(x[i], 7, s=400, marker=markers[i], color=colors[i], linewidths=1, edgecolors="#000000")
-    # plt.scatter(x[i], 5, s=600, marker=markers[i], color=colors[i], linewidths=1, edgecolors="#000000")
-    # plt.scatter(x[i], 3, s=800, marker=markers[i], color=colors[i], linewidths=1, edgecolors="#000000")
+    plt.scatter(x[i], 7, s=400, marker=markers[i], color=colors[i], linewidths=1, edgecolors="#000000")
+    plt.scatter(x[i], 5, s=600, marker=markers[i], color=colors[i], linewidths=1, edgecolors="#000000")
+    plt.scatter(x[i], 3, s=800, marker=markers[i], color=colors[i], linewidths=1, edgecolors="#000000")
 
-    plt.scatter(x[i], 7, s=400, marker=markers[i], color="k", linewidths=1, edgecolors="#000000")
-    plt.scatter(x[i], 5, s=600, marker=markers[i], color="k", linewidths=1, edgecolors="#000000")
-    plt.scatter(x[i], 3, s=800, marker=markers[i], color="k", linewidths=1, edgecolors="#000000")
+    #plt.scatter(x[i], 7, s=400, marker=markers[i], color="k", linewidths=1, edgecolors="#000000")
+    #plt.scatter(x[i], 5, s=600, marker=markers[i], color="k", linewidths=1, edgecolors="#000000")
+    #plt.scatter(x[i], 3, s=800, marker=markers[i], color="k", linewidths=1, edgecolors="#000000")
 
 # x1 = """
 #     $XY_{wm}$ $B_{rrr}$  $BB_{hutu}$\n
