@@ -88,7 +88,7 @@ Para ello introducen un nuevo símbolo $\Sigma$, seguido de un indicador $\Sigma
 
 Finalmente, usan códigos Huffman para codificar $\alpha, \beta, \chi, \phi$, y proponen una nueva codificación $\pi$ para cifrar diferencias, $\Sigma$, y otros enteros.
 
-\textcolor{red}{¿Es muy extendida esta explicación? Quizás podría detallar el método un poco menos.}
+%\textcolor{red}{¿Es muy extendida esta explicación? Quizás podría detallar el método un poco menos.}
 
 
 \subsection{Using Re-Pair, \textit{Claude y Navarro}}
@@ -130,9 +130,9 @@ Este modelo propone representar la matriz de adyacencia con un árbol $k_{2}$-na
 
 Finalmente, la compresión se realiza representando el árbol usando dos arreglos de bits, un bitmap $T$ para representar la estructura del árbol, y un bitmap $L$ para representar las hojas, que representan las celdas de la matriz. Además usan un bitmap adicional para acelerar la resolución de consultas. 
 
-En 2011, Hernández y Navarro \cite{hernandez2011compression} propusieron combinar varios métodos: Primero reducir la cantidad de aristas con nodos virtuales \cite{BuehrerChellapilla},  y luego comprimir usando la propuestas de k2-tree~\cite{brisaboa2009k}. Con esto, el número de aristas del grafo original se reduce cerca de diez veces, y el número de vértices aumenta en un $10\%$. Este enfoque proporciona resultados competitivos principalmente en grafos de la Web, pero no en grafos de redes sociales.
+En 2011, Hernández y Navarro \cite{hernandez2011compression} propusieron combinar varios métodos: Primero reducir la cantidad de aristas con nodos virtuales \cite{BuehrerChellapilla},  y luego comprimir usando la propuestas de k2-tree y Webgraph. Con esto, el número de aristas del grafo original se reduce cerca de diez veces, y el número de vértices aumenta en un $10\%$. Este enfoque proporciona resultados competitivos principalmente en grafos de la Web, pero no en grafos de redes sociales.
 
-En trabajos posteriores, Hernandez y Navarro \cite{hernandez2012compressed, hernandez2014compressed} proponen una estructura bastante similar, que consiste en obtener subgrafos bipartitos de grafos dirigidos, o no dirigidos con aristas duplicadas, usando una heurística de cantidad de aristas a representar. Luego se obtiene un conjunto de subgrafos bipartitos y un grafo restante. Finalmente se construye una estructura compacta, basada en wavelet trees y bitmaps comprimidos para representar la colección de subgrafos, y el resto del grado se comprime con otras técnicas como k2tree~\cite{brisaboa2009k}. Esta estructura permite obtener los vecinos directos y reversos de grafos dirigidos, o grafos no dirigidos representados como dirigidos.
+En trabajos posteriores, Hernández et. al. \cite{hernandez2009managing, hernandez2012compressed, hernandez2014compressed} proponen una estructura bastante similar, que consiste en obtener subgrafos bipartitos de grafos dirigidos, o no dirigidos con aristas duplicadas, usando una heurística que evalúa lo atractivo del tamaño del subgrafo bipartito en base a las aristas a representar, que pueden incluir cliques, y define una ganancia proporcional al número de aristas que pueden ser representadas por los vértices definidos por los conjuntos del subgrafo bipartito. Este enfoque contiene una parte del grafo representada por un conjunto de subgrafos bipartitos y un grafo restante. Finalmente se construye una estructura compacta, basada en wavelet trees y bitmaps comprimidos para representar la colección de subgrafos, y el resto del grafo se comprime con otras técnicas como k2tree. Esta estructura permite obtener los vecinos directos y reversos de grafos dirigidos, o grafos no dirigidos representados como dirigidos.
 
 
 \subsection{List Merging, \textit{Grabowski y Bieniecki}}
