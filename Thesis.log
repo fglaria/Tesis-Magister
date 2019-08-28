@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.5)  27 AUG 2019 11:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.5)  28 AUG 2019 16:23
 entering extended mode
 **./Thesis.tex
 (Thesis.tex
@@ -993,7 +993,7 @@ Cap\'{\i }tulo 1.
 ]) (marcoteorico.tex [2]
 Cap\'{\i }tulo 2.
 (figs/bipartito.tex
-<img/graphs-bipartito.pdf, id=502, 845.07718pt x 598.15468pt>
+<img/graphs-bipartito.pdf, id=506, 845.07718pt x 598.15468pt>
 File: img/graphs-bipartito.pdf Graphic file (type pdf)
 <use img/graphs-bipartito.pdf>
 Package pdftex.def Info: img/graphs-bipartito.pdf  used on input line 5.
@@ -1009,7 +1009,7 @@ Package pdftex.def Info: img/graphs-bipartito.pdf  used on input line 11.
 pdfTeX warning: pdflatex (file ./img/graphs-bipartito.pdf): PDF inclusion: inva
 lid other resource which is no dict (key 'ProcSets', type <array>); ignored.
 >] (figs/maxCliqueExample.tex
-<img/maxCliqueExample.pdf, id=522, 595.26389pt x 436.5108pt>
+<img/maxCliqueExample.pdf, id=526, 595.26389pt x 436.5108pt>
 File: img/maxCliqueExample.pdf Graphic file (type pdf)
 <use img/maxCliqueExample.pdf>
 Package pdftex.def Info: img/maxCliqueExample.pdf  used on input line 3.
@@ -1019,7 +1019,7 @@ Package pdftex.def Info: img/maxCliqueExample.pdf  used on input line 3.
 pdfTeX warning: pdflatex (file ./img/maxCliqueExample.pdf): PDF inclusion: inva
 lid other resource which is no dict (key 'ProcSets', type <array>); ignored.
 >] [5] (figs/fixedVarLength.tex) (figs/fixVarTrees.tex
-<img/graphs-fixVarTrees.pdf, id=557, 845.07718pt x 598.15468pt>
+<img/graphs-fixVarTrees.pdf, id=561, 845.07718pt x 598.15468pt>
 File: img/graphs-fixVarTrees.pdf Graphic file (type pdf)
 <use img/graphs-fixVarTrees.pdf>
 Package pdftex.def Info: img/graphs-fixVarTrees.pdf  used on input line 5.
@@ -1034,7 +1034,7 @@ File: img/graphs-fixVarTrees.pdf Graphic file (type pdf)
 Package pdftex.def Info: img/graphs-fixVarTrees.pdf  used on input line 11.
 (pdftex.def)             Requested size: 177.02322pt x 124.6281pt.
 ) [6] (figs/huffman2.tex
-<img/graphs-huffman2.pdf, id=577, 598.15468pt x 845.07718pt>
+<img/graphs-huffman2.pdf, id=581, 598.15468pt x 845.07718pt>
 File: img/graphs-huffman2.pdf Graphic file (type pdf)
 <use img/graphs-huffman2.pdf>
 Package pdftex.def Info: img/graphs-huffman2.pdf  used on input line 7.
@@ -1044,7 +1044,7 @@ Overfull \hbox (2.87958pt too wide) in paragraph at lines 7--8
  [][] 
  []
 
-<img/graphs-huffman21.pdf, id=579, 598.15468pt x 845.07718pt>
+<img/graphs-huffman21.pdf, id=583, 598.15468pt x 845.07718pt>
 File: img/graphs-huffman21.pdf Graphic file (type pdf)
 <use img/graphs-huffman21.pdf>
 Package pdftex.def Info: img/graphs-huffman21.pdf  used on input line 13.
@@ -1066,7 +1066,7 @@ File: img/graphs-fixVarTrees.pdf Graphic file (type pdf)
 Package pdftex.def Info: img/graphs-fixVarTrees.pdf  used on input line 45.
 (pdftex.def)             Requested size: 157.35265pt x 110.7796pt.
 ) (figs/huffmanBack.tex
-<img/graphs-huffmanBack.pdf, id=585, 598.15468pt x 845.07718pt>
+<img/graphs-huffmanBack.pdf, id=589, 598.15468pt x 845.07718pt>
 File: img/graphs-huffmanBack.pdf Graphic file (type pdf)
 <use img/graphs-huffmanBack.pdf>
 Package pdftex.def Info: img/graphs-huffmanBack.pdf  used on input line 7.
@@ -1102,7 +1102,7 @@ Cap\'{\i }tulo 3.
 ] (tables/arte-webgraph.tex)
 (tables/arte-webgraph2.tex) (tables/arte-webgraph-final.tex) [10]
 (figs/arte-bfs1.tex
-<img/arte/graphs-BFS-F1.pdf, id=673, 845.07718pt x 598.15468pt>
+<img/arte/graphs-BFS-F1.pdf, id=677, 845.07718pt x 598.15468pt>
 File: img/arte/graphs-BFS-F1.pdf Graphic file (type pdf)
 <use img/arte/graphs-BFS-F1.pdf>
 Package pdftex.def Info: img/arte/graphs-BFS-F1.pdf  used on input line 5.
@@ -1118,7 +1118,7 @@ pdfTeX warning: pdflatex (file ./img/arte/graphs-BFS-F1.pdf): PDF inclusion: in
 valid other resource which is no dict (key 'ProcSets', type <array>); ignored.
 >] (tables/arte-bfs-exploting.tex) (tables/arte-bfs-exploted.tex) [13]
 (tables/arte-repair.tex) [14] (figs/arte-repairCN.tex
-<img/arte/graphs-repair.pdf, id=737, 845.07718pt x 598.15468pt>
+<img/arte/graphs-repair.pdf, id=741, 845.07718pt x 598.15468pt>
 File: img/arte/graphs-repair.pdf Graphic file (type pdf)
 <use img/arte/graphs-repair.pdf>
 Package pdftex.def Info: img/arte/graphs-repair.pdf  used on input line 6.
@@ -1131,7 +1131,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 pdfTeX warning: pdflatex (file ./img/arte/graphs-repair.pdf): PDF inclusion: in
 valid other resource which is no dict (key 'ProcSets', type <array>); ignored.
 >] (figs/arte-virtualNode.tex
-<img/arte/graphs-virtual2.pdf, id=759, 845.07718pt x 598.15468pt>
+<img/arte/graphs-virtual2.pdf, id=763, 845.07718pt x 598.15468pt>
 File: img/arte/graphs-virtual2.pdf Graphic file (type pdf)
 <use img/arte/graphs-virtual2.pdf>
 Package pdftex.def Info: img/arte/graphs-virtual2.pdf  used on input line 6.
@@ -1146,25 +1146,22 @@ pdfTeX warning: pdflatex (file ./img/arte/graphs-virtual2.pdf): PDF inclusion:
 invalid other resource which is no dict (key 'ProcSets', type <array>); ignored
 .
 >] (figs/arte-k2tree.tex
-<img/arte/k2-tree-matrix.pdf, id=789, 794.97pt x 614.295pt>
+<img/arte/k2-tree-matrix.pdf, id=793, 794.97pt x 614.295pt>
 File: img/arte/k2-tree-matrix.pdf Graphic file (type pdf)
 <use img/arte/k2-tree-matrix.pdf>
 Package pdftex.def Info: img/arte/k2-tree-matrix.pdf  used on input line 5.
 (pdftex.def)             Requested size: 163.8125pt x 199.94812pt.
-<img/arte/graphs-k2tree.pdf, id=791, 845.07718pt x 598.15468pt>
+<img/arte/graphs-k2tree.pdf, id=795, 845.07718pt x 598.15468pt>
 File: img/arte/graphs-k2tree.pdf Graphic file (type pdf)
 <use img/arte/graphs-k2tree.pdf>
 Package pdftex.def Info: img/arte/graphs-k2tree.pdf  used on input line 11.
 (pdftex.def)             Requested size: 191.67506pt x 158.5516pt.
-)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [17 <./img/arte/k2-tree-matrix.pdf> <./img/arte/graphs-k2tree.pdf
+) [17 <./img/arte/k2-tree-matrix.pdf> <./img/arte/graphs-k2tree.pdf
 
 pdfTeX warning: pdflatex (file ./img/arte/graphs-k2tree.pdf): PDF inclusion: in
 valid other resource which is no dict (key 'ProcSets', type <array>); ignored.
 >] (figs/arte-spanningTree.tex
-<img/arte/graphs-spanningTree.pdf, id=830, 845.07718pt x 598.15468pt>
+<img/arte/graphs-spanningTree.pdf, id=834, 845.07718pt x 598.15468pt>
 File: img/arte/graphs-spanningTree.pdf Graphic file (type pdf)
 <use img/arte/graphs-spanningTree.pdf>
 Package pdftex.def Info: img/arte/graphs-spanningTree.pdf  used on input line 5
@@ -1176,7 +1173,7 @@ Package pdftex.def Info: img/arte/graphs-spanningTree.pdf  used on input line 1
 1.
 (pdftex.def)             Requested size: 205.5319pt x 54.57045pt.
 ) (figs/arte-LOUDS.tex
-<img/arte/LOUDS.jpg, id=833, 284.88834pt x 90.19296pt>
+<img/arte/LOUDS.jpg, id=837, 284.88834pt x 90.19296pt>
 File: img/arte/LOUDS.jpg Graphic file (type jpg)
 <use img/arte/LOUDS.jpg>
 Package pdftex.def Info: img/arte/LOUDS.jpg  used on input line 5.
@@ -1201,7 +1198,7 @@ pdfTeX warning: pdflatex (file ./img/arte/graphs-spanningTree.pdf): PDF inclusi
 on: invalid other resource which is no dict (key 'ProcSets', type <array>); ign
 ored.
 > <./img/arte/LOUDS.jpg>] (figs/arte-glouds.tex
-<img/arte/GLOUDS.jpg, id=865, 313.21819pt x 203.94594pt>
+<img/arte/GLOUDS.jpg, id=869, 313.21819pt x 203.94594pt>
 File: img/arte/GLOUDS.jpg Graphic file (type jpg)
 <use img/arte/GLOUDS.jpg>
 Package pdftex.def Info: img/arte/GLOUDS.jpg  used on input line 6.
@@ -1214,15 +1211,17 @@ File: img/arte/GLOUDS.jpg Graphic file (type jpg)
 <use img/arte/GLOUDS.jpg>
 Package pdftex.def Info: img/arte/GLOUDS.jpg  used on input line 20.
 (pdftex.def)             Requested size: 292.77933pt x 94.2827pt.
-) [20 <./img/arte/GLOUDS.jpg>]
-(figs/arte-wavelet-tree.tex
-<img/arte/graphs-wavelet-tree.pdf, id=882, 845.07718pt x 598.15468pt>
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20 <./img/arte/GLOUDS.jpg>] (figs/arte-wavelet-tree.tex
+<img/arte/graphs-wavelet-tree.pdf, id=886, 845.07718pt x 598.15468pt>
 File: img/arte/graphs-wavelet-tree.pdf Graphic file (type pdf)
 <use img/arte/graphs-wavelet-tree.pdf>
 Package pdftex.def Info: img/arte/graphs-wavelet-tree.pdf  used on input line 5
 .
 (pdftex.def)             Requested size: 172.50638pt x 105.65735pt.
-<img/arte/graphs-wavelet-tree2.pdf, id=884, 845.07718pt x 598.15468pt>
+<img/arte/graphs-wavelet-tree2.pdf, id=888, 845.07718pt x 598.15468pt>
 File: img/arte/graphs-wavelet-tree2.pdf Graphic file (type pdf)
 <use img/arte/graphs-wavelet-tree2.pdf>
 Package pdftex.def Info: img/arte/graphs-wavelet-tree2.pdf  used on input line 
@@ -1234,7 +1233,7 @@ Overfull \hbox (25.90305pt too wide) in paragraph at lines 12--13
  []
 
 ) [21] (figs/arte-wavelet-matrix.tex
-<img/arte/graphs-wavelet-matrix.pdf, id=895, 845.07718pt x 598.15468pt>
+<img/arte/graphs-wavelet-matrix.pdf, id=899, 845.07718pt x 598.15468pt>
 File: img/arte/graphs-wavelet-matrix.pdf Graphic file (type pdf)
 <use img/arte/graphs-wavelet-matrix.pdf>
 Package pdftex.def Info: img/arte/graphs-wavelet-matrix.pdf  used on input line
@@ -1255,7 +1254,10 @@ File: img/arte/graphs-wavelet-matrix.pdf Graphic file (type pdf)
 Package pdftex.def Info: img/arte/graphs-wavelet-matrix.pdf  used on input line
  17.
 (pdftex.def)             Requested size: 91.20319pt x 111.07756pt.
-) [22 <./img/arte/graphs-wavelet-tree.pdf
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [22 <./img/arte/graphs-wavelet-tree.pdf
 
 pdfTeX warning: pdflatex (file ./img/arte/graphs-wavelet-tree.pdf): PDF inclusi
 on: invalid other resource which is no dict (key 'ProcSets', type <array>); ign
@@ -1271,7 +1273,7 @@ pdfTeX warning: pdflatex (file ./img/arte/graphs-wavelet-matrix.pdf): PDF inclu
 sion: invalid other resource which is no dict (key 'ProcSets', type <array>); i
 gnored.
 >] (figs/arte-degenOrder.tex
-<img/arte/graphs-degeneracyOrder.png, id=960, 1026.83624pt x 635.37375pt>
+<img/arte/graphs-degeneracyOrder.png, id=965, 1026.83624pt x 635.37375pt>
 File: img/arte/graphs-degeneracyOrder.png Graphic file (type png)
 <use img/arte/graphs-degeneracyOrder.png>
 Package pdftex.def Info: img/arte/graphs-degeneracyOrder.png  used on input lin
@@ -1284,13 +1286,13 @@ e 11.
 (pdftex.def)             Requested size: 287.51219pt x 59.86295pt.
 )) (clustering.tex [24 <./img/arte/graphs-degeneracyOrder.png>]
 Cap\'{\i }tulo 4.
-<img/graphs-Graph2.pdf, id=981, 572.1375pt x 284.02109pt>
+<img/graphs-Graph2.pdf, id=986, 572.1375pt x 284.02109pt>
 File: img/graphs-Graph2.pdf Graphic file (type pdf)
 <use img/graphs-Graph2.pdf>
 Package pdftex.def Info: img/graphs-Graph2.pdf  used on input line 38.
 (pdftex.def)             Requested size: 182.09486pt x 90.39455pt.
 (equations/cliquesNodes2.tex)
-<img/graphs-Cliques2.pdf, id=983, 204.765pt x 277.035pt>
+<img/graphs-Cliques2.pdf, id=988, 204.765pt x 277.035pt>
 File: img/graphs-Cliques2.pdf Graphic file (type pdf)
 <use img/graphs-Cliques2.pdf>
 Package pdftex.def Info: img/graphs-Cliques2.pdf  used on input line 48.
@@ -1314,11 +1316,15 @@ Underfull \vbox (badness 5893) has occurred while \output is active []
 
  [28]
 [29] (tables/CP2ordered.tex) (tables/structure.tex)
-Overfull \hbox (5.57089pt too wide) in paragraph at lines 1--188
+Overfull \hbox (5.57089pt too wide) in paragraph at lines 1--189
  [][] 
  []
 
-[30] [31] (algorithms/sequential.tex) (algorithms/neighbors.tex)
+[30] (algorithms/sequential.tex)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [31]
+(algorithms/neighbors.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [32]
@@ -1335,44 +1341,44 @@ Cap\'{\i }tulo 5.
 [36
 
 ] (tables/grafos3.tex) (figs/grades.tex
-<img/grades/marknewman-astro.pdf, id=1251, 462.52798pt x 346.89601pt>
+<img/grades/marknewman-astro.pdf, id=1257, 462.52798pt x 346.89601pt>
 File: img/grades/marknewman-astro.pdf Graphic file (type pdf)
 <use img/grades/marknewman-astro.pdf>
 Package pdftex.def Info: img/grades/marknewman-astro.pdf  used on input line 7.
 
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<img/grades/marknewman-condmat.pdf, id=1252, 462.52798pt x 346.89601pt>
+<img/grades/marknewman-condmat.pdf, id=1258, 462.52798pt x 346.89601pt>
 File: img/grades/marknewman-condmat.pdf Graphic file (type pdf)
 <use img/grades/marknewman-condmat.pdf>
 Package pdftex.def Info: img/grades/marknewman-condmat.pdf  used on input line 
 13.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<img/grades/dblp-2010.pdf, id=1253, 462.52798pt x 346.89601pt>
+<img/grades/dblp-2010.pdf, id=1259, 462.52798pt x 346.89601pt>
 File: img/grades/dblp-2010.pdf Graphic file (type pdf)
 <use img/grades/dblp-2010.pdf>
 Package pdftex.def Info: img/grades/dblp-2010.pdf  used on input line 23.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<img/grades/dblp-2011.pdf, id=1254, 462.52798pt x 346.89601pt>
+<img/grades/dblp-2011.pdf, id=1260, 462.52798pt x 346.89601pt>
 File: img/grades/dblp-2011.pdf Graphic file (type pdf)
 <use img/grades/dblp-2011.pdf>
 Package pdftex.def Info: img/grades/dblp-2011.pdf  used on input line 29.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<img/grades/snap-dblp.pdf, id=1255, 462.52798pt x 346.89601pt>
+<img/grades/snap-dblp.pdf, id=1261, 462.52798pt x 346.89601pt>
 File: img/grades/snap-dblp.pdf Graphic file (type pdf)
 <use img/grades/snap-dblp.pdf>
 Package pdftex.def Info: img/grades/snap-dblp.pdf  used on input line 44.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<img/grades/snap-amazon.pdf, id=1256, 462.52798pt x 346.89601pt>
+<img/grades/snap-amazon.pdf, id=1262, 462.52798pt x 346.89601pt>
 File: img/grades/snap-amazon.pdf Graphic file (type pdf)
 <use img/grades/snap-amazon.pdf>
 Package pdftex.def Info: img/grades/snap-amazon.pdf  used on input line 50.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<img/grades/coPapersDBLP.pdf, id=1257, 462.52798pt x 346.89601pt>
+<img/grades/coPapersDBLP.pdf, id=1263, 462.52798pt x 346.89601pt>
 File: img/grades/coPapersDBLP.pdf Graphic file (type pdf)
 <use img/grades/coPapersDBLP.pdf>
 Package pdftex.def Info: img/grades/coPapersDBLP.pdf  used on input line 60.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<img/grades/coPapersCiteseer.pdf, id=1258, 462.52798pt x 346.89601pt>
+<img/grades/coPapersCiteseer.pdf, id=1264, 462.52798pt x 346.89601pt>
 File: img/grades/coPapersCiteseer.pdf Graphic file (type pdf)
 <use img/grades/coPapersCiteseer.pdf>
 Package pdftex.def Info: img/grades/coPapersCiteseer.pdf  used on input line 67
@@ -1383,46 +1389,46 @@ Package pdftex.def Info: img/grades/coPapersCiteseer.pdf  used on input line 67
 LaTeX Warning: Float too large for page by 85.31946pt on input line 81.
 
 ) (figs/cliqueDist2.tex
-<img/cliqueDist2/marknewman-astro.pdf, id=1259, 462.52798pt x 346.89601pt>
+<img/cliqueDist2/marknewman-astro.pdf, id=1265, 462.52798pt x 346.89601pt>
 File: img/cliqueDist2/marknewman-astro.pdf Graphic file (type pdf)
 <use img/cliqueDist2/marknewman-astro.pdf>
 Package pdftex.def Info: img/cliqueDist2/marknewman-astro.pdf  used on input li
 ne 8.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<img/cliqueDist2/marknewman-condmat.pdf, id=1260, 462.52798pt x 346.89601pt>
+<img/cliqueDist2/marknewman-condmat.pdf, id=1266, 462.52798pt x 346.89601pt>
 File: img/cliqueDist2/marknewman-condmat.pdf Graphic file (type pdf)
 <use img/cliqueDist2/marknewman-condmat.pdf>
 Package pdftex.def Info: img/cliqueDist2/marknewman-condmat.pdf  used on input 
 line 14.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<img/cliqueDist2/dblp-2010.pdf, id=1261, 462.52798pt x 346.89601pt>
+<img/cliqueDist2/dblp-2010.pdf, id=1267, 462.52798pt x 346.89601pt>
 File: img/cliqueDist2/dblp-2010.pdf Graphic file (type pdf)
 <use img/cliqueDist2/dblp-2010.pdf>
 Package pdftex.def Info: img/cliqueDist2/dblp-2010.pdf  used on input line 24.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<img/cliqueDist2/dblp-2011.pdf, id=1262, 462.52798pt x 346.89601pt>
+<img/cliqueDist2/dblp-2011.pdf, id=1268, 462.52798pt x 346.89601pt>
 File: img/cliqueDist2/dblp-2011.pdf Graphic file (type pdf)
 <use img/cliqueDist2/dblp-2011.pdf>
 Package pdftex.def Info: img/cliqueDist2/dblp-2011.pdf  used on input line 30.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<img/cliqueDist2/snap-dblp.pdf, id=1263, 462.52798pt x 346.89601pt>
+<img/cliqueDist2/snap-dblp.pdf, id=1269, 462.52798pt x 346.89601pt>
 File: img/cliqueDist2/snap-dblp.pdf Graphic file (type pdf)
 <use img/cliqueDist2/snap-dblp.pdf>
 Package pdftex.def Info: img/cliqueDist2/snap-dblp.pdf  used on input line 40.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<img/cliqueDist2/snap-amazon.pdf, id=1264, 462.52798pt x 346.89601pt>
+<img/cliqueDist2/snap-amazon.pdf, id=1270, 462.52798pt x 346.89601pt>
 File: img/cliqueDist2/snap-amazon.pdf Graphic file (type pdf)
 <use img/cliqueDist2/snap-amazon.pdf>
 Package pdftex.def Info: img/cliqueDist2/snap-amazon.pdf  used on input line 46
 .
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<img/cliqueDist2/coPapersDBLP.pdf, id=1265, 462.52798pt x 346.89601pt>
+<img/cliqueDist2/coPapersDBLP.pdf, id=1271, 462.52798pt x 346.89601pt>
 File: img/cliqueDist2/coPapersDBLP.pdf Graphic file (type pdf)
 <use img/cliqueDist2/coPapersDBLP.pdf>
 Package pdftex.def Info: img/cliqueDist2/coPapersDBLP.pdf  used on input line 5
 7.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<img/cliqueDist2/coPapersCiteseer.pdf, id=1266, 462.52798pt x 346.89601pt>
+<img/cliqueDist2/coPapersCiteseer.pdf, id=1272, 462.52798pt x 346.89601pt>
 File: img/cliqueDist2/coPapersCiteseer.pdf Graphic file (type pdf)
 <use img/cliqueDist2/coPapersCiteseer.pdf>
 Package pdftex.def Info: img/cliqueDist2/coPapersCiteseer.pdf  used on input li
@@ -1432,11 +1438,8 @@ ne 63.
 
 LaTeX Warning: Float too large for page by 85.31946pt on input line 79.
 
-)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [37]
-[38 <./img/grades/marknewman-astro.pdf> <./img/grades/marknewman-condmat.pdf
+) [37] [38 <./img/grades/marknewman-astro.pdf> <./img/grades/marknewman-condmat
+.pdf
 
 pdfTeX warning: pdflatex (file ./img/grades/marknewman-condmat.pdf): PDF inclus
 ion: multiple pdfs with page group included in a single page
@@ -1494,14 +1497,14 @@ on: multiple pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ./img/cliqueDist2/coPapersCiteseer.pdf): PDF inc
 lusion: multiple pdfs with page group included in a single page
 >] (figs/sdslBPEAle2.tex
-<img/sdsl/aleatorioBig/marknewman-astro.pdf, id=1781, 1344.94475pt x 712.58218p
+<img/sdsl/aleatorioBig/marknewman-astro.pdf, id=1787, 1344.94475pt x 712.58218p
 t>
 File: img/sdsl/aleatorioBig/marknewman-astro.pdf Graphic file (type pdf)
 <use img/sdsl/aleatorioBig/marknewman-astro.pdf>
 Package pdftex.def Info: img/sdsl/aleatorioBig/marknewman-astro.pdf  used on in
 put line 7.
 (pdftex.def)             Requested size: 364.19667pt x 192.95428pt.
-<img/sdsl/label.pdf, id=1782, 614.295pt x 794.97pt>
+<img/sdsl/label.pdf, id=1788, 614.295pt x 794.97pt>
 File: img/sdsl/label.pdf Graphic file (type pdf)
 <use img/sdsl/label.pdf>
 Package pdftex.def Info: img/sdsl/label.pdf  used on input line 11.
@@ -1511,7 +1514,7 @@ Overfull \hbox (51.40364pt too wide) in paragraph at lines 11--12
  [][] 
  []
 
-<img/sdsl/aleatorioBig/marknewman-condmat.pdf, id=1784, 1344.94475pt x 712.5821
+<img/sdsl/aleatorioBig/marknewman-condmat.pdf, id=1790, 1344.94475pt x 712.5821
 8pt>
 File: img/sdsl/aleatorioBig/marknewman-condmat.pdf Graphic file (type pdf)
 <use img/sdsl/aleatorioBig/marknewman-condmat.pdf>
@@ -1528,7 +1531,7 @@ Overfull \hbox (51.40364pt too wide) in paragraph at lines 25--26
  []
 
 ) (figs/sdslBPEAle3.tex
-<img/sdsl/aleatorioBig/dblp-2010.pdf, id=1786, 1344.94475pt x 712.58218pt>
+<img/sdsl/aleatorioBig/dblp-2010.pdf, id=1792, 1344.94475pt x 712.58218pt>
 File: img/sdsl/aleatorioBig/dblp-2010.pdf Graphic file (type pdf)
 <use img/sdsl/aleatorioBig/dblp-2010.pdf>
 Package pdftex.def Info: img/sdsl/aleatorioBig/dblp-2010.pdf  used on input lin
@@ -1543,7 +1546,7 @@ Overfull \hbox (51.40364pt too wide) in paragraph at lines 11--12
  [][] 
  []
 
-<img/sdsl/aleatorioBig/dblp-2011.pdf, id=1788, 1344.94475pt x 712.58218pt>
+<img/sdsl/aleatorioBig/dblp-2011.pdf, id=1794, 1344.94475pt x 712.58218pt>
 File: img/sdsl/aleatorioBig/dblp-2011.pdf Graphic file (type pdf)
 <use img/sdsl/aleatorioBig/dblp-2011.pdf>
 Package pdftex.def Info: img/sdsl/aleatorioBig/dblp-2011.pdf  used on input lin
@@ -1559,7 +1562,7 @@ Overfull \hbox (51.40364pt too wide) in paragraph at lines 25--26
  []
 
 ) (figs/sdslBPEAle4.tex
-<img/sdsl/aleatorioBig/snap-dblp.pdf, id=1790, 1344.94475pt x 712.58218pt>
+<img/sdsl/aleatorioBig/snap-dblp.pdf, id=1796, 1344.94475pt x 712.58218pt>
 File: img/sdsl/aleatorioBig/snap-dblp.pdf Graphic file (type pdf)
 <use img/sdsl/aleatorioBig/snap-dblp.pdf>
 Package pdftex.def Info: img/sdsl/aleatorioBig/snap-dblp.pdf  used on input lin
@@ -1574,7 +1577,7 @@ Overfull \hbox (51.40364pt too wide) in paragraph at lines 11--12
  [][] 
  []
 
-<img/sdsl/aleatorioBig/snap-amazon.pdf, id=1792, 1344.94475pt x 712.58218pt>
+<img/sdsl/aleatorioBig/snap-amazon.pdf, id=1798, 1344.94475pt x 712.58218pt>
 File: img/sdsl/aleatorioBig/snap-amazon.pdf Graphic file (type pdf)
 <use img/sdsl/aleatorioBig/snap-amazon.pdf>
 Package pdftex.def Info: img/sdsl/aleatorioBig/snap-amazon.pdf  used on input l
@@ -1590,7 +1593,7 @@ Overfull \hbox (51.40364pt too wide) in paragraph at lines 25--26
  []
 
 ) (figs/sdslBPEAle5.tex
-<img/sdsl/aleatorioBig/coPapersDBLP.pdf, id=1794, 1344.94475pt x 712.58218pt>
+<img/sdsl/aleatorioBig/coPapersDBLP.pdf, id=1800, 1344.94475pt x 712.58218pt>
 File: img/sdsl/aleatorioBig/coPapersDBLP.pdf Graphic file (type pdf)
 <use img/sdsl/aleatorioBig/coPapersDBLP.pdf>
 Package pdftex.def Info: img/sdsl/aleatorioBig/coPapersDBLP.pdf  used on input 
@@ -1605,7 +1608,7 @@ Overfull \hbox (51.40364pt too wide) in paragraph at lines 11--12
  [][] 
  []
 
-<img/sdsl/aleatorioBig/coPapersCiteseer.pdf, id=1796, 1344.94475pt x 712.58218p
+<img/sdsl/aleatorioBig/coPapersCiteseer.pdf, id=1802, 1344.94475pt x 712.58218p
 t>
 File: img/sdsl/aleatorioBig/coPapersCiteseer.pdf Graphic file (type pdf)
 <use img/sdsl/aleatorioBig/coPapersCiteseer.pdf>
@@ -1622,7 +1625,7 @@ Overfull \hbox (51.40364pt too wide) in paragraph at lines 25--26
  []
 
 ) (figs/sdslBPE2.tex
-<img/sdsl/secuencialBig/marknewman-astro.pdf, id=1798, 1344.94475pt x 712.58218
+<img/sdsl/secuencialBig/marknewman-astro.pdf, id=1804, 1344.94475pt x 712.58218
 pt>
 File: img/sdsl/secuencialBig/marknewman-astro.pdf Graphic file (type pdf)
 <use img/sdsl/secuencialBig/marknewman-astro.pdf>
@@ -1638,7 +1641,7 @@ Overfull \hbox (51.40364pt too wide) in paragraph at lines 11--12
  [][] 
  []
 
-<img/sdsl/secuencialBig/marknewman-condmat.pdf, id=1800, 1344.94475pt x 712.582
+<img/sdsl/secuencialBig/marknewman-condmat.pdf, id=1806, 1344.94475pt x 712.582
 18pt>
 File: img/sdsl/secuencialBig/marknewman-condmat.pdf Graphic file (type pdf)
 <use img/sdsl/secuencialBig/marknewman-condmat.pdf>
@@ -1655,7 +1658,7 @@ Overfull \hbox (51.40364pt too wide) in paragraph at lines 25--26
  []
 
 ) (figs/sdslBPE3.tex
-<img/sdsl/secuencialBig/dblp-2010.pdf, id=1802, 1344.94475pt x 712.58218pt>
+<img/sdsl/secuencialBig/dblp-2010.pdf, id=1808, 1344.94475pt x 712.58218pt>
 File: img/sdsl/secuencialBig/dblp-2010.pdf Graphic file (type pdf)
 <use img/sdsl/secuencialBig/dblp-2010.pdf>
 Package pdftex.def Info: img/sdsl/secuencialBig/dblp-2010.pdf  used on input li
@@ -1670,7 +1673,7 @@ Overfull \hbox (51.40364pt too wide) in paragraph at lines 11--12
  [][] 
  []
 
-<img/sdsl/secuencialBig/dblp-2011.pdf, id=1804, 1344.94475pt x 712.58218pt>
+<img/sdsl/secuencialBig/dblp-2011.pdf, id=1810, 1344.94475pt x 712.58218pt>
 File: img/sdsl/secuencialBig/dblp-2011.pdf Graphic file (type pdf)
 <use img/sdsl/secuencialBig/dblp-2011.pdf>
 Package pdftex.def Info: img/sdsl/secuencialBig/dblp-2011.pdf  used on input li
@@ -1686,7 +1689,7 @@ Overfull \hbox (51.40364pt too wide) in paragraph at lines 25--26
  []
 
 ) (figs/sdslBPE4.tex
-<img/sdsl/secuencialBig/snap-dblp.pdf, id=1806, 1344.94475pt x 712.58218pt>
+<img/sdsl/secuencialBig/snap-dblp.pdf, id=1812, 1344.94475pt x 712.58218pt>
 File: img/sdsl/secuencialBig/snap-dblp.pdf Graphic file (type pdf)
 <use img/sdsl/secuencialBig/snap-dblp.pdf>
 Package pdftex.def Info: img/sdsl/secuencialBig/snap-dblp.pdf  used on input li
@@ -1701,7 +1704,7 @@ Overfull \hbox (51.40364pt too wide) in paragraph at lines 11--12
  [][] 
  []
 
-<img/sdsl/secuencialBig/snap-amazon.pdf, id=1808, 1344.94475pt x 712.58218pt>
+<img/sdsl/secuencialBig/snap-amazon.pdf, id=1814, 1344.94475pt x 712.58218pt>
 File: img/sdsl/secuencialBig/snap-amazon.pdf Graphic file (type pdf)
 <use img/sdsl/secuencialBig/snap-amazon.pdf>
 Package pdftex.def Info: img/sdsl/secuencialBig/snap-amazon.pdf  used on input 
@@ -1717,7 +1720,7 @@ Overfull \hbox (51.40364pt too wide) in paragraph at lines 25--26
  []
 
 ) (figs/sdslBPE5.tex
-<img/sdsl/secuencialBig/coPapersDBLP.pdf, id=1810, 1344.94475pt x 712.58218pt>
+<img/sdsl/secuencialBig/coPapersDBLP.pdf, id=1816, 1344.94475pt x 712.58218pt>
 File: img/sdsl/secuencialBig/coPapersDBLP.pdf Graphic file (type pdf)
 <use img/sdsl/secuencialBig/coPapersDBLP.pdf>
 Package pdftex.def Info: img/sdsl/secuencialBig/coPapersDBLP.pdf  used on input
@@ -1732,7 +1735,7 @@ Overfull \hbox (51.40364pt too wide) in paragraph at lines 11--12
  [][] 
  []
 
-<img/sdsl/secuencialBig/coPapersCiteseer.pdf, id=1812, 1344.94475pt x 712.58218
+<img/sdsl/secuencialBig/coPapersCiteseer.pdf, id=1818, 1344.94475pt x 712.58218
 pt>
 File: img/sdsl/secuencialBig/coPapersCiteseer.pdf Graphic file (type pdf)
 <use img/sdsl/secuencialBig/coPapersCiteseer.pdf>
@@ -1817,79 +1820,78 @@ inclusion: multiple pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ./img/sdsl/secuencialBig/coPapersCiteseer.pdf): 
 PDF inclusion: multiple pdfs with page group included in a single page
 >] (figs/bpe3.tex
-<img/bpe3.pdf, id=2516, 1344.94475pt x 712.58218pt>
+<img/bpe3.pdf, id=2523, 1344.94475pt x 712.58218pt>
 File: img/bpe3.pdf Graphic file (type pdf)
 <use img/bpe3.pdf>
 Package pdftex.def Info: img/bpe3.pdf  used on input line 3.
 (pdftex.def)             Requested size: 455.24411pt x 241.19829pt.
-) (figs/nPartitions.tex
-<img/Npartitions3.pdf, id=2519, 1344.94475pt x 712.58218pt>
+) (tables/bpe3.tex) (figs/nPartitions.tex
+<img/Npartitions3.pdf, id=2526, 1344.94475pt x 712.58218pt>
 File: img/Npartitions3.pdf Graphic file (type pdf)
 <use img/Npartitions3.pdf>
 Package pdftex.def Info: img/Npartitions3.pdf  used on input line 3.
 (pdftex.def)             Requested size: 455.24411pt x 241.19829pt.
-) [49 <./img/bpe3.pdf>]
-(figs/bitsProp.tex
-<img/bits.pdf, id=2575, 1344.94475pt x 712.58218pt>
+ [49 <./img/bpe3.pdf>]) (figs/bitsProp.tex
+<img/bits.pdf, id=2582, 1344.94475pt x 712.58218pt>
 File: img/bits.pdf Graphic file (type pdf)
 <use img/bits.pdf>
 Package pdftex.def Info: img/bits.pdf  used on input line 5.
 (pdftex.def)             Requested size: 455.24411pt x 241.19829pt.
-<img/bitsNorm.pdf, id=2576, 1344.94475pt x 712.58218pt>
+<img/bitsNorm.pdf, id=2583, 1344.94475pt x 712.58218pt>
 File: img/bitsNorm.pdf Graphic file (type pdf)
 <use img/bitsNorm.pdf>
 Package pdftex.def Info: img/bitsNorm.pdf  used on input line 11.
 (pdftex.def)             Requested size: 455.24411pt x 241.19829pt.
 ) (figs/maxNodes.tex
-<img/maxNodes.pdf, id=2579, 1344.94475pt x 712.58218pt>
+<img/maxNodes.pdf, id=2586, 1344.94475pt x 712.58218pt>
 File: img/maxNodes.pdf Graphic file (type pdf)
 <use img/maxNodes.pdf>
 Package pdftex.def Info: img/maxNodes.pdf  used on input line 3.
 (pdftex.def)             Requested size: 455.24411pt x 241.19829pt.
 ) (figs/maxBytes.tex
-<img/maxBytes.pdf, id=2580, 1344.94475pt x 712.58218pt>
+<img/maxBytes.pdf, id=2587, 1344.94475pt x 712.58218pt>
 File: img/maxBytes.pdf Graphic file (type pdf)
 <use img/maxBytes.pdf>
 Package pdftex.def Info: img/maxBytes.pdf  used on input line 3.
 (pdftex.def)             Requested size: 455.24411pt x 241.19829pt.
 ) (figs/cdf.tex
-<img/cdf/marknewman-astro.pdf, id=2582, 462.52798pt x 346.89601pt>
+<img/cdf/marknewman-astro.pdf, id=2589, 462.52798pt x 346.89601pt>
 File: img/cdf/marknewman-astro.pdf Graphic file (type pdf)
 <use img/cdf/marknewman-astro.pdf>
 Package pdftex.def Info: img/cdf/marknewman-astro.pdf  used on input line 7.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<img/cdf/marknewman-condmat.pdf, id=2583, 462.52798pt x 346.89601pt>
+<img/cdf/marknewman-condmat.pdf, id=2590, 462.52798pt x 346.89601pt>
 File: img/cdf/marknewman-condmat.pdf Graphic file (type pdf)
 <use img/cdf/marknewman-condmat.pdf>
 Package pdftex.def Info: img/cdf/marknewman-condmat.pdf  used on input line 13.
 
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<img/cdf/dblp-2010.pdf, id=2584, 462.52798pt x 346.89601pt>
+<img/cdf/dblp-2010.pdf, id=2591, 462.52798pt x 346.89601pt>
 File: img/cdf/dblp-2010.pdf Graphic file (type pdf)
 <use img/cdf/dblp-2010.pdf>
 Package pdftex.def Info: img/cdf/dblp-2010.pdf  used on input line 23.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<img/cdf/dblp-2011.pdf, id=2585, 462.52798pt x 346.89601pt>
+<img/cdf/dblp-2011.pdf, id=2592, 462.52798pt x 346.89601pt>
 File: img/cdf/dblp-2011.pdf Graphic file (type pdf)
 <use img/cdf/dblp-2011.pdf>
 Package pdftex.def Info: img/cdf/dblp-2011.pdf  used on input line 29.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<img/cdf/snap-dblp.pdf, id=2586, 462.52798pt x 346.89601pt>
+<img/cdf/snap-dblp.pdf, id=2593, 462.52798pt x 346.89601pt>
 File: img/cdf/snap-dblp.pdf Graphic file (type pdf)
 <use img/cdf/snap-dblp.pdf>
 Package pdftex.def Info: img/cdf/snap-dblp.pdf  used on input line 39.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<img/cdf/snap-amazon.pdf, id=2587, 462.52798pt x 346.89601pt>
+<img/cdf/snap-amazon.pdf, id=2594, 462.52798pt x 346.89601pt>
 File: img/cdf/snap-amazon.pdf Graphic file (type pdf)
 <use img/cdf/snap-amazon.pdf>
 Package pdftex.def Info: img/cdf/snap-amazon.pdf  used on input line 45.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<img/cdf/coPapersDBLP.pdf, id=2588, 462.52798pt x 346.89601pt>
+<img/cdf/coPapersDBLP.pdf, id=2595, 462.52798pt x 346.89601pt>
 File: img/cdf/coPapersDBLP.pdf Graphic file (type pdf)
 <use img/cdf/coPapersDBLP.pdf>
 Package pdftex.def Info: img/cdf/coPapersDBLP.pdf  used on input line 55.
 (pdftex.def)             Requested size: 204.85846pt x 153.6457pt.
-<img/cdf/coPapersCiteseer.pdf, id=2589, 462.52798pt x 346.89601pt>
+<img/cdf/coPapersCiteseer.pdf, id=2596, 462.52798pt x 346.89601pt>
 File: img/cdf/coPapersCiteseer.pdf Graphic file (type pdf)
 <use img/cdf/coPapersCiteseer.pdf>
 Package pdftex.def Info: img/cdf/coPapersCiteseer.pdf  used on input line 61.
@@ -1898,12 +1900,6 @@ Package pdftex.def Info: img/cdf/coPapersCiteseer.pdf  used on input line 61.
 
 LaTeX Warning: Float too large for page by 99.81946pt on input line 75.
 
-) (figs/timesRanking.tex
-<img/timesRanking.pdf, id=2591, 1344.94475pt x 712.58218pt>
-File: img/timesRanking.pdf Graphic file (type pdf)
-<use img/timesRanking.pdf>
-Package pdftex.def Info: img/timesRanking.pdf  used on input line 3.
-(pdftex.def)             Requested size: 455.24411pt x 241.19829pt.
 ) [50 <./img/Npartitions3.pdf>] [51 <./img/bits.pdf> <./img/bitsNorm.pdf
 
 pdfTeX warning: pdflatex (file ./img/bitsNorm.pdf): PDF inclusion: multiple pdf
@@ -1940,271 +1936,201 @@ iple pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex (file ./img/cdf/coPapersCiteseer.pdf): PDF inclusion: 
 multiple pdfs with page group included in a single page
->] (tables/constructTimes.tex) [54 <./img/timesRanking.pdf>]
-(tables/bpeSmall.tex) [55] (tables/timesRandom.tex)
-Overfull \hbox (1.22392pt too wide) in paragraph at lines 151--152
+>] (figs/timesRanking.tex
+<img/timesRanking.pdf, id=3162, 1344.94475pt x 712.58218pt>
+File: img/timesRanking.pdf Graphic file (type pdf)
+<use img/timesRanking.pdf>
+Package pdftex.def Info: img/timesRanking.pdf  used on input line 3.
+(pdftex.def)             Requested size: 455.24411pt x 241.19829pt.
+) (tables/constructTimes.tex)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [54 <./img/timesRanking.pdf>] [55] (tables/bpeSmall.tex) (tables/timesRandom.t
+ex)
+Overfull \hbox (1.22392pt too wide) in paragraph at lines 163--164
 \OT1/cmtt/m/n/12 snap-amazon \OT1/cmr/m/n/12 tie-nen la ma-yor can-ti-dad de cl
 i-ques, y \OT1/cmtt/m/n/12 coPapersDBLP \OT1/cmr/m/n/12 con \OT1/cmtt/m/n/12 co
 PapersCiteseer
  []
 
 [56] (tables/timesSecuencial.tex) (figs/bpetAle1.tex
-<img/bpeTimes/aleatorio/marknewman-astro.pdf, id=3244, 1344.94475pt x 712.58218
+<img/bpeTimes/aleatorio/marknewman-astro.pdf, id=3252, 1387.58403pt x 710.41411
 pt>
 File: img/bpeTimes/aleatorio/marknewman-astro.pdf Graphic file (type pdf)
 <use img/bpeTimes/aleatorio/marknewman-astro.pdf>
 Package pdftex.def Info: img/bpeTimes/aleatorio/marknewman-astro.pdf  used on i
 nput line 7.
-(pdftex.def)             Requested size: 364.19667pt x 192.95428pt.
-<img/bpeTimes/labelAle.pdf, id=3245, 614.295pt x 794.97pt>
+(pdftex.def)             Requested size: 364.19667pt x 186.4594pt.
+<img/bpeTimes/labelAle.pdf, id=3253, 614.295pt x 794.97pt>
 File: img/bpeTimes/labelAle.pdf Graphic file (type pdf)
 <use img/bpeTimes/labelAle.pdf>
 Package pdftex.def Info: img/bpeTimes/labelAle.pdf  used on input line 11.
-(pdftex.def)             Requested size: 75.16216pt x 111.29787pt.
-
-Overfull \hbox (6.87833pt too wide) in paragraph at lines 11--12
- [][] 
- []
-
-<img/bpeTimes/aleatorio/marknewman-condmat.pdf, id=3247, 1344.94475pt x 712.582
-18pt>
+(pdftex.def)             Requested size: 58.29877pt x 132.97937pt.
+<img/bpeTimes/aleatorio/marknewman-condmat.pdf, id=3255, 1387.58403pt x 710.414
+11pt>
 File: img/bpeTimes/aleatorio/marknewman-condmat.pdf Graphic file (type pdf)
 <use img/bpeTimes/aleatorio/marknewman-condmat.pdf>
 Package pdftex.def Info: img/bpeTimes/aleatorio/marknewman-condmat.pdf  used on
  input line 21.
-(pdftex.def)             Requested size: 364.19667pt x 192.95428pt.
+(pdftex.def)             Requested size: 364.19667pt x 186.4594pt.
 File: img/bpeTimes/labelAle.pdf Graphic file (type pdf)
 <use img/bpeTimes/labelAle.pdf>
 Package pdftex.def Info: img/bpeTimes/labelAle.pdf  used on input line 25.
-(pdftex.def)             Requested size: 75.16216pt x 111.29787pt.
-
-Overfull \hbox (6.87833pt too wide) in paragraph at lines 25--26
- [][] 
- []
-
+(pdftex.def)             Requested size: 58.29877pt x 132.97937pt.
 ) (figs/bpetAle2.tex
-<img/bpeTimes/aleatorio/dblp-2010.pdf, id=3249, 1344.94475pt x 712.58218pt>
+<img/bpeTimes/aleatorio/dblp-2010.pdf, id=3257, 1387.58403pt x 710.41411pt>
 File: img/bpeTimes/aleatorio/dblp-2010.pdf Graphic file (type pdf)
 <use img/bpeTimes/aleatorio/dblp-2010.pdf>
 Package pdftex.def Info: img/bpeTimes/aleatorio/dblp-2010.pdf  used on input li
 ne 7.
-(pdftex.def)             Requested size: 364.19667pt x 192.95428pt.
+(pdftex.def)             Requested size: 364.19667pt x 186.4594pt.
 File: img/bpeTimes/labelAle.pdf Graphic file (type pdf)
 <use img/bpeTimes/labelAle.pdf>
 Package pdftex.def Info: img/bpeTimes/labelAle.pdf  used on input line 11.
-(pdftex.def)             Requested size: 75.16216pt x 111.29787pt.
-
-Overfull \hbox (6.87833pt too wide) in paragraph at lines 11--12
- [][] 
- []
-
-<img/bpeTimes/aleatorio/dblp-2011.pdf, id=3251, 1344.94475pt x 712.58218pt>
+(pdftex.def)             Requested size: 58.29877pt x 132.97937pt.
+<img/bpeTimes/aleatorio/dblp-2011.pdf, id=3259, 1387.58403pt x 710.41411pt>
 File: img/bpeTimes/aleatorio/dblp-2011.pdf Graphic file (type pdf)
 <use img/bpeTimes/aleatorio/dblp-2011.pdf>
 Package pdftex.def Info: img/bpeTimes/aleatorio/dblp-2011.pdf  used on input li
 ne 21.
-(pdftex.def)             Requested size: 364.19667pt x 192.95428pt.
+(pdftex.def)             Requested size: 364.19667pt x 186.4594pt.
 File: img/bpeTimes/labelAle.pdf Graphic file (type pdf)
 <use img/bpeTimes/labelAle.pdf>
 Package pdftex.def Info: img/bpeTimes/labelAle.pdf  used on input line 25.
-(pdftex.def)             Requested size: 75.16216pt x 111.29787pt.
-
-Overfull \hbox (6.87833pt too wide) in paragraph at lines 25--26
- [][] 
- []
-
-) (figs/bpetAle3.tex
-<img/bpeTimes/aleatorio/snap-dblp.pdf, id=3253, 1344.94475pt x 712.58218pt>
+(pdftex.def)             Requested size: 58.29877pt x 132.97937pt.
+)
+(figs/bpetAle3.tex
+<img/bpeTimes/aleatorio/snap-dblp.pdf, id=3261, 1387.58403pt x 710.41411pt>
 File: img/bpeTimes/aleatorio/snap-dblp.pdf Graphic file (type pdf)
 <use img/bpeTimes/aleatorio/snap-dblp.pdf>
 Package pdftex.def Info: img/bpeTimes/aleatorio/snap-dblp.pdf  used on input li
 ne 7.
-(pdftex.def)             Requested size: 364.19667pt x 192.95428pt.
+(pdftex.def)             Requested size: 364.19667pt x 186.4594pt.
 File: img/bpeTimes/labelAle.pdf Graphic file (type pdf)
 <use img/bpeTimes/labelAle.pdf>
 Package pdftex.def Info: img/bpeTimes/labelAle.pdf  used on input line 11.
-(pdftex.def)             Requested size: 75.16216pt x 111.29787pt.
-
-Overfull \hbox (6.87833pt too wide) in paragraph at lines 11--12
- [][] 
- []
-
-<img/bpeTimes/aleatorio/snap-amazon.pdf, id=3255, 1344.94475pt x 712.58218pt>
+(pdftex.def)             Requested size: 58.29877pt x 132.97937pt.
+<img/bpeTimes/aleatorio/snap-amazon.pdf, id=3263, 1387.58403pt x 710.41411pt>
 File: img/bpeTimes/aleatorio/snap-amazon.pdf Graphic file (type pdf)
 <use img/bpeTimes/aleatorio/snap-amazon.pdf>
 Package pdftex.def Info: img/bpeTimes/aleatorio/snap-amazon.pdf  used on input 
 line 21.
-(pdftex.def)             Requested size: 364.19667pt x 192.95428pt.
+(pdftex.def)             Requested size: 364.19667pt x 186.4594pt.
 File: img/bpeTimes/labelAle.pdf Graphic file (type pdf)
 <use img/bpeTimes/labelAle.pdf>
 Package pdftex.def Info: img/bpeTimes/labelAle.pdf  used on input line 25.
-(pdftex.def)             Requested size: 75.16216pt x 111.29787pt.
-
-Overfull \hbox (6.87833pt too wide) in paragraph at lines 25--26
- [][] 
- []
-
+(pdftex.def)             Requested size: 58.29877pt x 132.97937pt.
 ) (figs/bpetAle4.tex
-<img/bpeTimes/aleatorio/coPapersDBLP.pdf, id=3257, 1344.94475pt x 712.58218pt>
+<img/bpeTimes/aleatorio/coPapersDBLP.pdf, id=3265, 1387.58403pt x 710.41411pt>
 File: img/bpeTimes/aleatorio/coPapersDBLP.pdf Graphic file (type pdf)
 <use img/bpeTimes/aleatorio/coPapersDBLP.pdf>
 Package pdftex.def Info: img/bpeTimes/aleatorio/coPapersDBLP.pdf  used on input
  line 7.
-(pdftex.def)             Requested size: 364.19667pt x 192.95428pt.
+(pdftex.def)             Requested size: 364.19667pt x 186.4594pt.
 File: img/bpeTimes/labelAle.pdf Graphic file (type pdf)
 <use img/bpeTimes/labelAle.pdf>
 Package pdftex.def Info: img/bpeTimes/labelAle.pdf  used on input line 11.
-(pdftex.def)             Requested size: 75.16216pt x 111.29787pt.
-
-Overfull \hbox (6.87833pt too wide) in paragraph at lines 11--12
- [][] 
- []
-
-<img/bpeTimes/aleatorio/coPapersCiteseer.pdf, id=3259, 1344.94475pt x 712.58218
+(pdftex.def)             Requested size: 58.29877pt x 132.97937pt.
+<img/bpeTimes/aleatorio/coPapersCiteseer.pdf, id=3267, 1387.58403pt x 710.41411
 pt>
 File: img/bpeTimes/aleatorio/coPapersCiteseer.pdf Graphic file (type pdf)
 <use img/bpeTimes/aleatorio/coPapersCiteseer.pdf>
 Package pdftex.def Info: img/bpeTimes/aleatorio/coPapersCiteseer.pdf  used on i
 nput line 21.
-(pdftex.def)             Requested size: 364.19667pt x 192.95428pt.
+(pdftex.def)             Requested size: 364.19667pt x 186.4594pt.
 File: img/bpeTimes/labelAle.pdf Graphic file (type pdf)
 <use img/bpeTimes/labelAle.pdf>
 Package pdftex.def Info: img/bpeTimes/labelAle.pdf  used on input line 25.
-(pdftex.def)             Requested size: 75.16216pt x 111.29787pt.
-
-Overfull \hbox (6.87833pt too wide) in paragraph at lines 25--26
- [][] 
- []
-
+(pdftex.def)             Requested size: 58.29877pt x 132.97937pt.
 ) (figs/bpetSec1.tex
-<img/bpeTimes/secuencial/marknewman-astro.pdf, id=3261, 1344.94475pt x 712.5821
-8pt>
+<img/bpeTimes/secuencial/marknewman-astro.pdf, id=3269, 1387.58403pt x 710.4141
+1pt>
 File: img/bpeTimes/secuencial/marknewman-astro.pdf Graphic file (type pdf)
 <use img/bpeTimes/secuencial/marknewman-astro.pdf>
 Package pdftex.def Info: img/bpeTimes/secuencial/marknewman-astro.pdf  used on 
 input line 7.
-(pdftex.def)             Requested size: 364.19667pt x 192.95428pt.
-<img/bpeTimes/labelSec.pdf, id=3262, 614.295pt x 794.97pt>
+(pdftex.def)             Requested size: 364.19667pt x 186.4594pt.
+<img/bpeTimes/labelSec.pdf, id=3270, 614.295pt x 794.97pt>
 File: img/bpeTimes/labelSec.pdf Graphic file (type pdf)
 <use img/bpeTimes/labelSec.pdf>
 Package pdftex.def Info: img/bpeTimes/labelSec.pdf  used on input line 11.
-(pdftex.def)             Requested size: 75.16216pt x 106.47977pt.
-
-Overfull \hbox (6.87833pt too wide) in paragraph at lines 11--12
- [][] 
- []
-
-<img/bpeTimes/secuencial/marknewman-condmat.pdf, id=3264, 1344.94475pt x 712.58
-218pt>
+(pdftex.def)             Requested size: 60.70782pt x 113.70692pt.
+<img/bpeTimes/secuencial/marknewman-condmat.pdf, id=3272, 1387.58403pt x 710.41
+411pt>
 File: img/bpeTimes/secuencial/marknewman-condmat.pdf Graphic file (type pdf)
 <use img/bpeTimes/secuencial/marknewman-condmat.pdf>
 Package pdftex.def Info: img/bpeTimes/secuencial/marknewman-condmat.pdf  used o
 n input line 21.
-(pdftex.def)             Requested size: 364.19667pt x 192.95428pt.
+(pdftex.def)             Requested size: 364.19667pt x 186.4594pt.
 File: img/bpeTimes/labelSec.pdf Graphic file (type pdf)
 <use img/bpeTimes/labelSec.pdf>
 Package pdftex.def Info: img/bpeTimes/labelSec.pdf  used on input line 25.
-(pdftex.def)             Requested size: 75.16216pt x 106.47977pt.
-
-Overfull \hbox (6.87833pt too wide) in paragraph at lines 25--26
- [][] 
- []
-
+(pdftex.def)             Requested size: 60.70782pt x 113.70692pt.
 ) (figs/bpetSec2.tex
-<img/bpeTimes/secuencial/dblp-2010.pdf, id=3266, 1344.94475pt x 712.58218pt>
+<img/bpeTimes/secuencial/dblp-2010.pdf, id=3274, 1387.58403pt x 710.41411pt>
 File: img/bpeTimes/secuencial/dblp-2010.pdf Graphic file (type pdf)
 <use img/bpeTimes/secuencial/dblp-2010.pdf>
 Package pdftex.def Info: img/bpeTimes/secuencial/dblp-2010.pdf  used on input l
 ine 7.
-(pdftex.def)             Requested size: 364.19667pt x 192.95428pt.
+(pdftex.def)             Requested size: 364.19667pt x 186.4594pt.
 File: img/bpeTimes/labelSec.pdf Graphic file (type pdf)
 <use img/bpeTimes/labelSec.pdf>
 Package pdftex.def Info: img/bpeTimes/labelSec.pdf  used on input line 11.
-(pdftex.def)             Requested size: 75.16216pt x 106.47977pt.
-
-Overfull \hbox (6.87833pt too wide) in paragraph at lines 11--12
- [][] 
- []
-
-<img/bpeTimes/secuencial/dblp-2011.pdf, id=3268, 1344.94475pt x 712.58218pt>
+(pdftex.def)             Requested size: 60.70782pt x 113.70692pt.
+<img/bpeTimes/secuencial/dblp-2011.pdf, id=3276, 1387.58403pt x 710.41411pt>
 File: img/bpeTimes/secuencial/dblp-2011.pdf Graphic file (type pdf)
 <use img/bpeTimes/secuencial/dblp-2011.pdf>
 Package pdftex.def Info: img/bpeTimes/secuencial/dblp-2011.pdf  used on input l
 ine 21.
-(pdftex.def)             Requested size: 364.19667pt x 192.95428pt.
+(pdftex.def)             Requested size: 364.19667pt x 186.4594pt.
 File: img/bpeTimes/labelSec.pdf Graphic file (type pdf)
 <use img/bpeTimes/labelSec.pdf>
 Package pdftex.def Info: img/bpeTimes/labelSec.pdf  used on input line 25.
-(pdftex.def)             Requested size: 75.16216pt x 106.47977pt.
-
-Overfull \hbox (6.87833pt too wide) in paragraph at lines 25--26
- [][] 
- []
-
+(pdftex.def)             Requested size: 60.70782pt x 113.70692pt.
 ) (figs/bpetSec3.tex
-<img/bpeTimes/secuencial/snap-dblp.pdf, id=3270, 1344.94475pt x 712.58218pt>
+<img/bpeTimes/secuencial/snap-dblp.pdf, id=3278, 1387.58403pt x 710.41411pt>
 File: img/bpeTimes/secuencial/snap-dblp.pdf Graphic file (type pdf)
 <use img/bpeTimes/secuencial/snap-dblp.pdf>
 Package pdftex.def Info: img/bpeTimes/secuencial/snap-dblp.pdf  used on input l
 ine 7.
-(pdftex.def)             Requested size: 364.19667pt x 192.95428pt.
+(pdftex.def)             Requested size: 364.19667pt x 186.4594pt.
 File: img/bpeTimes/labelSec.pdf Graphic file (type pdf)
 <use img/bpeTimes/labelSec.pdf>
 Package pdftex.def Info: img/bpeTimes/labelSec.pdf  used on input line 11.
-(pdftex.def)             Requested size: 75.16216pt x 106.47977pt.
-
-Overfull \hbox (6.87833pt too wide) in paragraph at lines 11--12
- [][] 
- []
-
-<img/bpeTimes/secuencial/snap-amazon.pdf, id=3272, 1344.94475pt x 712.58218pt>
+(pdftex.def)             Requested size: 60.70782pt x 113.70692pt.
+<img/bpeTimes/secuencial/snap-amazon.pdf, id=3280, 1387.58403pt x 710.41411pt>
 File: img/bpeTimes/secuencial/snap-amazon.pdf Graphic file (type pdf)
 <use img/bpeTimes/secuencial/snap-amazon.pdf>
 Package pdftex.def Info: img/bpeTimes/secuencial/snap-amazon.pdf  used on input
  line 21.
-(pdftex.def)             Requested size: 364.19667pt x 192.95428pt.
+(pdftex.def)             Requested size: 364.19667pt x 186.4594pt.
 File: img/bpeTimes/labelSec.pdf Graphic file (type pdf)
 <use img/bpeTimes/labelSec.pdf>
 Package pdftex.def Info: img/bpeTimes/labelSec.pdf  used on input line 25.
-(pdftex.def)             Requested size: 75.16216pt x 106.47977pt.
-
-Overfull \hbox (6.87833pt too wide) in paragraph at lines 25--26
- [][] 
- []
-
+(pdftex.def)             Requested size: 60.70782pt x 113.70692pt.
 ) (figs/bpetSec4.tex
-<img/bpeTimes/secuencial/coPapersDBLP.pdf, id=3274, 1344.94475pt x 712.58218pt>
+<img/bpeTimes/secuencial/coPapersDBLP.pdf, id=3282, 1387.58403pt x 710.41411pt>
 
 File: img/bpeTimes/secuencial/coPapersDBLP.pdf Graphic file (type pdf)
 <use img/bpeTimes/secuencial/coPapersDBLP.pdf>
 Package pdftex.def Info: img/bpeTimes/secuencial/coPapersDBLP.pdf  used on inpu
 t line 7.
-(pdftex.def)             Requested size: 364.19667pt x 192.95428pt.
+(pdftex.def)             Requested size: 364.19667pt x 186.4594pt.
 File: img/bpeTimes/labelSec.pdf Graphic file (type pdf)
 <use img/bpeTimes/labelSec.pdf>
 Package pdftex.def Info: img/bpeTimes/labelSec.pdf  used on input line 11.
-(pdftex.def)             Requested size: 75.16216pt x 106.47977pt.
-
-Overfull \hbox (6.87833pt too wide) in paragraph at lines 11--12
- [][] 
- []
-
-<img/bpeTimes/secuencial/coPapersCiteseer.pdf, id=3276, 1344.94475pt x 712.5821
-8pt>
+(pdftex.def)             Requested size: 60.70782pt x 113.70692pt.
+<img/bpeTimes/secuencial/coPapersCiteseer.pdf, id=3284, 1387.58403pt x 710.4141
+1pt>
 File: img/bpeTimes/secuencial/coPapersCiteseer.pdf Graphic file (type pdf)
 <use img/bpeTimes/secuencial/coPapersCiteseer.pdf>
 Package pdftex.def Info: img/bpeTimes/secuencial/coPapersCiteseer.pdf  used on 
 input line 21.
-(pdftex.def)             Requested size: 364.19667pt x 192.95428pt.
+(pdftex.def)             Requested size: 364.19667pt x 186.4594pt.
 File: img/bpeTimes/labelSec.pdf Graphic file (type pdf)
 <use img/bpeTimes/labelSec.pdf>
 Package pdftex.def Info: img/bpeTimes/labelSec.pdf  used on input line 25.
-(pdftex.def)             Requested size: 75.16216pt x 106.47977pt.
-
-Overfull \hbox (6.87833pt too wide) in paragraph at lines 25--26
- [][] 
- []
-
+(pdftex.def)             Requested size: 60.70782pt x 113.70692pt.
 )) (conclusiones.tex [57] [58 <./img/bpeTimes/labelAle.pdf
 
 pdfTeX warning: pdflatex (file ./img/bpeTimes/labelAle.pdf): PDF inclusion: inv
@@ -2285,7 +2211,7 @@ Cap\'{\i }tulo 6.
 
 
 ] [69] [70]
-Underfull \hbox (badness 2564) in paragraph at lines 286--289
+Underfull \hbox (badness 2564) in paragraph at lines 291--294
 []\OT1/cmr/m/n/12 Daisuke Oka-noha-ra and Ku-nihi-ko Sa-da-ka-ne.  Prac-ti-cal 
 entropy-compressed
  []
@@ -2300,7 +2226,7 @@ LaTeX Info: Redefining \% on input line 23.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 325.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 325.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: CDB9DD07F42C483186BA2EF002EAA052;2755.
+(rerunfilecheck)             Checksum: CE69BF1BECB1E90E24F607A044D83222;2757.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2308,13 +2234,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 325.
  ) 
 Here is how much of TeX's memory you used:
- 19794 strings out of 492946
- 374479 string characters out of 3125823
- 465185 words of memory out of 3000000
- 22598 multiletter control sequences out of 15000+200000
+ 19800 strings out of 492946
+ 374623 string characters out of 3125823
+ 468426 words of memory out of 3000000
+ 22600 multiletter control sequences out of 15000+200000
  20627 words of font info for 76 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,15n,48p,1293b,1044s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,15n,48p,1309b,1044s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/felipe/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmbsy10.pfb><C:/Users/felipe/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmbx12.pfb><C:/Users/felipe/AppData/Local/Programs/MiKTeX 2
@@ -2344,9 +2270,9 @@ a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users
 /felipe/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12
 .pfb><C:/Users/felipe/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
 onts/symbols/msbm10.pfb>
-Output written on Thesis.pdf (83 pages, 2722658 bytes).
+Output written on Thesis.pdf (83 pages, 2745834 bytes).
 PDF statistics:
- 4173 PDF objects out of 4296 (max. 8388607)
- 424 named destinations out of 1000 (max. 500000)
+ 4183 PDF objects out of 4296 (max. 8388607)
+ 426 named destinations out of 1000 (max. 500000)
  1152 words of extra memory for PDF output out of 10000 (max. 10000000)
 

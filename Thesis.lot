@@ -14,8 +14,9 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {5.1}{\ignorespaces Cantidad de v\IeC {\'e}rtices, aristas, cliques, grado medio y m\IeC {\'a}ximo de los v\IeC {\'e}rtices, degeneracy, coeficiente de clusterizaci\IeC {\'o}n y transitividad de los grafos a comprimir.}}{37}{table.5.1}% 
-\contentsline {table}{\numberline {5.2}{\ignorespaces Tiempos de obtenci\IeC {\'o}n de listado de cliques maximales y construcci\IeC {\'o}n de la estructura compacta, en segundos.}}{55}{table.5.2}% 
-\contentsline {table}{\numberline {5.3}{\ignorespaces BPE de algoritmos de compresi\IeC {\'o}n.}}{56}{table.5.3}% 
-\contentsline {table}{\numberline {5.4}{\ignorespaces Tiempos de acceso aleatorio, en microsegundos por arco.}}{56}{table.5.4}% 
-\contentsline {table}{\numberline {5.5}{\ignorespaces Tiempos de reconstrucci\IeC {\'o}n secuencial del grafo, en segundos.}}{57}{table.5.5}% 
+\contentsline {table}{\numberline {5.2}{\ignorespaces Comparativa de BPE de las estructuras compactas para las funciones de ranking.}}{49}{table.5.2}% 
+\contentsline {table}{\numberline {5.3}{\ignorespaces Tiempos de obtenci\IeC {\'o}n de listado de cliques maximales y construcci\IeC {\'o}n de la estructura compacta, en segundos.}}{55}{table.5.3}% 
+\contentsline {table}{\numberline {5.4}{\ignorespaces BPE de algoritmos de compresi\IeC {\'o}n.}}{56}{table.5.4}% 
+\contentsline {table}{\numberline {5.5}{\ignorespaces Tiempos de acceso aleatorio, en microsegundos por arco.}}{57}{table.5.5}% 
+\contentsline {table}{\numberline {5.6}{\ignorespaces Tiempos de reconstrucci\IeC {\'o}n secuencial del grafo, en segundos.}}{58}{table.5.6}% 
 \addvspace {10\p@ }

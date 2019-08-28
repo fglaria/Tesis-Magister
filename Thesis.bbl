@@ -201,6 +201,11 @@ P~Jean-Jacques Herings, Gerard Van Der~Laan, and Dolf Talman.
 \newblock The positional power of nodes in digraphs.
 \newblock {\em Social Choice and Welfare}, 24(3):439--454, 2005.
 
+\bibitem{hernandez2009managing}
+Cecilia Hern{\'a}ndez and Mauricio Mar{\i}n.
+\newblock {\em Managing Massive Graphs}.
+\newblock PhD thesis, Citeseer, 2014.
+
 \bibitem{hernandez2011compression}
 Cecilia Hern{\'a}ndez and Gonzalo Navarro.
 \newblock Compression of web and social graphs supporting neighbor and

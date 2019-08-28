@@ -20,7 +20,7 @@
 \contentsline {figure}{\numberline {3.10}{\ignorespaces Ejemplo de ordenamiento por \textit {degeneracy}. (a) Grafo con \textit {degeneracy} 3. (b)~ Posible ordenamiento de nodos por \textit {degeneracy}.}}{24}{figure.3.10}% 
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces (a) Grafo no dirigido. (b) Lista de cliques maximales. (c) Grafo de cliques.}}{26}{figure.4.1}% 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Resultados de las funciones de ranking. (a) Puntaje final. (b) Particiones de cliques.}}{28}{figure.4.2}% 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Resultados de las funciones de ranking, asociados al grafo de la \autoref {fig:gafoEj}. (a) Puntaje final. (b) Particiones de cliques.}}{28}{figure.4.2}% 
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Ejemplo de reordenamiento y estructura compacta. (a) $\mathcal {C}\mathcal {P}_{rr}$ reordenado. (b) Estructura compacta reordenada.}}{30}{figure.4.3}% 
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Distribuci\IeC {\'o}n del grado de los v\IeC {\'e}rtices para cada grafo.}}{38}{figure.5.1}% 

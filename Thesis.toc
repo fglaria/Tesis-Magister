@@ -17,11 +17,11 @@
 \contentsline {subsection}{\numberline {3.1.5}k2-tree, \textit {Brisaboa, Ladra y Navarro}}{16}{subsection.3.1.5}% 
 \contentsline {subsection}{\numberline {3.1.6}List Merging, \textit {Grabowski y Bieniecki}}{18}{subsection.3.1.6}% 
 \contentsline {subsection}{\numberline {3.1.7}GLOUDS, \textit {Fischer y Peters}}{18}{subsection.3.1.7}% 
-\contentsline {section}{\numberline {3.2}Estructuras compactas}{20}{section.3.2}% 
+\contentsline {section}{\numberline {3.2}Estructuras compactas}{21}{section.3.2}% 
 \contentsline {subsection}{\numberline {3.2.1}Secuencias binarias}{21}{subsection.3.2.1}% 
 \contentsline {subsection}{\numberline {3.2.2}Wavelet Tree y Wavelet Matrix}{21}{subsection.3.2.2}% 
-\contentsline {subsection}{\numberline {3.2.3}SDSL - Succinct Data Structure Library}{22}{subsection.3.2.3}% 
-\contentsline {section}{\numberline {3.3}Detecci\IeC {\'o}n de cliques maximales}{23}{section.3.3}% 
+\contentsline {subsection}{\numberline {3.2.3}SDSL - Succinct Data Structure Library}{23}{subsection.3.2.3}% 
+\contentsline {section}{\numberline {3.3}Enumeraci\IeC {\'o}n de cliques maximales}{23}{section.3.3}% 
 \contentsline {chapter}{\numberline {Cap\'{\i }tulo 4}M\IeC {\'E}TODO DE COMPRESI\IeC {\'O}N PROPUESTO}{25}{chapter.4}% 
 \contentsline {section}{\numberline {4.1}Detecci\IeC {\'o}n de cliques maximales}{25}{section.4.1}% 
 \contentsline {section}{\numberline {4.2}Particionamento del grafo de cliques}{26}{section.4.2}% 
@@ -32,7 +32,7 @@
 \contentsline {chapter}{\numberline {Cap\'{\i }tulo 5}RESULTADOS}{36}{chapter.5}% 
 \contentsline {section}{\numberline {5.1}Grafos}{36}{section.5.1}% 
 \contentsline {section}{\numberline {5.2}Estructura compacta}{40}{section.5.2}% 
-\contentsline {section}{\numberline {5.3}Comparaci\IeC {\'o}n de funciones de ranking}{49}{section.5.3}% 
-\contentsline {section}{\numberline {5.4}Comparando con estado del arte}{54}{section.5.4}% 
+\contentsline {section}{\numberline {5.3}Comparaci\IeC {\'o}n de funciones de ranking}{40}{section.5.3}% 
+\contentsline {section}{\numberline {5.4}Comparando con estado del arte}{55}{section.5.4}% 
 \contentsline {chapter}{\numberline {Cap\'{\i }tulo 6}CONCLUSIONES}{66}{chapter.6}% 
 \contentsline {chapter}{Bibliograf\'{\i }a}{68}{chapter.6}% 
