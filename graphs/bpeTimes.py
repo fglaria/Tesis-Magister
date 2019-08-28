@@ -150,6 +150,7 @@ for graph in graphs:
     plt.xlabel("BPE")
     plt.ylabel("Tiempo [$s$]")
     plt.minorticks_on()
+    plt.subplots_adjust(left=0.07, bottom=0.10, right=0.98, top=0.96)
     plt.show()
 
     #continue
@@ -168,6 +169,7 @@ for graph in graphs:
     plt.xlabel("BPE")
     plt.ylabel("Tiempo [$\mu s$]")
     plt.minorticks_on()
+    plt.subplots_adjust(left=0.07, bottom=0.10, right=0.98, top=0.96)
     plt.show()
 
     # sys.exit(1)
