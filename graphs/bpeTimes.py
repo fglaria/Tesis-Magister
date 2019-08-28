@@ -61,10 +61,10 @@ colors = {
 bpe = {
     "marknewman-astro": (3.82, 3.96, 4.89, 4.34, 5.67, 8.10, 7.30),
     "marknewman-condmat": (5.44, 5.74, 6.28, 5.60, 7.86, 11.78, 10.45),
-    "dblp-2010": (6.41, 5.84, 4.23, 4.30, 6.71, 8.67, 6.91),
-    "dblp-2011": (10.46, 6.58, 5.48, 5.89, 9.67, 10.13, 8.71),
-    "snap-dblp": (5.73, 6.89, 5.88, 5.23, 8.14, 11.80, 10.17),
-    "snap-amazon": (6.48, 10.44, 8.02, 6.38, 10.96, 14.50, 13.35),
+    "dblp-2010": (5.73, 5.84, 4.23, 4.30, 6.71, 8.67, 6.91),
+    "dblp-2011": (6.48, 6.58, 5.48, 5.89, 9.67, 10.13, 8.71),
+    "snap-dblp": (6.41, 6.89, 5.88, 5.23, 8.14, 11.80, 10.17),
+    "snap-amazon": (10.46, 10.44, 8.02, 6.38, 10.96, 14.50, 13.35),
     "coPapersDBLP": (0.76, 0.78, 1.67, 0.94, 1.81, 2.71, 2.48),
     "coPapersCiteseer": (0.48, 0.52, 1.21, 0.45, 0.85, 1.79 , 1.63)
 }
@@ -132,28 +132,28 @@ for graph in graphs:
     yA = []
     mA = []
 
-    # For every algorithm, one point
-    for iA, algo in enumerate(algoBPE):
-        # If algorithm in secuencial, add point
-        if algo in algoSec:
-            plt.scatter(bpe[graph][iA], tSec[graph][algoSec.index(algo)], s=s, marker=markers[algo], color=colors[algo], linewidths=1, edgecolors="#000000", label=algo)
+    # # For every algorithm, one point
+    # for iA, algo in enumerate(algoBPE):
+    #     # If algorithm in secuencial, add point
+    #     if algo in algoSec:
+    #         plt.scatter(bpe[graph][iA], tSec[graph][algoSec.index(algo)], s=s, marker=markers[algo], color=colors[algo], linewidths=1, edgecolors="#000000", label=algo)
 
-    # ax.legend(loc='upper center', bbox_to_anchor=(0.5, 1.05), fontsize='small',
-    #     ncol=4, fancybox=True, shadow=True)
+    # # ax.legend(loc='upper center', bbox_to_anchor=(0.5, 1.05), fontsize='small',
+    # #     ncol=4, fancybox=True, shadow=True)
 
-    # plt.title("BPE vs. Tiempo acceso secuencial para " + graph)
-    # plt.title(graph, fontsize=20)
-    plt.title(graph, fontsize=28)
-    plt.grid(True)
-    # plt.figure(figsize=(3,4))
-    # plt.legend(fontsize=15)
-    plt.xlabel("BPE")
-    plt.ylabel("Tiempo [$s$]")
-    plt.minorticks_on()
-    plt.subplots_adjust(left=0.07, bottom=0.10, right=0.98, top=0.96)
-    plt.show()
+    # # plt.title("BPE vs. Tiempo acceso secuencial para " + graph)
+    # # plt.title(graph, fontsize=20)
+    # plt.title(graph, fontsize=28)
+    # plt.grid(True)
+    # # plt.figure(figsize=(3,4))
+    # # plt.legend(fontsize=15)
+    # plt.xlabel("BPE")
+    # plt.ylabel("Tiempo [$s$]")
+    # plt.minorticks_on()
+    # plt.subplots_adjust(left=0.07, bottom=0.10, right=0.98, top=0.96)
+    # plt.show()
 
-    #continue
+    # continue
 
 
     # If algorithm in aleatory, add point
