@@ -148,11 +148,6 @@ David Eppstein and Darren Strash.
 \newblock In {\em International Symposium on Experimental Algorithms}, pages
   364--375. Springer, 2011.
 
-\bibitem{fischer2016glouds}
-Johannes Fischer and Daniel Peters.
-\newblock Glouds: Representing tree-like graphs.
-\newblock {\em Journal of Discrete Algorithms}, 36:39--49, 2016.
-
 \bibitem{flake2002self}
 Gary~William Flake, Steve Lawrence, C~Lee Giles, and Frans~M Coetzee.
 \newblock Self-organization and identification of web communities.
@@ -229,12 +224,6 @@ Cecilia Hern{\'a}ndez and Gonzalo Navarro.
 David~A Huffman.
 \newblock A method for the construction of minimum-redundancy codes.
 \newblock {\em Proceedings of the IRE}, 40(9):1098--1101, 1952.
-
-\bibitem{jacobson1989space}
-Guy Jacobson.
-\newblock Space-efficient static trees and graphs.
-\newblock In {\em 30th Annual Symposium on Foundations of Computer Science},
-  pages 549--554. IEEE, 1989.
 
 \bibitem{karp1972reducibility}
 Richard~M Karp.

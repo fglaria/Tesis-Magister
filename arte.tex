@@ -160,30 +160,30 @@ Ambas secuencias, \textit{long list} y ya sea \textit{LM-bitmap} o \textit{LM-di
 Para más detalles sobre la codificación Huffman, ver la \autoref{sec:huffman}.
 
 
-\subsection{GLOUDS, \textit{Fischer y Peters}}
-Fischer y Peters \cite{fischer2016glouds} proponen una nueva estructura de datos sucintos para comprimir grafos dirigidos con forma de árbol, llamada \textit{GLOUDS (Graph Level Order Unary Degree Sequence)}. La idea del algoritmo es representar mediante otra estructura de datos sucintos para árboles de expansión, llamada \textit{LOUDS (Level Order Unary Degree Sequence)} \cite{jacobson1989space}, y agregarle información adicional para los nodos extra.
-
-\input{figs/arte-spanningTree}
-
-\input{figs/arte-LOUDS}
-
-Un árbol de expansión $T$ de un grafo $G$  con $n$ vértices y $m$ aristas, es un árbol que cubre todos los $n$ vértices de $G$ con la mínima cantidad de aristas posibles, sin generar ciclos. En la \autoref{fig:spanningTree} se muestran algunos ejemplos de árboles de expansión para un grafo simple. Un grafo con forma de árbol no tiene una cantidad de aristas adicionales muy alta, con respecto a un árbol de expansión.
-
-La estructura \textit{LOUDS} \cite{jacobson1989space} está diseñada para comprimir árboles de expansión. Primero, por conveniencia, agrandan el árbol con un nodo \textit{super-raíz} artificial conectado al nodo raíz original. Luego van construyendo un bitmap $B$, avanzando por el árbol mediante BFS. Por cada nodo con $k$ hijos, se agregan $1^{k}0$ bits a $B$ (con $k=3$ sería $1110$). Esto representa a cada nodo del árbol dos veces: una vez con un $1$ cuando aparece el nodo como hijo, y con un $0$ cuando aparece como padre. Para $n$ nodos, el bitmap $B$ tiene $2n + 1$ bits de largo. En la \autoref{fig:LOUDS} se muestra un ejemplo de esta representación. Los nodos quedan identificados según el nivel de BFS donde aparecen.
-
-Basado en esta idea, \textit{GLOUDS} \cite{fischer2016glouds} propone una nueva estructura para grafos con forma de árbol. Para esto define las siguientes características de un grafo $G$:
-
-\begin{itemize}
-	\item $c \leq n$, la cantidad de nodos raíz de $G$ (el tamaño mínimo del set de nodos desde donde se alcanzan todos los nodos restantes). 
-	\item $k = m - n + 1$, la cantidad de aristas adicionales, con respecto al árbol de expansión $T$ de $G$.
-	\item $h \leq k$, la cantidad de nodos adicionales.
-\end{itemize}
-
-Por simpleza, parten asumiendo que existe un nodo $r$ desde donde se pueden alcanzar todos los nodos restantes ($c = 1$). Desde $r$, realizan el recorrido por BFS de $G$, lo que llaman BFT, y $T_{G}^{BFT}$ el árbol resultante. Agrandan $T_{G}^{BFT}$ tal que por cada vértice $w$ ya visitado durante la BFT del nodo $v$ en una etapa anterior, realizan una copia llamada \textit{nodo sombra} y la agregan como hijo al nodo $v$ en $T_{G}^{BFT}$. Finalmente agregan el nodo \textit{super-raíz}, y llaman al árbol final $T_{G}$, que tiene exactamente $m + 2$ nodos. En la \autoref{fig:GLOUDS} se ilustra un ejemplo de GLOUDS, en (a) el grafo $G$, y en (b) el árbol $T_{G}$ final.
-
-\input{figs/arte-glouds}
-
-Luego proponen una representación de $T_{G}$ similar a la de LOUDS, pero que permita diferenciar los nodos sombra de los demás. Para esto, cambian el bitmap por una secuencia de trits, con posibles valores del conjunto $\{0, 1, 2\}$. Luego, la secuencia $B$ se genera de la misma manera, pero cuando aparece un nodo sombra en el recorrido BFS se agrega un $2$. Estos nodos no se vuelven a representar con un $0$. Le llaman al vector de trits $B$ CLOUDS, y tiene un largo de $n + m + c$ trits. En la \autoref{fig:LOUDS}~(c) se muestra el resultado para el ejemplo ya mencionado. Además, necesita un arreglo $H[0, k)$ que anota los nodos sombra que aparecen en B.
+%\subsection{GLOUDS, \textit{Fischer y Peters}}
+%Fischer y Peters \cite{fischer2016glouds} proponen una nueva estructura de datos sucintos para comprimir grafos dirigidos con forma de árbol, llamada \textit{GLOUDS (Graph Level Order Unary Degree Sequence)}. La idea del algoritmo es representar mediante otra estructura de datos sucintos para árboles de expansión, llamada \textit{LOUDS (Level Order Unary Degree Sequence)} \cite{jacobson1989space}, y agregarle información adicional para los nodos extra.
+%
+%\input{figs/arte-spanningTree}
+%
+%\input{figs/arte-LOUDS}
+%
+%Un árbol de expansión $T$ de un grafo $G$  con $n$ vértices y $m$ aristas, es un árbol que cubre todos los $n$ vértices de $G$ con la mínima cantidad de aristas posibles, sin generar ciclos. En la \autoref{fig:spanningTree} se muestran algunos ejemplos de árboles de expansión para un grafo simple. Un grafo con forma de árbol no tiene una cantidad de aristas adicionales muy alta, con respecto a un árbol de expansión.
+%
+%La estructura \textit{LOUDS} \cite{jacobson1989space} está diseñada para comprimir árboles de expansión. Primero, por conveniencia, agrandan el árbol con un nodo \textit{super-raíz} artificial conectado al nodo raíz original. Luego van construyendo un bitmap $B$, avanzando por el árbol mediante BFS. Por cada nodo con $k$ hijos, se agregan $1^{k}0$ bits a $B$ (con $k=3$ sería $1110$). Esto representa a cada nodo del árbol dos veces: una vez con un $1$ cuando aparece el nodo como hijo, y con un $0$ cuando aparece como padre. Para $n$ nodos, el bitmap $B$ tiene $2n + 1$ bits de largo. En la \autoref{fig:LOUDS} se muestra un ejemplo de esta representación. Los nodos quedan identificados según el nivel de BFS donde aparecen.
+%
+%Basado en esta idea, \textit{GLOUDS} \cite{fischer2016glouds} propone una nueva estructura para grafos con forma de árbol. Para esto define las siguientes características de un grafo $G$:
+%
+%\begin{itemize}
+%	\item $c \leq n$, la cantidad de nodos raíz de $G$ (el tamaño mínimo del set de nodos desde donde se alcanzan todos los nodos restantes). 
+%	\item $k = m - n + 1$, la cantidad de aristas adicionales, con respecto al árbol de expansión $T$ de $G$.
+%	\item $h \leq k$, la cantidad de nodos adicionales.
+%\end{itemize}
+%
+%Por simpleza, parten asumiendo que existe un nodo $r$ desde donde se pueden alcanzar todos los nodos restantes ($c = 1$). Desde $r$, realizan el recorrido por BFS de $G$, lo que llaman BFT, y $T_{G}^{BFT}$ el árbol resultante. Agrandan $T_{G}^{BFT}$ tal que por cada vértice $w$ ya visitado durante la BFT del nodo $v$ en una etapa anterior, realizan una copia llamada \textit{nodo sombra} y la agregan como hijo al nodo $v$ en $T_{G}^{BFT}$. Finalmente agregan el nodo \textit{super-raíz}, y llaman al árbol final $T_{G}$, que tiene exactamente $m + 2$ nodos. En la \autoref{fig:GLOUDS} se ilustra un ejemplo de GLOUDS, en (a) el grafo $G$, y en (b) el árbol $T_{G}$ final.
+%
+%\input{figs/arte-glouds}
+%
+%Luego proponen una representación de $T_{G}$ similar a la de LOUDS, pero que permita diferenciar los nodos sombra de los demás. Para esto, cambian el bitmap por una secuencia de trits, con posibles valores del conjunto $\{0, 1, 2\}$. Luego, la secuencia $B$ se genera de la misma manera, pero cuando aparece un nodo sombra en el recorrido BFS se agrega un $2$. Estos nodos no se vuelven a representar con un $0$. Le llaman al vector de trits $B$ CLOUDS, y tiene un largo de $n + m + c$ trits. En la \autoref{fig:LOUDS}~(c) se muestra el resultado para el ejemplo ya mencionado. Además, necesita un arreglo $H[0, k)$ que anota los nodos sombra que aparecen en B.
 
 
 En este trabajo, se considerarán en la comparación final los métodos considerados más eficientes, en términos de construcción y resultados en compresión y tiempos de accesos a vecinos.

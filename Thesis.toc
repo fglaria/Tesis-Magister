@@ -16,23 +16,22 @@
 \contentsline {subsection}{\numberline {3.1.4}Virtual Node Mining, \textit {Buehrer y Chellapilla}}{16}{subsection.3.1.4}% 
 \contentsline {subsection}{\numberline {3.1.5}k2-tree, \textit {Brisaboa, Ladra y Navarro}}{16}{subsection.3.1.5}% 
 \contentsline {subsection}{\numberline {3.1.6}List Merging, \textit {Grabowski y Bieniecki}}{18}{subsection.3.1.6}% 
-\contentsline {subsection}{\numberline {3.1.7}GLOUDS, \textit {Fischer y Peters}}{18}{subsection.3.1.7}% 
-\contentsline {section}{\numberline {3.2}Estructuras compactas}{21}{section.3.2}% 
-\contentsline {subsection}{\numberline {3.2.1}Secuencias binarias}{21}{subsection.3.2.1}% 
-\contentsline {subsection}{\numberline {3.2.2}Wavelet Tree y Wavelet Matrix}{21}{subsection.3.2.2}% 
-\contentsline {subsection}{\numberline {3.2.3}SDSL - Succinct Data Structure Library}{23}{subsection.3.2.3}% 
-\contentsline {section}{\numberline {3.3}Enumeraci\IeC {\'o}n de cliques maximales}{23}{section.3.3}% 
-\contentsline {chapter}{\numberline {Cap\'{\i }tulo 4}M\IeC {\'E}TODO DE COMPRESI\IeC {\'O}N PROPUESTO}{25}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Detecci\IeC {\'o}n de cliques maximales}{25}{section.4.1}% 
-\contentsline {section}{\numberline {4.2}Particionamento del grafo de cliques}{26}{section.4.2}% 
-\contentsline {section}{\numberline {4.3}Algoritmo de particionamiento o clustering}{27}{section.4.3}% 
-\contentsline {section}{\numberline {4.4}Representaci\IeC {\'o}n en estructuras compactas}{28}{section.4.4}% 
-\contentsline {subsection}{\numberline {4.4.1}Secuencias de la representaci\IeC {\'o}n de las particiones}{29}{subsection.4.4.1}% 
-\contentsline {subsection}{\numberline {4.4.2}Algoritmos de consulta}{30}{subsection.4.4.2}% 
-\contentsline {chapter}{\numberline {Cap\'{\i }tulo 5}RESULTADOS}{36}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}Grafos}{36}{section.5.1}% 
-\contentsline {section}{\numberline {5.2}Estructura compacta}{40}{section.5.2}% 
-\contentsline {section}{\numberline {5.3}Comparaci\IeC {\'o}n de funciones de ranking}{40}{section.5.3}% 
-\contentsline {section}{\numberline {5.4}Comparando con estado del arte}{55}{section.5.4}% 
-\contentsline {chapter}{\numberline {Cap\'{\i }tulo 6}CONCLUSIONES}{66}{chapter.6}% 
-\contentsline {chapter}{Bibliograf\'{\i }a}{68}{chapter.6}% 
+\contentsline {section}{\numberline {3.2}Estructuras compactas}{18}{section.3.2}% 
+\contentsline {subsection}{\numberline {3.2.1}Secuencias binarias}{19}{subsection.3.2.1}% 
+\contentsline {subsection}{\numberline {3.2.2}Wavelet Tree y Wavelet Matrix}{19}{subsection.3.2.2}% 
+\contentsline {subsection}{\numberline {3.2.3}SDSL - Succinct Data Structure Library}{21}{subsection.3.2.3}% 
+\contentsline {section}{\numberline {3.3}Enumeraci\IeC {\'o}n de cliques maximales}{21}{section.3.3}% 
+\contentsline {chapter}{\numberline {Cap\'{\i }tulo 4}M\IeC {\'E}TODO DE COMPRESI\IeC {\'O}N PROPUESTO}{23}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Detecci\IeC {\'o}n de cliques maximales}{23}{section.4.1}% 
+\contentsline {section}{\numberline {4.2}Particionamento del grafo de cliques}{24}{section.4.2}% 
+\contentsline {section}{\numberline {4.3}Algoritmo de particionamiento o clustering}{25}{section.4.3}% 
+\contentsline {section}{\numberline {4.4}Representaci\IeC {\'o}n en estructuras compactas}{26}{section.4.4}% 
+\contentsline {subsection}{\numberline {4.4.1}Secuencias de la representaci\IeC {\'o}n de las particiones}{27}{subsection.4.4.1}% 
+\contentsline {subsection}{\numberline {4.4.2}Algoritmos de consulta}{28}{subsection.4.4.2}% 
+\contentsline {chapter}{\numberline {Cap\'{\i }tulo 5}RESULTADOS}{34}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Grafos}{34}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}Estructura compacta}{38}{section.5.2}% 
+\contentsline {section}{\numberline {5.3}Comparaci\IeC {\'o}n de funciones de ranking}{38}{section.5.3}% 
+\contentsline {section}{\numberline {5.4}Comparando con estado del arte}{53}{section.5.4}% 
+\contentsline {chapter}{\numberline {Cap\'{\i }tulo 6}CONCLUSIONES}{64}{chapter.6}% 
+\contentsline {chapter}{Bibliograf\'{\i }a}{66}{chapter.6}% 

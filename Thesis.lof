@@ -12,40 +12,37 @@
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Ejemplo para Re-Pair aplicado a grafos por Claude y Navarro. (a) Grafo de ejemplo. (b) Listado concatenado $T(G)$ y resultado final luego de tres reemplazos y eliminar nodos de referencia. (c) Bitmaps indicadores de nodos de referencia removidos.}}{15}{figure.3.2}% 
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Ejemplo de reemplazo por nodo virtual. (a) Biclique. (b) Biclique con reemplazo de aristas por nodo virtual $V$.}}{16}{figure.3.3}% 
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Ejemplo de k2-tree. (a) Matriz de adyacencia. (b) Diagrama de estructura.}}{17}{figure.3.4}% 
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Ejemplos de \IeC {\'a}rboles de expansi\IeC {\'o}n. (a) Grafo simple. (b)~Posibles \IeC {\'a}rboles de expansi\IeC {\'o}n para el grafo.}}{19}{figure.3.5}% 
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Ejemplo de un \IeC {\'a}rbol de expansi\IeC {\'o}n y su LOUDS. (a) \IeC {\'A}rbol de expansi\IeC {\'o}n y los bits generados por cada nivel de BFS. (b)~Bitmap $B$ de LOUDS.}}{19}{figure.3.6}% 
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Ejemplo de la generaci\IeC {\'o}n de GLOUDS. (a) Grafo $G$. (b)~\IeC {\'A}rbol $T_{G}$. (c)~GLOUDS $B$ y el arreglo $H$ de nodos sombra.}}{20}{figure.3.7}% 
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Ejemplos de wavelet-tree. (a) Ejemplo b\IeC {\'a}sico de subdivisi\IeC {\'o}n de secuencia ordenada. (b) Ejemplo pr\IeC {\'a}ctico con alfabetos y bitmaps por nodo.}}{22}{figure.3.8}% 
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Ejemplos para wavelet-matrix. (a) Un wavelet tree. (b) El mismo wavelet tree sin punteros. (c) La wavelet matrix correpondiente.}}{23}{figure.3.9}% 
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Ejemplo de ordenamiento por \textit {degeneracy}. (a) Grafo con \textit {degeneracy} 3. (b)~ Posible ordenamiento de nodos por \textit {degeneracy}.}}{24}{figure.3.10}% 
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Ejemplos de wavelet-tree. (a) Ejemplo b\IeC {\'a}sico de subdivisi\IeC {\'o}n de secuencia ordenada. (b) Ejemplo pr\IeC {\'a}ctico con alfabetos y bitmaps por nodo.}}{20}{figure.3.5}% 
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Ejemplos para wavelet-matrix. (a) Un wavelet tree. (b) El mismo wavelet tree sin punteros. (c) La wavelet matrix correpondiente.}}{20}{figure.3.6}% 
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Ejemplo de ordenamiento por \textit {degeneracy}. (a) Grafo con \textit {degeneracy} 3. (b)~ Posible ordenamiento de nodos por \textit {degeneracy}.}}{22}{figure.3.7}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces (a) Grafo no dirigido. (b) Lista de cliques maximales. (c) Grafo de cliques.}}{26}{figure.4.1}% 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Resultados de las funciones de ranking, asociados al grafo de la \autoref {fig:gafoEj}. (a) Puntaje final. (b) Particiones de cliques.}}{28}{figure.4.2}% 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Ejemplo de reordenamiento y estructura compacta. (a) $\mathcal {C}\mathcal {P}_{rr}$ reordenado. (b) Estructura compacta reordenada.}}{30}{figure.4.3}% 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces (a) Grafo no dirigido. (b) Lista de cliques maximales. (c) Grafo de cliques.}}{24}{figure.4.1}% 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Resultados de las funciones de ranking, asociados al grafo de la \autoref {fig:gafoEj}. (a) Puntaje final. (b) Particiones de cliques.}}{26}{figure.4.2}% 
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Ejemplo de reordenamiento y estructura compacta. (a) $\mathcal {C}\mathcal {P}_{rr}$ reordenado. (b) Estructura compacta reordenada.}}{28}{figure.4.3}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Distribuci\IeC {\'o}n del grado de los v\IeC {\'e}rtices para cada grafo.}}{38}{figure.5.1}% 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Distribuci\IeC {\'o}n del tama\IeC {\~n}o de los cliques maximales para cada grafo.}}{39}{figure.5.2}% 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces BPE y Tiempo de acceso aleatorio medio para posibles estructuras compactas, por cada funci\IeC {\'o}n de ranking, para los grafos marknewman-astro y marknewman-condmat.}}{41}{figure.5.3}% 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces BPE y Tiempo de acceso aleatorio medio para posibles estructuras compactas, por cada funci\IeC {\'o}n de ranking, para los grafos dblp-2010 y dblp-2011.}}{42}{figure.5.4}% 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces BPE y Tiempo de acceso aleatorio medio para posibles estructuras compactas, por cada funci\IeC {\'o}n de ranking, para los grafos snap-dblp y snap-amazon.}}{43}{figure.5.5}% 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces BPE y Tiempo de acceso aleatorio medio para posibles estructuras compactas, por cada funci\IeC {\'o}n de ranking, para los grafos coPapersDBLP y coPapersCiteseer.}}{44}{figure.5.6}% 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces BPE y Tiempo de acceso aleatorio medio para posibles estructuras compactas, por cada funci\IeC {\'o}n de ranking, para los grafos marknewman-astro y marknewman-condmat.}}{45}{figure.5.7}% 
-\contentsline {figure}{\numberline {5.8}{\ignorespaces BPE y Tiempo de acceso secuencial medio para posibles estructuras compactas, por cada funci\IeC {\'o}n de ranking, para los grafos dblp-2010 y dblp-2011.}}{46}{figure.5.8}% 
-\contentsline {figure}{\numberline {5.9}{\ignorespaces BPE y Tiempo de acceso secuencial medio para posibles estructuras compactas, por cada funci\IeC {\'o}n de ranking, para los grafos snap-dblp y snap-amazon.}}{47}{figure.5.9}% 
-\contentsline {figure}{\numberline {5.10}{\ignorespaces BPE y Tiempo de acceso secuencial medio para posibles estructuras compactas, por cada funci\IeC {\'o}n de ranking, para los grafos coPapersDBLP y coPapersCiteseer.}}{48}{figure.5.10}% 
-\contentsline {figure}{\numberline {5.11}{\ignorespaces BPE de las estructuras compactas para las funciones de ranking.}}{49}{figure.5.11}% 
-\contentsline {figure}{\numberline {5.12}{\ignorespaces N\IeC {\'u}mero de particiones en las estructuras compactas para las funciones de ranking.}}{50}{figure.5.12}% 
-\contentsline {figure}{\numberline {5.13}{\ignorespaces (a) Proporci\IeC {\'o}n de bits por cada secuencia en la estructura compacta, para cada funci\IeC {\'o}n de ranking. (b) Proporci\IeC {\'o}n normalizada.}}{51}{figure.5.13}% 
-\contentsline {figure}{\numberline {5.14}{\ignorespaces N\IeC {\'u}mero m\IeC {\'a}ximo de v\IeC {\'e}rtices en la secuencia $X$ para las funciones de ranking.}}{52}{figure.5.14}% 
-\contentsline {figure}{\numberline {5.15}{\ignorespaces N\IeC {\'u}mero m\IeC {\'a}ximo de bytes por nodo para las funciones de ranking.}}{52}{figure.5.15}% 
-\contentsline {figure}{\numberline {5.16}{\ignorespaces CDF para bytes por v\IeC {\'e}rtice en estructuras compactas para cada funci\IeC {\'o}n de ranking.}}{53}{figure.5.16}% 
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Tiempos de acceso aleatorio para las funciones de ranking.}}{54}{figure.5.17}% 
-\contentsline {figure}{\numberline {5.18}{\ignorespaces BPE y tiempo de acceso aleatorio en microsegundos de cada algoritmo, para los grafos marknewman-astro y marknewman-condmat.}}{58}{figure.5.18}% 
-\contentsline {figure}{\numberline {5.19}{\ignorespaces BPE y tiempo de acceso aleatorio en microsegundos de cada algoritmo, para los grafos dblp-2010 y dblp-2010.}}{59}{figure.5.19}% 
-\contentsline {figure}{\numberline {5.20}{\ignorespaces BPE y tiempo de acceso aleatorio en microsegundos de cada algoritmo, para los grafos snap-dblp y snap-amazon.}}{60}{figure.5.20}% 
-\contentsline {figure}{\numberline {5.21}{\ignorespaces BPE y tiempo de acceso aleatorio en microsegundos de cada algoritmo, para los grafos coPapersDBLP y coPapersCiteseer.}}{61}{figure.5.21}% 
-\contentsline {figure}{\numberline {5.22}{\ignorespaces BPE y tiempo de reconstrucci\IeC {\'o}n secuencial en segundos de cada algoritmo, para los grafos marknewman-astro y marknewman-condmat.}}{62}{figure.5.22}% 
-\contentsline {figure}{\numberline {5.23}{\ignorespaces BPE y tiempo de reconstrucci\IeC {\'o}n secuencial en segundos de cada algoritmo, para los grafos dblp-2010 y dblp-2011.}}{63}{figure.5.23}% 
-\contentsline {figure}{\numberline {5.24}{\ignorespaces BPE y tiempo de reconstrucci\IeC {\'o}n secuencial en segundos de cada algoritmo, para los grafos snap-dblp y snap-amazon.}}{64}{figure.5.24}% 
-\contentsline {figure}{\numberline {5.25}{\ignorespaces BPE y tiempo de reconstrucci\IeC {\'o}n secuencial en segundos de cada algoritmo, para los grafos coPapersDBLP y coPapersCiteseer.}}{65}{figure.5.25}% 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Distribuci\IeC {\'o}n del grado de los v\IeC {\'e}rtices para cada grafo.}}{36}{figure.5.1}% 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Distribuci\IeC {\'o}n del tama\IeC {\~n}o de los cliques maximales para cada grafo.}}{37}{figure.5.2}% 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces BPE y Tiempo de acceso aleatorio medio para posibles estructuras compactas, por cada funci\IeC {\'o}n de ranking, para los grafos marknewman-astro y marknewman-condmat.}}{39}{figure.5.3}% 
+\contentsline {figure}{\numberline {5.4}{\ignorespaces BPE y Tiempo de acceso aleatorio medio para posibles estructuras compactas, por cada funci\IeC {\'o}n de ranking, para los grafos dblp-2010 y dblp-2011.}}{40}{figure.5.4}% 
+\contentsline {figure}{\numberline {5.5}{\ignorespaces BPE y Tiempo de acceso aleatorio medio para posibles estructuras compactas, por cada funci\IeC {\'o}n de ranking, para los grafos snap-dblp y snap-amazon.}}{41}{figure.5.5}% 
+\contentsline {figure}{\numberline {5.6}{\ignorespaces BPE y Tiempo de acceso aleatorio medio para posibles estructuras compactas, por cada funci\IeC {\'o}n de ranking, para los grafos coPapersDBLP y coPapersCiteseer.}}{42}{figure.5.6}% 
+\contentsline {figure}{\numberline {5.7}{\ignorespaces BPE y Tiempo de acceso aleatorio medio para posibles estructuras compactas, por cada funci\IeC {\'o}n de ranking, para los grafos marknewman-astro y marknewman-condmat.}}{43}{figure.5.7}% 
+\contentsline {figure}{\numberline {5.8}{\ignorespaces BPE y Tiempo de acceso secuencial medio para posibles estructuras compactas, por cada funci\IeC {\'o}n de ranking, para los grafos dblp-2010 y dblp-2011.}}{44}{figure.5.8}% 
+\contentsline {figure}{\numberline {5.9}{\ignorespaces BPE y Tiempo de acceso secuencial medio para posibles estructuras compactas, por cada funci\IeC {\'o}n de ranking, para los grafos snap-dblp y snap-amazon.}}{45}{figure.5.9}% 
+\contentsline {figure}{\numberline {5.10}{\ignorespaces BPE y Tiempo de acceso secuencial medio para posibles estructuras compactas, por cada funci\IeC {\'o}n de ranking, para los grafos coPapersDBLP y coPapersCiteseer.}}{46}{figure.5.10}% 
+\contentsline {figure}{\numberline {5.11}{\ignorespaces BPE de las estructuras compactas para las funciones de ranking.}}{47}{figure.5.11}% 
+\contentsline {figure}{\numberline {5.12}{\ignorespaces N\IeC {\'u}mero de particiones en las estructuras compactas para las funciones de ranking.}}{48}{figure.5.12}% 
+\contentsline {figure}{\numberline {5.13}{\ignorespaces (a) Proporci\IeC {\'o}n de bits por cada secuencia en la estructura compacta, para cada funci\IeC {\'o}n de ranking. (b) Proporci\IeC {\'o}n normalizada.}}{49}{figure.5.13}% 
+\contentsline {figure}{\numberline {5.14}{\ignorespaces N\IeC {\'u}mero m\IeC {\'a}ximo de v\IeC {\'e}rtices en la secuencia $X$ para las funciones de ranking.}}{50}{figure.5.14}% 
+\contentsline {figure}{\numberline {5.15}{\ignorespaces N\IeC {\'u}mero m\IeC {\'a}ximo de bytes por nodo para las funciones de ranking.}}{50}{figure.5.15}% 
+\contentsline {figure}{\numberline {5.16}{\ignorespaces CDF para bytes por v\IeC {\'e}rtice en estructuras compactas para cada funci\IeC {\'o}n de ranking.}}{51}{figure.5.16}% 
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Tiempos de acceso aleatorio para las funciones de ranking.}}{52}{figure.5.17}% 
+\contentsline {figure}{\numberline {5.18}{\ignorespaces BPE y tiempo de acceso aleatorio en microsegundos de cada algoritmo, para los grafos marknewman-astro y marknewman-condmat.}}{56}{figure.5.18}% 
+\contentsline {figure}{\numberline {5.19}{\ignorespaces BPE y tiempo de acceso aleatorio en microsegundos de cada algoritmo, para los grafos dblp-2010 y dblp-2010.}}{57}{figure.5.19}% 
+\contentsline {figure}{\numberline {5.20}{\ignorespaces BPE y tiempo de acceso aleatorio en microsegundos de cada algoritmo, para los grafos snap-dblp y snap-amazon.}}{58}{figure.5.20}% 
+\contentsline {figure}{\numberline {5.21}{\ignorespaces BPE y tiempo de acceso aleatorio en microsegundos de cada algoritmo, para los grafos coPapersDBLP y coPapersCiteseer.}}{59}{figure.5.21}% 
+\contentsline {figure}{\numberline {5.22}{\ignorespaces BPE y tiempo de reconstrucci\IeC {\'o}n secuencial en segundos de cada algoritmo, para los grafos marknewman-astro y marknewman-condmat.}}{60}{figure.5.22}% 
+\contentsline {figure}{\numberline {5.23}{\ignorespaces BPE y tiempo de reconstrucci\IeC {\'o}n secuencial en segundos de cada algoritmo, para los grafos dblp-2010 y dblp-2011.}}{61}{figure.5.23}% 
+\contentsline {figure}{\numberline {5.24}{\ignorespaces BPE y tiempo de reconstrucci\IeC {\'o}n secuencial en segundos de cada algoritmo, para los grafos snap-dblp y snap-amazon.}}{62}{figure.5.24}% 
+\contentsline {figure}{\numberline {5.25}{\ignorespaces BPE y tiempo de reconstrucci\IeC {\'o}n secuencial en segundos de cada algoritmo, para los grafos coPapersDBLP y coPapersCiteseer.}}{63}{figure.5.25}% 
 \addvspace {10\p@ }
