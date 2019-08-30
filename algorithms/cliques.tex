@@ -17,7 +17,7 @@
         \IF {$bpu_{p} = 0$}
             \STATE $\mathcal{C} \leftarrow \mathcal{C} \cup {X_{p}[e..s]}$
        	\ELSE
-       		\STATE $BB_{p} \leftarrow HuffmanToBytes(BB[Y_{p}], BB[Y_{p + 1}])$
+       		\STATE $BB_{p} \leftarrow \mathit{HuffmanToBytes}(BB[Y_{p}], BB[Y_{p + 1}])$
 
 		\STATE $CC \leftarrow \emptyset$
         	\FOR{$j = 0$ \TO $|X_{p}| - 1$}

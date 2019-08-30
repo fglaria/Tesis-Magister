@@ -4,7 +4,7 @@
 \begin{algorithmic}[1]
 \REQUIRE $\mathcal{C}$ maximal clique collection ($N=|\mathcal{C}|$), ranking function $r(u)$
 \ENSURE Returns clique-graph partition collection $\mathcal{C}\mathcal{P}$
-\STATE $(D,R) \leftarrow computeRanking(r,\mathcal{C})$ (array D y R, $\forall u \in V$ ) \label{alg:clustering:rankarray} 
+\STATE $(D,R) \leftarrow computeRanking(r,\mathcal{C})$ (array $D$ y $R$, $\forall u \in V$ ) \label{alg:clustering:rankarray} 
 \STATE Initialize bit array $Z$ of size $N$ and set each bit to 0
 \FOR {$u \in R$}
     \STATE $cpid \leftarrow \emptyset$

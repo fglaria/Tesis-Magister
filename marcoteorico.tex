@@ -14,8 +14,8 @@ El \textbf{grado de un vértice} $d(v)$ se define como la cantidad de vértices 
 
 Un grafo \textbf{k-degenerate} es un grafo no dirigido donde cada subgrafo tiene un vértice con grado a lo más \textbf{k}. El índice de \textbf{degeneracy} de un grafo, $D(G)$, es el menor valor \textbf{k} para el cual el grafo es \textbf{k-degenerate}.
 
-Un grafo es \textbf{bipartito} cuando sus vértices se pueden separar en dos conjuntos separados $U$ y $W$, tal que se cumple $U \cup W = V$ y $U \cap W = \varnothing$. Un grafo es \textbf{bipartito completo} o \textbf{biclique}, cuando todos los vértices de un conjunto son vecinos directos de todos los vértices del otro conjunto. En la \autoref{fig:bipartito} se ilustra un ejemplo de grafo bipartito y un biclique.
-
+Un grafo \textbf{bipartito} es un grafo tal que sus vértices pueden ser particionados en dos conjuntos independientes, es decir, que los elementos de cada partición no son adyacentes entre sí. Un grafo es \textbf{bipartito completo} o \textbf{biclique}, cuando todos los vértices de un conjunto son vecinos directos de todos los vértices del otro conjunto. En la \autoref{fig:bipartito} se ilustra un ejemplo de grafo bipartito y un biclique.
+%Un grafo \textbf{bipartito} cuando sus vértices se pueden separar en dos conjuntos separados $U$ y $W$, tal que se cumple $U \cup W = V$ y $U \cap W = \varnothing$. Un grafo es \textbf{bipartito completo} o \textbf{biclique}, cuando todos los vértices de un conjunto son vecinos directos de todos los vértices del otro conjunto. En la \autoref{fig:bipartito} se ilustra un ejemplo de grafo bipartito y un biclique.
 
 Un \textbf{clique} es un subgrafo donde todos los vértices son adyacentes entre sí, es decir, $\exists V' \subseteq V(G), \forall v_{1}, v_{2} \in V', (v_{1}, v_{2}) \in E(G) $. Un \textbf{clique maximal} no puede extenderse incluyendo otro vértice adyacente, es decir, no es subconjunto de otro clique más grande. En la \autoref{fig:maxCliqueExample} se presenta ejemplo de un grafo y sus cliques maximales.
 
@@ -60,7 +60,7 @@ Existen distintos tipos de codificaciones, según la aplicación. En esta secci�
 Los códigos universales para enteros son un tipo de códigos que transforman enteros positivos en secuencias de bits, donde el largo de la secuencia final de bits tiene relación con el entero a codificar. Existen varios códigos de este tipo, algunos son:
 
 \begin{itemize}
-	\item \textbf{Código unario}: Se representa un entero $x$ por una secuencia de $1^{x-1}0$, donde el $0$ indica el término de la secuencia. Por ejemplo, el número $5$ se representa por la secuencia $111110$. Este código no es muy eficiente por si solo, pero se usa de base para otro tipo de códigos.
+	\item \textbf{Código unario}: Se representa un entero $x$ por una secuencia de $1^{x-1}0$, donde el $0$ indica el término de la secuencia. Por ejemplo, el número $5$ se representa por la secuencia $11110$. Este código no es muy eficiente por si solo, pero se usa de base para otro tipo de códigos.
 	
 	\item \textbf{Código gamma ($\gamma$)}: Se representa un entero $x$ en un par concatenado de \textit{largo} y \textit{offset}. \textit{Offset} es la representación binaria de $x$, pero sin el primer 1. Por ejemplo, para $x=5$ su representación binaria es $101$, por tanto su \textit{offset} es $01$. \textit{Largo} codifica el largo de \textit{offset} en código unario. Para $x=5$, el largo de \textit{offset} es 2 bits, por tanto \textit{largo} es $110$. Concatenando ambas, el código $\gamma$ para $x=5$ es $11001$.
 	

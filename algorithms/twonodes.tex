@@ -35,7 +35,7 @@
     			\STATE $s \leftarrow select_{1}(B, p1)$
     			\STATE $e \leftarrow select_{1}(B, p1 + 1)$
         		\STATE $bpu_{p} \leftarrow \frac{Y_{p1 + 1} - Y_{p1}}{e - s}$
-             \STATE $BB_{p} \leftarrow HuffmanToBytes(BB[Y_{p}], BB[Y_{p + 1}])$
+             \STATE $BB_{p} \leftarrow \mathit{HuffmanToBytes}(BB[Y_{p}], BB[Y_{p + 1}])$
              
 			\STATE $iBB1 \leftarrow bpu_{p}  \cdot (u1_{p} - s)$
 			\STATE $iBB2 \leftarrow bpu_{p} \cdot (u2_{p} - s)$

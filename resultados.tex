@@ -78,7 +78,7 @@ En la mayoría de los casos, la estructura que presenta la mejor relación entre
 
 \section{Comparación de funciones de ranking}
 
-A continuación se compararán las estructuras compactas resultantes, usando las tres funciones de ranking basadas en la frecuencia del vértice en los cliques maximales $r_{f}(u)$, en la cantidad de vecinos en los cliques del vértice $r_{c}(u)$, y la razón entre ambas funciones $r_{r}(u)$. 
+A continuación se comparan las estructuras compactas resultantes, usando las tres funciones de ranking basadas en la frecuencia del vértice en los cliques maximales $r_{f}(u)$, en la cantidad de vecinos en los cliques del vértice $r_{c}(u)$, y la razón entre ambas funciones $r_{r}(u)$. 
 
 En la \autoref{fig:bpe3} y la \autoref{table:bpe3} se muestran los BPE de las estructuras compactas finales, aplicando las funciones de ranking en la heurística de clusterización. Se puede apreciar que $r_{f}(u)$ logra los mejores resultados de compresión, con excepción del grafo \texttt{snap-amazon} donde $r_{r}(u)$ tiene un BPE levemente menor. Si este parámetro fuera el único a considerar para elegir la mejor función, $r_{f}(u)$ sería la mejor opción, pero es necesario profundizar en la conformación de la estructura.
 
@@ -150,7 +150,7 @@ Mención especial requiere k2-tree, donde la autora proporcionó una versión me
 
 Con esto presente, en la \autoref{table:BPEcomp} se comparan los BPE de todos los casos, resaltando los mejores resultados. Para dos de los grafos comprimidos, \texttt{marknewman-astro} y \texttt{coPapersDBLP}, la propuesta usando la función de ranking $r_{f}(u)$ es la que obtiene el menor resultado, seguido muy de cerca por la versión usando la función de ranking $r_{r}(u)$. Para \texttt{marknewman-condmat} también logra el mejor resultado, pero seguido por k2tree con BFS. Con el grafo \texttt{coPapersCiteseer} se obtiene un resultado muy cercano al mejor caso de k2tree con BFS, y en los demás, los dos mejores resultados los obtienen alguna de las dos versiones de k2-tree, seguido siempre por alguna de las dos opciones del método propuesto. Tanto Webgraph como AD no logran competir en compresión con los demás.
 
-Esto confirma que la la propuesta es competitiva con el estado del arte, solo considerando el nivel de compresión. A continuación se evaluara el rendimiento en tiempos de acceso.
+Esto confirma que la propuesta es competitiva con el estado del arte, solo considerando el nivel de compresión. A continuación se evalúa el rendimiento en tiempos de acceso.
 
 \input{tables/bpeSmall}
 
@@ -162,7 +162,7 @@ Como se puede apreciar, Webgraph presenta los menores tiempos de acceso entre to
 
 El tiempo de reconstrucción secuencial se midió usando el Algoritmo~\ref{alg:sequential}. En la \autoref{table:timesSecuencial} se presentan los resultados obtenidos para los algoritmos evaluados. En este caso, si bien el método propuesto es más lento que los demás, para casos como \texttt{marknweman-astro}, \texttt{marknewman-condmat}, \texttt{dblp-2010} y \texttt{snap-dblp}, la diferencia es menor a un segundo. Para el resto de los casos, los grafos tienen una cantidad considerable de arcos, \texttt{dblp-2011} y \texttt{snap-amazon} tienen la mayor cantidad de cliques, y \texttt{coPapersDBLP} con \texttt{coPapersCiteseer} tienen muchos cliques de hasta 100 vértices, y presentan una relación no proporcional entre cantidad de vértices y cantidad de cliques, como lo muestra la \autoref{table:gafros3}, lo que afecta bastante a la hora de recuperar dichos grafos.
 
-Para evaluar mejor la competitividad, en la \autoref{fig:bpetAle1}, \autoref{fig:bpetAle2}, \autoref{fig:bpetAle3}, y \autoref{fig:bpetAle4} se grafican los BPE con respecto a los tiempo de acceso aleatorio en micro-segundos, y en la \autoref{fig:bpetSec1}, \autoref{fig:bpetSec2}, \autoref{fig:bpetSec3}, y \autoref{fig:bpetSec4} los BPE con respecto a los tiempos de reconstrucción secuencial en segundos, obtenidos para cada algoritmo y cada grafo.
+Para evaluar mejor la competitividad, en las Figuras~\ref{fig:bpetAle1}~-~\ref{fig:bpetAle4} se muestras los BPE con respecto a los tiempo de acceso aleatorio en micro-segundos, y en las Figuras~\ref{fig:bpetSec1}~-~\ref{fig:bpetSec4} los BPE con respecto a los tiempos de reconstrucción secuencial en segundos, obtenidos para cada algoritmo y cada grafo.
 
 Se puede apreciar que, para el caso aleatorio, si bien el método de compresión se ubica casi siempre en el cuadrante de menor BPE y mayor tiempo, otros logran una ubicación de menor calidad, como los casos de los algoritmos de k2tree para los grafos \texttt{dblp-2010}, \texttt{dbpl-2011} en la \autoref{fig:bpetAle2}, y \texttt{snap-dblp} en la \autoref{fig:bpetAle3}. En el caso secuencial, para el set de grafos pequeños \texttt{marknewman-astro} y \texttt{marknewman-condmat}, se logra muy buena ubicación en el cuadrante de menor BPE y menor tiempo (\autoref{fig:bpetSec1}), pero para los demás grafos el tiempo es muy lejano a los demás algoritmos. 
 
