@@ -13,9 +13,17 @@ El gran tamaño de estos grafos trae consigo grandes problemas de procesamiento.
 
 Estos problemas han motivado a la comunidad científica a proponer estructuras comprimidas que permitan la navegación del grafo a través de consultas básicas, como obtener el listado de vecinos de un nodo. El objetivo de estas representaciones comprimidas es permitir la simulación de algoritmos de procesamiento de grafos usando mucho menos espacio en memoria que las representaciones sin comprimir.
 
-En este trabajo, se propone un método de compresión de grafos poco densos y no dirigidos, que aprovecha la cantidad de vértices en común de sus cliques maximales, para crear una estructura compacta que permita responder consultas de manera eficiente.
+Por otra parte, la detección de cliques maximales en grafos es un problema NP-Hard \cite{karp1972reducibility}, y existen varios enfoques para tratar el problema \cite{bron1973algorithm, eblen2012maximum, hendrix2010theoretical, bomze1999maximum, eppstein2010listing, eppstein2011listing}. Esto es particularmente de interés en grafos de red social para detectar comunidades \cite{modani2008large}, donde es provechoso contar con modelos comprimidos de dichos grafos, y que permitan obtener el listado de cliques maximales de manera rápida.
 
 En el contexto de estructuras de datos sucintos, actualmente existen estructuras compactas que permiten representar secuencias de bits, bytes y símbolos, con soporte de consultas básicas y rápidas \cite{raman2002succinct, grossi2003high, claude2015wavelet}.
+
+Este método primero enumera los cliques maximales y luego los representa en una estructura compacta. El esquema propuesto aprovecha tanto el tamaño como la superposición de vértices en los cliques con el objetivo de reducir el número de vértices explícitamente representados en la estructura. Los resultados muestran alto nivel de compresión y tiempos de acceso competitivo en grafos reales con un alto coeficiente de clustering y con tamaños de cliques medianos o grandes.
+
+%En este trabajo, se propone un método de compresión de grafos poco densos y no dirigidos, que aprovecha la cantidad de vértices en común de sus cliques maximales, para crear una estructura compacta que permita responder consultas de manera eficiente. Se decide aprovechar la superposición de vértices entre cliques maximales, mientras más clusterizados sean los grafos a comprimir, es esperable que dicha superposición sea más provechosa de codificar de manera alternativa y eficiente.
+
+%En este trabajo, se propone un método de compresión de grafos poco densos y no dirigidos, que aprovecha la cantidad de vértices en común de sus cliques maximales, para crear una estructura compacta que permita responder consultas de manera eficiente.
+
+
 
 
 
