@@ -2,21 +2,21 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Representaci\IeC {\'o}n de Webgraph usando listado de sucesores directo y con brechas.}}{10}{table.3.1}
-\contentsline {table}{\numberline {3.2}{\ignorespaces Representaci\IeC {\'o}n de Webgraph usando copy list.}}{10}{table.3.2}
-\contentsline {table}{\numberline {3.3}{\ignorespaces Representaci\IeC {\'o}n de Webgraph usando copy blocks.}}{10}{table.3.3}
-\contentsline {table}{\numberline {3.4}{\ignorespaces Representaci\IeC {\'o}n de Webgraph usando intervalos, con umbral $L_{min} = 2$.}}{11}{table.3.4}
-\contentsline {table}{\numberline {3.5}{\ignorespaces Lista de adyacencia para BFS, con $v_{i}$ siendo el primer nodo de un trozo.}}{12}{table.3.5}
-\contentsline {table}{\numberline {3.6}{\ignorespaces Codificaci\IeC {\'o}n BFS del listado de adyacencia en la Tabla~\ref {table:bfs-adjacency}.}}{13}{table.3.6}
-\contentsline {table}{\numberline {3.7}{\ignorespaces Ejemplo de redundancias a explotar en listado de adyacencia de BFS.}}{13}{table.3.7}
-\contentsline {table}{\numberline {3.8}{\ignorespaces Ejemplo de redundancias codificadas de BFS para la Tabla~\ref {table:bfs-exploting}.}}{14}{table.3.8}
-\contentsline {table}{\numberline {3.9}{\ignorespaces Ejemplo de Re-Pair. Las reglas en la tabla conforman el diccionario asociado a la compresi\IeC {\'o}n.}}{14}{table.3.9}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Representaci\IeC {\'o}n de Webgraph usando listado de sucesores directo y con brechas.}}{10}{table.3.1}% 
+\contentsline {table}{\numberline {3.2}{\ignorespaces Representaci\IeC {\'o}n de Webgraph usando copy list.}}{10}{table.3.2}% 
+\contentsline {table}{\numberline {3.3}{\ignorespaces Representaci\IeC {\'o}n de Webgraph usando copy blocks.}}{10}{table.3.3}% 
+\contentsline {table}{\numberline {3.4}{\ignorespaces Representaci\IeC {\'o}n de Webgraph usando intervalos, con umbral $L_{min} = 2$.}}{11}{table.3.4}% 
+\contentsline {table}{\numberline {3.5}{\ignorespaces Lista de adyacencia para BFS, con $v_{i}$ siendo el primer nodo de un trozo.}}{12}{table.3.5}% 
+\contentsline {table}{\numberline {3.6}{\ignorespaces Codificaci\IeC {\'o}n BFS del listado de adyacencia en la Tabla~\ref {table:bfs-adjacency}.}}{13}{table.3.6}% 
+\contentsline {table}{\numberline {3.7}{\ignorespaces Ejemplo de redundancias a explotar en listado de adyacencia de BFS.}}{13}{table.3.7}% 
+\contentsline {table}{\numberline {3.8}{\ignorespaces Ejemplo de redundancias codificadas de BFS para la Tabla~\ref {table:bfs-exploting}.}}{14}{table.3.8}% 
+\contentsline {table}{\numberline {3.9}{\ignorespaces Ejemplo de Re-Pair. Las reglas en la tabla conforman el diccionario asociado a la compresi\IeC {\'o}n.}}{14}{table.3.9}% 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Cantidad de v\IeC {\'e}rtices, aristas, cliques, grado medio y m\IeC {\'a}ximo de los v\IeC {\'e}rtices, degeneracy, coeficiente de clusterizaci\IeC {\'o}n y transitividad de los grafos a comprimir.}}{35}{table.5.1}
-\contentsline {table}{\numberline {5.2}{\ignorespaces Comparativa de BPE de las estructuras compactas para las funciones de ranking.}}{47}{table.5.2}
-\contentsline {table}{\numberline {5.3}{\ignorespaces Tiempos de obtenci\IeC {\'o}n de listado de cliques maximales y construcci\IeC {\'o}n de la estructura compacta, en segundos.}}{53}{table.5.3}
-\contentsline {table}{\numberline {5.4}{\ignorespaces BPE de algoritmos de compresi\IeC {\'o}n.}}{54}{table.5.4}
-\contentsline {table}{\numberline {5.5}{\ignorespaces Tiempos de acceso aleatorio, en microsegundos por arco.}}{55}{table.5.5}
-\contentsline {table}{\numberline {5.6}{\ignorespaces Tiempos de reconstrucci\IeC {\'o}n secuencial del grafo, en segundos.}}{56}{table.5.6}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Cantidad de v\IeC {\'e}rtices, aristas, cliques, grado medio y m\IeC {\'a}ximo de los v\IeC {\'e}rtices, degeneracy, coeficiente de clusterizaci\IeC {\'o}n y transitividad de los grafos a comprimir.}}{35}{table.5.1}% 
+\contentsline {table}{\numberline {5.2}{\ignorespaces Comparativa de BPE de las estructuras compactas para las funciones de ranking.}}{47}{table.5.2}% 
+\contentsline {table}{\numberline {5.3}{\ignorespaces Tiempos de obtenci\IeC {\'o}n de listado de cliques maximales y construcci\IeC {\'o}n de la estructura compacta, en segundos.}}{53}{table.5.3}% 
+\contentsline {table}{\numberline {5.4}{\ignorespaces BPE de algoritmos de compresi\IeC {\'o}n.}}{54}{table.5.4}% 
+\contentsline {table}{\numberline {5.5}{\ignorespaces Tiempos de acceso aleatorio, en microsegundos por arco.}}{55}{table.5.5}% 
+\contentsline {table}{\numberline {5.6}{\ignorespaces Tiempos de reconstrucci\IeC {\'o}n secuencial del grafo, en segundos.}}{56}{table.5.6}% 
 \addvspace {10\p@ }

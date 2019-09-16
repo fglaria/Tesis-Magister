@@ -276,6 +276,12 @@ Alan Mislove, Massimiliano Marcon, Krishna~P Gummadi, Peter Druschel, and Bobby
 \newblock In {\em Proceedings of the 7th ACM SIGCOMM conference on Internet
   measurement}, pages 29--42. ACM, 2007.
 
+\bibitem{modani2008large}
+Natwar Modani and Kuntal Dey.
+\newblock Large maximal cliques enumeration in sparse graphs.
+\newblock In {\em Proceedings of the 17th ACM conference on Information and
+  knowledge management}, pages 1377--1378. ACM, 2008.
+
 \bibitem{DBLP:journals/corr/abs-cs-0610001}
 Daisuke Okanohara and Kunihiko Sadakane.
 \newblock Practical entropy-compressed rank/select dictionary.
