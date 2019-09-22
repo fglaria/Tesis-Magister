@@ -8,7 +8,7 @@
 \STATE Initialize bit array $Z$ of size $N$ and set each bit to 0
 \FOR {$u \in R$}
     \STATE $cpid \leftarrow \emptyset$
-     \FOR {$id \in D[u]$ and $D[u]=0$} 
+     \FOR {$id \in D[u]$ and $Z[id]=0$} 
           \STATE $Z[id] \leftarrow 1$
           \STATE $cpid \leftarrow cpid \cup \{id\}$
     \ENDFOR
