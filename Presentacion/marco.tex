@@ -6,7 +6,7 @@
 	\item Dos vértices $v_{1}$ y $v_{2} \in V(G)$ son \textbf{adyacentes} o \textbf{vecinos} si $(v_{1}, v_{2}) \in E(G)$ y $v_{1} \neq v_{2}$.
 	\item Un grafo es \textbf{no dirigido} cuando la arista conlleva ambos sentidos, es decir $(v_{1}, v_{2}) = (v_{2}, v_{1})$.
 	\item El \textbf{grado de un vértice} $d(v)$ es la cantidad de vértices en $V(G)$ que son adyacentes con $v$.
-	\item La \textbf{matriz de adyacencia} de un grafo $G$ corresponde a una matriz binaria cuadrada $|V(G)| \times |V(G)|$ donde cada bit representa si un par de vértices $v_{1}$ y $v_{2} \in V(G)$ son vecinos o no.
+	\item La \textbf{matriz de adyacencia} de un grafo $G$ corresponde a una matriz binaria cuadrada $|V(G)| \times |V(G)|$ donde cada celda $(i,j)$ almacena un 1 si el par de vértices $v_{i}$ y $v_{j} \in V(G)$ son vecinos. De lo contrario almacena un 0.
 \end{itemize}
 
 \end{frame}
@@ -17,16 +17,16 @@
 \frametitle{Marco teórico (2)}
 
 \begin{itemize}
-	\item Un grafo \textbf{k-degenerate} es no dirigido, donde cada subgrafo tiene un vértice con grado a lo más \textbf{k}. 
-	\item El índice de \textbf{degeneracy} de un grafo, $D(G)$, es el menor valor \textbf{k} para el cual el grafo es \textbf{k-degenerate}.
+	%\item Un grafo \textbf{k-degenerate} es un grafo no dirigido donde cada subgrafo tiene un vértice con grado a lo más \textbf{k}. 
+	%\item El índice de \textbf{degeneracy} de un grafo, $D(G)$, es el menor valor \textbf{k} para el cual el grafo es \textbf{k-degenerate}.
 	\item Un \textbf{clique} es un subgrafo donde todos los vértices son adyacentes entre sí. Un \textbf{clique maximal} no es subconjunto de otro clique más grande.
 	\begin{figure}
-    	\centering
-    	\includegraphics[width=0.4\linewidth]{../img/maxCliqueExample.pdf}
+    		\centering
+    		\includegraphics[width=0.4\linewidth]{../img/maxCliqueExample.pdf}
     	
-    \caption{Ejemplo de grafo y sus cliques maximales.}
-    \label{fig:maxCliqueExample}
-\end{figure}
+    		\caption{Ejemplo de grafo y sus cliques maximales.}
+    		\label{fig:maxCliqueExample}
+	\end{figure}
 \end{itemize}
 
 \end{frame}
@@ -66,6 +66,35 @@
 	\begin{equation}
 		T(G) = \dfrac{3 \lambda(G)}{\tau(G)} \label{eq:T} 
 	\end{equation}
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Marco teórico (5)}
+
+\begin{itemize}
+	\item La \textbf{codificación Huffman} es un algoritmo greedy basado en definir códigos mas cortos para aquellos elementos mas frecuentes. 
+	\item Es un técnica de compresión de datos óptima que define códigos de largo variable libre de prefijos.
+	\begin{figure}
+    		\centering
+    		 	\begin{minipage}{0.45\textwidth}
+    		\centering
+    		\includegraphics[scale=.3, clip,  trim=20 350 350 20]{../img/graphs-fixVarTrees.pdf}
+    		
+    		(a)
+    	\end{minipage}
+    	\begin{minipage}{0.45\textwidth}
+    		\centering
+    		\includegraphics[scale=.3, clip, trim=20 40 430 280 ]{../img/graphs-fixVarTrees.pdf}
+    		
+    		(b)
+    	\end{minipage}
+    	
+    		\caption{Ejemplos de Árboles: (a)~Árbol para código de largo fijo. (b)~Árbol para código Huffman.}
+    		\label{fig:trees}
+	\end{figure}
 \end{itemize}
 
 \end{frame}

@@ -1,37 +1,37 @@
 \babel@toc {spanish}{}
-\contentsline {chapter}{Resumen}{\es@scroman {v}}{chapter*.1}% 
-\contentsline {chapter}{\'{I}ndice de tablas}{\es@scroman {viii}}{chapter*.2}% 
-\contentsline {chapter}{\'{I}ndice de figuras}{\es@scroman {ix}}{chapter*.3}% 
-\contentsline {chapter}{\numberline {Cap\'{\i }tulo 1}INTRODUCCI\'ON}{1}{chapter.1}% 
-\contentsline {chapter}{\numberline {Cap\'{\i }tulo 2}MARCO TE\IeC {\'O}RICO}{3}{chapter.2}% 
-\contentsline {section}{\numberline {2.1}Grafos, cliques maximales y m\IeC {\'e}tricas de clusterizaci\IeC {\'o}n}{3}{section.2.1}% 
-\contentsline {section}{\numberline {2.2}Codificaciones}{5}{section.2.2}% 
-\contentsline {subsection}{\numberline {2.2.1}C\IeC {\'o}digos universales}{5}{subsection.2.2.1}% 
-\contentsline {subsection}{\numberline {2.2.2}Codificaci\IeC {\'o}n Huffman}{6}{subsection.2.2.2}% 
-\contentsline {chapter}{\numberline {Cap\'{\i }tulo 3}ESTADO DEL ARTE}{9}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}Compresi\IeC {\'o}n de grafos}{9}{section.3.1}% 
-\contentsline {subsection}{\numberline {3.1.1}The WebGraph Framework, \textit {Boldi y Vigna}}{9}{subsection.3.1.1}% 
-\contentsline {subsection}{\numberline {3.1.2}BFS, \textit {Apostolico y Drovandi}}{11}{subsection.3.1.2}% 
-\contentsline {subsection}{\numberline {3.1.3}Using Re-Pair, \textit {Claude y Navarro}}{14}{subsection.3.1.3}% 
-\contentsline {subsection}{\numberline {3.1.4}Virtual Node Mining, \textit {Buehrer y Chellapilla}}{16}{subsection.3.1.4}% 
-\contentsline {subsection}{\numberline {3.1.5}k2-tree, \textit {Brisaboa, Ladra y Navarro}}{16}{subsection.3.1.5}% 
-\contentsline {subsection}{\numberline {3.1.6}List Merging, \textit {Grabowski y Bieniecki}}{18}{subsection.3.1.6}% 
-\contentsline {section}{\numberline {3.2}Estructuras compactas}{18}{section.3.2}% 
-\contentsline {subsection}{\numberline {3.2.1}Secuencias binarias}{19}{subsection.3.2.1}% 
-\contentsline {subsection}{\numberline {3.2.2}Wavelet Tree y Wavelet Matrix}{19}{subsection.3.2.2}% 
-\contentsline {subsection}{\numberline {3.2.3}SDSL - Succinct Data Structure Library}{21}{subsection.3.2.3}% 
-\contentsline {section}{\numberline {3.3}Enumeraci\IeC {\'o}n de cliques maximales}{21}{section.3.3}% 
-\contentsline {chapter}{\numberline {Cap\'{\i }tulo 4}M\IeC {\'E}TODO DE COMPRESI\IeC {\'O}N PROPUESTO}{23}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Detecci\IeC {\'o}n de cliques maximales}{23}{section.4.1}% 
-\contentsline {section}{\numberline {4.2}Particionamento del grafo de cliques}{24}{section.4.2}% 
-\contentsline {section}{\numberline {4.3}Algoritmo de particionamiento o clustering}{25}{section.4.3}% 
-\contentsline {section}{\numberline {4.4}Representaci\IeC {\'o}n en estructuras compactas}{26}{section.4.4}% 
-\contentsline {subsection}{\numberline {4.4.1}Secuencias de la representaci\IeC {\'o}n de las particiones}{27}{subsection.4.4.1}% 
-\contentsline {subsection}{\numberline {4.4.2}Algoritmos de consulta}{28}{subsection.4.4.2}% 
-\contentsline {chapter}{\numberline {Cap\'{\i }tulo 5}RESULTADOS}{34}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}Grafos}{34}{section.5.1}% 
-\contentsline {section}{\numberline {5.2}Estructura compacta}{38}{section.5.2}% 
-\contentsline {section}{\numberline {5.3}Comparaci\IeC {\'o}n de funciones de ranking}{38}{section.5.3}% 
-\contentsline {section}{\numberline {5.4}Comparando con estado del arte}{53}{section.5.4}% 
-\contentsline {chapter}{\numberline {Cap\'{\i }tulo 6}CONCLUSIONES}{64}{chapter.6}% 
-\contentsline {chapter}{Bibliograf\'{\i }a}{66}{chapter.6}% 
+\contentsline {chapter}{Resumen}{\es@scroman {v}}{chapter*.1}
+\contentsline {chapter}{\'{I}ndice de tablas}{\es@scroman {viii}}{chapter*.2}
+\contentsline {chapter}{\'{I}ndice de figuras}{\es@scroman {ix}}{chapter*.3}
+\contentsline {chapter}{\numberline {Cap\'{\i }tulo 1}INTRODUCCI\'ON}{1}{chapter.1}
+\contentsline {chapter}{\numberline {Cap\'{\i }tulo 2}MARCO TE\IeC {\'O}RICO}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Grafos, cliques maximales y m\IeC {\'e}tricas de clusterizaci\IeC {\'o}n}{3}{section.2.1}
+\contentsline {section}{\numberline {2.2}Codificaciones}{5}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}C\IeC {\'o}digos universales}{5}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Codificaci\IeC {\'o}n Huffman}{6}{subsection.2.2.2}
+\contentsline {chapter}{\numberline {Cap\'{\i }tulo 3}ESTADO DEL ARTE}{9}{chapter.3}
+\contentsline {section}{\numberline {3.1}Compresi\IeC {\'o}n de grafos}{9}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}The WebGraph Framework, \textit {Boldi y Vigna}}{9}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}BFS, \textit {Apostolico y Drovandi}}{11}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Using Re-Pair, \textit {Claude y Navarro}}{14}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Virtual Node Mining, \textit {Buehrer y Chellapilla}}{16}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.5}k2-tree, \textit {Brisaboa, Ladra y Navarro}}{16}{subsection.3.1.5}
+\contentsline {subsection}{\numberline {3.1.6}List Merging, \textit {Grabowski y Bieniecki}}{18}{subsection.3.1.6}
+\contentsline {section}{\numberline {3.2}Estructuras compactas}{18}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Secuencias binarias}{19}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Wavelet Tree y Wavelet Matrix}{19}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}SDSL - Succinct Data Structure Library}{21}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}Enumeraci\IeC {\'o}n de cliques maximales}{21}{section.3.3}
+\contentsline {chapter}{\numberline {Cap\'{\i }tulo 4}M\IeC {\'E}TODO DE COMPRESI\IeC {\'O}N PROPUESTO}{23}{chapter.4}
+\contentsline {section}{\numberline {4.1}Detecci\IeC {\'o}n de cliques maximales}{23}{section.4.1}
+\contentsline {section}{\numberline {4.2}Particionamento del grafo de cliques}{24}{section.4.2}
+\contentsline {section}{\numberline {4.3}Algoritmo de particionamiento o clustering}{25}{section.4.3}
+\contentsline {section}{\numberline {4.4}Representaci\IeC {\'o}n en estructuras compactas}{26}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Secuencias de la representaci\IeC {\'o}n de las particiones}{27}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Algoritmos de consulta}{28}{subsection.4.4.2}
+\contentsline {chapter}{\numberline {Cap\'{\i }tulo 5}RESULTADOS}{34}{chapter.5}
+\contentsline {section}{\numberline {5.1}Grafos}{34}{section.5.1}
+\contentsline {section}{\numberline {5.2}Estructura compacta}{38}{section.5.2}
+\contentsline {section}{\numberline {5.3}Comparaci\IeC {\'o}n de funciones de ranking}{38}{section.5.3}
+\contentsline {section}{\numberline {5.4}Comparando con estado del arte}{53}{section.5.4}
+\contentsline {chapter}{\numberline {Cap\'{\i }tulo 6}CONCLUSIONES}{64}{chapter.6}
+\contentsline {chapter}{Bibliograf\'{\i }a}{66}{chapter.6}

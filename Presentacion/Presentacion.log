@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  27 JUN 2019 12:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  2 OCT 2019 11:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1052,26 +1052,53 @@ Package: l3keys2e 2018/02/21 LaTeX2e option processing using LaTeX3 keys
 )
 \c@definition=\count334
 \c@problem=\count335
- (./Presentacion.aux
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count336
+\float@exts=\toks48
+\float@box=\box77
+\@float@everytoks=\toks49
+\@floatcapt=\box78
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\@float@every@algorithm=\toks50
+\c@algorithm=\count337
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/algorithms/algorithmic.sty
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+\c@ALC@unique=\count338
+\c@ALC@line=\count339
+\c@ALC@rem=\count340
+\c@ALC@depth=\count341
+\ALC@tlm=\skip70
+\algorithmicindent=\skip71
+)
+(./Presentacion.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
 \openout1 = `Presentacion.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1109,17 +1136,17 @@ LaTeX Font Info:    ... okay on input line 54.
 
 (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count336
+\scratchcounter=\count342
 \scratchdimen=\dimen305
-\scratchbox=\box77
-\nofMPsegments=\count337
-\nofMParguments=\count338
-\everyMPshowfont=\toks48
-\MPscratchCnt=\count339
+\scratchbox=\box79
+\nofMPsegments=\count343
+\nofMParguments=\count344
+\everyMPshowfont=\toks51
+\MPscratchCnt=\count345
 \MPscratchDim=\dimen306
-\MPnumerator=\count340
-\makeMPintoPDFobject=\count341
-\everyMPtoPDFconversion=\toks49
+\MPnumerator=\count346
+\makeMPintoPDFobject=\count347
+\everyMPtoPDFconversion=\toks52
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1138,8 +1165,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box78
-Package hyperref Info: Link coloring OFF on input line 54.
+\AtBeginShipoutBox=\box80
+Package hyperref Info: Link coloring OFF on input line 72.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1147,11 +1174,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count342
+\c@section@level=\count348
 )
-LaTeX Info: Redefining \ref on input line 54.
-LaTeX Info: Redefining \pageref on input line 54.
-LaTeX Info: Redefining \nameref on input line 54.
+LaTeX Info: Redefining \ref on input line 72.
+LaTeX Info: Redefining \pageref on input line 72.
+LaTeX Info: Redefining \nameref on input line 72.
 
 (./Presentacion.out) (./Presentacion.out)
 \@outlinefile=\write5
@@ -1182,8 +1209,8 @@ Dictionary: translator-numbers-dictionary, Language: English
 tionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \. on input line 54.
-LaTeX Info: Redefining \% on input line 54.
+LaTeX Info: Redefining \. on input line 72.
+LaTeX Info: Redefining \% on input line 72.
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
 
@@ -1263,20 +1290,20 @@ File: ts1enc.dfu 2018/04/05 v1.2c UTF-8 support for inputenc
 (/usr/local/texlive/2018/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 ) (./Presentacion.nav)
-LaTeX Font Info:    Try loading font information for U+msa on input line 54.
+LaTeX Font Info:    Try loading font information for U+msa on input line 72.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 54.
+LaTeX Font Info:    Try loading font information for U+msb on input line 72.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<img/escudo.png, id=13, 242.9075pt x 303.1325pt>
+<img/escudo.png, id=17, 242.9075pt x 303.1325pt>
 File: img/escudo.png Graphic file (type png)
 <use img/escudo.png>
-Package pdftex.def Info: img/escudo.png  used on input line 59.
+Package pdftex.def Info: img/escudo.png  used on input line 77.
 (pdftex.def)             Requested size: 34.19954pt x 42.67912pt.
  [1
 
@@ -1284,12 +1311,12 @@ Package pdftex.def Info: img/escudo.png  used on input line 59.
 scudo.png>]
 (./motivacion.tex [2
 
-]) (./relacionados.tex [3
+] [3
 
 ]) (./marco.tex [4
 
 ]
-<../img/maxCliqueExample.pdf, id=50, 595.26389pt x 436.5108pt>
+<../img/maxCliqueExample.pdf, id=55, 595.26389pt x 436.5108pt>
 File: ../img/maxCliqueExample.pdf Graphic file (type pdf)
 <use ../img/maxCliqueExample.pdf>
 Package pdftex.def Info: ../img/maxCliqueExample.pdf  used on input line 32.
@@ -1305,26 +1332,52 @@ pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/maxCliqueExample.pdf)
 
 ] [7
 
-]) (./metodo.tex [8
+]
+<../img/graphs-fixVarTrees.pdf, id=94, 845.07718pt x 598.15468pt>
+File: ../img/graphs-fixVarTrees.pdf Graphic file (type pdf)
+<use ../img/graphs-fixVarTrees.pdf>
+Package pdftex.def Info: ../img/graphs-fixVarTrees.pdf  used on input line 100.
 
-] (./method01.tex [9
+(pdftex.def)             Requested size: 142.10773pt x 68.0304pt.
+
+Overfull \hbox (3.82823pt too wide) in paragraph at lines 100--100
+ [][] 
+ []
+
+File: ../img/graphs-fixVarTrees.pdf Graphic file (type pdf)
+<use ../img/graphs-fixVarTrees.pdf>
+Package pdftex.def Info: ../img/graphs-fixVarTrees.pdf  used on input line 100.
+
+(pdftex.def)             Requested size: 118.01747pt x 83.0868pt.
+[8
+
+ <../img/graphs-fixVarTrees.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/graphs-fixVarTrees.pd
+f): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', typ
+e <array>); ignored.
+>]) (./relacionados.tex [9
 
 ] [10
 
+] [11
+
+]) (./metodo.tex [12
+
 ]
-<../img/graphs-Graph2.pdf, id=113, 572.1375pt x 284.02109pt>
+<../img/graphs-Graph2.pdf, id=138, 572.1375pt x 284.02109pt>
 File: ../img/graphs-Graph2.pdf Graphic file (type pdf)
 <use ../img/graphs-Graph2.pdf>
-Package pdftex.def Info: ../img/graphs-Graph2.pdf  used on input line 64.
+Package pdftex.def Info: ../img/graphs-Graph2.pdf  used on input line 62.
 (pdftex.def)             Requested size: 138.2795pt x 68.64316pt.
 
 (../equations/cliquesNodes2.tex)
-<../img/graphs-Cliques2.pdf, id=115, 204.765pt x 277.035pt>
+<../img/graphs-Cliques2.pdf, id=140, 204.765pt x 277.035pt>
 File: ../img/graphs-Cliques2.pdf Graphic file (type pdf)
 <use ../img/graphs-Cliques2.pdf>
-Package pdftex.def Info: ../img/graphs-Cliques2.pdf  used on input line 64.
+Package pdftex.def Info: ../img/graphs-Cliques2.pdf  used on input line 62.
 (pdftex.def)             Requested size: 46.0916pt x 62.35977pt.
- [11
+ [13
 
  <../img/graphs-Graph2.pdf
 
@@ -1336,20 +1389,1255 @@ ray>); ignored.
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/graphs-Cliques2.pdf):
  PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <
 array>); ignored.
->]) (./method02.tex [12
+>] [14
 
-] [13
+] [15
 
-]))
-<img/handshakeInv.png, id=159, 123.3408pt x 69.1383pt>
+] [16
+
+] (../equations/cliquesNodes2.tex) (../tables/Rr2.tex) [17
+
+]
+[18
+
+] (../equations/cliquesNodes2.tex) (../tables/Rr2.tex) (../tables/CP2.tex)
+[19
+
+] [20
+
+] (../equations/cliquesNodes2.tex) (../tables/CP2ordered.tex)
+(../tables/structure.tex) [21
+
+] [22
+
+] [23
+
+] [24
+
+] [25
+
+]) (./resultados.tex [26
+
+]
+[27
+
+]
+<../img/grades/marknewman-astro.pdf, id=262, 462.52798pt x 346.89601pt>
+File: ../img/grades/marknewman-astro.pdf Graphic file (type pdf)
+<use ../img/grades/marknewman-astro.pdf>
+Package pdftex.def Info: ../img/grades/marknewman-astro.pdf  used on input line
+ 90.
+(pdftex.def)             Requested size: 138.2795pt x 103.70966pt.
+<../img/grades/marknewman-condmat.pdf, id=263, 462.52798pt x 346.89601pt>
+File: ../img/grades/marknewman-condmat.pdf Graphic file (type pdf)
+<use ../img/grades/marknewman-condmat.pdf>
+Package pdftex.def Info: ../img/grades/marknewman-condmat.pdf  used on input li
+ne 90.
+(pdftex.def)             Requested size: 138.2795pt x 103.70966pt.
+<../img/grades/dblp-2010.pdf, id=264, 462.52798pt x 346.89601pt>
+File: ../img/grades/dblp-2010.pdf Graphic file (type pdf)
+<use ../img/grades/dblp-2010.pdf>
+Package pdftex.def Info: ../img/grades/dblp-2010.pdf  used on input line 90.
+(pdftex.def)             Requested size: 138.2795pt x 103.70966pt.
+<../img/grades/dblp-2011.pdf, id=265, 462.52798pt x 346.89601pt>
+File: ../img/grades/dblp-2011.pdf Graphic file (type pdf)
+<use ../img/grades/dblp-2011.pdf>
+Package pdftex.def Info: ../img/grades/dblp-2011.pdf  used on input line 90.
+(pdftex.def)             Requested size: 138.2795pt x 103.70966pt.
+
+Overfull \vbox (9.46835pt too high) detected at line 90
+ []
+
+[28
+
+ <../img/grades/marknewman-astro.pdf> <../img/grades/marknewman-condmat.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/grades/marknewman-con
+dmat.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
+ge
+> <../img/grades/dblp-2010.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/grades/dblp-2010.pdf)
+: PDF inclusion: multiple pdfs with page group included in a single page
+> <../img/grades/dblp-2011.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/grades/dblp-2011.pdf)
+: PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<../img/grades/snap-dblp.pdf, id=392, 462.52798pt x 346.89601pt>
+File: ../img/grades/snap-dblp.pdf Graphic file (type pdf)
+<use ../img/grades/snap-dblp.pdf>
+Package pdftex.def Info: ../img/grades/snap-dblp.pdf  used on input line 123.
+(pdftex.def)             Requested size: 138.2795pt x 103.70966pt.
+<../img/grades/snap-amazon.pdf, id=393, 462.52798pt x 346.89601pt>
+File: ../img/grades/snap-amazon.pdf Graphic file (type pdf)
+<use ../img/grades/snap-amazon.pdf>
+Package pdftex.def Info: ../img/grades/snap-amazon.pdf  used on input line 123.
+
+(pdftex.def)             Requested size: 138.2795pt x 103.70966pt.
+<../img/grades/coPapersDBLP.pdf, id=394, 462.52798pt x 346.89601pt>
+File: ../img/grades/coPapersDBLP.pdf Graphic file (type pdf)
+<use ../img/grades/coPapersDBLP.pdf>
+Package pdftex.def Info: ../img/grades/coPapersDBLP.pdf  used on input line 123
+.
+(pdftex.def)             Requested size: 138.2795pt x 103.70966pt.
+<../img/grades/coPapersCiteseer.pdf, id=395, 462.52798pt x 346.89601pt>
+File: ../img/grades/coPapersCiteseer.pdf Graphic file (type pdf)
+<use ../img/grades/coPapersCiteseer.pdf>
+Package pdftex.def Info: ../img/grades/coPapersCiteseer.pdf  used on input line
+ 123.
+(pdftex.def)             Requested size: 138.2795pt x 103.70966pt.
+
+Overfull \vbox (9.46835pt too high) detected at line 123
+ []
+
+[29
+
+ <../img/grades/snap-dblp.pdf> <../img/grades/snap-amazon.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/grades/snap-amazon.pd
+f): PDF inclusion: multiple pdfs with page group included in a single page
+> <../img/grades/coPapersDBLP.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/grades/coPapersDBLP.p
+df): PDF inclusion: multiple pdfs with page group included in a single page
+> <../img/grades/coPapersCiteseer.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/grades/coPapersCitese
+er.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+
+>] [30
+
+] (../tables/bpe3.tex) [31
+
+]
+<../img/timesRanking.pdf, id=538, 1344.94475pt x 712.58218pt>
+File: ../img/timesRanking.pdf Graphic file (type pdf)
+<use ../img/timesRanking.pdf>
+Package pdftex.def Info: ../img/timesRanking.pdf  used on input line 208.
+(pdftex.def)             Requested size: 307.28987pt x 162.80313pt.
+ [32
+
+ <../img/timesRanking.pdf>]
+(../tables/constructTimes.tex) [33
+
+]) (./resultadosComp.tex [34
+
+]
+(../tables/bpeSmall.tex
+Overfull \hbox (16.49678pt too wide) in paragraph at lines 6--20
+ [] 
+ []
+
+) [35
+
+] (../tables/timesRandom.tex
+Overfull \hbox (14.57707pt too wide) in paragraph at lines 6--20
+ [] 
+ []
+
+) [36
+
+] (../tables/timesSecuencial.tex) [37
+
+]) (./conclusion.tex [38
+
+] [39
+
+]
+[40
+
+])
+<img/handshakeInv.png, id=642, 123.3408pt x 69.1383pt>
 File: img/handshakeInv.png Graphic file (type png)
 <use img/handshakeInv.png>
-Package pdftex.def Info: img/handshakeInv.png  used on input line 88.
+Package pdftex.def Info: img/handshakeInv.png  used on input line 110.
 (pdftex.def)             Requested size: 123.34048pt x 69.13812pt.
- [14
+ [41
 
  <./img/handshakeInv.png>]
-\c@finalframe=\count343
+\c@finalframe=\count349
+ (./anexo/resultados.tex
+<../img/cliqueDist2/marknewman-astro.pdf, id=649, 462.52798pt x 346.89601pt>
+File: ../img/cliqueDist2/marknewman-astro.pdf Graphic file (type pdf)
+<use ../img/cliqueDist2/marknewman-astro.pdf>
+Package pdftex.def Info: ../img/cliqueDist2/marknewman-astro.pdf  used on input
+ line 36.
+(pdftex.def)             Requested size: 138.2795pt x 103.70966pt.
+<../img/cliqueDist2/marknewman-condmat.pdf, id=650, 462.52798pt x 346.89601pt>
+File: ../img/cliqueDist2/marknewman-condmat.pdf Graphic file (type pdf)
+<use ../img/cliqueDist2/marknewman-condmat.pdf>
+Package pdftex.def Info: ../img/cliqueDist2/marknewman-condmat.pdf  used on inp
+ut line 36.
+(pdftex.def)             Requested size: 138.2795pt x 103.70966pt.
+<../img/cliqueDist2/dblp-2010.pdf, id=651, 462.52798pt x 346.89601pt>
+File: ../img/cliqueDist2/dblp-2010.pdf Graphic file (type pdf)
+<use ../img/cliqueDist2/dblp-2010.pdf>
+Package pdftex.def Info: ../img/cliqueDist2/dblp-2010.pdf  used on input line 3
+6.
+(pdftex.def)             Requested size: 138.2795pt x 103.70966pt.
+<../img/cliqueDist2/dblp-2011.pdf, id=652, 462.52798pt x 346.89601pt>
+File: ../img/cliqueDist2/dblp-2011.pdf Graphic file (type pdf)
+<use ../img/cliqueDist2/dblp-2011.pdf>
+Package pdftex.def Info: ../img/cliqueDist2/dblp-2011.pdf  used on input line 3
+6.
+(pdftex.def)             Requested size: 138.2795pt x 103.70966pt.
+
+Overfull \vbox (9.46835pt too high) detected at line 36
+ []
+
+[42
+
+ <../img/cliqueDist2/marknewman-astro.pdf> <../img/cliqueDist2/marknewman-condm
+at.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/cliqueDist2/marknewma
+n-condmat.pdf): PDF inclusion: multiple pdfs with page group included in a sing
+le page
+> <../img/cliqueDist2/dblp-2010.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/cliqueDist2/dblp-2010
+.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <../img/cliqueDist2/dblp-2011.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/cliqueDist2/dblp-2011
+.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<../img/cliqueDist2/snap-dblp.pdf, id=777, 462.52798pt x 346.89601pt>
+File: ../img/cliqueDist2/snap-dblp.pdf Graphic file (type pdf)
+<use ../img/cliqueDist2/snap-dblp.pdf>
+Package pdftex.def Info: ../img/cliqueDist2/snap-dblp.pdf  used on input line 6
+9.
+(pdftex.def)             Requested size: 138.2795pt x 103.70966pt.
+<../img/cliqueDist2/snap-amazon.pdf, id=778, 462.52798pt x 346.89601pt>
+File: ../img/cliqueDist2/snap-amazon.pdf Graphic file (type pdf)
+<use ../img/cliqueDist2/snap-amazon.pdf>
+Package pdftex.def Info: ../img/cliqueDist2/snap-amazon.pdf  used on input line
+ 69.
+(pdftex.def)             Requested size: 138.2795pt x 103.70966pt.
+<../img/cliqueDist2/coPapersDBLP.pdf, id=779, 462.52798pt x 346.89601pt>
+File: ../img/cliqueDist2/coPapersDBLP.pdf Graphic file (type pdf)
+<use ../img/cliqueDist2/coPapersDBLP.pdf>
+Package pdftex.def Info: ../img/cliqueDist2/coPapersDBLP.pdf  used on input lin
+e 69.
+(pdftex.def)             Requested size: 138.2795pt x 103.70966pt.
+<../img/cliqueDist2/coPapersCiteseer.pdf, id=780, 462.52798pt x 346.89601pt>
+File: ../img/cliqueDist2/coPapersCiteseer.pdf Graphic file (type pdf)
+<use ../img/cliqueDist2/coPapersCiteseer.pdf>
+Package pdftex.def Info: ../img/cliqueDist2/coPapersCiteseer.pdf  used on input
+ line 69.
+(pdftex.def)             Requested size: 138.2795pt x 103.70966pt.
+
+Overfull \vbox (9.46835pt too high) detected at line 69
+ []
+
+[43
+
+ <../img/cliqueDist2/snap-dblp.pdf> <../img/cliqueDist2/snap-amazon.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/cliqueDist2/snap-amaz
+on.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+
+> <../img/cliqueDist2/coPapersDBLP.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/cliqueDist2/coPapersD
+BLP.pdf): PDF inclusion: multiple pdfs with page group included in a single pag
+e
+> <../img/cliqueDist2/coPapersCiteseer.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/cliqueDist2/coPapersC
+iteseer.pdf): PDF inclusion: multiple pdfs with page group included in a single
+ page
+>]
+<../img/bpe3.pdf, id=908, 1344.94475pt x 712.58218pt>
+File: ../img/bpe3.pdf Graphic file (type pdf)
+<use ../img/bpe3.pdf>
+Package pdftex.def Info: ../img/bpe3.pdf  used on input line 83.
+(pdftex.def)             Requested size: 307.28987pt x 162.80313pt.
+ [44
+
+ <../img/bpe3.pdf>]
+<../img/Npartitions3.pdf, id=963, 1344.94475pt x 712.58218pt>
+File: ../img/Npartitions3.pdf Graphic file (type pdf)
+<use ../img/Npartitions3.pdf>
+Package pdftex.def Info: ../img/Npartitions3.pdf  used on input line 96.
+(pdftex.def)             Requested size: 307.28987pt x 162.80313pt.
+ [45
+
+ <../img/Npartitions3.pdf>]
+<../img/bits.pdf, id=1020, 1344.94475pt x 712.58218pt>
+File: ../img/bits.pdf Graphic file (type pdf)
+<use ../img/bits.pdf>
+Package pdftex.def Info: ../img/bits.pdf  used on input line 108.
+(pdftex.def)             Requested size: 307.28987pt x 162.80313pt.
+ [46
+
+ <../img/bits.pdf>]
+<../img/bitsNorm.pdf, id=1071, 1344.94475pt x 712.58218pt>
+File: ../img/bitsNorm.pdf Graphic file (type pdf)
+<use ../img/bitsNorm.pdf>
+Package pdftex.def Info: ../img/bitsNorm.pdf  used on input line 120.
+(pdftex.def)             Requested size: 307.28987pt x 162.80313pt.
+[47
+
+ <../img/bitsNorm.pdf>]
+<../img/maxNodes.pdf, id=1121, 1344.94475pt x 712.58218pt>
+File: ../img/maxNodes.pdf Graphic file (type pdf)
+<use ../img/maxNodes.pdf>
+Package pdftex.def Info: ../img/maxNodes.pdf  used on input line 133.
+(pdftex.def)             Requested size: 307.28987pt x 162.80313pt.
+ [48
+
+ <../img/maxNodes.pdf>]
+<../img/maxBytes.pdf, id=1180, 1344.94475pt x 712.58218pt>
+File: ../img/maxBytes.pdf Graphic file (type pdf)
+<use ../img/maxBytes.pdf>
+Package pdftex.def Info: ../img/maxBytes.pdf  used on input line 145.
+(pdftex.def)             Requested size: 307.28987pt x 162.80313pt.
+ [49
+
+ <../img/maxBytes.pdf>]
+<../img/cdf/marknewman-astro.pdf, id=1241, 462.52798pt x 346.89601pt>
+File: ../img/cdf/marknewman-astro.pdf Graphic file (type pdf)
+<use ../img/cdf/marknewman-astro.pdf>
+Package pdftex.def Info: ../img/cdf/marknewman-astro.pdf  used on input line 18
+2.
+(pdftex.def)             Requested size: 138.2795pt x 103.70966pt.
+<../img/cdf/marknewman-condmat.pdf, id=1242, 462.52798pt x 346.89601pt>
+File: ../img/cdf/marknewman-condmat.pdf Graphic file (type pdf)
+<use ../img/cdf/marknewman-condmat.pdf>
+Package pdftex.def Info: ../img/cdf/marknewman-condmat.pdf  used on input line 
+182.
+(pdftex.def)             Requested size: 138.2795pt x 103.70966pt.
+<../img/cdf/dblp-2010.pdf, id=1243, 462.52798pt x 346.89601pt>
+File: ../img/cdf/dblp-2010.pdf Graphic file (type pdf)
+<use ../img/cdf/dblp-2010.pdf>
+Package pdftex.def Info: ../img/cdf/dblp-2010.pdf  used on input line 182.
+(pdftex.def)             Requested size: 138.2795pt x 103.70966pt.
+<../img/cdf/dblp-2011.pdf, id=1244, 462.52798pt x 346.89601pt>
+File: ../img/cdf/dblp-2011.pdf Graphic file (type pdf)
+<use ../img/cdf/dblp-2011.pdf>
+Package pdftex.def Info: ../img/cdf/dblp-2011.pdf  used on input line 182.
+(pdftex.def)             Requested size: 138.2795pt x 103.70966pt.
+
+Overfull \vbox (20.9128pt too high) detected at line 182
+ []
+
+[50
+
+ <../img/cdf/marknewman-astro.pdf> <../img/cdf/marknewman-condmat.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/cdf/marknewman-condma
+t.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <../img/cdf/dblp-2010.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/cdf/dblp-2010.pdf): P
+DF inclusion: multiple pdfs with page group included in a single page
+> <../img/cdf/dblp-2011.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/cdf/dblp-2011.pdf): P
+DF inclusion: multiple pdfs with page group included in a single page
+>]
+<../img/cdf/snap-dblp.pdf, id=1404, 462.52798pt x 346.89601pt>
+File: ../img/cdf/snap-dblp.pdf Graphic file (type pdf)
+<use ../img/cdf/snap-dblp.pdf>
+Package pdftex.def Info: ../img/cdf/snap-dblp.pdf  used on input line 215.
+(pdftex.def)             Requested size: 138.2795pt x 103.70966pt.
+<../img/cdf/snap-amazon.pdf, id=1405, 462.52798pt x 346.89601pt>
+File: ../img/cdf/snap-amazon.pdf Graphic file (type pdf)
+<use ../img/cdf/snap-amazon.pdf>
+Package pdftex.def Info: ../img/cdf/snap-amazon.pdf  used on input line 215.
+(pdftex.def)             Requested size: 138.2795pt x 103.70966pt.
+<../img/cdf/coPapersDBLP.pdf, id=1406, 462.52798pt x 346.89601pt>
+File: ../img/cdf/coPapersDBLP.pdf Graphic file (type pdf)
+<use ../img/cdf/coPapersDBLP.pdf>
+Package pdftex.def Info: ../img/cdf/coPapersDBLP.pdf  used on input line 215.
+(pdftex.def)             Requested size: 138.2795pt x 103.70966pt.
+<../img/cdf/coPapersCiteseer.pdf, id=1407, 462.52798pt x 346.89601pt>
+File: ../img/cdf/coPapersCiteseer.pdf Graphic file (type pdf)
+<use ../img/cdf/coPapersCiteseer.pdf>
+Package pdftex.def Info: ../img/cdf/coPapersCiteseer.pdf  used on input line 21
+5.
+(pdftex.def)             Requested size: 138.2795pt x 103.70966pt.
+
+Overfull \vbox (20.9128pt too high) detected at line 215
+ []
+
+[51
+
+ <../img/cdf/snap-dblp.pdf> <../img/cdf/snap-amazon.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/cdf/snap-amazon.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
+> <../img/cdf/coPapersDBLP.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/cdf/coPapersDBLP.pdf)
+: PDF inclusion: multiple pdfs with page group included in a single page
+> <../img/cdf/coPapersCiteseer.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/cdf/coPapersCiteseer.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<../img/sdsl/aleatorioBig/marknewman-astro.pdf, id=1563, 1344.94475pt x 712.582
+18pt>
+File: ../img/sdsl/aleatorioBig/marknewman-astro.pdf Graphic file (type pdf)
+<use ../img/sdsl/aleatorioBig/marknewman-astro.pdf>
+Package pdftex.def Info: ../img/sdsl/aleatorioBig/marknewman-astro.pdf  used on
+ input line 240.
+(pdftex.def)             Requested size: 245.83282pt x 130.23816pt.
+<../img/sdsl/label.pdf, id=1564, 614.295pt x 794.97pt>
+File: ../img/sdsl/label.pdf Graphic file (type pdf)
+<use ../img/sdsl/label.pdf>
+Package pdftex.def Info: ../img/sdsl/label.pdf  used on input line 240.
+(pdftex.def)             Requested size: 81.60132pt x 119.24036pt.
+
+Overfull \hbox (35.50972pt too wide) in paragraph at lines 240--240
+ [][] 
+ []
+
+[52
+
+ <../img/sdsl/label.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/sdsl/label.pdf): PDF 
+inclusion: invalid other resource which is no dict (key 'ProcSets', type <array
+>); ignored.
+> <../img/sdsl/aleatorioBig/marknewman-astro.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/sdsl/aleatorioBig/mar
+knewman-astro.pdf): PDF inclusion: multiple pdfs with page group included in a 
+single page
+>]
+<../img/sdsl/aleatorioBig/marknewman-condmat.pdf, id=1634, 1344.94475pt x 712.5
+8218pt>
+File: ../img/sdsl/aleatorioBig/marknewman-condmat.pdf Graphic file (type pdf)
+<use ../img/sdsl/aleatorioBig/marknewman-condmat.pdf>
+Package pdftex.def Info: ../img/sdsl/aleatorioBig/marknewman-condmat.pdf  used 
+on input line 263.
+(pdftex.def)             Requested size: 245.83282pt x 130.23816pt.
+File: ../img/sdsl/label.pdf Graphic file (type pdf)
+<use ../img/sdsl/label.pdf>
+Package pdftex.def Info: ../img/sdsl/label.pdf  used on input line 263.
+(pdftex.def)             Requested size: 81.60132pt x 119.24036pt.
+
+Overfull \hbox (35.50972pt too wide) in paragraph at lines 263--263
+ [][] 
+ []
+
+[53
+
+ <../img/sdsl/aleatorioBig/marknewman-condmat.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/sdsl/aleatorioBig/mar
+knewman-condmat.pdf): PDF inclusion: multiple pdfs with page group included in 
+a single page
+>]
+<../img/sdsl/aleatorioBig/dblp-2010.pdf, id=1684, 1344.94475pt x 712.58218pt>
+File: ../img/sdsl/aleatorioBig/dblp-2010.pdf Graphic file (type pdf)
+<use ../img/sdsl/aleatorioBig/dblp-2010.pdf>
+Package pdftex.def Info: ../img/sdsl/aleatorioBig/dblp-2010.pdf  used on input 
+line 286.
+(pdftex.def)             Requested size: 245.83282pt x 130.23816pt.
+File: ../img/sdsl/label.pdf Graphic file (type pdf)
+<use ../img/sdsl/label.pdf>
+Package pdftex.def Info: ../img/sdsl/label.pdf  used on input line 286.
+(pdftex.def)             Requested size: 81.60132pt x 119.24036pt.
+
+Overfull \hbox (35.50972pt too wide) in paragraph at lines 286--286
+ [][] 
+ []
+
+[54
+
+ <../img/sdsl/aleatorioBig/dblp-2010.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/sdsl/aleatorioBig/dbl
+p-2010.pdf): PDF inclusion: multiple pdfs with page group included in a single 
+page
+>]
+<../img/sdsl/aleatorioBig/dblp-2011.pdf, id=1729, 1344.94475pt x 712.58218pt>
+File: ../img/sdsl/aleatorioBig/dblp-2011.pdf Graphic file (type pdf)
+<use ../img/sdsl/aleatorioBig/dblp-2011.pdf>
+Package pdftex.def Info: ../img/sdsl/aleatorioBig/dblp-2011.pdf  used on input 
+line 309.
+(pdftex.def)             Requested size: 245.83282pt x 130.23816pt.
+File: ../img/sdsl/label.pdf Graphic file (type pdf)
+<use ../img/sdsl/label.pdf>
+Package pdftex.def Info: ../img/sdsl/label.pdf  used on input line 309.
+(pdftex.def)             Requested size: 81.60132pt x 119.24036pt.
+
+Overfull \hbox (35.50972pt too wide) in paragraph at lines 309--309
+ [][] 
+ []
+
+[55
+
+ <../img/sdsl/aleatorioBig/dblp-2011.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/sdsl/aleatorioBig/dbl
+p-2011.pdf): PDF inclusion: multiple pdfs with page group included in a single 
+page
+>]
+<../img/sdsl/aleatorioBig/snap-dblp.pdf, id=1773, 1344.94475pt x 712.58218pt>
+File: ../img/sdsl/aleatorioBig/snap-dblp.pdf Graphic file (type pdf)
+<use ../img/sdsl/aleatorioBig/snap-dblp.pdf>
+Package pdftex.def Info: ../img/sdsl/aleatorioBig/snap-dblp.pdf  used on input 
+line 332.
+(pdftex.def)             Requested size: 245.83282pt x 130.23816pt.
+File: ../img/sdsl/label.pdf Graphic file (type pdf)
+<use ../img/sdsl/label.pdf>
+Package pdftex.def Info: ../img/sdsl/label.pdf  used on input line 332.
+(pdftex.def)             Requested size: 81.60132pt x 119.24036pt.
+
+Overfull \hbox (35.50972pt too wide) in paragraph at lines 332--332
+ [][] 
+ []
+
+[56
+
+ <../img/sdsl/aleatorioBig/snap-dblp.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/sdsl/aleatorioBig/sna
+p-dblp.pdf): PDF inclusion: multiple pdfs with page group included in a single 
+page
+>]
+<../img/sdsl/aleatorioBig/snap-amazon.pdf, id=1823, 1344.94475pt x 712.58218pt>
+
+File: ../img/sdsl/aleatorioBig/snap-amazon.pdf Graphic file (type pdf)
+<use ../img/sdsl/aleatorioBig/snap-amazon.pdf>
+Package pdftex.def Info: ../img/sdsl/aleatorioBig/snap-amazon.pdf  used on inpu
+t line 355.
+(pdftex.def)             Requested size: 245.83282pt x 130.23816pt.
+File: ../img/sdsl/label.pdf Graphic file (type pdf)
+<use ../img/sdsl/label.pdf>
+Package pdftex.def Info: ../img/sdsl/label.pdf  used on input line 355.
+(pdftex.def)             Requested size: 81.60132pt x 119.24036pt.
+
+Overfull \hbox (35.50972pt too wide) in paragraph at lines 355--355
+ [][] 
+ []
+
+[57
+
+ <../img/sdsl/aleatorioBig/snap-amazon.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/sdsl/aleatorioBig/sna
+p-amazon.pdf): PDF inclusion: multiple pdfs with page group included in a singl
+e page
+>]
+<../img/sdsl/aleatorioBig/coPapersDBLP.pdf, id=1869, 1344.94475pt x 712.58218pt
+>
+File: ../img/sdsl/aleatorioBig/coPapersDBLP.pdf Graphic file (type pdf)
+<use ../img/sdsl/aleatorioBig/coPapersDBLP.pdf>
+Package pdftex.def Info: ../img/sdsl/aleatorioBig/coPapersDBLP.pdf  used on inp
+ut line 378.
+(pdftex.def)             Requested size: 245.83282pt x 130.23816pt.
+File: ../img/sdsl/label.pdf Graphic file (type pdf)
+<use ../img/sdsl/label.pdf>
+Package pdftex.def Info: ../img/sdsl/label.pdf  used on input line 378.
+(pdftex.def)             Requested size: 81.60132pt x 119.24036pt.
+
+Overfull \hbox (35.50972pt too wide) in paragraph at lines 378--378
+ [][] 
+ []
+
+[58
+
+ <../img/sdsl/aleatorioBig/coPapersDBLP.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/sdsl/aleatorioBig/coP
+apersDBLP.pdf): PDF inclusion: multiple pdfs with page group included in a sing
+le page
+>]
+<../img/sdsl/aleatorioBig/coPapersCiteseer.pdf, id=1919, 1344.94475pt x 712.582
+18pt>
+File: ../img/sdsl/aleatorioBig/coPapersCiteseer.pdf Graphic file (type pdf)
+<use ../img/sdsl/aleatorioBig/coPapersCiteseer.pdf>
+Package pdftex.def Info: ../img/sdsl/aleatorioBig/coPapersCiteseer.pdf  used on
+ input line 401.
+(pdftex.def)             Requested size: 245.83282pt x 130.23816pt.
+File: ../img/sdsl/label.pdf Graphic file (type pdf)
+<use ../img/sdsl/label.pdf>
+Package pdftex.def Info: ../img/sdsl/label.pdf  used on input line 401.
+(pdftex.def)             Requested size: 81.60132pt x 119.24036pt.
+
+Overfull \hbox (35.50972pt too wide) in paragraph at lines 401--401
+ [][] 
+ []
+
+[59
+
+ <../img/sdsl/aleatorioBig/coPapersCiteseer.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/sdsl/aleatorioBig/coP
+apersCiteseer.pdf): PDF inclusion: multiple pdfs with page group included in a 
+single page
+>]
+<../img/sdsl/secuencialBig/marknewman-astro.pdf, id=1967, 1344.94475pt x 712.58
+218pt>
+File: ../img/sdsl/secuencialBig/marknewman-astro.pdf Graphic file (type pdf)
+<use ../img/sdsl/secuencialBig/marknewman-astro.pdf>
+Package pdftex.def Info: ../img/sdsl/secuencialBig/marknewman-astro.pdf  used o
+n input line 425.
+(pdftex.def)             Requested size: 245.83282pt x 130.23816pt.
+File: ../img/sdsl/label.pdf Graphic file (type pdf)
+<use ../img/sdsl/label.pdf>
+Package pdftex.def Info: ../img/sdsl/label.pdf  used on input line 425.
+(pdftex.def)             Requested size: 81.60132pt x 119.24036pt.
+
+Overfull \hbox (35.50972pt too wide) in paragraph at lines 425--425
+ [][] 
+ []
+
+[60
+
+ <../img/sdsl/secuencialBig/marknewman-astro.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/sdsl/secuencialBig/ma
+rknewman-astro.pdf): PDF inclusion: multiple pdfs with page group included in a
+ single page
+>]
+<../img/sdsl/secuencialBig/marknewman-condmat.pdf, id=2017, 1344.94475pt x 712.
+58218pt>
+File: ../img/sdsl/secuencialBig/marknewman-condmat.pdf Graphic file (type pdf)
+<use ../img/sdsl/secuencialBig/marknewman-condmat.pdf>
+Package pdftex.def Info: ../img/sdsl/secuencialBig/marknewman-condmat.pdf  used
+ on input line 448.
+(pdftex.def)             Requested size: 245.83282pt x 130.23816pt.
+File: ../img/sdsl/label.pdf Graphic file (type pdf)
+<use ../img/sdsl/label.pdf>
+Package pdftex.def Info: ../img/sdsl/label.pdf  used on input line 448.
+(pdftex.def)             Requested size: 81.60132pt x 119.24036pt.
+
+Overfull \hbox (35.50972pt too wide) in paragraph at lines 448--448
+ [][] 
+ []
+
+[61
+
+ <../img/sdsl/secuencialBig/marknewman-condmat.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/sdsl/secuencialBig/ma
+rknewman-condmat.pdf): PDF inclusion: multiple pdfs with page group included in
+ a single page
+>]
+<../img/sdsl/secuencialBig/dblp-2010.pdf, id=2068, 1344.94475pt x 712.58218pt>
+File: ../img/sdsl/secuencialBig/dblp-2010.pdf Graphic file (type pdf)
+<use ../img/sdsl/secuencialBig/dblp-2010.pdf>
+Package pdftex.def Info: ../img/sdsl/secuencialBig/dblp-2010.pdf  used on input
+ line 471.
+(pdftex.def)             Requested size: 245.83282pt x 130.23816pt.
+File: ../img/sdsl/label.pdf Graphic file (type pdf)
+<use ../img/sdsl/label.pdf>
+Package pdftex.def Info: ../img/sdsl/label.pdf  used on input line 471.
+(pdftex.def)             Requested size: 81.60132pt x 119.24036pt.
+
+Overfull \hbox (35.50972pt too wide) in paragraph at lines 471--471
+ [][] 
+ []
+
+[62
+
+ <../img/sdsl/secuencialBig/dblp-2010.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/sdsl/secuencialBig/db
+lp-2010.pdf): PDF inclusion: multiple pdfs with page group included in a single
+ page
+>]
+<../img/sdsl/secuencialBig/dblp-2011.pdf, id=2114, 1344.94475pt x 712.58218pt>
+File: ../img/sdsl/secuencialBig/dblp-2011.pdf Graphic file (type pdf)
+<use ../img/sdsl/secuencialBig/dblp-2011.pdf>
+Package pdftex.def Info: ../img/sdsl/secuencialBig/dblp-2011.pdf  used on input
+ line 494.
+(pdftex.def)             Requested size: 245.83282pt x 130.23816pt.
+File: ../img/sdsl/label.pdf Graphic file (type pdf)
+<use ../img/sdsl/label.pdf>
+Package pdftex.def Info: ../img/sdsl/label.pdf  used on input line 494.
+(pdftex.def)             Requested size: 81.60132pt x 119.24036pt.
+
+Overfull \hbox (35.50972pt too wide) in paragraph at lines 494--494
+ [][] 
+ []
+
+[63
+
+ <../img/sdsl/secuencialBig/dblp-2011.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/sdsl/secuencialBig/db
+lp-2011.pdf): PDF inclusion: multiple pdfs with page group included in a single
+ page
+>]
+<../img/sdsl/secuencialBig/snap-dblp.pdf, id=2160, 1344.94475pt x 712.58218pt>
+File: ../img/sdsl/secuencialBig/snap-dblp.pdf Graphic file (type pdf)
+<use ../img/sdsl/secuencialBig/snap-dblp.pdf>
+Package pdftex.def Info: ../img/sdsl/secuencialBig/snap-dblp.pdf  used on input
+ line 517.
+(pdftex.def)             Requested size: 245.83282pt x 130.23816pt.
+File: ../img/sdsl/label.pdf Graphic file (type pdf)
+<use ../img/sdsl/label.pdf>
+Package pdftex.def Info: ../img/sdsl/label.pdf  used on input line 517.
+(pdftex.def)             Requested size: 81.60132pt x 119.24036pt.
+
+Overfull \hbox (35.50972pt too wide) in paragraph at lines 517--517
+ [][] 
+ []
+
+[64
+
+ <../img/sdsl/secuencialBig/snap-dblp.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/sdsl/secuencialBig/sn
+ap-dblp.pdf): PDF inclusion: multiple pdfs with page group included in a single
+ page
+>]
+<../img/sdsl/secuencialBig/snap-amazon.pdf, id=2210, 1344.94475pt x 712.58218pt
+>
+File: ../img/sdsl/secuencialBig/snap-amazon.pdf Graphic file (type pdf)
+<use ../img/sdsl/secuencialBig/snap-amazon.pdf>
+Package pdftex.def Info: ../img/sdsl/secuencialBig/snap-amazon.pdf  used on inp
+ut line 540.
+(pdftex.def)             Requested size: 245.83282pt x 130.23816pt.
+File: ../img/sdsl/label.pdf Graphic file (type pdf)
+<use ../img/sdsl/label.pdf>
+Package pdftex.def Info: ../img/sdsl/label.pdf  used on input line 540.
+(pdftex.def)             Requested size: 81.60132pt x 119.24036pt.
+
+Overfull \hbox (35.50972pt too wide) in paragraph at lines 540--540
+ [][] 
+ []
+
+[65
+
+ <../img/sdsl/secuencialBig/snap-amazon.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/sdsl/secuencialBig/sn
+ap-amazon.pdf): PDF inclusion: multiple pdfs with page group included in a sing
+le page
+>]
+<../img/sdsl/secuencialBig/coPapersDBLP.pdf, id=2256, 1344.94475pt x 712.58218p
+t>
+File: ../img/sdsl/secuencialBig/coPapersDBLP.pdf Graphic file (type pdf)
+<use ../img/sdsl/secuencialBig/coPapersDBLP.pdf>
+Package pdftex.def Info: ../img/sdsl/secuencialBig/coPapersDBLP.pdf  used on in
+put line 563.
+(pdftex.def)             Requested size: 245.83282pt x 130.23816pt.
+File: ../img/sdsl/label.pdf Graphic file (type pdf)
+<use ../img/sdsl/label.pdf>
+Package pdftex.def Info: ../img/sdsl/label.pdf  used on input line 563.
+(pdftex.def)             Requested size: 81.60132pt x 119.24036pt.
+
+Overfull \hbox (35.50972pt too wide) in paragraph at lines 563--563
+ [][] 
+ []
+
+[66
+
+ <../img/sdsl/secuencialBig/coPapersDBLP.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/sdsl/secuencialBig/co
+PapersDBLP.pdf): PDF inclusion: multiple pdfs with page group included in a sin
+gle page
+>]
+<../img/sdsl/secuencialBig/coPapersCiteseer.pdf, id=2303, 1344.94475pt x 712.58
+218pt>
+File: ../img/sdsl/secuencialBig/coPapersCiteseer.pdf Graphic file (type pdf)
+<use ../img/sdsl/secuencialBig/coPapersCiteseer.pdf>
+Package pdftex.def Info: ../img/sdsl/secuencialBig/coPapersCiteseer.pdf  used o
+n input line 586.
+(pdftex.def)             Requested size: 245.83282pt x 130.23816pt.
+File: ../img/sdsl/label.pdf Graphic file (type pdf)
+<use ../img/sdsl/label.pdf>
+Package pdftex.def Info: ../img/sdsl/label.pdf  used on input line 586.
+(pdftex.def)             Requested size: 81.60132pt x 119.24036pt.
+
+Overfull \hbox (35.50972pt too wide) in paragraph at lines 586--586
+ [][] 
+ []
+
+[67
+
+ <../img/sdsl/secuencialBig/coPapersCiteseer.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/sdsl/secuencialBig/co
+PapersCiteseer.pdf): PDF inclusion: multiple pdfs with page group included in a
+ single page
+>]
+<../img/bpeTimes/aleatorio/marknewman-astro.pdf, id=2353, 1387.58403pt x 710.41
+411pt>
+File: ../img/bpeTimes/aleatorio/marknewman-astro.pdf Graphic file (type pdf)
+<use ../img/bpeTimes/aleatorio/marknewman-astro.pdf>
+Package pdftex.def Info: ../img/bpeTimes/aleatorio/marknewman-astro.pdf  used o
+n input line 614.
+(pdftex.def)             Requested size: 245.83282pt x 125.85277pt.
+<../img/bpeTimes/labelAle.pdf, id=2354, 614.295pt x 794.97pt>
+File: ../img/bpeTimes/labelAle.pdf Graphic file (type pdf)
+<use ../img/bpeTimes/labelAle.pdf>
+Package pdftex.def Info: ../img/bpeTimes/labelAle.pdf  used on input line 614.
+(pdftex.def)             Requested size: 42.07791pt x 88.65291pt.
+ [68
+
+ <../img/bpeTimes/labelAle.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/bpeTimes/labelAle.pdf
+): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type
+ <array>); ignored.
+> <../img/bpeTimes/aleatorio/marknewman-astro.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/bpeTimes/aleatorio/ma
+rknewman-astro.pdf): PDF inclusion: multiple pdfs with page group included in a
+ single page
+>]
+<../img/bpeTimes/aleatorio/marknewman-condmat.pdf, id=2422, 1387.58403pt x 710.
+41411pt>
+File: ../img/bpeTimes/aleatorio/marknewman-condmat.pdf Graphic file (type pdf)
+<use ../img/bpeTimes/aleatorio/marknewman-condmat.pdf>
+Package pdftex.def Info: ../img/bpeTimes/aleatorio/marknewman-condmat.pdf  used
+ on input line 637.
+(pdftex.def)             Requested size: 245.83282pt x 125.85277pt.
+File: ../img/bpeTimes/labelAle.pdf Graphic file (type pdf)
+<use ../img/bpeTimes/labelAle.pdf>
+Package pdftex.def Info: ../img/bpeTimes/labelAle.pdf  used on input line 637.
+(pdftex.def)             Requested size: 42.07791pt x 88.65291pt.
+ [69
+
+ <../img/bpeTimes/aleatorio/marknewman-condmat.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/bpeTimes/aleatorio/ma
+rknewman-condmat.pdf): PDF inclusion: multiple pdfs with page group included in
+ a single page
+>]
+<../img/bpeTimes/aleatorio/dblp-2010.pdf, id=2473, 1387.58403pt x 710.41411pt>
+File: ../img/bpeTimes/aleatorio/dblp-2010.pdf Graphic file (type pdf)
+<use ../img/bpeTimes/aleatorio/dblp-2010.pdf>
+Package pdftex.def Info: ../img/bpeTimes/aleatorio/dblp-2010.pdf  used on input
+ line 660.
+(pdftex.def)             Requested size: 245.83282pt x 125.85277pt.
+File: ../img/bpeTimes/labelAle.pdf Graphic file (type pdf)
+<use ../img/bpeTimes/labelAle.pdf>
+Package pdftex.def Info: ../img/bpeTimes/labelAle.pdf  used on input line 660.
+(pdftex.def)             Requested size: 42.07791pt x 88.65291pt.
+ [70
+
+ <../img/bpeTimes/aleatorio/dblp-2010.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/bpeTimes/aleatorio/db
+lp-2010.pdf): PDF inclusion: multiple pdfs with page group included in a single
+ page
+>]
+<../img/bpeTimes/aleatorio/dblp-2011.pdf, id=2519, 1387.58403pt x 710.41411pt>
+File: ../img/bpeTimes/aleatorio/dblp-2011.pdf Graphic file (type pdf)
+<use ../img/bpeTimes/aleatorio/dblp-2011.pdf>
+Package pdftex.def Info: ../img/bpeTimes/aleatorio/dblp-2011.pdf  used on input
+ line 683.
+(pdftex.def)             Requested size: 245.83282pt x 125.85277pt.
+File: ../img/bpeTimes/labelAle.pdf Graphic file (type pdf)
+<use ../img/bpeTimes/labelAle.pdf>
+Package pdftex.def Info: ../img/bpeTimes/labelAle.pdf  used on input line 683.
+(pdftex.def)             Requested size: 42.07791pt x 88.65291pt.
+ [71
+
+ <../img/bpeTimes/aleatorio/dblp-2011.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/bpeTimes/aleatorio/db
+lp-2011.pdf): PDF inclusion: multiple pdfs with page group included in a single
+ page
+>]
+<../img/bpeTimes/aleatorio/snap-dblp.pdf, id=2563, 1387.58403pt x 710.41411pt>
+File: ../img/bpeTimes/aleatorio/snap-dblp.pdf Graphic file (type pdf)
+<use ../img/bpeTimes/aleatorio/snap-dblp.pdf>
+Package pdftex.def Info: ../img/bpeTimes/aleatorio/snap-dblp.pdf  used on input
+ line 706.
+(pdftex.def)             Requested size: 245.83282pt x 125.85277pt.
+File: ../img/bpeTimes/labelAle.pdf Graphic file (type pdf)
+<use ../img/bpeTimes/labelAle.pdf>
+Package pdftex.def Info: ../img/bpeTimes/labelAle.pdf  used on input line 706.
+(pdftex.def)             Requested size: 42.07791pt x 88.65291pt.
+ [72
+
+ <../img/bpeTimes/aleatorio/snap-dblp.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/bpeTimes/aleatorio/sn
+ap-dblp.pdf): PDF inclusion: multiple pdfs with page group included in a single
+ page
+>]
+<../img/bpeTimes/aleatorio/snap-amazon.pdf, id=2612, 1387.58403pt x 710.41411pt
+>
+File: ../img/bpeTimes/aleatorio/snap-amazon.pdf Graphic file (type pdf)
+<use ../img/bpeTimes/aleatorio/snap-amazon.pdf>
+Package pdftex.def Info: ../img/bpeTimes/aleatorio/snap-amazon.pdf  used on inp
+ut line 729.
+(pdftex.def)             Requested size: 245.83282pt x 125.85277pt.
+File: ../img/bpeTimes/labelAle.pdf Graphic file (type pdf)
+<use ../img/bpeTimes/labelAle.pdf>
+Package pdftex.def Info: ../img/bpeTimes/labelAle.pdf  used on input line 729.
+(pdftex.def)             Requested size: 42.07791pt x 88.65291pt.
+ [73
+
+ <../img/bpeTimes/aleatorio/snap-amazon.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/bpeTimes/aleatorio/sn
+ap-amazon.pdf): PDF inclusion: multiple pdfs with page group included in a sing
+le page
+>]
+<../img/bpeTimes/aleatorio/coPapersDBLP.pdf, id=2656, 1387.58403pt x 710.41411p
+t>
+File: ../img/bpeTimes/aleatorio/coPapersDBLP.pdf Graphic file (type pdf)
+<use ../img/bpeTimes/aleatorio/coPapersDBLP.pdf>
+Package pdftex.def Info: ../img/bpeTimes/aleatorio/coPapersDBLP.pdf  used on in
+put line 752.
+(pdftex.def)             Requested size: 245.83282pt x 125.85277pt.
+File: ../img/bpeTimes/labelAle.pdf Graphic file (type pdf)
+<use ../img/bpeTimes/labelAle.pdf>
+Package pdftex.def Info: ../img/bpeTimes/labelAle.pdf  used on input line 752.
+(pdftex.def)             Requested size: 42.07791pt x 88.65291pt.
+ [74
+
+ <../img/bpeTimes/aleatorio/coPapersDBLP.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/bpeTimes/aleatorio/co
+PapersDBLP.pdf): PDF inclusion: multiple pdfs with page group included in a sin
+gle page
+>]
+<../img/bpeTimes/aleatorio/coPapersCiteseer.pdf, id=2700, 1387.58403pt x 710.41
+411pt>
+File: ../img/bpeTimes/aleatorio/coPapersCiteseer.pdf Graphic file (type pdf)
+<use ../img/bpeTimes/aleatorio/coPapersCiteseer.pdf>
+Package pdftex.def Info: ../img/bpeTimes/aleatorio/coPapersCiteseer.pdf  used o
+n input line 775.
+(pdftex.def)             Requested size: 245.83282pt x 125.85277pt.
+File: ../img/bpeTimes/labelAle.pdf Graphic file (type pdf)
+<use ../img/bpeTimes/labelAle.pdf>
+Package pdftex.def Info: ../img/bpeTimes/labelAle.pdf  used on input line 775.
+(pdftex.def)             Requested size: 42.07791pt x 88.65291pt.
+ [75
+
+ <../img/bpeTimes/aleatorio/coPapersCiteseer.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/bpeTimes/aleatorio/co
+PapersCiteseer.pdf): PDF inclusion: multiple pdfs with page group included in a
+ single page
+>]
+<../img/bpeTimes/secuencial/marknewman-astro.pdf, id=2745, 1387.58403pt x 710.4
+1411pt>
+File: ../img/bpeTimes/secuencial/marknewman-astro.pdf Graphic file (type pdf)
+<use ../img/bpeTimes/secuencial/marknewman-astro.pdf>
+Package pdftex.def Info: ../img/bpeTimes/secuencial/marknewman-astro.pdf  used 
+on input line 802.
+(pdftex.def)             Requested size: 245.83282pt x 125.85277pt.
+<../img/bpeTimes/labelSec.pdf, id=2746, 614.295pt x 794.97pt>
+File: ../img/bpeTimes/labelSec.pdf Graphic file (type pdf)
+<use ../img/bpeTimes/labelSec.pdf>
+Package pdftex.def Info: ../img/bpeTimes/labelSec.pdf  used on input line 802.
+(pdftex.def)             Requested size: 42.07791pt x 88.65291pt.
+ [76
+
+ <../img/bpeTimes/labelSec.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/bpeTimes/labelSec.pdf
+): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type
+ <array>); ignored.
+> <../img/bpeTimes/secuencial/marknewman-astro.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/bpeTimes/secuencial/m
+arknewman-astro.pdf): PDF inclusion: multiple pdfs with page group included in 
+a single page
+>]
+<../img/bpeTimes/secuencial/marknewman-condmat.pdf, id=2811, 1387.58403pt x 710
+.41411pt>
+File: ../img/bpeTimes/secuencial/marknewman-condmat.pdf Graphic file (type pdf)
+
+<use ../img/bpeTimes/secuencial/marknewman-condmat.pdf>
+Package pdftex.def Info: ../img/bpeTimes/secuencial/marknewman-condmat.pdf  use
+d on input line 825.
+(pdftex.def)             Requested size: 245.83282pt x 125.85277pt.
+File: ../img/bpeTimes/labelSec.pdf Graphic file (type pdf)
+<use ../img/bpeTimes/labelSec.pdf>
+Package pdftex.def Info: ../img/bpeTimes/labelSec.pdf  used on input line 825.
+(pdftex.def)             Requested size: 42.07791pt x 88.65291pt.
+ [77
+
+ <../img/bpeTimes/secuencial/marknewman-condmat.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/bpeTimes/secuencial/m
+arknewman-condmat.pdf): PDF inclusion: multiple pdfs with page group included i
+n a single page
+>]
+<../img/bpeTimes/secuencial/dblp-2010.pdf, id=2862, 1387.58403pt x 710.41411pt>
+
+File: ../img/bpeTimes/secuencial/dblp-2010.pdf Graphic file (type pdf)
+<use ../img/bpeTimes/secuencial/dblp-2010.pdf>
+Package pdftex.def Info: ../img/bpeTimes/secuencial/dblp-2010.pdf  used on inpu
+t line 848.
+(pdftex.def)             Requested size: 245.83282pt x 125.85277pt.
+File: ../img/bpeTimes/labelSec.pdf Graphic file (type pdf)
+<use ../img/bpeTimes/labelSec.pdf>
+Package pdftex.def Info: ../img/bpeTimes/labelSec.pdf  used on input line 848.
+(pdftex.def)             Requested size: 42.07791pt x 88.65291pt.
+ [78
+
+ <../img/bpeTimes/secuencial/dblp-2010.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/bpeTimes/secuencial/d
+blp-2010.pdf): PDF inclusion: multiple pdfs with page group included in a singl
+e page
+>]
+<../img/bpeTimes/secuencial/dblp-2011.pdf, id=2906, 1387.58403pt x 710.41411pt>
+
+File: ../img/bpeTimes/secuencial/dblp-2011.pdf Graphic file (type pdf)
+<use ../img/bpeTimes/secuencial/dblp-2011.pdf>
+Package pdftex.def Info: ../img/bpeTimes/secuencial/dblp-2011.pdf  used on inpu
+t line 871.
+(pdftex.def)             Requested size: 245.83282pt x 125.85277pt.
+File: ../img/bpeTimes/labelSec.pdf Graphic file (type pdf)
+<use ../img/bpeTimes/labelSec.pdf>
+Package pdftex.def Info: ../img/bpeTimes/labelSec.pdf  used on input line 871.
+(pdftex.def)             Requested size: 42.07791pt x 88.65291pt.
+ [79
+
+ <../img/bpeTimes/secuencial/dblp-2011.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/bpeTimes/secuencial/d
+blp-2011.pdf): PDF inclusion: multiple pdfs with page group included in a singl
+e page
+>]
+<../img/bpeTimes/secuencial/snap-dblp.pdf, id=2953, 1387.58403pt x 710.41411pt>
+
+File: ../img/bpeTimes/secuencial/snap-dblp.pdf Graphic file (type pdf)
+<use ../img/bpeTimes/secuencial/snap-dblp.pdf>
+Package pdftex.def Info: ../img/bpeTimes/secuencial/snap-dblp.pdf  used on inpu
+t line 894.
+(pdftex.def)             Requested size: 245.83282pt x 125.85277pt.
+File: ../img/bpeTimes/labelSec.pdf Graphic file (type pdf)
+<use ../img/bpeTimes/labelSec.pdf>
+Package pdftex.def Info: ../img/bpeTimes/labelSec.pdf  used on input line 894.
+(pdftex.def)             Requested size: 42.07791pt x 88.65291pt.
+ [80
+
+ <../img/bpeTimes/secuencial/snap-dblp.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/bpeTimes/secuencial/s
+nap-dblp.pdf): PDF inclusion: multiple pdfs with page group included in a singl
+e page
+>]
+<../img/bpeTimes/secuencial/snap-amazon.pdf, id=3001, 1387.58403pt x 710.41411p
+t>
+File: ../img/bpeTimes/secuencial/snap-amazon.pdf Graphic file (type pdf)
+<use ../img/bpeTimes/secuencial/snap-amazon.pdf>
+Package pdftex.def Info: ../img/bpeTimes/secuencial/snap-amazon.pdf  used on in
+put line 917.
+(pdftex.def)             Requested size: 245.83282pt x 125.85277pt.
+File: ../img/bpeTimes/labelSec.pdf Graphic file (type pdf)
+<use ../img/bpeTimes/labelSec.pdf>
+Package pdftex.def Info: ../img/bpeTimes/labelSec.pdf  used on input line 917.
+(pdftex.def)             Requested size: 42.07791pt x 88.65291pt.
+ [81
+
+ <../img/bpeTimes/secuencial/snap-amazon.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/bpeTimes/secuencial/s
+nap-amazon.pdf): PDF inclusion: multiple pdfs with page group included in a sin
+gle page
+>]
+<../img/bpeTimes/secuencial/coPapersDBLP.pdf, id=3047, 1387.58403pt x 710.41411
+pt>
+File: ../img/bpeTimes/secuencial/coPapersDBLP.pdf Graphic file (type pdf)
+<use ../img/bpeTimes/secuencial/coPapersDBLP.pdf>
+Package pdftex.def Info: ../img/bpeTimes/secuencial/coPapersDBLP.pdf  used on i
+nput line 940.
+(pdftex.def)             Requested size: 245.83282pt x 125.85277pt.
+File: ../img/bpeTimes/labelSec.pdf Graphic file (type pdf)
+<use ../img/bpeTimes/labelSec.pdf>
+Package pdftex.def Info: ../img/bpeTimes/labelSec.pdf  used on input line 940.
+(pdftex.def)             Requested size: 42.07791pt x 88.65291pt.
+ [82
+
+ <../img/bpeTimes/secuencial/coPapersDBLP.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/bpeTimes/secuencial/c
+oPapersDBLP.pdf): PDF inclusion: multiple pdfs with page group included in a si
+ngle page
+>]
+<../img/bpeTimes/secuencial/coPapersCiteseer.pdf, id=3093, 1387.58403pt x 710.4
+1411pt>
+File: ../img/bpeTimes/secuencial/coPapersCiteseer.pdf Graphic file (type pdf)
+<use ../img/bpeTimes/secuencial/coPapersCiteseer.pdf>
+Package pdftex.def Info: ../img/bpeTimes/secuencial/coPapersCiteseer.pdf  used 
+on input line 963.
+(pdftex.def)             Requested size: 245.83282pt x 125.85277pt.
+File: ../img/bpeTimes/labelSec.pdf Graphic file (type pdf)
+<use ../img/bpeTimes/labelSec.pdf>
+Package pdftex.def Info: ../img/bpeTimes/labelSec.pdf  used on input line 963.
+(pdftex.def)             Requested size: 42.07791pt x 88.65291pt.
+ [83
+
+ <../img/bpeTimes/secuencial/coPapersCiteseer.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/bpeTimes/secuencial/c
+oPapersCiteseer.pdf): PDF inclusion: multiple pdfs with page group included in 
+a single page
+>]) (./anexo/arte.tex [84
+
+]
+Overfull \hbox (1.8585pt too wide) in paragraph at lines 81--81
+ [] 
+ []
+
+[85
+
+]
+<../img/arte/graphs-BFS-F1.pdf, id=3150, 845.07718pt x 598.15468pt>
+File: ../img/arte/graphs-BFS-F1.pdf Graphic file (type pdf)
+<use ../img/arte/graphs-BFS-F1.pdf>
+Package pdftex.def Info: ../img/arte/graphs-BFS-F1.pdf  used on input line 107.
+
+(pdftex.def)             Requested size: 66.82571pt x 86.09808pt.
+File: ../img/arte/graphs-BFS-F1.pdf Graphic file (type pdf)
+<use ../img/arte/graphs-BFS-F1.pdf>
+Package pdftex.def Info: ../img/arte/graphs-BFS-F1.pdf  used on input line 107.
+
+(pdftex.def)             Requested size: 66.82571pt x 86.09808pt.
+ [86
+
+ <../img/arte/graphs-BFS-F1.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/arte/graphs-BFS-F1.pd
+f): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', typ
+e <array>); ignored.
+>] [87
+
+] [88
+
+] [89
+
+] [90
+
+]
+<../img/arte/graphs-repair.pdf, id=3192, 845.07718pt x 598.15468pt>
+File: ../img/arte/graphs-repair.pdf Graphic file (type pdf)
+<use ../img/arte/graphs-repair.pdf>
+Package pdftex.def Info: ../img/arte/graphs-repair.pdf  used on input line 295.
+
+(pdftex.def)             Requested size: 80.68379pt x 35.3151pt.
+
+Overfull \hbox (2.71774pt too wide) in paragraph at lines 295--295
+ [][] 
+ []
+
+
+Overfull \vbox (1.60948pt too high) detected at line 295
+ []
+
+[91
+
+ <../img/arte/graphs-repair.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/arte/graphs-repair.pd
+f): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', typ
+e <array>); ignored.
+>]
+<../img/arte/graphs-virtual2.pdf, id=3210, 845.07718pt x 598.15468pt>
+File: ../img/arte/graphs-virtual2.pdf Graphic file (type pdf)
+<use ../img/arte/graphs-virtual2.pdf>
+Package pdftex.def Info: ../img/arte/graphs-virtual2.pdf  used on input line 31
+8.
+(pdftex.def)             Requested size: 115.0062pt x 58.99657pt.
+File: ../img/arte/graphs-virtual2.pdf Graphic file (type pdf)
+<use ../img/arte/graphs-virtual2.pdf>
+Package pdftex.def Info: ../img/arte/graphs-virtual2.pdf  used on input line 31
+8.
+(pdftex.def)             Requested size: 115.0062pt x 58.99657pt.
+ [92
+
+ <../img/arte/graphs-virtual2.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/arte/graphs-virtual2.
+pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', t
+ype <array>); ignored.
+>]
+<../img/arte/k2-tree-matrix.pdf, id=3229, 794.97pt x 614.295pt>
+File: ../img/arte/k2-tree-matrix.pdf Graphic file (type pdf)
+<use ../img/arte/k2-tree-matrix.pdf>
+Package pdftex.def Info: ../img/arte/k2-tree-matrix.pdf  used on input line 342
+.
+(pdftex.def)             Requested size: 136.50903pt x 166.62175pt.
+<../img/arte/graphs-k2tree.pdf, id=3231, 845.07718pt x 598.15468pt>
+File: ../img/arte/graphs-k2tree.pdf Graphic file (type pdf)
+<use ../img/arte/graphs-k2tree.pdf>
+Package pdftex.def Info: ../img/arte/graphs-k2tree.pdf  used on input line 342.
+
+(pdftex.def)             Requested size: 153.3377pt x 126.83934pt.
+
+Overfull \hbox (15.05821pt too wide) in paragraph at lines 342--342
+ [][] 
+ []
+
+[93
+
+ <../img/arte/k2-tree-matrix.pdf> <../img/arte/graphs-k2tree.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/arte/graphs-k2tree.pd
+f): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', typ
+e <array>); ignored.
+>]
+<../img/arte/graphs-wavelet-tree.pdf, id=3257, 845.07718pt x 598.15468pt>
+File: ../img/arte/graphs-wavelet-tree.pdf Graphic file (type pdf)
+<use ../img/arte/graphs-wavelet-tree.pdf>
+Package pdftex.def Info: ../img/arte/graphs-wavelet-tree.pdf  used on input lin
+e 367.
+(pdftex.def)             Requested size: 115.0062pt x 70.43942pt.
+<../img/arte/graphs-wavelet-tree2.pdf, id=3259, 845.07718pt x 598.15468pt>
+File: ../img/arte/graphs-wavelet-tree2.pdf Graphic file (type pdf)
+<use ../img/arte/graphs-wavelet-tree2.pdf>
+Package pdftex.def Info: ../img/arte/graphs-wavelet-tree2.pdf  used on input li
+ne 367.
+(pdftex.def)             Requested size: 169.01244pt x 119.62881pt.
+
+Overfull \hbox (15.36751pt too wide) in paragraph at lines 367--367
+ [][] 
+ []
+
+[94
+
+ <../img/arte/graphs-wavelet-tree.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/arte/graphs-wavelet-t
+ree.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets
+', type <array>); ignored.
+> <../img/arte/graphs-wavelet-tree2.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/arte/graphs-wavelet-t
+ree2.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSet
+s', type <array>); ignored.
+>]
+<../img/arte/graphs-wavelet-matrix.pdf, id=3280, 845.07718pt x 598.15468pt>
+File: ../img/arte/graphs-wavelet-matrix.pdf Graphic file (type pdf)
+<use ../img/arte/graphs-wavelet-matrix.pdf>
+Package pdftex.def Info: ../img/arte/graphs-wavelet-matrix.pdf  used on input l
+ine 397.
+(pdftex.def)             Requested size: 111.99492pt x 86.09808pt.
+
+Overfull \hbox (19.80702pt too wide) in paragraph at lines 397--397
+ [][] 
+ []
+
+File: ../img/arte/graphs-wavelet-matrix.pdf Graphic file (type pdf)
+<use ../img/arte/graphs-wavelet-matrix.pdf>
+Package pdftex.def Info: ../img/arte/graphs-wavelet-matrix.pdf  used on input l
+ine 397.
+(pdftex.def)             Requested size: 60.80315pt x 74.05296pt.
+File: ../img/arte/graphs-wavelet-matrix.pdf Graphic file (type pdf)
+<use ../img/arte/graphs-wavelet-matrix.pdf>
+Package pdftex.def Info: ../img/arte/graphs-wavelet-matrix.pdf  used on input l
+ine 397.
+(pdftex.def)             Requested size: 60.80315pt x 74.05296pt.
+[95
+
+ <../img/arte/graphs-wavelet-matrix.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../img/arte/graphs-wavelet-m
+atrix.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSe
+ts', type <array>); ignored.
+>])
 \tf@nav=\write6
 \openout6 = `Presentacion.nav'.
 
@@ -1359,52 +2647,54 @@ Package pdftex.def Info: img/handshakeInv.png  used on input line 88.
 \tf@snm=\write8
 \openout8 = `Presentacion.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 99.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 99.
-
-(./Presentacion.aux
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 123.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 123.
+ (./Presentacion.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 99.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 99.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 123.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 123.
 Package rerunfilecheck Info: File `Presentacion.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: CACB9CBA4F660B9ACDA772804CDB9B37;44.
  ) 
 Here is how much of TeX's memory you used:
- 28470 strings out of 492649
- 574190 string characters out of 6129622
- 623626 words of memory out of 5000000
- 31830 multiletter control sequences out of 15000+600000
- 542620 words of font info for 70 fonts, out of 8000000 for 9000
+ 29562 strings out of 492649
+ 598434 string characters out of 6129622
+ 665387 words of memory out of 5000000
+ 32651 multiletter control sequences out of 15000+600000
+ 544568 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,11n,55p,10363b,838s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,12n,58p,10363b,838s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 ></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
-/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></u
-sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
-/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
-ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loc
-al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/
-texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/tex
-live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texl
-ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texli
-ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/local/texliv
-e/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/
-2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive
-/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive
-/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/local/texlive
-/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
-2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/20
-18/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2018/tex
-mf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Presentacion.pdf (14 pages, 367856 bytes).
+/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></u
+sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
+/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/l
+ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
+al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local
+/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/te
+xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texli
+ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/
+2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2
+018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/20
+18/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/local/texlive/201
+8/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2018/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2018
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2018
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/local/texlive/2018
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2018/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2018/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2018/texmf-dis
+t/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Presentacion.pdf (95 pages, 1635549 bytes).
 PDF statistics:
- 247 PDF objects out of 1000 (max. 8388607)
- 184 compressed objects within 2 object streams
- 41 named destinations out of 1000 (max. 500000)
- 80 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3432 PDF objects out of 3580 (max. 8388607)
+ 1227 compressed objects within 13 object streams
+ 219 named destinations out of 1000 (max. 500000)
+ 739 words of extra memory for PDF output out of 10000 (max. 10000000)
 

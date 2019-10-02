@@ -390,7 +390,7 @@
       \MakeUppercaseWithNewline{\@degree} \\
       \vskip 2.5ex
    \end{center}
-   
+
    \begin{center}
       \vskip 2.5ex
       \ POR \\
@@ -399,7 +399,7 @@
    	  { \small \@defensedate} \\
    \end{center}
    \vfill
-  
+
    \begin{flushright}
    {Profesor gu\'ia:} \@advisor\\
    		\@dept \\
@@ -408,11 +408,11 @@
    \end{flushright}
    \clearpage
    }
-   
+
 \newcommand{\no@breaks}[1]{%
    {\def\\{ \ignorespaces}#1}%
    }
-   
+
 \newenvironment{dal@frontpage}%
    {\list{}{\listparindent \z@%
        \itemindent    \z@%
@@ -429,7 +429,7 @@
       \begin{center}
          \large\em\null\vskip1in#1\vfill
       \end{center}
-      
+
       }%
       \newcount\ab@page
    }
@@ -457,7 +457,7 @@
    \vskip 2.5ex
     \begin{flushright}
     \vspace*{\fill}
-    
+
 		 \large\em\null\vskip1in
 		 \vspace*{\fill}
 	}
@@ -470,10 +470,10 @@
 \newenvironment{acknowledgements}%
   % {\prefacesection{\ackname}}
    {\newpage
-  
+
    \MakeUppercaseWithNewline{\bf Agradecimientos} \\
    \vfill}
-   
+
 \let\acknowledgments\acknowledgements
 \let\endacknowledgments\endacknowledgements
 

@@ -2,20 +2,57 @@
 \begin{frame}{•}
 \frametitle{Trabajos Relacionados}
 
-{\small
-\textbf{WebGraph}, {\footnotesize \textit{Boldi} y \textit{Vigna} (2003)}.
+Compresión de grafos
 
-\textbf{k2-tree}, {\footnotesize \textit{Brisaboa}, \textit{Ladra} y \textit{Navarro} (2009)}.
+\begin{itemize}
+	\item \textbf{The WebGraph Framework}, {\footnotesize \textit{Boldi y Vigna} (2003)}.
+	\item \textbf{Graph Compression by BFS}, {\footnotesize \textit{Apostolico y Drovandi} (2009)}.
+	\item \textbf{Using Re-Pair}, {\footnotesize \textit{Claude y Navarro} (2010)}.
+	\item \textbf{Virtual Node Mining}, {\footnotesize \textit{Buehrer y Chellapilla} (2008)}.
+	\item \textbf{k2-tree}, {\footnotesize \textit{Brisaboa, Ladra y Navarro} (2009)}.
+	\item \textbf{List Merging}, {\footnotesize \textit{Grabowski y Bieniecki} (2014)}.
+\end{itemize}
 
-\textbf{Graph Compression by BFS}, {\footnotesize \textit{Apostolico} y \textit{Drovandi} (2009)}.
+\end{frame}
 
-\textbf{Layered Label Propagation}, de \textit{Boldi}, \textit{Vigna}, \textit{Santini} y \textit{Rosa} (2011).
 
-\textbf{Tight and simple Web graph compression}, {\footnotesize \textit{Grabowski} y \textit{Bieniecki} (2011)}.
 
-\textbf{Compressed representations for web and social graphs}, {\footnotesize \textit{Hernández} y \textit{Navarro} (2014)}.
+\begin{frame}{•}
+\frametitle{Trabajos Relacionados (2)}
 
-\textbf{Compressing graphs by grammars}, {\footnotesize \textit{Maneth} y \textit{Peternek} (2016)}.
-}
+Estructuras compactas: Tres operaciones básicas:
+
+\begin{itemize}
+	\item \textbf{$Rank_{S}(a, i)$}: Cuenta las ocurrencias del símbolo $a$ hasta la posición $i$ en la secuencia $S$.
+	\item \textbf{$Select_{S}(a, i)$}: Encuentra la posición de la ocurrencia $i$ del símbolo $a$ en la secuencia $S$.
+	\item \textbf{$Access_{S}(i)$}: Retorna el símbolo en la posición $i$ de la secuencia $S$.
+\end{itemize}
+
+Se utilizarán:
+\begin{itemize}
+	\item Secuencias binarias, {\footnotesize \textit{Raman, Raman y Rao}}.
+	\item Wavelet tree, {\footnotesize \textit{Grossi, Gupta y Vitter}}.
+	\item Wavelet matrix, {\footnotesize \textit{Claude, Navarro y Ordóñez}}.
+\end{itemize}
+
+Disponibles en el repositorio \textbf{SDSL}\footnote{\url{https://github.com/simongog/sdsl-lite}} (\textit{Succinct Data Structure Library}).
+
+\end{frame}
+
+
+
+\begin{frame}{•}
+\frametitle{Trabajos Relacionados (3)}
+
+Enumeración de cliques maximales
+
+\begin{itemize}
+	\item Es un problema NP-Hard.
+	\item \textit{Eppstein, Löffler y Strash} proponen un método apropiado para grafos poco densos.
+	\item Para un grafo con $n$ nodos y \textit{degeneracy} $d$, en un tiempo $O(dn3^{d/3})$
+\end{itemize}
+
+Disponible en el repositorio \textbf{Quick Cliques}\footnote{\url{https://github.com/darrenstrash/quick-cliques}}.
+
 
 \end{frame}

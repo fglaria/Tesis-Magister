@@ -1,0 +1,70 @@
+\begin{frame}
+\frametitle{Conclusiones}
+
+Se desarrolla método de compresión:
+\begin{itemize}
+	\item Para grafos no dirigidos y poco densos.
+	\item Basado en clustering de cliques maximales.
+	\item Usando estructuras compactas.
+\end{itemize}
+
+Estructura comprimida permite responder consultas:
+\begin{itemize}
+	\item Reconstrucción del grafo original.
+	\item Listado de vecinos de un nodo.
+	\item Consultar vecindad de dos nodos.
+	\item Generar listado de cliques maximales.
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Conclusiones (2)}
+
+Nivel de compresión competitivo al estado del arte
+\begin{itemize}
+	\item Solo superado por k2tree.
+\end{itemize}
+
+Buen tiempo de acceso aleatorio
+\begin{itemize}
+	\item Competitivo con k2tree.
+	\item Otros algoritmos logran mejor tiempo.
+\end{itemize}
+
+Menor desempeño en reconstrucción secuencial.
+\begin{itemize}
+	\item Algunos casos compiten con Webgraph.
+	\item Otros algoritmos logran mejor tiempo.
+\end{itemize}
+
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Conclusiones (3)}
+
+Posible aplicación:
+\begin{itemize}
+	\item Dispositivos con poca memoria.
+	\item Responder consultas sin descomprimir.
+\end{itemize}
+
+Trabajo futuro:
+\begin{itemize}
+	\item Mejorar tiempos de acceso.
+		\begin{itemize}
+			\footnotesize
+			\item Nuevas heurísticas en funciones de ranking.
+		\end{itemize}
+	\item Potencial de paralelismo.
+		\begin{itemize}
+			\footnotesize
+			\item Acceso paralelo por partición.
+			\item Comparar bytes usando instrucciones paralelas (SIMD\footnote{SIMD: Single Instruction, Multiple Data. Una instrucción, múltiples datos.}).
+		\end{itemize}
+\end{itemize}
+
+
+\end{frame}

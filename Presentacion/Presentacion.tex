@@ -35,6 +35,7 @@
 \setbeamerfont{caption}{size=\footnotesize}
 
 
+
 \newcommand{\backupbegin}{
    \newcounter{finalframe}
    \setcounter{finalframe}{\value{framenumber}}
@@ -43,11 +44,28 @@
    \setcounter{framenumber}{\value{finalframe}}
 }
 
+\usepackage{amsthm} % Theorems (definitions)
+
+\usepackage{amsfonts} % more math symbols
+
+
+\definecolor{azul}{HTML}{AAFFFF}
+\definecolor{amarillo}{HTML}{FFFFAA}
+\definecolor{verde}{HTML}{E2FFAA}
+\definecolor{rojo}{HTML}{E75A7C}
+\definecolor{cafe}{HTML}{758ECD}
+\definecolor{blanco}{HTML}{FFFFFF}
+
+
+\usepackage{algorithm} % Writing pseudocode
+\usepackage{algorithmic} % Writing pseudocode
+%\numberwithin{algorithm}{chapter} % Correct numbering of algorithms
+
 \author{Felipe A. Glaría Grego}
 \title{Diseño e implementación de método de compresión de grafos basados en clustering de cliques maximales}
 \subtitle{Defensa de Tesis}
 %\logo{\includegraphics[height=1.5cm]{escudo.png}} 
-\institute{\includegraphics[height=1.5cm]{img/escudo.png}\\Lilian Salinas, Ceciclia Hernández\\Departamento de Ingeniería Informática y Ciencias de la Computación\\Facultad de Ingeniería\\Universidad de Concepción} 
+\institute{\includegraphics[height=1.5cm]{img/escudo.png}\\Lilian Salinas, Cecilia Hernández\\Departamento de Ingeniería Informática y Ciencias de la Computación\\Facultad de Ingeniería\\Universidad de Concepción} 
 %\date{} 
 
 %\subject{} 
@@ -64,33 +82,39 @@
 
 \input{motivacion}
 
-\input{relacionados}
-
 \input{marco}
+
+\input{relacionados}
 
 %\input{hipotesis}
 
 \input{metodo}
 
-%\input{metodologia}
+\input{resultados}
+
+\input{resultadosComp}
+
+\input{conclusion}
 
 %\input{adelantado}
 
 %\input{planificacion}
 
 {
-\setbeamercolor{background canvas}{bg=black}
-\begin{frame}[plain]
-\centerline{\includegraphics[]{img/handshakeInv.png}}
-\begin{center}
-{\Huge \color{white}Muchas gracias}
-\end{center}
-\end{frame}
+	\setbeamercolor{background canvas}{bg=black}
+	\begin{frame}[plain]
+		\centerline{\includegraphics[]{img/handshakeInv.png}}
+		\begin{center}
+			{\Huge \color{white}Muchas gracias}
+		\end{center}
+	\end{frame}
 }
 
 \appendix
 \backupbegin
-%\input{anexo/popular}
+%\input{anexo/metodo}
+\input{anexo/resultados}
+\input{anexo/arte}
 %\input{anexo/sdsl}
 %\input{anexo/similitud}
 %\input{anexo/minhash}
